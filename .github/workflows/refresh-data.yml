@@ -1,0 +1,34 @@
+name: Refresh news data
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # daily at 06:00 UTC
+  workflow_dispatch: {}  # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # fetch_news_data.py has zero external dependencies (stdlib only),
+      # so no pip install step is needed here. ACLED conflict data isn't
+      # refreshed by this workflow -- data/acled_country_events.json stays
+      # whatever it was last manually converted to (see README).
+      - name: Fetch latest climate/political/conflict-fallback data
+        run: python fetch_news_data.py
+
+      - name: Commit and push if the data changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/news_data.json
+          git diff --quiet --cached || git commit -m "Auto-refresh news data"
+          git push
