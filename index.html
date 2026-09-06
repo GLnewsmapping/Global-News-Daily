@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dispatch — the world, as it's happening</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink: #12181F;
+    --panel: #1B2430;
+    --panel-line: #2B3644;
+    --paper: #E8E6DE;
+    --muted: #8B94A3;
+    --conflict: #E2572B;
+    --climate: #2FA88C;
+    --political: #4C7BD9;
+    --shipping: #D9A441;
+  }
+  *{ box-sizing: border-box; }
+  html, body{ height: 100%; margin: 0; overflow: hidden; }
+  body{
+    font-family: 'Inter', sans-serif;
+    background: var(--ink);
+    color: var(--paper);
+    display: flex;
+  }
+  @keyframes fadeInUp{
+    from{ opacity: 0; transform: translateY(14px); }
+    to{ opacity: 1; transform: translateY(0); }
+  }
+
+  /* ---------- Sidebar ---------- */
+  #sidebar{
+    width: 380px;
+    min-width: 380px;
+    background: var(--panel);
+    border-right: 1px solid var(--panel-line);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  #masthead{
+    padding: 28px 24px 20px;
+    border-bottom: 1px solid var(--panel-line);
+    animation: fadeInUp 900ms ease-out both;
+  }
+  #masthead .kicker{
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  #masthead h1{
+    font-family: 'Newsreader', serif;
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin: 0 0 8px;
+  }
+  #masthead p{
+    margin: 0;
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.5;
+    max-width: 34ch;
+  }
+
+  /* ---------- View switcher ---------- */
+  #view-switch{
+    display: flex;
+    padding: 16px 24px 0;
+    gap: 8px;
+    animation: fadeInUp 900ms ease-out 60ms both;
+  }
+  .view-btn{
+    flex: 1;
+    padding: 8px 0;
+    border: 1px solid var(--panel-line);
+    background: transparent;
+    color: var(--muted);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.15s ease;
+  }
+  .view-btn.active{
+    color: var(--ink);
+    background: var(--paper);
+    border-color: var(--paper);
+  }
+
+  #meta{
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--panel-line);
+    font-size: 12px;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+    animation: fadeInUp 900ms ease-out 120ms both;
+  }
+
+  #filters{
+    padding: 16px 24px;
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid var(--panel-line);
+    animation: fadeInUp 900ms ease-out 220ms both;
+  }
+  .toggle{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: 1px solid var(--panel-line);
+    background: transparent;
+    color: var(--paper);
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: border-color 0.15s ease, opacity 0.15s ease;
+  }
+  .toggle.off{ opacity: 0.35; }
+  .toggle .swatch{ width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+  .toggle .count{ margin-left: auto; color: var(--muted); font-size: 12px; }
+  .toggle.conflict .swatch{ background: var(--conflict); }
+  .toggle.climate .swatch{ background: var(--climate); }
+  .toggle.political .swatch{ background: var(--political); }
+  .toggle.conflict{ border-color: color-mix(in srgb, var(--conflict) 40%, var(--panel-line)); }
+  .toggle.climate{ border-color: color-mix(in srgb, var(--climate) 40%, var(--panel-line)); }
+  .toggle.political{ border-color: color-mix(in srgb, var(--political) 40%, var(--panel-line)); }
+
+  #lanes-row{
+    padding: 0 24px 16px;
+    border-bottom: 1px solid var(--panel-line);
+    animation: fadeInUp 900ms ease-out 260ms both;
+  }
+  .toggle.lanes{ width: 100%; border-color: color-mix(in srgb, var(--shipping) 40%, var(--panel-line)); }
+  .toggle.lanes .swatch{ background: var(--shipping); }
+  .toggle.lanes.off{ opacity: 0.5; }
+
+  #list{
+    flex: 1;
+    overflow-y: auto;
+    padding: 4px 0 24px;
+  }
+  .story{
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--panel-line);
+    cursor: pointer;
+    transition: background 0.12s ease;
+    opacity: 0;
+    animation: fadeInUp 500ms ease-out forwards;
+  }
+  .story:hover{ background: rgba(255,255,255,0.03); }
+  .story-top{
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  .story-dot{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .story-dot.conflict{ background: var(--conflict); }
+  .story-dot.climate{ background: var(--climate); }
+  .story-dot.political{ background: var(--political); }
+  .story-place{
+    font-family: 'Newsreader', serif;
+    font-size: 16px;
+    font-style: italic;
+  }
+  .story-count{
+    margin-left: auto;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .story-headline{
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.4;
+  }
+  .story-headline a{
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .story-headline a:hover{ color: var(--paper); }
+
+  #empty-state{
+    padding: 40px 24px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  #empty-state code{
+    background: var(--panel-line);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+  }
+
+  /* ---------- Viz area (shared by both views) ---------- */
+  #viz-wrap{ flex: 1; height: 100vh; position: relative; animation: fadeInUp 1100ms ease-out 100ms both; }
+  .viz-layer{ position: absolute; inset: 0; }
+  .viz-layer.hidden{ display: none; }
+  #vignette{
+    position: absolute;
+    inset: 0;
+    z-index: 400;
+    pointer-events: none;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 45%, rgba(0,0,0,0.55) 100%);
+  }
+  .continent-label{
+    color: rgba(255, 255, 255, 0.92);
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    pointer-events: none;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.85), 0 0 8px rgba(0,0,0,0.6);
+  }
+  .chokepoint-label{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+    white-space: nowrap;
+    pointer-events: none;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.85), 0 0 8px rgba(0,0,0,0.6);
+  }
+  .chokepoint-label .dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--shipping);
+    border: 1.5px solid rgba(0,0,0,0.6);
+    flex-shrink: 0;
+  }
+  .chokepoint-label .rank{
+    color: rgba(255,255,255,0.7);
+    font-weight: 700;
+  }
+  @keyframes pulseRing{
+    0%{ opacity: 0.85; transform: scale(1); }
+    70%{ opacity: 0; transform: scale(2.6); }
+    100%{ opacity: 0; transform: scale(2.6); }
+  }
+  .pulse-marker{
+    animation: pulseRing 2s ease-out infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  .leaflet-popup-content-wrapper{
+    background: var(--panel);
+    color: var(--paper);
+    border-radius: 4px;
+  }
+  .leaflet-popup-tip{ background: var(--panel); }
+  .leaflet-popup-content a{ color: #A9C6FF; }
+  .popup-place{
+    font-family: 'Newsreader', serif;
+    font-size: 16px;
+    font-style: italic;
+    margin: 0 0 4px;
+  }
+  .popup-meta{ font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+  .summary-list{
+    list-style: none;
+    margin: 6px 0 0;
+    padding: 0;
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .summary-list li{ padding-left: 14px; position: relative; }
+  .summary-list li::before{
+    content: '\2013';
+    position: absolute;
+    left: 0;
+    color: var(--shipping);
+  }
+
+  /* ---------- Story panel (globe view only) ---------- */
+  #story-panel{
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    z-index: 10;
+    width: 360px;
+    background: rgba(22, 30, 40, 0.9);
+    backdrop-filter: blur(6px);
+    border: 1px solid var(--panel-line);
+    border-radius: 4px;
+    padding: 20px;
+    transform: translateY(12px);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.45s ease;
+  }
+  #story-panel.visible{
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  #story-panel .story-cat{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    text-transform: lowercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  #story-panel .story-cat .swatch{ width: 7px; height: 7px; border-radius: 50%; }
+  #story-panel h2{
+    font-family: 'Newsreader', serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+    margin: 0 0 8px;
+    line-height: 1.3;
+  }
+  #story-panel p{
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.55;
+    margin: 0 0 14px;
+  }
+  #story-panel a{
+    font-size: 13px;
+    color: var(--paper);
+    text-decoration: none;
+    border-bottom: 1px solid var(--panel-line);
+    padding-bottom: 2px;
+  }
+  #story-panel a:hover{ border-color: var(--paper); }
+  #story-panel .close{
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 16px;
+    background: none;
+    border: none;
+  }
+</style>
+</head>
+<body>
+
+<div id="sidebar">
+  <div id="masthead">
+    <span class="kicker">Conflict &middot; Climate &middot; Political</span>
+    <h1>Dispatch</h1>
+    <p>Geolocated in real time. Rotate, zoom, click any point.</p>
+  </div>
+  <div id="view-switch">
+    <button class="view-btn active" data-view="globe">Globe</button>
+    <button class="view-btn" data-view="map">Map</button>
+  </div>
+  <div id="meta">
+    <span id="meta-count">— locations</span>
+    <span id="meta-time">—</span>
+  </div>
+  <div id="filters">
+    <button class="toggle conflict" data-category="conflict">
+      <span class="swatch"></span> Conflict <span class="count"></span>
+    </button>
+    <button class="toggle climate" data-category="climate">
+      <span class="swatch"></span> Climate <span class="count"></span>
+    </button>
+    <button class="toggle political" data-category="political">
+      <span class="swatch"></span> Political <span class="count"></span>
+    </button>
+  </div>
+  <div id="lanes-row">
+    <button class="toggle lanes off" id="lanes-toggle">
+      <span class="swatch"></span> Shipping Lanes <span class="count" style="margin-left:auto;font-size:11px;color:var(--muted);">highest-traffic</span>
+    </button>
+    <button class="toggle lanes off" id="chokepoints-toggle" style="margin-top:8px;">
+      <span class="swatch"></span> Chokepoints <span class="count" style="margin-left:auto;font-size:11px;color:var(--muted);">top 10</span>
+    </button>
+  </div>
+  <div id="list"></div>
+</div>
+
+<div id="viz-wrap">
+  <div id="globeViz" class="viz-layer"></div>
+  <div id="map-container" class="viz-layer hidden"></div>
+  <div id="vignette"></div>
+  <div id="story-panel">
+    <button class="close" onclick="hidePanel()">&times;</button>
+    <div class="story-cat"><span class="swatch"></span><span id="panel-cat"></span></div>
+    <h2 id="panel-place"></h2>
+    <p id="panel-headline"></p>
+    <ul id="panel-summary" class="summary-list"></ul>
+    <a id="panel-link" href="#" target="_blank">Read the source →</a>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/globe.gl"></script>
+<script>
+  const COLORS = {
+    conflict: '#E2572B',
+    climate: '#2FA88C',
+    political: '#4C7BD9',
+  };
+
+  // Approximate centroids, used only to label continents.
+  const CONTINENT_LABELS = [
+    { name: 'NORTH AMERICA', lat: 45, lon: -100 },
+    { name: 'SOUTH AMERICA', lat: -15, lon: -60 },
+    { name: 'EUROPE', lat: 50, lon: 15 },
+    { name: 'AFRICA', lat: 2, lon: 20 },
+    { name: 'ASIA', lat: 48, lon: 90 },
+    { name: 'OCEANIA', lat: -25, lon: 135 },
+  ];
+
+  const DATA_URL = 'data/news_data.json'; // written by fetch_news_data.py
+  const FALLBACK_URL = 'data/news_data.sample.json'; // used if the real file isn't found yet
+  const PULSE_THRESHOLD = 20; // articles -- above this, a map marker gets an animated glow
+
+  const MAP_LANE_STYLE = {
+    'very-high': { weight: 5, opacity: 0.9 },
+    'high': { weight: 3.5, opacity: 0.8 },
+    'medium': { weight: 2, opacity: 0.65 },
+  };
+  const GLOBE_LANE_STYLE = {
+    'very-high': { color: 'rgba(217, 164, 65, 0.9)', stroke: 1.1 },
+    'high': { color: 'rgba(217, 164, 65, 0.7)', stroke: 0.75 },
+    'medium': { color: 'rgba(217, 164, 65, 0.5)', stroke: 0.45 },
+  };
+
+  // ---------- Shared state ----------
+  let currentView = 'globe';
+  const activeCategories = new Set(['conflict', 'climate', 'political']);
+  let rawFeatures = [];   // {category, lat, lon, name, count, html} -- shape written by fetch_news_data.py
+  let globeEvents = [];   // same data, adapted for the globe renderer
+  let LANES = [];
+  let lanesVisible = false;
+  let mapMarkers = []; // { category, marker, isHalo? }
+  let CHOKEPOINTS = [];
+  let chokepointsVisible = false;
+
+  // fetch_news_data.py writes {category, lat, lon, name, count, html} --
+  // this maps that shape into what the globe expects, and pulls a headline
+  // + link out of GDELT's raw html snippet.
+  function transformFeature(f) {
+    let headline = '';
+    let url = '#';
+    try {
+      const doc = new DOMParser().parseFromString(f.html || '', 'text/html');
+      const links = doc.querySelectorAll('a');
+      if (links.length > 0) {
+        headline = links[0].textContent.trim();
+        url = links[0].getAttribute('href') || '#';
+        if (links.length > 1) {
+          const more = links.length - 1;
+          headline += ` (+${more} more ${more === 1 ? 'story' : 'stories'})`;
+        }
+      }
+    } catch (e) { /* fall through to plain-text fallback below */ }
+
+    if (!headline) {
+      headline = (f.html || '').replace(/<[^>]+>/g, '').trim() || 'No headline available';
+    }
+
+    const count = f.count || 1;
+    const size = Math.max(0.3, Math.min(1.3, 0.3 + Math.log2(count + 1) * 0.25));
+
+    return { category: f.category, lat: f.lat, lng: f.lon, place: f.name, headline, url, size, summary: f.summary || null };
+  }
+
+  function summaryHtml(f) {
+    if (!f.summary || !f.summary.length) return '';
+    return `<ul class="summary-list">${f.summary.map(s => `<li>${s}</li>`).join('')}</ul>`;
+  }
+
+  function visibleGlobeEvents() {
+    return globeEvents.filter(e => activeCategories.has(e.category));
+  }
+
+  function updateCounts() {
+    ['conflict', 'climate', 'political'].forEach(cat => {
+      const n = rawFeatures.filter(f => f.category === cat).length;
+      const el = document.querySelector(`.toggle.${cat} .count`);
+      if (el) el.textContent = n;
+    });
+  }
+
+  // ================= Globe =================
+  if (typeof Globe === 'undefined') {
+    document.getElementById('globeViz').innerHTML =
+      '<div style="color:#E8E6DE;font-family:Inter,sans-serif;padding:40px;max-width:480px;line-height:1.6;">' +
+      '<h2 style="font-family:Newsreader,serif;font-weight:500;">Couldn\'t load the globe library</h2>' +
+      '<p>This page loads globe.gl from a CDN (cdn.jsdelivr.net). If you\'re offline, on a restricted network, ' +
+      'or have an ad-blocker/script-blocker enabled, that request can get blocked.</p></div>';
+    throw new Error('globe.gl failed to load from CDN');
+  }
+
+  function hexToRgb(hex) {
+    const n = parseInt(hex.replace('#', ''), 16);
+    return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+  }
+
+  const world = Globe()
+    (document.getElementById('globeViz'))
+    .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
+    .bumpImageUrl('https://unpkg.com/three-globe/example/img/earth-topology.png')
+    .backgroundImageUrl('https://unpkg.com/three-globe/example/img/night-sky.png')
+    .backgroundColor('rgba(0,0,0,0)')
+    .showAtmosphere(true)
+    .atmosphereColor('#4C7BD9')
+    .atmosphereAltitude(0.18)
+    .pointsData([])
+    .pointLat('lat')
+    .pointLng('lng')
+    .pointColor(d => COLORS[d.category])
+    .pointAltitude(0.01)
+    .pointRadius(d => 0.35 + d.size * 0.5)
+    .pointLabel(d => `<div style="font-family:Inter,sans-serif;font-size:12px;padding:4px 2px;">${d.place}</div>`)
+    .onPointClick(showPanel)
+    .ringsData([])
+    .ringColor(d => {
+      const [r, g, b] = hexToRgb(COLORS[d.category]);
+      return t => `rgba(${r}, ${g}, ${b}, ${Math.sqrt(1 - t)})`;
+    })
+    .ringMaxRadius(d => 3 + d.size * 2.5)
+    .ringPropagationSpeed(0.9)
+    .ringRepeatPeriod(2400)
+    .labelsData(CONTINENT_LABELS.map(c => ({ ...c, type: 'continent' })))
+    .labelLat('lat')
+    .labelLng('lon')
+    .labelText(d => d.type === 'chokepoint' ? `${d.rank} · ${d.name.toUpperCase()}` : d.name)
+    .labelSize(d => d.type === 'chokepoint' ? 1.0 : 1.5)
+    .labelDotRadius(d => d.type === 'chokepoint' ? 0.35 : 0)
+    .labelColor(d => d.type === 'chokepoint' ? 'rgba(217, 164, 65, 0.95)' : 'rgba(232, 230, 222, 0.45)')
+    .labelResolution(2)
+    .labelAltitude(0.005)
+    .pathsData([])
+    .pathPoints(d => d.path)
+    .pathPointLat(p => p[0])
+    .pathPointLng(p => p[1])
+    .pathColor(d => GLOBE_LANE_STYLE[d.volume]?.color || GLOBE_LANE_STYLE.medium.color)
+    .pathStroke(d => GLOBE_LANE_STYLE[d.volume]?.stroke || GLOBE_LANE_STYLE.medium.stroke)
+    .pathLabel(d => `<div style="font-family:Inter,sans-serif;font-size:12px;max-width:220px;padding:4px 2px;"><strong>${d.name}</strong><br>${d.note}</div>`)
+    .pathTransitionDuration(0);
+
+  // Flood the whole sphere with light so there's no dark/night side --
+  // globe.gl's default directional light otherwise leaves half the globe in
+  // shadow. Tune the lights it already created internally (rather than
+  // constructing new THREE.Light instances, which needs a separate THREE.js
+  // import that conflicts with globe.gl's own bundled copy).
+  world.scene().traverse(obj => {
+    if (obj.isAmbientLight) obj.intensity = 2.4;
+    if (obj.isDirectionalLight) obj.intensity = 0.3;
+  });
+
+  // Cinematic entrance: start pulled back, then glide in to the resting view.
+  world.pointOfView({ lat: 15, lng: 20, altitude: 3.5 });
+  setTimeout(() => {
+    world.pointOfView({ lat: 15, lng: 20, altitude: 2.4 }, 3200);
+  }, 200);
+
+  const controls = world.controls();
+  controls.autoRotate = true;
+  controls.autoRotateSpeed = 0.35;
+  controls.enableZoom = true;
+
+  function showPanel(d) {
+    document.getElementById('panel-cat').textContent = d.category;
+    document.querySelector('#story-panel .story-cat .swatch').style.background = COLORS[d.category];
+    document.getElementById('panel-place').textContent = d.place;
+    document.getElementById('panel-headline').textContent = d.headline;
+    document.getElementById('panel-summary').innerHTML = d.summary
+      ? d.summary.map(s => `<li>${s}</li>`).join('')
+      : '';
+    document.getElementById('panel-link').href = d.url;
+    document.getElementById('story-panel').classList.add('visible');
+    controls.autoRotate = false;
+    world.pointOfView({ lat: d.lat, lng: d.lng, altitude: 1.6 }, 800);
+  }
+
+  function hidePanel() {
+    document.getElementById('story-panel').classList.remove('visible');
+    controls.autoRotate = true;
+  }
+
+  function refreshGlobe() {
+    world.pointsData(visibleGlobeEvents());
+    world.ringsData(visibleGlobeEvents().filter(d => d.size > 0.7));
+  }
+
+  function refreshGlobeLabels() {
+    const labels = CONTINENT_LABELS.map(c => ({ ...c, type: 'continent' }));
+    if (chokepointsVisible) {
+      labels.push(...CHOKEPOINTS.map(c => ({ ...c, type: 'chokepoint' })));
+    }
+    world.labelsData(labels);
+  }
+
+  function resizeGlobe() {
+    const el = document.getElementById('globeViz');
+    if (el.clientWidth === 0 || el.clientHeight === 0) return; // hidden right now -- skip
+    world.width(el.clientWidth);
+    world.height(el.clientHeight);
+  }
+
+  // ================= Map =================
+  const map = L.map('map-container', { zoomControl: true }).setView([20, 10], 2.4);
+
+  // Just the satellite imagery -- the Esri boundaries/labels reference layer
+  // bakes its own continent-scale text (e.g. "EUROPE") into the tiles, which
+  // duplicated our own bolder custom continent labels below with no way to
+  // selectively suppress just that label tier.
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community',
+    maxZoom: 19
+  }).addTo(map);
+
+  CONTINENT_LABELS.forEach(({ name, lat, lon }) => {
+    L.marker([lat, lon], {
+      icon: L.divIcon({ className: '', html: `<div class="continent-label">${name}</div>`, iconSize: [0, 0] }),
+      interactive: false,
+      keyboard: false,
+    }).addTo(map);
+  });
+
+  const colorFor = (category) =>
+    getComputedStyle(document.documentElement).getPropertyValue(`--${category}`).trim()
+    || getComputedStyle(document.documentElement).getPropertyValue('--climate').trim();
+
+  function radiusFor(count) {
+    return Math.max(5, Math.min(22, 5 + Math.log2(count + 1) * 3.5));
+  }
+
+  function renderMarkers(features) {
+    mapMarkers.forEach(({ marker }) => map.removeLayer(marker));
+    mapMarkers = [];
+
+    features.forEach((f) => {
+      if (f.count >= PULSE_THRESHOLD) {
+        const halo = L.circleMarker([f.lat, f.lon], {
+          radius: radiusFor(f.count),
+          className: 'pulse-marker',
+          color: colorFor(f.category),
+          weight: 1,
+          fill: false,
+          interactive: false,
+        });
+        mapMarkers.push({ category: f.category, marker: halo, isHalo: true });
+      }
+
+      const marker = L.circleMarker([f.lat, f.lon], {
+        radius: radiusFor(f.count),
+        color: colorFor(f.category),
+        weight: 1,
+        fillColor: colorFor(f.category),
+        fillOpacity: 0.55,
+      });
+
+      marker.bindPopup(
+        `<p class="popup-place">${f.name}</p>` +
+        (f.summary ? '' : `<p class="popup-meta">${f.count} article${f.count === 1 ? '' : 's'} &middot; ${f.category}</p>`) +
+        `${f.html || ''}` +
+        summaryHtml(f)
+      );
+
+      mapMarkers.push({ category: f.category, marker });
+    });
+
+    applyFilter();
+  }
+
+  function applyFilter() {
+    mapMarkers.forEach(({ category, marker }) => {
+      if (activeCategories.has(category)) {
+        if (!map.hasLayer(marker)) marker.addTo(map);
+      } else {
+        if (map.hasLayer(marker)) map.removeLayer(marker);
+      }
+    });
+  }
+
+  function renderList(features) {
+    const list = document.getElementById('list');
+    list.innerHTML = '';
+
+    const sorted = [...features].sort((a, b) => b.count - a.count);
+
+    sorted.forEach((f, i) => {
+      const row = document.createElement('div');
+      row.className = 'story';
+      row.style.animationDelay = `${Math.min(i, 20) * 35}ms`;
+      row.innerHTML = `
+        <div class="story-top">
+          <span class="story-dot ${f.category}"></span>
+          <span class="story-place">${f.name}</span>
+          <span class="story-count">${f.count}</span>
+        </div>
+        <div class="story-headline">${f.html || ''}</div>
+        ${summaryHtml(f)}
+      `;
+      row.addEventListener('click', () => {
+        if (currentView === 'map') {
+          map.flyTo([f.lat, f.lon], 6, { duration: 0.8 });
+          const found = mapMarkers.find(m => !m.isHalo && m.marker.getLatLng().lat === f.lat && m.marker.getLatLng().lng === f.lon);
+          if (found) found.marker.openPopup();
+        } else {
+          showPanel(transformFeature(f));
+        }
+      });
+      list.appendChild(row);
+    });
+  }
+
+  function updateMeta(data) {
+    document.getElementById('meta-count').textContent = `${data.feature_count} locations`;
+    const when = new Date(data.generated_at);
+    document.getElementById('meta-time').textContent = isNaN(when) ? '' : when.toLocaleString();
+  }
+
+  function showEmptyState() {
+    document.getElementById('list').innerHTML = `
+      <div id="empty-state">
+        No data loaded yet. Run <code>python fetch_news_data.py</code> to generate
+        <code>data/news_data.json</code>, then refresh this page.
+      </div>`;
+  }
+
+  // ================= Shipping lanes (shared) =================
+  const lanesLayer = L.layerGroup();
+
+  async function loadLanes() {
+    try {
+      const res = await fetch('data/shipping_lanes.json', { cache: 'no-store' });
+      if (!res.ok) return;
+      const data = await res.json();
+      LANES = data.lanes || [];
+
+      const laneColor = getComputedStyle(document.documentElement).getPropertyValue('--shipping').trim();
+      LANES.forEach((lane) => {
+        const style = MAP_LANE_STYLE[lane.volume] || MAP_LANE_STYLE.medium;
+        L.polyline(lane.path, {
+          color: laneColor,
+          weight: style.weight,
+          opacity: style.opacity,
+        }).bindTooltip(`<strong>${lane.name}</strong><br>${lane.note}`, { sticky: true }).addTo(lanesLayer);
+      });
+    } catch (e) { /* lanes are optional -- fail silently */ }
+  }
+  loadLanes();
+
+  document.getElementById('lanes-toggle').addEventListener('click', (e) => {
+    lanesVisible = !lanesVisible;
+    e.currentTarget.classList.toggle('off', !lanesVisible);
+    if (lanesVisible) {
+      lanesLayer.addTo(map);
+    } else {
+      map.removeLayer(lanesLayer);
+    }
+    world.pathsData(lanesVisible ? LANES : []);
+  });
+
+  // ================= Maritime chokepoints (shared) =================
+  const chokepointsLayer = L.layerGroup();
+
+  async function loadChokepoints() {
+    try {
+      const res = await fetch('data/chokepoints.json', { cache: 'no-store' });
+      if (!res.ok) return;
+      const data = await res.json();
+      CHOKEPOINTS = data.chokepoints || [];
+      CHOKEPOINTS.forEach((cp) => {
+        const marker = L.marker([cp.lat, cp.lon], {
+          icon: L.divIcon({
+            className: '',
+            html: `<div class="chokepoint-label"><span class="dot"></span><span class="rank">${cp.rank}</span> ${cp.name}</div>`,
+            iconSize: [220, 20],
+            iconAnchor: [8, 10],
+          }),
+        });
+        marker.bindPopup(
+          `<p class="popup-place">${cp.rank}. ${cp.name}</p>` +
+          `<p class="popup-meta">${cp.stat}</p>` +
+          `<p style="font-size:12px;color:var(--muted);max-width:240px;line-height:1.5;">${cp.note}</p>`
+        );
+        chokepointsLayer.addLayer(marker);
+      });
+    } catch (e) { /* chokepoints are optional -- fail silently */ }
+  }
+  loadChokepoints();
+
+  document.getElementById('chokepoints-toggle').addEventListener('click', (e) => {
+    chokepointsVisible = !chokepointsVisible;
+    e.currentTarget.classList.toggle('off', !chokepointsVisible);
+    if (chokepointsVisible) {
+      chokepointsLayer.addTo(map);
+    } else {
+      map.removeLayer(chokepointsLayer);
+    }
+    refreshGlobeLabels();
+  });
+
+  // ================= Category filters (shared) =================
+  document.querySelectorAll('.toggle[data-category]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const cat = btn.dataset.category;
+      if (activeCategories.has(cat)) {
+        activeCategories.delete(cat);
+        btn.classList.add('off');
+      } else {
+        activeCategories.add(cat);
+        btn.classList.remove('off');
+      }
+      applyFilter();
+      refreshGlobe();
+    });
+  });
+
+  // ================= View switcher =================
+  document.querySelectorAll('.view-btn').forEach(btn => {
+    btn.addEventListener('click', () => switchView(btn.dataset.view));
+  });
+
+  function switchView(view) {
+    if (view === currentView) return;
+    currentView = view;
+    document.querySelectorAll('.view-btn').forEach(b => b.classList.toggle('active', b.dataset.view === view));
+    document.getElementById('globeViz').classList.toggle('hidden', view !== 'globe');
+    document.getElementById('map-container').classList.toggle('hidden', view !== 'map');
+
+    if (view === 'globe') {
+      world.resumeAnimation?.();
+      resizeGlobe();
+    } else {
+      hidePanel();
+      world.pauseAnimation?.();
+      map.invalidateSize();
+    }
+  }
+
+  window.addEventListener('resize', () => {
+    if (currentView === 'globe') resizeGlobe();
+    else map.invalidateSize();
+  });
+
+  // ================= Data loading =================
+  async function loadData() {
+    let res = await fetch(DATA_URL, { cache: 'no-store' }).catch(() => null);
+    let data = res && res.ok ? await res.json() : null;
+
+    if (!data || !(data.features || []).length) {
+      res = await fetch(FALLBACK_URL, { cache: 'no-store' }).catch(() => null);
+      data = res && res.ok ? await res.json() : null;
+    }
+
+    if (!data || !(data.features || []).length) {
+      showEmptyState();
+      return;
+    }
+
+    rawFeatures = data.features.filter(f => typeof f.lat === 'number' && typeof f.lon === 'number');
+    globeEvents = rawFeatures.map(transformFeature);
+
+    updateMeta(data);
+    updateCounts();
+    renderMarkers(rawFeatures);
+    renderList(rawFeatures);
+    refreshGlobe();
+  }
+
+  loadData();
+</script>
+
+</body>
+</html>

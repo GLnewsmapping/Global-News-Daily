@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-09-02T08:00:00+00:00",
+  "timespan": "1d",
+  "feature_count": 10,
+  "features": [
+    {"category": "conflict", "lat": 50.4501, "lon": 30.5234, "name": "Kyiv, Ukraine", "count": 42, "html": "<a href='https://example.com/a1' target='_blank'>Strikes reported near capital overnight</a>"},
+    {"category": "conflict", "lat": 31.5, "lon": 34.47, "name": "Gaza Strip", "count": 61, "html": "<a href='https://example.com/a2' target='_blank'>Ceasefire talks resume amid renewed clashes</a>"},
+    {"category": "conflict", "lat": 15.5527, "lon": 32.5599, "name": "Khartoum, Sudan", "count": 18, "html": "<a href='https://example.com/a3' target='_blank'>Fighting displaces thousands in capital region</a>"},
+    {"category": "conflict", "lat": 6.5244, "lon": 3.3792, "name": "Lagos, Nigeria", "count": 7, "html": "<a href='https://example.com/a4' target='_blank'>Protests over fuel prices turn tense</a>"},
+    {"category": "conflict", "lat": 34.5553, "lon": 69.2075, "name": "Kabul, Afghanistan", "count": 12, "html": "<a href='https://example.com/a5' target='_blank'>Security forces respond to militant attack</a>"},
+    {"category": "climate", "lat": 37.9838, "lon": 23.7275, "name": "Athens, Greece", "count": 24, "html": "<a href='https://example.com/c1' target='_blank'>Heatwave pushes temperatures past 44C</a>"},
+    {"category": "climate", "lat": -33.8688, "lon": 151.2093, "name": "Sydney, Australia", "count": 9, "html": "<a href='https://example.com/c2' target='_blank'>Coastal flooding warnings issued</a>"},
+    {"category": "climate", "lat": 39.7392, "lon": -104.9903, "name": "Denver, USA", "count": 15, "html": "<a href='https://example.com/c3' target='_blank'>Wildfire smoke triggers air quality alerts</a>"},
+    {"category": "climate", "lat": 23.8103, "lon": 90.4125, "name": "Dhaka, Bangladesh", "count": 33, "html": "<a href='https://example.com/c4' target='_blank'>Monsoon flooding displaces coastal villages</a>"},
+    {"category": "climate", "lat": 28.6139, "lon": 77.209, "name": "New Delhi, India", "count": 21, "html": "<a href='https://example.com/c5' target='_blank'>Drought conditions strain water supply</a>"},
+    {"category": "political", "lat": 38.9072, "lon": -77.0369, "name": "Washington, D.C., USA", "count": 29, "html": "<a href='https://example.com/p1' target='_blank'>Lawmakers spar over budget bill ahead of deadline</a>"},
+    {"category": "political", "lat": 51.5072, "lon": -0.1276, "name": "London, UK", "count": 14, "html": "<a href='https://example.com/p2' target='_blank'>Cabinet reshuffle follows narrow confidence vote</a>"},
+    {"category": "political", "lat": -15.7939, "lon": -47.8828, "name": "Bras\u00edlia, Brazil", "count": 8, "html": "<a href='https://example.com/p3' target='_blank'>Supreme court ruling reshapes electoral calendar</a>"}
+  ]
+}

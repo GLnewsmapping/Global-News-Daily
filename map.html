@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dispatch — conflict &amp; climate, mapped daily</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink: #12181F;
+    --panel: #1B2430;
+    --panel-line: #2B3644;
+    --paper: #E8E6DE;
+    --muted: #8B94A3;
+    --conflict: #E2572B;
+    --climate: #2FA88C;
+    --political: #4C7BD9;
+    --shipping: #D9A441;
+  }
+  *{ box-sizing: border-box; }
+  html, body{ height: 100%; margin: 0; }
+  body{
+    font-family: 'Inter', sans-serif;
+    background: var(--ink);
+    color: var(--paper);
+    display: flex;
+    overflow: hidden;
+  }
+
+  /* ---------- Sidebar ---------- */
+  #sidebar{
+    width: 380px;
+    min-width: 380px;
+    background: var(--panel);
+    border-right: 1px solid var(--panel-line);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  @keyframes fadeInUp{
+    from{ opacity: 0; transform: translateY(14px); }
+    to{ opacity: 1; transform: translateY(0); }
+  }
+
+  #masthead{
+    padding: 28px 24px 20px;
+    border-bottom: 1px solid var(--panel-line);
+    animation: fadeInUp 900ms ease-out both;
+  }
+  #masthead .kicker{
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  #masthead h1{
+    font-family: 'Newsreader', serif;
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin: 0 0 8px;
+  }
+  #masthead p{
+    margin: 0;
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.5;
+    max-width: 34ch;
+  }
+  #meta{
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--panel-line);
+    font-size: 12px;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+    animation: fadeInUp 900ms ease-out 120ms both;
+  }
+
+  #filters{
+    padding: 16px 24px;
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid var(--panel-line);
+    animation: fadeInUp 900ms ease-out 220ms both;
+  }
+  .toggle{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: 1px solid var(--panel-line);
+    background: transparent;
+    color: var(--paper);
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: border-color 0.15s ease, opacity 0.15s ease;
+  }
+  .toggle.off{ opacity: 0.35; }
+  .toggle .swatch{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .toggle.conflict .swatch{ background: var(--conflict); }
+  .toggle.climate .swatch{ background: var(--climate); }
+  .toggle.political .swatch{ background: var(--political); }
+  .toggle.conflict{ border-color: color-mix(in srgb, var(--conflict) 40%, var(--panel-line)); }
+  .toggle.climate{ border-color: color-mix(in srgb, var(--climate) 40%, var(--panel-line)); }
+  .toggle.political{ border-color: color-mix(in srgb, var(--political) 40%, var(--panel-line)); }
+
+  #lanes-row{
+    padding: 0 24px 16px;
+    border-bottom: 1px solid var(--panel-line);
+    animation: fadeInUp 900ms ease-out 260ms both;
+  }
+  .toggle.lanes{ width: 100%; border-color: color-mix(in srgb, var(--shipping) 40%, var(--panel-line)); }
+  .toggle.lanes .swatch{ background: var(--shipping); }
+  .toggle.lanes.off{ opacity: 0.5; }
+
+  #list{
+    flex: 1;
+    overflow-y: auto;
+    padding: 4px 0 24px;
+  }
+  .story{
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--panel-line);
+    cursor: pointer;
+    transition: background 0.12s ease;
+    opacity: 0;
+    animation: fadeInUp 500ms ease-out forwards;
+  }
+  .story:hover{ background: rgba(255,255,255,0.03); }
+  .story-top{
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  .story-dot{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .story-dot.conflict{ background: var(--conflict); }
+  .story-dot.climate{ background: var(--climate); }
+  .story-dot.political{ background: var(--political); }
+  .story-place{
+    font-family: 'Newsreader', serif;
+    font-size: 16px;
+    font-style: italic;
+  }
+  .story-count{
+    margin-left: auto;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .story-headline{
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.4;
+  }
+  .story-headline a{
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .story-headline a:hover{ color: var(--paper); }
+
+  #empty-state{
+    padding: 40px 24px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  #empty-state code{
+    background: var(--panel-line);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+  }
+
+  /* ---------- Map ---------- */
+  #map-wrap{ flex: 1; height: 100vh; position: relative; animation: fadeInUp 1100ms ease-out 100ms both; }
+  #map-container{ position: absolute; inset: 0; }
+  #vignette{
+    position: absolute;
+    inset: 0;
+    z-index: 400;
+    pointer-events: none;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 45%, rgba(0,0,0,0.5) 100%);
+  }
+  .continent-label{
+    color: rgba(232, 230, 222, 0.4);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+  @keyframes pulseRing{
+    0%{ opacity: 0.85; transform: scale(1); }
+    70%{ opacity: 0; transform: scale(2.6); }
+    100%{ opacity: 0; transform: scale(2.6); }
+  }
+  .pulse-marker{
+    animation: pulseRing 2s ease-out infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  .leaflet-popup-content-wrapper{
+    background: var(--panel);
+    color: var(--paper);
+    border-radius: 4px;
+  }
+  .leaflet-popup-tip{ background: var(--panel); }
+  .leaflet-popup-content a{ color: #A9C6FF; }
+  .popup-place{
+    font-family: 'Newsreader', serif;
+    font-size: 16px;
+    font-style: italic;
+    margin: 0 0 4px;
+  }
+  .popup-meta{ font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+</style>
+</head>
+<body>
+
+<div id="sidebar">
+  <div id="masthead">
+    <span class="kicker">Conflict &middot; Climate &middot; Political</span>
+    <h1>Dispatch</h1>
+    <p>Events plotted where they happened. Refreshed once daily.</p>
+  </div>
+  <div id="meta">
+    <span id="meta-count">— locations</span>
+    <span id="meta-time">—</span>
+  </div>
+  <div id="filters">
+    <button class="toggle conflict" data-category="conflict">
+      <span class="swatch"></span> Conflict
+    </button>
+    <button class="toggle climate" data-category="climate">
+      <span class="swatch"></span> Climate
+    </button>
+    <button class="toggle political" data-category="political">
+      <span class="swatch"></span> Political
+    </button>
+  </div>
+  <div id="lanes-row">
+    <button class="toggle lanes off" id="lanes-toggle">
+      <span class="swatch"></span> Shipping Lanes <span class="count" style="margin-left:auto;font-size:11px;color:var(--muted);">highest-traffic</span>
+    </button>
+  </div>
+  <div id="list"></div>
+</div>
+
+<div id="map-wrap">
+  <div id="map-container"></div>
+  <div id="vignette"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+  const DATA_URL = 'data/news_data.json'; // run fetch_news_data.py to generate this
+  const FALLBACK_URL = 'data/news_data.sample.json'; // used only if the real file isn't found yet
+
+  const activeCategories = new Set(['conflict', 'climate', 'political']);
+  let markers = []; // { category, marker }
+  let allFeatures = [];
+
+  const map = L.map('map-container', { zoomControl: true }).setView([20, 10], 2.4);
+
+  L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; Stadia Maps &copy; OpenMapTiles &copy; OpenStreetMap contributors',
+    maxZoom: 19
+  }).addTo(map);
+
+  // Approximate centroids, used only to label continents on the map.
+  const CONTINENT_LABELS = [
+    { name: 'NORTH AMERICA', lat: 45, lon: -100 },
+    { name: 'SOUTH AMERICA', lat: -15, lon: -60 },
+    { name: 'EUROPE', lat: 50, lon: 15 },
+    { name: 'AFRICA', lat: 2, lon: 20 },
+    { name: 'ASIA', lat: 48, lon: 90 },
+    { name: 'OCEANIA', lat: -25, lon: 135 },
+  ];
+  CONTINENT_LABELS.forEach(({ name, lat, lon }) => {
+    L.marker([lat, lon], {
+      icon: L.divIcon({ className: '', html: `<div class="continent-label">${name}</div>`, iconSize: [0, 0] }),
+      interactive: false,
+      keyboard: false,
+    }).addTo(map);
+  });
+
+  const PULSE_THRESHOLD = 20; // articles -- above this, a marker gets an animated glow
+
+  const LANE_STYLE = {
+    'very-high': { weight: 5, opacity: 0.9 },
+    'high': { weight: 3.5, opacity: 0.8 },
+    'medium': { weight: 2, opacity: 0.65 },
+  };
+
+  const lanesLayer = L.layerGroup();
+  let lanesVisible = false;
+
+  async function loadLanes() {
+    try {
+      const res = await fetch('data/shipping_lanes.json');
+      if (!res.ok) return;
+      const data = await res.json();
+      const laneColor = getComputedStyle(document.documentElement).getPropertyValue('--shipping').trim();
+      (data.lanes || []).forEach((lane) => {
+        const style = LANE_STYLE[lane.volume] || LANE_STYLE.medium;
+        L.polyline(lane.path, {
+          color: laneColor,
+          weight: style.weight,
+          opacity: style.opacity,
+        }).bindTooltip(`<strong>${lane.name}</strong><br>${lane.note}`, { sticky: true }).addTo(lanesLayer);
+      });
+    } catch (e) { /* lanes are optional -- fail silently */ }
+  }
+
+  document.getElementById('lanes-toggle').addEventListener('click', (e) => {
+    lanesVisible = !lanesVisible;
+    e.currentTarget.classList.toggle('off', !lanesVisible);
+    if (lanesVisible) {
+      lanesLayer.addTo(map);
+    } else {
+      map.removeLayer(lanesLayer);
+    }
+  });
+
+  loadLanes();
+
+  const colorFor = (category) =>
+    getComputedStyle(document.documentElement).getPropertyValue(`--${category}`).trim()
+    || getComputedStyle(document.documentElement).getPropertyValue('--climate').trim();
+
+  function radiusFor(count) {
+    return Math.max(5, Math.min(22, 5 + Math.log2(count + 1) * 3.5));
+  }
+
+  function renderMarkers(features) {
+    markers.forEach(({ marker }) => map.removeLayer(marker));
+    markers = [];
+
+    features.forEach((f) => {
+      if (f.count >= PULSE_THRESHOLD) {
+        const halo = L.circleMarker([f.lat, f.lon], {
+          radius: radiusFor(f.count),
+          className: 'pulse-marker',
+          color: colorFor(f.category),
+          weight: 1,
+          fill: false,
+          interactive: false,
+        });
+        markers.push({ category: f.category, marker: halo, isHalo: true });
+      }
+
+      const marker = L.circleMarker([f.lat, f.lon], {
+        radius: radiusFor(f.count),
+        color: colorFor(f.category),
+        weight: 1,
+        fillColor: colorFor(f.category),
+        fillOpacity: 0.55,
+      });
+
+      marker.bindPopup(
+        `<p class="popup-place">${f.name}</p>` +
+        `<p class="popup-meta">${f.count} article${f.count === 1 ? '' : 's'} &middot; ${f.category}</p>` +
+        `${f.html || ''}`
+      );
+
+      markers.push({ category: f.category, marker });
+    });
+
+    applyFilter();
+  }
+
+  function applyFilter() {
+    markers.forEach(({ category, marker }) => {
+      if (activeCategories.has(category)) {
+        if (!map.hasLayer(marker)) marker.addTo(map);
+      } else {
+        if (map.hasLayer(marker)) map.removeLayer(marker);
+      }
+    });
+  }
+
+  function renderList(features) {
+    const list = document.getElementById('list');
+    list.innerHTML = '';
+
+    const sorted = [...features].sort((a, b) => b.count - a.count);
+
+    sorted.forEach((f, i) => {
+      const row = document.createElement('div');
+      row.className = 'story';
+      row.style.animationDelay = `${Math.min(i, 20) * 35}ms`;
+      row.innerHTML = `
+        <div class="story-top">
+          <span class="story-dot ${f.category}"></span>
+          <span class="story-place">${f.name}</span>
+          <span class="story-count">${f.count}</span>
+        </div>
+        <div class="story-headline">${f.html || ''}</div>
+      `;
+      row.addEventListener('click', () => {
+        map.flyTo([f.lat, f.lon], 6, { duration: 0.8 });
+        const found = markers.find(m => !m.isHalo && m.marker.getLatLng().lat === f.lat && m.marker.getLatLng().lng === f.lon);
+        if (found) found.marker.openPopup();
+      });
+      list.appendChild(row);
+    });
+  }
+
+  function updateMeta(data) {
+    document.getElementById('meta-count').textContent = `${data.feature_count} locations`;
+    const when = new Date(data.generated_at);
+    document.getElementById('meta-time').textContent = isNaN(when) ? '' : when.toLocaleString();
+  }
+
+  function showEmptyState() {
+    document.getElementById('list').innerHTML = `
+      <div id="empty-state">
+        No data loaded yet. Run <code>python fetch_news_data.py</code> to generate
+        <code>data/news_data.json</code>, then refresh this page.
+      </div>`;
+  }
+
+  async function loadData() {
+    let res = await fetch(DATA_URL).catch(() => null);
+    let data = res && res.ok ? await res.json() : null;
+
+    if (!data || !(data.features || []).length) {
+      res = await fetch(FALLBACK_URL).catch(() => null);
+      data = res && res.ok ? await res.json() : null;
+    }
+
+    if (!data || !(data.features || []).length) {
+      showEmptyState();
+      return;
+    }
+
+    allFeatures = data.features;
+    updateMeta(data);
+    renderMarkers(allFeatures);
+    renderList(allFeatures);
+  }
+
+  document.querySelectorAll('.toggle').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const cat = btn.dataset.category;
+      if (activeCategories.has(cat)) {
+        activeCategories.delete(cat);
+        btn.classList.add('off');
+      } else {
+        activeCategories.add(cat);
+        btn.classList.remove('off');
+      }
+      applyFilter();
+    });
+  });
+
+  loadData();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+{
+  "source": "Compiled from Visual Capitalist (\"Mapping the World's Key Maritime Choke Points\"), Mappr (\"Mapped: The World's Most Important Straits and Chokepoints\"), and US EIA world oil transit chokepoint reporting.",
+  "note": "Ranked by a blend of oil-transit volume, share of world trade, and vessel-traffic count -- not a single official ranking, since no one metric captures 'importance' the same way across all ten.",
+  "chokepoints": [
+    {
+      "rank": 1,
+      "name": "Strait of Malacca",
+      "lat": 3.5,
+      "lon": 100.8,
+      "stat": "~1/4 of all globally traded goods; the main artery for East Asia's oil imports.",
+      "note": "Between Sumatra and the Malay Peninsula. As little as ~1.5 nautical miles wide at its narrowest, and the single busiest maritime chokepoint on Earth."
+    },
+    {
+      "rank": 2,
+      "name": "Strait of Hormuz",
+      "lat": 26.57,
+      "lon": 56.25,
+      "stat": "~20 million barrels of oil per day -- roughly a fifth of global oil supply.",
+      "note": "Between the Persian Gulf and the Gulf of Oman. The world's most important oil chokepoint, and one of its most geopolitically sensitive."
+    },
+    {
+      "rank": 3,
+      "name": "Suez Canal",
+      "lat": 30.5,
+      "lon": 32.35,
+      "stat": "12-15% of world trade; ~19,000 vessel transits and roughly 1 billion tons of cargo a year.",
+      "note": "Connects the Mediterranean to the Red Sea, cutting ~7 days off the alternative route around Africa."
+    },
+    {
+      "rank": 4,
+      "name": "Panama Canal",
+      "lat": 9.08,
+      "lon": -79.68,
+      "stat": "~5% of world trade; saves ships over 8,000 nautical miles versus rounding South America.",
+      "note": "Connects the Atlantic and Pacific via a lock system; critical for Asia-US East Coast trade."
+    },
+    {
+      "rank": 5,
+      "name": "Bab-el-Mandeb Strait",
+      "lat": 12.6,
+      "lon": 43.4,
+      "stat": "~8.7 million barrels of oil per day.",
+      "note": "Between Yemen and Djibouti/Eritrea, linking the Red Sea to the Gulf of Aden -- the southern gateway that feeds the Suez Canal."
+    },
+    {
+      "rank": 6,
+      "name": "Strait of Dover / English Channel",
+      "lat": 51.0,
+      "lon": 1.4,
+      "stat": "400+ vessels a day -- the busiest strait in the world by ship count.",
+      "note": "Between England and France, linking the North Sea to the Atlantic. As narrow as ~33 km wide."
+    },
+    {
+      "rank": 7,
+      "name": "Strait of Gibraltar",
+      "lat": 35.97,
+      "lon": -5.6,
+      "stat": "100,000+ ship transits a year.",
+      "note": "Between Spain and Morocco -- the only sea gateway between the Atlantic and the Mediterranean."
+    },
+    {
+      "rank": 8,
+      "name": "Bosphorus",
+      "lat": 41.05,
+      "lon": 29.02,
+      "stat": "Sole route for Russian and Ukrainian oil and grain exports from the Black Sea.",
+      "note": "Runs through Istanbul, as narrow as ~700 meters -- one of the narrowest and most heavily trafficked straits in the world."
+    },
+    {
+      "rank": 9,
+      "name": "Danish Straits (Great Belt)",
+      "lat": 55.3,
+      "lon": 11.0,
+      "stat": "Carries the bulk of Russia's Baltic oil exports.",
+      "note": "The main deep-water passage linking the Baltic Sea to the North Sea, between the Danish islands."
+    },
+    {
+      "rank": 10,
+      "name": "Taiwan Strait",
+      "lat": 24.0,
+      "lon": 119.5,
+      "stat": "~1/5 of global maritime trade transits this corridor.",
+      "note": "Between Taiwan and mainland China -- among the most geopolitically sensitive shipping corridors in the world."
+    }
+  ]
+}

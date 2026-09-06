@@ -1,0 +1,1307 @@
+{
+  "generated_at": "2026-09-05T15:30:46.009373+00:00",
+  "timespan": "2d",
+  "feature_count": 100,
+  "features": [
+    {
+      "category": "climate",
+      "lat": 41.517567,
+      "lon": -117.74215,
+      "name": "Emergency Stabilization BAER McConnell, Humboldt, Nevada",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-NVWID-020663' target='_blank'>Emergency Stabilization BAER McConnell, Humboldt, Nevada</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Reported: Sep 03, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 36.56328098359691,
+      "lon": 137.18696935262963,
+      "name": "Flood in Japan",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104140' target='_blank'>Flood in Japan</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Sep 02, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 56.087554434864494,
+      "lon": 22.14237195052825,
+      "name": "Flood in Lithuania",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104138' target='_blank'>Flood in Lithuania</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 31, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 28.305420970588237,
+      "lon": 69.64171470588235,
+      "name": "Flood in Pakistan",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104136' target='_blank'>Flood in Pakistan</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 30, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 34.428947428693185,
+      "lon": 35.842888813068186,
+      "name": "Flood in Lebanon",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104129' target='_blank'>Flood in Lebanon</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 28, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 34.1,
+      "lon": 165.9,
+      "name": "Tropical Storm Bang-Lang",
+      "count": 1,
+      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp2026.tcw' target='_blank'>Tropical Storm Bang-Lang</a>",
+      "summary": [
+        "Type: Severe Storms",
+        "Reported: Aug 30, 2026",
+        "Source: JTWC"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": -45.00063900666984,
+      "lon": 169.37733538844688,
+      "name": "Flood in New Zealand",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104126' target='_blank'>Flood in New Zealand</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 26, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 9.568931313604303,
+      "lon": -13.6339676,
+      "name": "Flood in Guinea",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104117' target='_blank'>Flood in Guinea</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 22, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": -8.515162642857142,
+      "lon": -35.70344370985715,
+      "name": "Flood in Brazil",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104106' target='_blank'>Flood in Brazil</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 17, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 46.65069,
+      "lon": -104.83045,
+      "name": "Wildfire Ayers Pond, Prairie, Montana",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-MTMCD-000777' target='_blank'>Wildfire Ayers Pond, Prairie, Montana</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Reported: Sep 03, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 13.973494413604302,
+      "lon": 107.999556,
+      "name": "Flood in Vietnam",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104141' target='_blank'>Flood in Vietnam</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Sep 02, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 47.367264422285714,
+      "lon": 12.80637679457143,
+      "name": "Flood in Austria",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104137' target='_blank'>Flood in Austria</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 30, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 27.792046945847563,
+      "lon": 85.48509754132895,
+      "name": "Flood in Nepal",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104124' target='_blank'>Flood in Nepal</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 25, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 39.06238610452484,
+      "lon": 34.224948188887694,
+      "name": "Flood in T\u00fcrkiye",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104131' target='_blank'>Flood in T\u00fcrkiye</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 27, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 31.7,
+      "lon": 166.8,
+      "name": "Tropical Storm Etau",
+      "count": 1,
+      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp2126.tcw' target='_blank'>Tropical Storm Etau</a>",
+      "summary": [
+        "Type: Severe Storms",
+        "Reported: Aug 30, 2026",
+        "Source: JTWC"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": -32.84662894265403,
+      "lon": 138.15080248720378,
+      "name": "Flood in Australia",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104119' target='_blank'>Flood in Australia</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 23, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 14.879642913604302,
+      "lon": -15.8851484,
+      "name": "Flood in Senegal",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104113' target='_blank'>Flood in Senegal</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 18, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": -32.36436803616236,
+      "lon": -54.17374468523985,
+      "name": "Flood in Uruguay",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104112' target='_blank'>Flood in Uruguay</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 15, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 46.48575,
+      "lon": -105.185017,
+      "name": "Wildfire Snow, Custer, Montana",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-MTLG14-000775' target='_blank'>Wildfire Snow, Custer, Montana</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Reported: Sep 02, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 27.8,
+      "lon": 126.7,
+      "name": "Tropical Storm Krovanh",
+      "count": 1,
+      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp2226.tcw' target='_blank'>Tropical Storm Krovanh</a>",
+      "summary": [
+        "Type: Severe Storms",
+        "Reported: Sep 05, 2026",
+        "Source: JTWC"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 52.06322570844622,
+      "lon": -9.510024692191235,
+      "name": "Flood in Ireland",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104127' target='_blank'>Flood in Ireland</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 26, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 14.596209413138544,
+      "lon": 99.11790238010836,
+      "name": "Flood in Thailand",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104122' target='_blank'>Flood in Thailand</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 17, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 38.1,
+      "lon": -179.1,
+      "name": "Tropical Storm Lala",
+      "count": 1,
+      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/cp0126.tcw' target='_blank'>Tropical Storm Lala</a>",
+      "summary": [
+        "Type: Severe Storms",
+        "Reported: Aug 28, 2026",
+        "Source: JTWC"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 45.253405,
+      "lon": -119.69069,
+      "name": "Wildfire Ruggs, Morrow, Oregon",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-ORHEPN-000600' target='_blank'>Wildfire Ruggs, Morrow, Oregon</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Reported: Aug 31, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 35.30100849090909,
+      "lon": 126.57581320909092,
+      "name": "Flood in South Korea",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104133' target='_blank'>Flood in South Korea</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 28, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 42.01258642865497,
+      "lon": 42.844023445614035,
+      "name": "Flood in Georgia",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104128' target='_blank'>Flood in Georgia</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 26, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 33.05632251,
+      "lon": -99.07646449,
+      "name": "Wildfire Harris, Throckmorton, Texas",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-TXTXS-267913' target='_blank'>Wildfire Harris, Throckmorton, Texas</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Reported: Aug 31, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 15.090101805386418,
+      "lon": 120.5505380735363,
+      "name": "Flood in Philippines",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104130' target='_blank'>Flood in Philippines</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 27, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 41.74294337470793,
+      "lon": 23.47269031341964,
+      "name": "Flood in Bulgaria",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104120' target='_blank'>Flood in Bulgaria</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 23, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 34.6084,
+      "lon": -98.7205,
+      "name": "Wildfire SOUTH RAILROAD, Comanche, Oklahoma",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-OKANA-002690' target='_blank'>Wildfire SOUTH RAILROAD, Comanche, Oklahoma</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Reported: Aug 30, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 14.009381906428573,
+      "lon": 107.17211393563026,
+      "name": "Flood in Cambodia",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104132' target='_blank'>Flood in Cambodia</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 27, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 48.22728456442595,
+      "lon": 15.790745877721179,
+      "name": "Flood in Austria",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104115' target='_blank'>Flood in Austria</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 19, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 34.4777778,
+      "lon": -95.2966667,
+      "name": "Wildfire Alexander Trail Fire, Pushmataha, Oklahoma",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-OKOKSC-260966' target='_blank'>Wildfire Alexander Trail Fire, Pushmataha, Oklahoma</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Reported: Aug 30, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 40.09255575178571,
+      "lon": 124.5021684532967,
+      "name": "Flood in North Korea",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104125' target='_blank'>Flood in North Korea</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 22, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 49.44856919676259,
+      "lon": 15.226649712410072,
+      "name": "Flood in Czech Republic",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104118' target='_blank'>Flood in Czech Republic</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 19, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 34.4777778,
+      "lon": -95.2966667,
+      "name": "Wildfire Alexander Trail, Pushmataha, Oklahoma",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-OKOKS-260966' target='_blank'>Wildfire Alexander Trail, Pushmataha, Oklahoma</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Reported: Aug 30, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 25.371162352729993,
+      "lon": 117.02146826002992,
+      "name": "Flood in China",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104123' target='_blank'>Flood in China</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 21, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 51.034959164142876,
+      "lon": 18.72111695148078,
+      "name": "Flood in Poland",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104102' target='_blank'>Flood in Poland</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 16, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 35.535,
+      "lon": -104.295,
+      "name": "Wildfire 4V, San Miguel, New Mexico",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-NMN4S-000549' target='_blank'>Wildfire 4V, San Miguel, New Mexico</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Reported: Aug 29, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 20,
+      "lon": 109.6,
+      "name": "Tropical Storm Narra",
+      "count": 1,
+      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp1826.tcw' target='_blank'>Tropical Storm Narra</a>",
+      "summary": [
+        "Type: Severe Storms",
+        "Reported: Aug 25, 2026",
+        "Source: JTWC"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 35.224667,
+      "lon": -96.1149,
+      "name": "Wildfire WRIGHT, Hughes, Oklahoma",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-OKOMA-002688' target='_blank'>Wildfire WRIGHT, Hughes, Oklahoma</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Reported: Aug 29, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 23.8,
+      "lon": 117.4,
+      "name": "Typhoon Saudel",
+      "count": 1,
+      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp1726.tcw' target='_blank'>Typhoon Saudel</a>",
+      "summary": [
+        "Type: Severe Storms",
+        "Reported: Sep 03, 2026",
+        "Source: JTWC"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 34.6084,
+      "lon": -98.7205,
+      "name": "Wildfire RAILROAD SOUTH, Comanche, Oklahoma",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-OKANA-002686' target='_blank'>Wildfire RAILROAD SOUTH, Comanche, Oklahoma</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Reported: Aug 29, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 14.841882713604303,
+      "lon": 120.2880193,
+      "name": "Flood in Philippines",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104107' target='_blank'>Flood in Philippines</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 16, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 30.18416667,
+      "lon": -100.3149,
+      "name": "Wildfire McKee Draw, Edwards, Texas",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-TXTXS-267823' target='_blank'>Wildfire McKee Draw, Edwards, Texas</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Reported: Aug 29, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 30.36872624,
+      "lon": -100.1516574,
+      "name": "Wildfire West Fork, Sutton, Texas",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-TXTXS-267801' target='_blank'>Wildfire West Fork, Sutton, Texas</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Reported: Aug 28, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 44.921867,
+      "lon": -112.77825,
+      "name": "Wildfire Roe 2, Beaverhead, Montana",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-MTCES-266405' target='_blank'>Wildfire Roe 2, Beaverhead, Montana</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Reported: Aug 27, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 41.288667,
+      "lon": -112.4795,
+      "name": "Wildfire Brushy Canyon, Box Elder, Utah",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-UTBRS-200695' target='_blank'>Wildfire Brushy Canyon, Box Elder, Utah</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Reported: Aug 27, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 21.1,
+      "lon": -119.3,
+      "name": "Hurricane Marie",
+      "count": 1,
+      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/ep1326.tcw' target='_blank'>Hurricane Marie</a>",
+      "summary": [
+        "Type: Severe Storms",
+        "Reported: Sep 05, 2026",
+        "Source: JTWC"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 30.8,
+      "lon": -95,
+      "name": "Tropical Storm Edouard",
+      "count": 1,
+      "html": "<a href='https://www.nhc.noaa.gov/archive/2026/EDOUARD.shtml' target='_blank'>Tropical Storm Edouard</a>",
+      "summary": [
+        "Type: Severe Storms",
+        "Reported: Sep 02, 2026",
+        "Source: NOAA_NHC"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 48.657532515563794,
+      "lon": 31.27377208442636,
+      "name": "Ukraine",
+      "count": 58999,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Ukraine: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 58,999",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 59.039434214106194,
+      "lon": 98.6704990698032,
+      "name": "Russia",
+      "count": 13328,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Russia: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 13,328",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 33.91160170722086,
+      "lon": 35.89651946324749,
+      "name": "Lebanon",
+      "count": 8816,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Lebanon: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 8,816",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": -11.524630416426652,
+      "lon": -54.355206608256424,
+      "name": "Brazil",
+      "count": 7241,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Brazil: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 7,241",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 19.901227931399873,
+      "lon": 97.08892285397344,
+      "name": "Myanmar",
+      "count": 6175,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Myanmar: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 6,175",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 9.61029352034213,
+      "lon": 8.147714845256194,
+      "name": "Nigeria",
+      "count": 4923,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Nigeria: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 4,923",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 23.87436068093592,
+      "lon": -101.55399731630118,
+      "name": "Mexico",
+      "count": 4425,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Mexico: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 4,425",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 0.15591979959037652,
+      "lon": 113.96538246847302,
+      "name": "Indonesia",
+      "count": 674,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Indonesia: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 674",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": -17.822470952336204,
+      "lon": 177.98144613732626,
+      "name": "Fiji",
+      "count": 3,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Fiji: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 3",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 46.6423682169416,
+      "lon": 2.1940236627886227,
+      "name": "France",
+      "count": 91,
+      "html": "<a href='https://acleddata.com/' target='_blank'>France: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 91",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 47.641465195176835,
+      "lon": 66.3759193479301,
+      "name": "Kazakhstan",
+      "count": 36,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Kazakhstan: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 36",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 31.930818736453883,
+      "lon": 35.24251184154588,
+      "name": "Palestine",
+      "count": 7025,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Palestine: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 7,025",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": -1.5642721388853116,
+      "lon": -78.4630326109714,
+      "name": "Ecuador",
+      "count": 2092,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Ecuador: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 2,092",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 30.116188371410882,
+      "lon": 69.08835090769651,
+      "name": "Pakistan",
+      "count": 2772,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Pakistan: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 2,772",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 6.524534573103924,
+      "lon": 45.40037867243972,
+      "name": "Somalia",
+      "count": 3283,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Somalia: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 3,283",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 18.883520486983567,
+      "lon": -72.89291379842,
+      "name": "Haiti",
+      "count": 816,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Haiti: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 816",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 15.586542251094242,
+      "lon": 121.82208941416745,
+      "name": "Philippines",
+      "count": 288,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Philippines: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 288",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": -25.697337673983082,
+      "lon": 134.02277170916162,
+      "name": "Australia",
+      "count": 2,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Australia: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 2",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 39.42012261727978,
+      "lon": 23.110368936161876,
+      "name": "Greece",
+      "count": 51,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Greece: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 51",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": -20.28142317475198,
+      "lon": 57.56415671066546,
+      "name": "Mauritius",
+      "count": 10,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Mauritius: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 10",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 32.906023742890056,
+      "lon": 54.237077001065444,
+      "name": "Iran",
+      "count": 3866,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Iran: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 3,866",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 4.187753877352739,
+      "lon": -72.6445066243485,
+      "name": "Colombia",
+      "count": 1898,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Colombia: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 1,898",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 23.586300567746722,
+      "lon": 81.17300408530181,
+      "name": "India",
+      "count": 1811,
+      "html": "<a href='https://acleddata.com/' target='_blank'>India: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 1,811",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 6.294168487480992,
+      "lon": 12.948474142398263,
+      "name": "Cameroon",
+      "count": 2825,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Cameroon: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 2,825",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 15.820878515352684,
+      "lon": -90.31219349119617,
+      "name": "Guatemala",
+      "count": 583,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Guatemala: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 583",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 38.07325481105728,
+      "lon": 104.69113855849604,
+      "name": "China",
+      "count": 119,
+      "html": "<a href='https://acleddata.com/' target='_blank'>China: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 119",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": -9.613104734596515,
+      "lon": 160.16475795033884,
+      "name": "Solomon Islands",
+      "count": 1,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Solomon Islands: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 1",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 44.02679870131969,
+      "lon": 20.85677444395745,
+      "name": "Serbia",
+      "count": 37,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Serbia: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 37",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 35.09751106058316,
+      "lon": 38.5117323139514,
+      "name": "Syria",
+      "count": 2390,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Syria: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 2,390",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": -37.82938283049967,
+      "lon": -70.76863431739216,
+      "name": "Chile",
+      "count": 135,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Chile: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 135",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 23.673728665121,
+      "lon": 90.43212562608613,
+      "name": "Bangladesh",
+      "count": 912,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Bangladesh: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 912",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": -3.338629596207896,
+      "lon": 23.419827574282188,
+      "name": "Democratic Republic of Congo",
+      "count": 1924,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Democratic Republic of Congo: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 1,924",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 14.740370695750006,
+      "lon": -86.49251679006962,
+      "name": "Honduras",
+      "count": 401,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Honduras: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 401",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": -7.156912819152135,
+      "lon": 144.8348942994695,
+      "name": "Papua New Guinea",
+      "count": 112,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Papua New Guinea: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 112",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 42.98201127614267,
+      "lon": 12.763657166123137,
+      "name": "Italy",
+      "count": 34,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Italy: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 34",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 15.67060230984256,
+      "lon": 29.951458283594064,
+      "name": "Sudan",
+      "count": 1901,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Sudan: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 1,901",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": -8.522717984240291,
+      "lon": -74.11416196781884,
+      "name": "Peru",
+      "count": 93,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Peru: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 93",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 34.13402601376932,
+      "lon": 66.59216131095278,
+      "name": "Afghanistan",
+      "count": 812,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Afghanistan: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 812",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 8.729389557048396,
+      "lon": 39.914902886544276,
+      "name": "Ethiopia",
+      "count": 1526,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Ethiopia: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 1,526",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 7.148324760507107,
+      "lon": -66.36492135985132,
+      "name": "Venezuela",
+      "count": 246,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Venezuela: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 246",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 13.66222784745538,
+      "lon": 101.08675116214552,
+      "name": "Thailand",
+      "count": 108,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Thailand: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 108",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 53.97844735080214,
+      "lon": -2.852943909329258,
+      "name": "United Kingdom",
+      "count": 28,
+      "html": "<a href='https://acleddata.com/' target='_blank'>United Kingdom: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 28",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 16.001392616307445,
+      "lon": 47.46815793206386,
+      "name": "Yemen",
+      "count": 1861,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Yemen: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 1,861",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": -16.7312488393574,
+      "lon": -64.45209597511206,
+      "name": "Bolivia",
+      "count": 58,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Bolivia: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 58",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 28.300920699755657,
+      "lon": 84.1338898313567,
+      "name": "Nepal",
+      "count": 101,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Nepal: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 101",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 17.168146208584837,
+      "lon": -4.346399841781153,
+      "name": "Mali",
+      "count": 1115,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Mali: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 1,115",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 18.12207889341651,
+      "lon": -77.30358894542778,
+      "name": "Jamaica",
+      "count": 162,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Jamaica: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 162",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 40.19198091470839,
+      "lon": 127.3379805653744,
+      "name": "North Korea",
+      "count": 5,
+      "html": "<a href='https://acleddata.com/' target='_blank'>North Korea: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 5",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 40.365008336683836,
+      "lon": -3.6516251409956983,
+      "name": "Spain",
+      "count": 22,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Spain: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 22",
+        "Source: ACLED"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 31.513542220043195,
+      "lon": 35.027923472437024,
+      "name": "Israel",
+      "count": 1223,
+      "html": "<a href='https://acleddata.com/' target='_blank'>Israel: political violence &amp; conflict events</a>",
+      "summary": [
+        "Type: Political violence & conflict (country total)",
+        "Events in 2026: 1,223",
+        "Source: ACLED"
+      ]
+    }
+  ]
+}
