@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T15:30:46.009373+00:00",
+  "generated_at": "2026-09-07T06:09:28.036784+00:00",
   "timespan": "2d",
   "feature_count": 100,
   "features": [
@@ -226,19 +226,6 @@
     },
     {
       "category": "climate",
-      "lat": -32.36436803616236,
-      "lon": -54.17374468523985,
-      "name": "Flood in Uruguay",
-      "count": 1,
-      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104112' target='_blank'>Flood in Uruguay</a>",
-      "summary": [
-        "Type: Floods",
-        "Reported: Aug 15, 2026",
-        "Source: GDACS"
-      ]
-    },
-    {
-      "category": "climate",
       "lat": 46.48575,
       "lon": -105.185017,
       "name": "Wildfire Snow, Custer, Montana",
@@ -252,14 +239,14 @@
     },
     {
       "category": "climate",
-      "lat": 27.8,
-      "lon": 126.7,
+      "lat": 26.2,
+      "lon": 132.1,
       "name": "Tropical Storm Krovanh",
       "count": 1,
       "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp2226.tcw' target='_blank'>Tropical Storm Krovanh</a>",
       "summary": [
         "Type: Severe Storms",
-        "Reported: Sep 05, 2026",
+        "Reported: Sep 07, 2026",
         "Source: JTWC"
       ]
     },
@@ -486,19 +473,6 @@
     },
     {
       "category": "climate",
-      "lat": 51.034959164142876,
-      "lon": 18.72111695148078,
-      "name": "Flood in Poland",
-      "count": 1,
-      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104102' target='_blank'>Flood in Poland</a>",
-      "summary": [
-        "Type: Floods",
-        "Reported: Aug 16, 2026",
-        "Source: GDACS"
-      ]
-    },
-    {
-      "category": "climate",
       "lat": 35.535,
       "lon": -104.295,
       "name": "Wildfire 4V, San Miguel, New Mexico",
@@ -564,19 +538,6 @@
     },
     {
       "category": "climate",
-      "lat": 14.841882713604303,
-      "lon": 120.2880193,
-      "name": "Flood in Philippines",
-      "count": 1,
-      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104107' target='_blank'>Flood in Philippines</a>",
-      "summary": [
-        "Type: Floods",
-        "Reported: Aug 16, 2026",
-        "Source: GDACS"
-      ]
-    },
-    {
-      "category": "climate",
       "lat": 30.18416667,
       "lon": -100.3149,
       "name": "Wildfire McKee Draw, Edwards, Texas",
@@ -629,14 +590,27 @@
     },
     {
       "category": "climate",
-      "lat": 21.1,
-      "lon": -119.3,
+      "lat": 43.79864896836983,
+      "lon": -79.51452490705597,
+      "name": "Flood in Canada",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104143' target='_blank'>Flood in Canada</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Sep 01, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 24,
+      "lon": -123,
       "name": "Hurricane Marie",
       "count": 1,
       "html": "<a href='https://www.metoc.navy.mil/jtwc/products/ep1326.tcw' target='_blank'>Hurricane Marie</a>",
       "summary": [
         "Type: Severe Storms",
-        "Reported: Sep 05, 2026",
+        "Reported: Sep 07, 2026",
         "Source: JTWC"
       ]
     },
@@ -651,6 +625,32 @@
         "Type: Severe Storms",
         "Reported: Sep 02, 2026",
         "Source: NOAA_NHC"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 19.4457105136043,
+      "lon": -72.6884336,
+      "name": "Flood in Haiti",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104142' target='_blank'>Flood in Haiti</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 31, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 9.322846374153846,
+      "lon": -83.8244115343077,
+      "name": "Flood in Costa Rica",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104135' target='_blank'>Flood in Costa Rica</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 29, 2026",
+        "Source: GDACS"
       ]
     },
     {
