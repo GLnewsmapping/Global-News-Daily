@@ -435,7 +435,7 @@
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.6);
-    z-index: 200;
+    z-index: 320; /* above the mobile sidebar drawer (300) and its menu button (310) */
     align-items: center;
     justify-content: center;
   }
@@ -484,9 +484,63 @@
     border: none;
   }
   #about-modal .close:hover{ color: var(--paper); }
+
+  /* ---------- Mobile ---------- */
+  #menu-btn{
+    display: none;
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 310;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    background: var(--panel);
+    border: 1px solid var(--panel-line);
+    border-radius: 4px;
+    color: var(--paper);
+    font-size: 18px;
+    cursor: pointer;
+  }
+  #sidebar-backdrop{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 290;
+  }
+  #sidebar-backdrop.visible{ display: block; }
+  @media (max-width: 768px){
+    #menu-btn{ display: flex; }
+    #sidebar{
+      position: fixed;
+      inset: 0;
+      z-index: 300;
+      width: 88vw;
+      max-width: 380px;
+      min-width: 0;
+      transform: translateX(-100%);
+      transition: transform 0.25s ease;
+    }
+    #sidebar.open{ transform: translateX(0); }
+    #viz-wrap{ width: 100%; }
+    #masthead{ padding-left: 68px; } /* clears the fixed menu button */
+    #story-panel{
+      left: 16px;
+      right: 16px;
+      bottom: 16px;
+      width: auto;
+    }
+    #about-modal{ width: calc(100% - 32px); padding: 22px; }
+    .leaflet-top.leaflet-left{ top: 66px; } /* clear the fixed menu button */
+  }
 </style>
 </head>
 <body>
+
+<button id="menu-btn" aria-label="Toggle menu">&#9776;</button>
+<div id="sidebar-backdrop"></div>
 
 <div id="sidebar">
   <div id="masthead">
@@ -933,6 +987,7 @@
         } else {
           showPanel(transformFeature(f));
         }
+        setSidebarOpen(false); // on mobile, jump to the globe/map view the story landed on
       });
       list.appendChild(row);
     });
@@ -1040,6 +1095,7 @@
 
   document.getElementById('about-link').addEventListener('click', () => {
     document.getElementById('about-overlay').classList.add('visible');
+    setSidebarOpen(false); // avoid double-dimmed backdrop when opened from the mobile drawer
   });
   document.getElementById('about-close').addEventListener('click', () => {
     document.getElementById('about-overlay').classList.remove('visible');
@@ -1047,6 +1103,18 @@
   document.getElementById('about-overlay').addEventListener('click', (e) => {
     if (e.target.id === 'about-overlay') e.target.classList.remove('visible');
   });
+
+  // Mobile: sidebar is an off-canvas drawer over the full-screen globe/map.
+  const sidebarEl = document.getElementById('sidebar');
+  const backdropEl = document.getElementById('sidebar-backdrop');
+  function setSidebarOpen(open) {
+    sidebarEl.classList.toggle('open', open);
+    backdropEl.classList.toggle('visible', open);
+  }
+  document.getElementById('menu-btn').addEventListener('click', () => {
+    setSidebarOpen(!sidebarEl.classList.contains('open'));
+  });
+  backdropEl.addEventListener('click', () => setSidebarOpen(false));
 
   // ================= Maritime chokepoints (shared) =================
   const chokepointsLayer = L.layerGroup();
