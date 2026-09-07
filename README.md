@@ -55,6 +55,10 @@ Both viewers have an optional "Shipping Lanes" toggle showing the world's busies
 
 `index.html` also has a "Chokepoints" toggle labeling the world's 10 most important maritime chokepoints, in `data/chokepoints.json`. Compiled from [Visual Capitalist](https://www.visualcapitalist.com/mapping-the-worlds-key-maritime-choke-points/), [Mappr](https://www.mappr.co/important-straits-chokepoints-world/), and US EIA world oil transit chokepoint reporting — ranked by a blend of oil-transit volume, share of world trade, and vessel-traffic count, since no single metric captures "importance" the same way across all ten.
 
+## Country borders overlay
+
+A "Country Borders" toggle in `index.html` shows a subtle reference outline of every country, on both the map and globe. Geometry is `data/country_borders.json`, sourced from [Natural Earth](https://www.naturalearthdata.com/) (1:110m Admin 0 Countries, public domain) via [its official GitHub mirror](https://github.com/nvkelso/natural-earth-vector) — the standard, widely-used dataset for this, not hand-approximated. Off by default and rendered thin/low-opacity so it reads as a reference layer rather than competing with the event markers or shipping lanes.
+
 ## Notes
 
 - `index.html`'s map basemap is Esri World Imagery (satellite), chosen for maximum land/sea detail; continent labels are our own overlay (Esri's reference/labels layer duplicated them, so it isn't used). `globe.html` and standalone `map.html` still use Stadia Maps' `alidade_smooth_dark`, which is key-free for local/dev use only — **if you deploy `map.html` publicly**, Stadia requires a free API key for non-localhost domains (see [their docs](https://docs.stadiamaps.com/authentication/)).

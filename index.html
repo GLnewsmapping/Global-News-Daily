@@ -18,6 +18,7 @@
     --climate: #1859D1;
     --political: #8355E8;
     --shipping: #D9A441;
+    --borders: #C9CCD6;
   }
   *{ box-sizing: border-box; }
   html, body{ height: 100%; margin: 0; overflow: hidden; }
@@ -157,6 +158,9 @@
   .toggle.lanes{ width: 100%; border-color: color-mix(in srgb, var(--shipping) 40%, var(--panel-line)); }
   .toggle.lanes .swatch{ background: var(--shipping); }
   .toggle.lanes.off{ opacity: 0.5; }
+  .toggle.borders{ width: 100%; border-color: color-mix(in srgb, var(--borders) 40%, var(--panel-line)); }
+  .toggle.borders .swatch{ background: var(--borders); }
+  .toggle.borders.off{ opacity: 0.5; }
 
   #search-row{
     padding: 14px 24px;
@@ -445,6 +449,9 @@
     <button class="toggle lanes off" id="chokepoints-toggle" style="margin-top:8px;">
       <span class="swatch"></span> Chokepoints <span class="count" style="margin-left:auto;font-size:11px;color:var(--muted);">top 10</span>
     </button>
+    <button class="toggle borders off" id="borders-toggle" style="margin-top:8px;">
+      <span class="swatch"></span> Country Borders
+    </button>
   </div>
   <div id="search-row">
     <input type="text" id="search-box" placeholder="Search stories..." autocomplete="off">
@@ -505,6 +512,8 @@
     'high': { color: 'rgba(217, 164, 65, 0.7)', stroke: 0.75 },
     'medium': { color: 'rgba(217, 164, 65, 0.5)', stroke: 0.45 },
   };
+  const BORDER_COLOR_GLOBE = 'rgba(201, 204, 214, 0.45)'; // matches --borders, low-opacity so it reads as reference, not data
+  const BORDER_STROKE_GLOBE = 0.25; // thin -- visible but not competing with event markers or lanes
 
   // ---------- Shared state ----------
   let currentView = 'globe';
@@ -514,6 +523,8 @@
   let globeEvents = [];   // same data, adapted for the globe renderer
   let LANES = [];
   let lanesVisible = false;
+  let BORDERS = [];
+  let bordersVisible = false;
   let mapMarkers = []; // { category, marker, isHalo? }
   let CHOKEPOINTS = [];
   let chokepointsVisible = false;
@@ -616,9 +627,11 @@
     .pathPoints(d => d.path)
     .pathPointLat(p => p[0])
     .pathPointLng(p => p[1])
-    .pathColor(d => GLOBE_LANE_STYLE[d.volume]?.color || GLOBE_LANE_STYLE.medium.color)
-    .pathStroke(d => GLOBE_LANE_STYLE[d.volume]?.stroke || GLOBE_LANE_STYLE.medium.stroke)
-    .pathLabel(d => `<div style="font-family:Inter,sans-serif;font-size:12px;max-width:220px;padding:4px 2px;"><strong>${d.name}</strong><br>${d.note}</div>`)
+    .pathColor(d => d.type === 'border' ? BORDER_COLOR_GLOBE : (GLOBE_LANE_STYLE[d.volume]?.color || GLOBE_LANE_STYLE.medium.color))
+    .pathStroke(d => d.type === 'border' ? BORDER_STROKE_GLOBE : (GLOBE_LANE_STYLE[d.volume]?.stroke || GLOBE_LANE_STYLE.medium.stroke))
+    .pathLabel(d => d.type === 'border'
+      ? `<div style="font-family:Inter,sans-serif;font-size:12px;padding:4px 2px;">${d.country}</div>`
+      : `<div style="font-family:Inter,sans-serif;font-size:12px;max-width:220px;padding:4px 2px;"><strong>${d.name}</strong><br>${d.note}</div>`)
     .pathTransitionDuration(0);
 
   // three.js doesn't default the renderer to the display's actual pixel
@@ -854,6 +867,14 @@
   }
   loadLanes();
 
+  function refreshGlobePaths() {
+    const combined = [
+      ...(lanesVisible ? LANES.map(l => ({ ...l, type: 'lane' })) : []),
+      ...(bordersVisible ? BORDERS.map(b => ({ ...b, type: 'border' })) : []),
+    ];
+    world.pathsData(combined);
+  }
+
   document.getElementById('lanes-toggle').addEventListener('click', (e) => {
     lanesVisible = !lanesVisible;
     e.currentTarget.classList.toggle('off', !lanesVisible);
@@ -862,7 +883,41 @@
     } else {
       map.removeLayer(lanesLayer);
     }
-    world.pathsData(lanesVisible ? LANES : []);
+    refreshGlobePaths();
+  });
+
+  // ================= Country borders (shared, reference layer) =================
+  const bordersLayer = L.layerGroup();
+
+  async function loadBorders() {
+    try {
+      const res = await fetch('data/country_borders.json', { cache: 'no-store' });
+      if (!res.ok) return;
+      const data = await res.json();
+      BORDERS = data.borders || [];
+
+      const borderColor = getComputedStyle(document.documentElement).getPropertyValue('--borders').trim();
+      BORDERS.forEach((b) => {
+        L.polyline(b.path, {
+          color: borderColor,
+          weight: 1,
+          opacity: 0.45,
+          interactive: false,
+        }).addTo(bordersLayer);
+      });
+    } catch (e) { /* borders are optional -- fail silently */ }
+  }
+  loadBorders();
+
+  document.getElementById('borders-toggle').addEventListener('click', (e) => {
+    bordersVisible = !bordersVisible;
+    e.currentTarget.classList.toggle('off', !bordersVisible);
+    if (bordersVisible) {
+      bordersLayer.addTo(map);
+    } else {
+      map.removeLayer(bordersLayer);
+    }
+    refreshGlobePaths();
   });
 
   // ================= Maritime chokepoints (shared) =================
