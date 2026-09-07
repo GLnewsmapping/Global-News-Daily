@@ -129,38 +129,30 @@
     align-items: center;
     gap: 8px;
     padding: 8px 12px;
-    border: 1px solid var(--panel-line);
-    background: transparent;
-    color: var(--paper);
+    border: none;
     font-family: 'Inter', sans-serif;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     border-radius: 3px;
-    transition: border-color 0.15s ease, opacity 0.15s ease;
+    transition: opacity 0.15s ease, filter 0.15s ease;
   }
   .toggle.off{ opacity: 0.35; }
-  .toggle:hover{ border-color: var(--paper); }
-  .toggle .swatch{ width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
-  .toggle .count{ margin-left: auto; color: var(--muted); font-size: 12px; }
-  .toggle.conflict .swatch{ background: var(--conflict); }
-  .toggle.climate .swatch{ background: var(--climate); }
-  .toggle.political .swatch{ background: var(--political); }
-  .toggle.conflict{ border-color: color-mix(in srgb, var(--conflict) 40%, var(--panel-line)); }
-  .toggle.climate{ border-color: color-mix(in srgb, var(--climate) 40%, var(--panel-line)); }
-  .toggle.political{ border-color: color-mix(in srgb, var(--political) 40%, var(--panel-line)); }
+  .toggle:hover{ filter: brightness(1.12); }
+  .toggle .swatch{ display: none; } /* redundant now the whole block is the category color */
+  .toggle .count{ margin-left: auto; color: inherit; opacity: 0.75; font-size: 12px; }
+
+  .toggle.conflict{ background: var(--conflict); color: var(--paper); }
+  .toggle.climate{ background: var(--climate); color: var(--paper); }
+  .toggle.political{ background: var(--political); color: var(--paper); }
 
   #lanes-row{
     padding: 0 24px 16px;
     border-bottom: 1px solid var(--panel-line);
     animation: fadeInUp 900ms ease-out 260ms both;
   }
-  .toggle.lanes{ width: 100%; border-color: color-mix(in srgb, var(--shipping) 40%, var(--panel-line)); }
-  .toggle.lanes .swatch{ background: var(--shipping); }
-  .toggle.lanes.off{ opacity: 0.5; }
-  .toggle.borders{ width: 100%; border-color: color-mix(in srgb, var(--borders) 40%, var(--panel-line)); }
-  .toggle.borders .swatch{ background: var(--borders); }
-  .toggle.borders.off{ opacity: 0.5; }
+  .toggle.lanes{ width: 100%; background: var(--shipping); color: var(--ink); }
+  .toggle.borders{ width: 100%; background: #FFFFFF; color: #000000; }
 
   #search-row{
     padding: 14px 24px;
@@ -444,10 +436,10 @@
   </div>
   <div id="lanes-row">
     <button class="toggle lanes off" id="lanes-toggle">
-      <span class="swatch"></span> Shipping Lanes <span class="count" style="margin-left:auto;font-size:11px;color:var(--muted);">highest-traffic</span>
+      <span class="swatch"></span> Shipping Lanes <span class="count" style="margin-left:auto;font-size:11px;">highest-traffic</span>
     </button>
     <button class="toggle lanes off" id="chokepoints-toggle" style="margin-top:8px;">
-      <span class="swatch"></span> Chokepoints <span class="count" style="margin-left:auto;font-size:11px;color:var(--muted);">top 10</span>
+      <span class="swatch"></span> Chokepoints <span class="count" style="margin-left:auto;font-size:11px;">top 10</span>
     </button>
     <button class="toggle borders off" id="borders-toggle" style="margin-top:8px;">
       <span class="swatch"></span> Country Borders
@@ -668,6 +660,14 @@
   controls.autoRotateSpeed = 0.35;
   controls.enableZoom = true;
 
+  // Once the user manually drags/zooms the globe, stop auto-rotating for good —
+  // OrbitControls fires 'start' for both rotate-drag and wheel-zoom interactions.
+  let userHasInteracted = false;
+  controls.addEventListener('start', () => {
+    userHasInteracted = true;
+    controls.autoRotate = false;
+  });
+
   function showPanel(d) {
     document.getElementById('panel-cat').textContent = d.category;
     document.querySelector('#story-panel .story-cat .swatch').style.background = COLORS[d.category];
@@ -684,7 +684,7 @@
 
   function hidePanel() {
     document.getElementById('story-panel').classList.remove('visible');
-    controls.autoRotate = true;
+    controls.autoRotate = !userHasInteracted;
   }
 
   function refreshGlobe() {
