@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dispatch — the world, as it's happening</title>
+<meta name="description" content="A live globe and map of geolocated conflict, climate, and political events from ACLED, NASA EONET, and GDELT — updated daily.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dispatch — the world, as it's happening">
+<meta property="og:description" content="A live globe and map of geolocated conflict, climate, and political events from ACLED, NASA EONET, and GDELT — updated daily.">
+<meta property="og:url" content="https://glnewsmapping.github.io/Global-News-Daily/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Dispatch — the world, as it's happening">
+<meta name="twitter:description" content="A live globe and map of geolocated conflict, climate, and political events from ACLED, NASA EONET, and GDELT — updated daily.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%2312181F' stroke='%23E8E6DE' stroke-width='4'/%3E%3Cpath d='M6 50h88M50 6v88M15 27c15 10 55 10 70 0M15 73c15-10 55-10 70 0' fill='none' stroke='%23E8E6DE' stroke-width='3' opacity='0.55'/%3E%3Ccircle cx='38' cy='40' r='5' fill='%23E2572B'/%3E%3Ccircle cx='62' cy='58' r='5' fill='%231859D1'/%3E%3Ccircle cx='55' cy='32' r='5' fill='%238355E8'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -405,6 +414,76 @@
     background: none;
     border: none;
   }
+
+  /* ---------- About / methodology ---------- */
+  #about-link{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: var(--muted);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+  }
+  #about-link:hover{ color: var(--paper); }
+  #about-overlay{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+  }
+  #about-overlay.visible{ display: flex; }
+  #about-modal{
+    background: var(--panel);
+    border: 1px solid var(--panel-line);
+    border-radius: 4px;
+    max-width: 480px;
+    width: calc(100% - 48px);
+    max-height: calc(100% - 48px);
+    overflow-y: auto;
+    padding: 28px;
+    position: relative;
+  }
+  #about-modal h2{
+    font-family: 'Newsreader', serif;
+    font-weight: 500;
+    font-size: 22px;
+    margin: 0 0 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  #about-modal h3{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--muted);
+    margin: 18px 0 6px;
+  }
+  #about-modal p{
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--paper);
+    margin: 0 0 4px;
+  }
+  #about-modal p.dim{ color: var(--muted); }
+  #about-modal .close{
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 16px;
+    background: none;
+    border: none;
+  }
+  #about-modal .close:hover{ color: var(--paper); }
 </style>
 </head>
 <body>
@@ -414,6 +493,7 @@
     <span class="kicker">Conflict &middot; Climate &middot; Political</span>
     <h1>Dispatch</h1>
     <p>Geolocated in real time. Rotate, zoom, click any point.</p>
+    <button id="about-link">About &amp; data sources</button>
   </div>
   <div id="view-switch">
     <button class="view-btn active" data-view="globe">Globe</button>
@@ -462,6 +542,29 @@
     <p id="panel-headline"></p>
     <ul id="panel-summary" class="summary-list"></ul>
     <a id="panel-link" href="#" target="_blank">Read the source →</a>
+  </div>
+</div>
+
+<div id="about-overlay">
+  <div id="about-modal">
+    <button class="close" id="about-close">&times;</button>
+    <h2>About Dispatch</h2>
+    <p>A live globe and map of geolocated conflict, climate, and political events, refreshed daily. Nothing here is simulated — every point traces back to a real tracked event or report.</p>
+
+    <h3>Conflict</h3>
+    <p><a href="https://acleddata.com/" target="_blank" style="color:var(--conflict);">ACLED</a>'s country-year political violence event counts, with a live GDELT search as fallback.</p>
+
+    <h3>Climate</h3>
+    <p><a href="https://eonet.gsfc.nasa.gov/" target="_blank" style="color:var(--climate);">NASA EONET</a> — real tracked wildfires, storms, floods, drought, and temperature extremes.</p>
+
+    <h3>Political</h3>
+    <p><a href="https://www.gdeltproject.org/" target="_blank" style="color:var(--political);">GDELT</a>'s global event database, filtered to diplomacy, aid, sanctions, and cooperation events.</p>
+
+    <h3>Shipping lanes &amp; chokepoints</h3>
+    <p class="dim">Digitized trade-route geometry and the world's 10 busiest maritime chokepoints, compiled from public shipping and energy-transit data — a snapshot, not live vessel tracking.</p>
+
+    <h3>Country borders</h3>
+    <p class="dim">Natural Earth (1:110m Admin 0 Countries), public domain.</p>
   </div>
 </div>
 
@@ -835,10 +938,27 @@
     });
   }
 
+  function relativeTime(when) {
+    const diffMs = Date.now() - when.getTime();
+    const mins = Math.round(diffMs / 60000);
+    if (mins < 1) return 'just now';
+    if (mins < 60) return `${mins}m ago`;
+    const hours = Math.round(mins / 60);
+    if (hours < 24) return `${hours}h ago`;
+    const days = Math.round(hours / 24);
+    return `${days}d ago`;
+  }
+
   function updateMeta(data) {
     document.getElementById('meta-count').textContent = `${data.feature_count} locations`;
     const when = new Date(data.generated_at);
-    document.getElementById('meta-time').textContent = isNaN(when) ? '' : when.toLocaleString();
+    const metaTime = document.getElementById('meta-time');
+    if (isNaN(when)) {
+      metaTime.textContent = '';
+    } else {
+      metaTime.textContent = `Updated ${relativeTime(when)}`;
+      metaTime.title = when.toLocaleString();
+    }
   }
 
   function showEmptyState() {
@@ -916,6 +1036,16 @@
       map.removeLayer(bordersLayer);
     }
     world.polygonsData(bordersVisible ? COUNTRY_POLYGONS : []);
+  });
+
+  document.getElementById('about-link').addEventListener('click', () => {
+    document.getElementById('about-overlay').classList.add('visible');
+  });
+  document.getElementById('about-close').addEventListener('click', () => {
+    document.getElementById('about-overlay').classList.remove('visible');
+  });
+  document.getElementById('about-overlay').addEventListener('click', (e) => {
+    if (e.target.id === 'about-overlay') e.target.classList.remove('visible');
   });
 
   // ================= Maritime chokepoints (shared) =================

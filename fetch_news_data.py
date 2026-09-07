@@ -26,8 +26,10 @@ Docs: https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/
 """
 
 import argparse
+import glob
 import io
 import json
+import os
 import re
 import sys
 import time
@@ -523,6 +525,9 @@ def main():
     parser.add_argument("--acled-file", default="data/acled_country_events.json", help="Pre-processed ACLED country data from convert_acled_countries.py, optional (default: data/acled_country_events.json)")
     parser.add_argument("--gdelt-bulk-hours", type=int, default=12, help="Hours of GDELT bulk event files to scan for political/geopolitical actions (default: 12)")
     parser.add_argument("--out", default="data/news_data.json", help="Output path (default: data/news_data.json)")
+    parser.add_argument("--archive-dir", default="data/archive", help="Directory to keep one dated snapshot per day for the timeline feature (default: data/archive)")
+    parser.add_argument("--archive-days", type=int, default=30, help="Days of dated snapshots to keep before pruning the oldest (default: 30)")
+    parser.add_argument("--no-archive", action="store_true", help="Skip writing/pruning the dated archive snapshot")
     args = parser.parse_args()
 
     all_features = []
@@ -578,6 +583,31 @@ def main():
     print(f"\nSaved {len(all_features)} total locations to {args.out}")
     if len(all_features) == 0:
         print("No results came back -- check your internet connection or try a longer --timespan.")
+
+    if not args.no_archive:
+        save_archive_snapshot(output, args.archive_dir, args.archive_days)
+
+
+def save_archive_snapshot(output, archive_dir, keep_days):
+    """Keep one dated snapshot per day (for the timeline feature) alongside
+    the always-current news_data.json, pruning anything older than keep_days."""
+    os.makedirs(archive_dir, exist_ok=True)
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    archive_path = os.path.join(archive_dir, f"{today}.json")
+    with open(archive_path, "w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2)
+    print(f"Archived today's snapshot to {archive_path}")
+
+    cutoff = datetime.now(timezone.utc) - timedelta(days=keep_days)
+    for path in glob.glob(os.path.join(archive_dir, "*.json")):
+        stem = os.path.splitext(os.path.basename(path))[0]
+        try:
+            day = datetime.strptime(stem, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+        except ValueError:
+            continue
+        if day < cutoff:
+            os.remove(path)
+            print(f"Pruned old archive snapshot {path}")
 
 
 if __name__ == "__main__":

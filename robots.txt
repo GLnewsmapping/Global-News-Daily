@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://glnewsmapping.github.io/Global-News-Daily/sitemap.xml
