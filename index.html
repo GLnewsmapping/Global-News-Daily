@@ -267,6 +267,7 @@
   /* ---------- Viz area (shared by both views) ---------- */
   #viz-wrap{ flex: 1; height: 100vh; position: relative; animation: fadeInUp 1100ms ease-out 100ms both; }
   .viz-layer{ position: absolute; inset: 0; opacity: 1; transition: opacity 350ms ease; pointer-events: auto; }
+  .leaflet-container{ background: var(--ink); } /* matches the theme if the map's bounds ever leave a sliver of empty space at the edge */
   .viz-layer.hidden{ opacity: 0; pointer-events: none; }
   #vignette{
     position: absolute;
@@ -897,7 +898,18 @@
   }
 
   // ================= Map =================
-  const map = L.map('map-container', { zoomControl: true }).setView([20, 10], 2.4);
+  // noWrap + maxBounds keep exactly one copy of the world on screen --
+  // without them, Leaflet tiles the world infinitely and zooming out far
+  // enough shows repeated copies side by side. minZoom keeps the world
+  // filling the view at all times so you don't zoom out past it into blank
+  // space either.
+  const map = L.map('map-container', {
+    zoomControl: true,
+    worldCopyJump: false,
+    maxBounds: [[-90, -180], [90, 180]],
+    maxBoundsViscosity: 1.0,
+    minZoom: 2,
+  }).setView([20, 10], 2.4);
 
   // Just the satellite imagery -- the Esri boundaries/labels reference layer
   // bakes its own continent-scale text (e.g. "EUROPE") into the tiles, which
@@ -905,7 +917,8 @@
   // selectively suppress just that label tier.
   L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
     attribution: 'Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community',
-    maxZoom: 19
+    maxZoom: 19,
+    noWrap: true,
   }).addTo(map);
 
   CONTINENT_LABELS.forEach(({ name, lat, lon }) => {

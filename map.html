@@ -196,6 +196,7 @@
   /* ---------- Map ---------- */
   #map-wrap{ flex: 1; height: 100vh; position: relative; animation: fadeInUp 1100ms ease-out 100ms both; }
   #map-container{ position: absolute; inset: 0; }
+  .leaflet-container{ background: var(--ink); } /* matches the theme if the map's bounds ever leave a sliver of empty space at the edge */
   #vignette{
     position: absolute;
     inset: 0;
@@ -284,11 +285,23 @@
   let markers = []; // { category, marker }
   let allFeatures = [];
 
-  const map = L.map('map-container', { zoomControl: true }).setView([20, 10], 2.4);
+  // noWrap + maxBounds keep exactly one copy of the world on screen --
+  // without them, Leaflet tiles the world infinitely and zooming out far
+  // enough shows repeated copies side by side. minZoom keeps the world
+  // filling the view at all times so you don't zoom out past it into blank
+  // space either.
+  const map = L.map('map-container', {
+    zoomControl: true,
+    worldCopyJump: false,
+    maxBounds: [[-90, -180], [90, 180]],
+    maxBoundsViscosity: 1.0,
+    minZoom: 2,
+  }).setView([20, 10], 2.4);
 
   L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; Stadia Maps &copy; OpenMapTiles &copy; OpenStreetMap contributors',
-    maxZoom: 19
+    maxZoom: 19,
+    noWrap: true,
   }).addTo(map);
 
   // Approximate centroids, used only to label continents on the map.
