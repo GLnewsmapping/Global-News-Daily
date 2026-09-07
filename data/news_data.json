@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-07T12:34:48.887402+00:00",
+  "generated_at": "2026-09-07T12:57:46.427822+00:00",
   "timespan": "2d",
-  "feature_count": 100,
+  "feature_count": 99,
   "features": [
     {
       "category": "climate",
@@ -448,244 +448,465 @@
       ]
     },
     {
-      "category": "climate",
-      "lat": 49.44856919676259,
-      "lon": 15.226649712410072,
-      "name": "Flood in Czech Republic",
-      "count": 1,
-      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104118' target='_blank'>Flood in Czech Republic</a>",
+      "category": "political",
+      "lat": 42.1497,
+      "lon": -74.9384,
+      "name": "Reduced relations / sanctions: Paris \u2194 London",
+      "count": 6,
+      "html": "<a href='https://www.pr-inside.com/pomerantz-llp-calls-attention-to-class-action-against-hdfc-bank-limited-r5220084.htm' target='_blank'>Reduced relations / sanctions: Paris \u2194 London</a>",
       "summary": [
-        "Type: Floods",
-        "Reported: Aug 19, 2026",
-        "Source: GDACS"
+        "Type: Reduced relations / sanctions",
+        "Actors: Paris \u2194 London",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
-      "category": "climate",
-      "lat": 34.4777778,
-      "lon": -95.2966667,
-      "name": "Wildfire Alexander Trail, Pushmataha, Oklahoma",
-      "count": 1,
-      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-OKOKS-260966' target='_blank'>Wildfire Alexander Trail, Pushmataha, Oklahoma</a>",
+      "category": "political",
+      "lat": 9.03333,
+      "lon": 38.7,
+      "name": "Diplomatic cooperation: Addis Ababa \u2194 African Union (international org)",
+      "count": 5,
+      "html": "<a href='https://www.miragenews.com/addis-ababa-urges-early-warning-action-in-africa-1739881/' target='_blank'>Diplomatic cooperation: Addis Ababa \u2194 African Union (international org)</a>",
       "summary": [
-        "Type: Wildfires",
-        "Size: 1,600 acres",
-        "Location note: 5 Miles W from Nashoba, OK",
-        "Reported: Aug 30, 2026",
-        "Source: IRWIN"
+        "Type: Diplomatic cooperation",
+        "Actors: Addis Ababa \u2194 African Union (international org)",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
-      "category": "climate",
-      "lat": 25.371162352729993,
-      "lon": 117.02146826002992,
-      "name": "Flood in China",
-      "count": 1,
-      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104123' target='_blank'>Flood in China</a>",
+      "category": "political",
+      "lat": 33.0,
+      "lon": 44.0,
+      "name": "Diplomatic visit: Dijon \u2194 Iraq",
+      "count": 10,
+      "html": "<a href='https://www.middleeastmonitor.com/20260907-an-awakening-question-from-rousseau-to-al-husri/' target='_blank'>Diplomatic visit: Dijon \u2194 Iraq</a>",
       "summary": [
-        "Type: Floods",
-        "Reported: Aug 21, 2026",
-        "Source: GDACS"
+        "Type: Diplomatic visit",
+        "Actors: Dijon \u2194 Iraq",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
-      "category": "climate",
-      "lat": 35.535,
-      "lon": -104.295,
-      "name": "Wildfire 4V, San Miguel, New Mexico",
-      "count": 1,
-      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-NMN4S-000549' target='_blank'>Wildfire 4V, San Miguel, New Mexico</a>",
+      "category": "political",
+      "lat": 50.8333,
+      "lon": 4.33333,
+      "name": "Diplomatic consultation: European \u2194 Ireland",
+      "count": 20,
+      "html": "<a href='https://www.bankingnews.gr/diethni/articles/897850/disarming-blockade-against-kallas-member-states-demolish-the-new-defense-plan-before-it-even-starts-what-is-happening' target='_blank'>Diplomatic consultation: European \u2194 Ireland</a>",
       "summary": [
-        "Type: Wildfires",
-        "Size: 1,000 acres",
-        "Location note: 40 Miles NW from Tucumcari, NM",
-        "Reported: Aug 29, 2026",
-        "Source: IRWIN"
+        "Type: Diplomatic consultation",
+        "Actors: European \u2194 Ireland",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
-      "category": "climate",
-      "lat": 20,
-      "lon": 109.6,
-      "name": "Tropical Storm Narra",
-      "count": 1,
-      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp1826.tcw' target='_blank'>Tropical Storm Narra</a>",
+      "category": "political",
+      "lat": 39.9289,
+      "lon": 116.388,
+      "name": "Economic cooperation: Beijing \u2194 Japan",
+      "count": 10,
+      "html": "<a href='http://www.japanherald.com/news/279291545/china-imposes-provisional-anti-dumping-measures-on-japanese-dichlorosilane' target='_blank'>Economic cooperation: Beijing \u2194 Japan</a>",
       "summary": [
-        "Type: Severe Storms",
-        "Peak winds: 25 kts (~29 mph)",
-        "Tracked for 4 days (since Aug 21, 2026)",
-        "Source: JTWC"
+        "Type: Economic cooperation",
+        "Actors: Beijing \u2194 Japan",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
-      "category": "climate",
-      "lat": 35.224667,
-      "lon": -96.1149,
-      "name": "Wildfire WRIGHT, Hughes, Oklahoma",
-      "count": 1,
-      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-OKOMA-002688' target='_blank'>Wildfire WRIGHT, Hughes, Oklahoma</a>",
+      "category": "political",
+      "lat": -25.0,
+      "lon": 135.0,
+      "name": "Diplomatic cooperation: Nepal \u2194 Tibet",
+      "count": 10,
+      "html": "<a href='https://www.abc.net.au/listen/programs/pm/survival-stories-spread-hope-in-nepal/107125900' target='_blank'>Diplomatic cooperation: Nepal \u2194 Tibet</a>",
       "summary": [
-        "Type: Wildfires",
-        "Size: 608 acres",
-        "Location note: 5 Miles SW from Dustin, OK",
-        "Reported: Aug 29, 2026",
-        "Source: IRWIN"
+        "Type: Diplomatic cooperation",
+        "Actors: Nepal \u2194 Tibet",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
-      "category": "climate",
-      "lat": 23.8,
-      "lon": 117.4,
-      "name": "Typhoon Saudel",
-      "count": 1,
-      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp1726.tcw' target='_blank'>Typhoon Saudel</a>",
+      "category": "political",
+      "lat": 28.1311,
+      "lon": 83.8929,
+      "name": "Provided aid: Roma \u2194 Nuwakot",
+      "count": 10,
+      "html": "<a href='https://www.bresciaoggi.it/news/mondo/fango-e-detriti-causati-dall-alluvione-in-nepal-1.13117343' target='_blank'>Provided aid: Roma \u2194 Nuwakot</a>",
       "summary": [
-        "Type: Severe Storms",
-        "Peak winds: 40 kts (~46 mph)",
-        "Tracked for 15 days (since Aug 19, 2026)",
-        "Source: JTWC"
+        "Type: Provided aid",
+        "Actors: Roma \u2194 Nuwakot",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
-      "category": "climate",
-      "lat": 34.6084,
-      "lon": -98.7205,
-      "name": "Wildfire RAILROAD SOUTH, Comanche, Oklahoma",
+      "category": "political",
+      "lat": -44.0,
+      "lon": -68.0,
+      "name": "Diplomatic consultation: Argentina \u2194 Google (multinational company)",
       "count": 1,
-      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-OKANA-002686' target='_blank'>Wildfire RAILROAD SOUTH, Comanche, Oklahoma</a>",
+      "html": "<a href='https://finance.yahoo.com/technology/articles/tech-companies-look-argentina-windswept-100259741.html' target='_blank'>Diplomatic consultation: Argentina \u2194 Google (multinational company)</a>",
       "summary": [
-        "Type: Wildfires",
-        "Size: 515 acres",
-        "Location note: 3 Miles E from Indiahoma, OK",
-        "Reported: Aug 29, 2026",
-        "Source: IRWIN"
+        "Type: Diplomatic consultation",
+        "Actors: Argentina \u2194 Google (multinational company)",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
-      "category": "climate",
-      "lat": 30.18416667,
-      "lon": -100.3149,
-      "name": "Wildfire McKee Draw, Edwards, Texas",
-      "count": 1,
-      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-TXTXS-267823' target='_blank'>Wildfire McKee Draw, Edwards, Texas</a>",
+      "category": "political",
+      "lat": 29.4241,
+      "lon": -98.4936,
+      "name": "Diplomatic visit: Toyota (multinational company) \u2194 San Antonio",
+      "count": 5,
+      "html": "<a href='https://www.kono1011.com/station/happy-labor-day/DOHSNZ4KLJFU3MSDILSEQLYL4U/' target='_blank'>Diplomatic visit: Toyota (multinational company) \u2194 San Antonio</a>",
       "summary": [
-        "Type: Wildfires",
-        "Size: 4,416 acres",
-        "Location note: 13 Miles NW from Rocksprings, TX",
-        "Reported: Aug 29, 2026",
-        "Source: IRWIN"
+        "Type: Diplomatic visit",
+        "Actors: Toyota (multinational company) \u2194 San Antonio",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
-      "category": "climate",
-      "lat": 30.36872624,
-      "lon": -100.1516574,
-      "name": "Wildfire West Fork, Sutton, Texas",
-      "count": 1,
-      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-TXTXS-267801' target='_blank'>Wildfire West Fork, Sutton, Texas</a>",
+      "category": "political",
+      "lat": 6.51667,
+      "lon": 3.36667,
+      "name": "Diplomatic visit: Nigeria \u2194 Sierra Leone (business/elite figure)",
+      "count": 5,
+      "html": "<a href='https://www.thesierraleonetelegraph.com/former-president-ernest-bai-koroma-of-sierra-leone-finally-returns-home/' target='_blank'>Diplomatic visit: Nigeria \u2194 Sierra Leone (business/elite figure)</a>",
       "summary": [
-        "Type: Wildfires",
-        "Size: 961 acres",
-        "Location note: 25 Miles SW from Junction, TX",
-        "Reported: Aug 28, 2026",
-        "Source: IRWIN"
+        "Type: Diplomatic visit",
+        "Actors: Nigeria \u2194 Sierra Leone (business/elite figure)",
+        "Reported: Sep 06, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
-      "category": "climate",
-      "lat": 44.921867,
-      "lon": -112.77825,
-      "name": "Wildfire Roe 2, Beaverhead, Montana",
-      "count": 1,
-      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-MTCES-266405' target='_blank'>Wildfire Roe 2, Beaverhead, Montana</a>",
+      "category": "political",
+      "lat": 40.0,
+      "lon": 45.0,
+      "name": "Diplomatic cooperation: Armenia \u2194 Nvidia (multinational company)",
+      "count": 10,
+      "html": "<a href='https://news.am/en/news/1060085' target='_blank'>Diplomatic cooperation: Armenia \u2194 Nvidia (multinational company)</a>",
       "summary": [
-        "Type: Wildfires",
-        "Size: 978 acres",
-        "Location note: 20 Miles S from Dillon, MT",
-        "Reported: Aug 27, 2026",
-        "Source: IRWIN"
+        "Type: Diplomatic cooperation",
+        "Actors: Armenia \u2194 Nvidia (multinational company)",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
-      "category": "climate",
-      "lat": 41.288667,
-      "lon": -112.4795,
-      "name": "Wildfire Brushy Canyon, Box Elder, Utah",
-      "count": 1,
-      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-UTBRS-200695' target='_blank'>Wildfire Brushy Canyon, Box Elder, Utah</a>",
+      "category": "political",
+      "lat": 55.7522,
+      "lon": 37.6156,
+      "name": "Diplomatic consultation: Moscow \u2194 The Us (government)",
+      "count": 14,
+      "html": "<a href='https://www.dailyliberal.com.au/story/9344861/kremlin-not-ruling-out-restart-of-ukraine-and-us-talks/' target='_blank'>Diplomatic consultation: Moscow \u2194 The Us (government)</a>",
       "summary": [
-        "Type: Wildfires",
-        "Size: 10,002 acres",
-        "Location note: 4 Miles N from Promontory, UT",
-        "Reported: Aug 27, 2026",
-        "Source: IRWIN"
+        "Type: Diplomatic consultation",
+        "Actors: Moscow \u2194 The Us (government)",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
-      "category": "climate",
-      "lat": 43.79864896836983,
-      "lon": -79.51452490705597,
-      "name": "Flood in Canada",
-      "count": 1,
-      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104143' target='_blank'>Flood in Canada</a>",
+      "category": "political",
+      "lat": 1.366667,
+      "lon": 103.8,
+      "name": "Economic or material cooperation: Singaporean \u2194 Jakarta (government)",
+      "count": 10,
+      "html": "<a href='https://www.straitstimes.com/singapore/mount-anak-krakatua-eruption-sporeans-in-indonesia-urged-to-stay-safe-minimise-outdoor-activities' target='_blank'>Economic or material cooperation: Singaporean \u2194 Jakarta (government)</a>",
       "summary": [
-        "Type: Floods",
-        "Reported: Sep 01, 2026",
-        "Source: GDACS"
+        "Type: Economic or material cooperation",
+        "Actors: Singaporean \u2194 Jakarta (government)",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
-      "category": "climate",
-      "lat": 24.2,
-      "lon": -123.4,
-      "name": "Hurricane Marie",
-      "count": 1,
-      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/ep1326.tcw' target='_blank'>Hurricane Marie</a>",
+      "category": "political",
+      "lat": -42.0,
+      "lon": 174.0,
+      "name": "Imposed sanctions or embargo: New Zealand \u2194 Israel",
+      "count": 8,
+      "html": "<a href='https://thedailyblog.co.nz/clip-1-on-1-in-10-why-john-minto-is-taking-nz-to-court-over-rocket-lab/' target='_blank'>Imposed sanctions or embargo: New Zealand \u2194 Israel</a>",
       "summary": [
-        "Type: Severe Storms",
-        "Peak winds: 55 kts (~63 mph)",
-        "Tracked for 6 days (since Sep 01, 2026)",
-        "Source: JTWC"
+        "Type: Imposed sanctions or embargo",
+        "Actors: New Zealand \u2194 Israel",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
-      "category": "climate",
-      "lat": 30.8,
-      "lon": -95,
-      "name": "Tropical Storm Edouard",
-      "count": 1,
-      "html": "<a href='https://www.nhc.noaa.gov/archive/2026/EDOUARD.shtml' target='_blank'>Tropical Storm Edouard</a>",
+      "category": "political",
+      "lat": 33.7,
+      "lon": 73.1667,
+      "name": "Reduced relations / sanctions: Pakistani \u2194 Jordan (government)",
+      "count": 3,
+      "html": "<a href='https://tribune.com.pk/story/2627918/islamabad-atc-grants-bail-to-mushtaq-ahmad-95-others-over-ajk-protest' target='_blank'>Reduced relations / sanctions: Pakistani \u2194 Jordan (government)</a>",
       "summary": [
-        "Type: Severe Storms",
-        "Peak winds: 30 kts (~35 mph)",
-        "Tracked for 1 day (since Sep 01, 2026)",
-        "Source: NOAA_NHC"
+        "Type: Reduced relations / sanctions",
+        "Actors: Pakistani \u2194 Jordan (government)",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
-      "category": "climate",
-      "lat": 19.4457105136043,
-      "lon": -72.6884336,
-      "name": "Flood in Haiti",
-      "count": 1,
-      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104142' target='_blank'>Flood in Haiti</a>",
+      "category": "political",
+      "lat": 38.8951,
+      "lon": -77.0364,
+      "name": "Diplomatic consultation: Africa \u2194 United States",
+      "count": 4,
+      "html": "<a href='https://allafrica.com/stories/202609070260.html' target='_blank'>Diplomatic consultation: Africa \u2194 United States</a>",
       "summary": [
-        "Type: Floods",
+        "Type: Diplomatic consultation",
+        "Actors: Africa \u2194 United States",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 5.11185,
+      "lon": -1.24373,
+      "name": "Diplomatic consultation: Africa \u2194 Ghana",
+      "count": 2,
+      "html": "<a href='https://www.graphic.com.gh/news/general-news/ghana-news-dont-admit-outside-cssps-minister-directs-shs-heads.html' target='_blank'>Diplomatic consultation: Africa \u2194 Ghana</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Africa \u2194 Ghana",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 32.0,
+      "lon": 53.0,
+      "name": "Diplomatic consultation: Iran \u2194 Iraq",
+      "count": 10,
+      "html": "<a href='https://www.meed.com:443/iraq-boosts-oil-exports-after-talks-with-iran' target='_blank'>Diplomatic consultation: Iran \u2194 Iraq</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Iran \u2194 Iraq",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 49.0,
+      "lon": 32.0,
+      "name": "Provided aid: Ukraine \u2194 Russian",
+      "count": 10,
+      "html": "<a href='https://www.rferl.org/a/ukraine-donetsk-pet-rescue-volunteer-russia-air-attack-animal/33847001.html' target='_blank'>Provided aid: Ukraine \u2194 Russian</a>",
+      "summary": [
+        "Type: Provided aid",
+        "Actors: Ukraine \u2194 Russian",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 39.9289,
+      "lon": 116.388,
+      "name": "Diplomatic cooperation: China \u2194 Qatar",
+      "count": 8,
+      "html": "<a href='https://www.qatarliving.com/en/article/qatar-pm-and-chinese-premier-discuss-investment-trade-and-technology-cooperation-in-beijing' target='_blank'>Diplomatic cooperation: China \u2194 Qatar</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: China \u2194 Qatar",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": -25.0,
+      "lon": 135.0,
+      "name": "Diplomatic consultation: Australian \u2194 Balearic Islands",
+      "count": 5,
+      "html": "<a href='https://www.dailymail.com/tvshowbiz/article-16111293/Lizzie-Cundy-58-white-cut-swimsuit-Mykonos.html' target='_blank'>Diplomatic consultation: Australian \u2194 Balearic Islands</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Australian \u2194 Balearic Islands",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 28.6667,
+      "lon": 77.2167,
+      "name": "Expressed intent to cooperate: Africa \u2194 South African",
+      "count": 2,
+      "html": "<a href='https://www.freepressjournal.in/business/india-south-africa-trade-ties-set-for-fresh-push-brics-meet-could-unlock-new-growth-opportunities-envoy' target='_blank'>Expressed intent to cooperate: Africa \u2194 South African</a>",
+      "summary": [
+        "Type: Expressed intent to cooperate",
+        "Actors: Africa \u2194 South African",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 27.8333,
+      "lon": -81.717,
+      "name": "Economic or material cooperation: Florida \u2194 Guatemala",
+      "count": 4,
+      "html": "<a href='https://www.macombdaily.com/2026/09/07/a-boy-screams-families-weep-children-leave-south-florida-to-live-with-deported-guatemala-parents/' target='_blank'>Economic or material cooperation: Florida \u2194 Guatemala</a>",
+      "summary": [
+        "Type: Economic or material cooperation",
+        "Actors: Florida \u2194 Guatemala",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": -8.83833,
+      "lon": 13.2344,
+      "name": "Diplomatic cooperation: Angola \u2194 Botswana",
+      "count": 2,
+      "html": "<a href='https://allafrica.com/stories/202609070383.html' target='_blank'>Diplomatic cooperation: Angola \u2194 Botswana</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: Angola \u2194 Botswana",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 33.8719,
+      "lon": 35.5097,
+      "name": "Expressed intent to cooperate: Israel \u2194 Lebanon",
+      "count": 8,
+      "html": "<a href='https://www.naharnet.com:443/stories/en/322298-israeli-strikes-kill-11-including-infants-in-kfar-rumman-as-hezbollah-accused-of-launching-drone' target='_blank'>Expressed intent to cooperate: Israel \u2194 Lebanon</a>",
+      "summary": [
+        "Type: Expressed intent to cooperate",
+        "Actors: Israel \u2194 Lebanon",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 51.5,
+      "lon": 10.5,
+      "name": "Diplomatic cooperation: Germany \u2194 France",
+      "count": 10,
+      "html": "<a href='https://www.breakingnews.ie/world/germanys-far-right-afd-thanks-elon-musk-as-france-warns-state-election-win-a-serious-moment-1948013.html' target='_blank'>Diplomatic cooperation: Germany \u2194 France</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: Germany \u2194 France",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 35.0,
+      "lon": 105.0,
+      "name": "Provided aid: China \u2194 Honda (multinational company)",
+      "count": 8,
+      "html": "<a href='https://www.whio.com/news/local/ohio-car-dealership-owner-accused-importing-counterfeit-airbags-enters-plea/XSG5XWNK5NHCLMUHZZ4QYPIHJQ/' target='_blank'>Provided aid: China \u2194 Honda (multinational company)</a>",
+      "summary": [
+        "Type: Provided aid",
+        "Actors: China \u2194 Honda (multinational company)",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": -33.8833,
+      "lon": 151.217,
+      "name": "Diplomatic cooperation: United States \u2194 Australia",
+      "count": 4,
+      "html": "<a href='https://www.theguardian.com/us-news/2026/sep/07/hhs-report-trans-support-authoritarianism' target='_blank'>Diplomatic cooperation: United States \u2194 Australia</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: United States \u2194 Australia",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 42.8731,
+      "lon": 74.6003,
+      "name": "Diplomatic consultation: Shanghai \u2194 Israel",
+      "count": 2,
+      "html": "<a href='https://www.thehindu.com/newsletter/newsletter-international/the-view-from-india-newsletter-lion-king-in-the-rubble-in-gaza/article71437901.ece' target='_blank'>Diplomatic consultation: Shanghai \u2194 Israel</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Shanghai \u2194 Israel",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 44.2563,
+      "lon": -89.6385,
+      "name": "Diplomatic consultation: China \u2194 United States",
+      "count": 4,
+      "html": "<a href='https://nypost.com/2026/09/07/media/hasan-piker-brushes-off-dems-who-see-him-as-a-liability-names-his-28-choice/' target='_blank'>Diplomatic consultation: China \u2194 United States</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: China \u2194 United States",
         "Reported: Aug 31, 2026",
-        "Source: GDACS"
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
-      "category": "climate",
-      "lat": 9.322846374153846,
-      "lon": -83.8244115343077,
-      "name": "Flood in Costa Rica",
-      "count": 1,
-      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104135' target='_blank'>Flood in Costa Rica</a>",
+      "category": "political",
+      "lat": -13.35,
+      "lon": 34.0833,
+      "name": "Diplomatic consultation: Mozambique \u2194 Mwanza (police)",
+      "count": 2,
+      "html": "<a href='https://www.faceofmalawi.com/2026/09/07/mwanza-police-arrest-man-after-two-firearms-ammunition-found-in-vehicle/' target='_blank'>Diplomatic consultation: Mozambique \u2194 Mwanza (police)</a>",
       "summary": [
-        "Type: Floods",
-        "Reported: Aug 29, 2026",
-        "Source: GDACS"
+        "Type: Diplomatic consultation",
+        "Actors: Mozambique \u2194 Mwanza (police)",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 35.75,
+      "lon": 51.5148,
+      "name": "Expressed intent to cooperate: Tehran \u2194 The Us (government)",
+      "count": 6,
+      "html": "<a href='https://www.aol.co.uk/articles/first-thing-german-far-leader-112053000.html' target='_blank'>Expressed intent to cooperate: Tehran \u2194 The Us (government)</a>",
+      "summary": [
+        "Type: Expressed intent to cooperate",
+        "Actors: Tehran \u2194 The Us (government)",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 51.5,
+      "lon": -0.133333,
+      "name": "Diplomatic consultation: United Kingdom \u2194 Jamaican",
+      "count": 10,
+      "html": "<a href='https://www.dailymail.com/news/article-16111285/King-Charles-meet-Jamaican-officials-slavery-reparations.html' target='_blank'>Diplomatic consultation: United Kingdom \u2194 Jamaican</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: United Kingdom \u2194 Jamaican",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
@@ -1147,244 +1368,6 @@
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 401",
         "Global rank: #32 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": -7.156912819152135,
-      "lon": 144.8348942994695,
-      "name": "Papua New Guinea",
-      "count": 112,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Papua New Guinea: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 112",
-        "Global rank: #50 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 42.98201127614267,
-      "lon": 12.763657166123137,
-      "name": "Italy",
-      "count": 34,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Italy: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 34",
-        "Global rank: #71 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 15.67060230984256,
-      "lon": 29.951458283594064,
-      "name": "Sudan",
-      "count": 1901,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Sudan: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 1,901",
-        "Global rank: #16 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": -8.522717984240291,
-      "lon": -74.11416196781884,
-      "name": "Peru",
-      "count": 93,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Peru: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 93",
-        "Global rank: #55 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 34.13402601376932,
-      "lon": 66.59216131095278,
-      "name": "Afghanistan",
-      "count": 812,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Afghanistan: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 812",
-        "Global rank: #28 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 8.729389557048396,
-      "lon": 39.914902886544276,
-      "name": "Ethiopia",
-      "count": 1526,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Ethiopia: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 1,526",
-        "Global rank: #20 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 7.148324760507107,
-      "lon": -66.36492135985132,
-      "name": "Venezuela",
-      "count": 246,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Venezuela: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 246",
-        "Global rank: #36 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 13.66222784745538,
-      "lon": 101.08675116214552,
-      "name": "Thailand",
-      "count": 108,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Thailand: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 108",
-        "Global rank: #51 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 53.97844735080214,
-      "lon": -2.852943909329258,
-      "name": "United Kingdom",
-      "count": 28,
-      "html": "<a href='https://acleddata.com/' target='_blank'>United Kingdom: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 28",
-        "Global rank: #78 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 16.001392616307445,
-      "lon": 47.46815793206386,
-      "name": "Yemen",
-      "count": 1861,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Yemen: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 1,861",
-        "Global rank: #18 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": -16.7312488393574,
-      "lon": -64.45209597511206,
-      "name": "Bolivia",
-      "count": 58,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Bolivia: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 58",
-        "Global rank: #62 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 28.300920699755657,
-      "lon": 84.1338898313567,
-      "name": "Nepal",
-      "count": 101,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Nepal: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 101",
-        "Global rank: #54 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 17.168146208584837,
-      "lon": -4.346399841781153,
-      "name": "Mali",
-      "count": 1115,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Mali: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 1,115",
-        "Global rank: #22 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 18.12207889341651,
-      "lon": -77.30358894542778,
-      "name": "Jamaica",
-      "count": 162,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Jamaica: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 162",
-        "Global rank: #42 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 40.19198091470839,
-      "lon": 127.3379805653744,
-      "name": "North Korea",
-      "count": 5,
-      "html": "<a href='https://acleddata.com/' target='_blank'>North Korea: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 5",
-        "Global rank: #115 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 40.365008336683836,
-      "lon": -3.6516251409956983,
-      "name": "Spain",
-      "count": 22,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Spain: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 22",
-        "Global rank: #82 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 31.513542220043195,
-      "lon": 35.027923472437024,
-      "name": "Israel",
-      "count": 1223,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Israel: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 1,223",
-        "Global rank: #21 of 162 countries tracked",
         "Source: ACLED"
       ]
     }

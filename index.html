@@ -16,7 +16,7 @@
     --muted: #8B94A3;
     --conflict: #E2572B;
     --climate: #1859D1;
-    --political: #4C7BD9;
+    --political: #8355E8;
     --shipping: #D9A441;
   }
   *{ box-sizing: border-box; }
@@ -469,10 +469,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/globe.gl"></script>
 <script>
+  // Read from the CSS variables rather than hardcoding a second copy --
+  // otherwise the globe's points/rings and the story-panel swatch silently
+  // drift out of sync with whatever the CSS actually defines (as happened
+  // here: this object still had the pre-redesign colors after the CSS
+  // variables were updated).
+  const rootStyle = getComputedStyle(document.documentElement);
   const COLORS = {
-    conflict: '#E2572B',
-    climate: '#2FA88C',
-    political: '#4C7BD9',
+    conflict: rootStyle.getPropertyValue('--conflict').trim(),
+    climate: rootStyle.getPropertyValue('--climate').trim(),
+    political: rootStyle.getPropertyValue('--political').trim(),
   };
 
   // Approximate centroids, used only to label continents.
