@@ -388,6 +388,7 @@ def fetch_gdelt_bulk_political(hours: int, limit: int) -> list:
 
             event_code = row[26]
             label = CAMEO_CODE_LABELS.get(event_code) or CAMEO_ROOT_LABELS.get(root_code, "Diplomatic/political action")
+            place = row[52] or "Unknown location"
             actor1_name = _actor_label((row[6] or actor1_country).title(), row[12])
             actor2_name = _actor_label((row[16] or actor2_country).title(), row[22])
             try:
@@ -410,6 +411,7 @@ def fetch_gdelt_bulk_political(hours: int, limit: int) -> list:
                 "summary": [
                     f"Type: {label}",
                     f"Actors: {actor1_name} ↔ {actor2_name}",
+                    f"Location: {place}",
                     f"Reported: {date_str}",
                     "Source: GDELT (bulk event data)",
                 ],
