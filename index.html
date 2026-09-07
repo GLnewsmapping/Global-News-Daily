@@ -585,12 +585,14 @@
     .showAtmosphere(true)
     .atmosphereColor('#4C7BD9')
     .atmosphereAltitude(0.18)
+    .globeCurvatureResolution(1) // smoother sphere silhouette (default 4deg -- visibly faceted near the horizon/terminator)
     .pointsData([])
     .pointLat('lat')
     .pointLng('lng')
     .pointColor(d => COLORS[d.category])
     .pointAltitude(0.01)
     .pointRadius(0.55) // uniform size across all categories -- count scales too wildly between sources to mean anything visually
+    .pointResolution(20) // rounder marker dots (default 12 shows as faintly polygonal up close)
     .pointLabel(d => `<div style="font-family:Inter,sans-serif;font-size:12px;padding:4px 2px;">${d.place}</div>`)
     .onPointClick(showPanel)
     .ringsData([])
@@ -618,6 +620,14 @@
     .pathStroke(d => GLOBE_LANE_STYLE[d.volume]?.stroke || GLOBE_LANE_STYLE.medium.stroke)
     .pathLabel(d => `<div style="font-family:Inter,sans-serif;font-size:12px;max-width:220px;padding:4px 2px;"><strong>${d.name}</strong><br>${d.note}</div>`)
     .pathTransitionDuration(0);
+
+  // three.js doesn't default the renderer to the display's actual pixel
+  // density -- without this, the canvas renders at 1x and gets upscaled by
+  // the browser, looking soft on any Retina/high-DPI screen. resizeGlobe()
+  // (defined below, hoisted) sets both size and pixel ratio together, and
+  // needs calling explicitly here since it otherwise only runs on window
+  // resize or view-switch, never on initial load.
+  resizeGlobe();
 
   // Flood the whole sphere with light so there's no dark/night side --
   // globe.gl's default directional light otherwise leaves half the globe in
@@ -677,6 +687,7 @@
     if (el.clientWidth === 0 || el.clientHeight === 0) return; // hidden right now -- skip
     world.width(el.clientWidth);
     world.height(el.clientHeight);
+    world.renderer().setPixelRatio(window.devicePixelRatio); // width()/height() resets this, so reassert every resize
   }
 
   // ================= Map =================
