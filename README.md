@@ -57,7 +57,7 @@ Both viewers have an optional "Shipping Lanes" toggle showing the world's busies
 
 ## Country borders overlay
 
-A "Country Borders" toggle in `index.html` shows a subtle reference outline of every country, on both the map and globe. Geometry is `data/country_borders.json`, sourced from [Natural Earth](https://www.naturalearthdata.com/) (1:110m Admin 0 Countries, public domain) via [its official GitHub mirror](https://github.com/nvkelso/natural-earth-vector) — the standard, widely-used dataset for this, not hand-approximated. Off by default and rendered thin/low-opacity so it reads as a reference layer rather than competing with the event markers or shipping lanes.
+A "Country Borders" toggle in `index.html` shows every country's outline on both the map and globe, and hovering anywhere inside a country shows its name. Geometry is `data/country_polygons.json` (full country polygons, not just outlines, so the whole interior is hoverable) — sourced from [Natural Earth](https://www.naturalearthdata.com/) (1:110m Admin 0 Countries, public domain) via [its official GitHub mirror](https://github.com/nvkelso/natural-earth-vector), the standard dataset for this, not hand-approximated. Off by default.
 
 ## Notes
 
