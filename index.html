@@ -18,7 +18,7 @@
     --climate: #1859D1;
     --political: #8355E8;
     --shipping: #D9A441;
-    --borders: #C9CCD6;
+    --borders: #000000;
   }
   *{ box-sizing: border-box; }
   html, body{ height: 100%; margin: 0; overflow: hidden; }
@@ -512,8 +512,8 @@
     'high': { color: 'rgba(217, 164, 65, 0.7)', stroke: 0.75 },
     'medium': { color: 'rgba(217, 164, 65, 0.5)', stroke: 0.45 },
   };
-  const BORDER_COLOR_GLOBE = 'rgba(201, 204, 214, 0.65)'; // matches --borders, low-opacity so it reads as reference, not data
-  const BORDER_STROKE_GLOBE = 0.35; // thin -- visible but not competing with event markers or lanes
+  const BORDER_COLOR_GLOBE = 'rgba(0, 0, 0, 0.85)'; // matches --borders (black)
+  const BORDER_STROKE_GLOBE = 0.55;
 
   // ---------- Shared state ----------
   let currentView = 'globe';
@@ -900,8 +900,8 @@
       BORDERS.forEach((b) => {
         L.polyline(b.path, {
           color: borderColor,
-          weight: 1.4,
-          opacity: 0.65,
+          weight: 2,
+          opacity: 0.85,
           interactive: false,
         }).addTo(bordersLayer);
       });
