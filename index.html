@@ -95,6 +95,10 @@
     border-radius: 3px;
     transition: all 0.15s ease;
   }
+  .view-btn:hover:not(.active){
+    color: var(--paper);
+    border-color: var(--paper);
+  }
   .view-btn.active{
     color: var(--ink);
     background: var(--paper);
@@ -135,6 +139,7 @@
     transition: border-color 0.15s ease, opacity 0.15s ease;
   }
   .toggle.off{ opacity: 0.35; }
+  .toggle:hover{ border-color: var(--paper); }
   .toggle .swatch{ width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
   .toggle .count{ margin-left: auto; color: var(--muted); font-size: 12px; }
   .toggle.conflict .swatch{ background: var(--conflict); }
@@ -152,6 +157,44 @@
   .toggle.lanes{ width: 100%; border-color: color-mix(in srgb, var(--shipping) 40%, var(--panel-line)); }
   .toggle.lanes .swatch{ background: var(--shipping); }
   .toggle.lanes.off{ opacity: 0.5; }
+
+  #search-row{
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--panel-line);
+  }
+  #search-box{
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--panel-line);
+    background: rgba(255,255,255,0.03);
+    color: var(--paper);
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    border-radius: 3px;
+    transition: border-color 0.15s ease;
+  }
+  #search-box::placeholder{ color: var(--muted); }
+  #search-box:focus{
+    outline: none;
+    border-color: var(--paper);
+  }
+  #no-results{
+    padding: 30px 24px;
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+  }
+  @keyframes pulseFade{
+    0%, 100%{ opacity: 0.4; }
+    50%{ opacity: 0.9; }
+  }
+  #loading-state{
+    padding: 30px 24px;
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+    animation: pulseFade 1.6s ease-in-out infinite;
+  }
 
   #list{
     flex: 1;
@@ -218,8 +261,8 @@
 
   /* ---------- Viz area (shared by both views) ---------- */
   #viz-wrap{ flex: 1; height: 100vh; position: relative; animation: fadeInUp 1100ms ease-out 100ms both; }
-  .viz-layer{ position: absolute; inset: 0; }
-  .viz-layer.hidden{ display: none; }
+  .viz-layer{ position: absolute; inset: 0; opacity: 1; transition: opacity 350ms ease; pointer-events: auto; }
+  .viz-layer.hidden{ opacity: 0; pointer-events: none; }
   #vignette{
     position: absolute;
     inset: 0;
@@ -403,7 +446,10 @@
       <span class="swatch"></span> Chokepoints <span class="count" style="margin-left:auto;font-size:11px;color:var(--muted);">top 10</span>
     </button>
   </div>
-  <div id="list"></div>
+  <div id="search-row">
+    <input type="text" id="search-box" placeholder="Search stories..." autocomplete="off">
+  </div>
+  <div id="list"><div id="loading-state">Loading stories...</div></div>
 </div>
 
 <div id="viz-wrap">
@@ -457,6 +503,7 @@
   // ---------- Shared state ----------
   let currentView = 'globe';
   const activeCategories = new Set(['conflict', 'climate', 'political']);
+  let searchQuery = '';
   let rawFeatures = [];   // {category, lat, lon, name, count, html} -- shape written by fetch_news_data.py
   let globeEvents = [];   // same data, adapted for the globe renderer
   let LANES = [];
@@ -705,9 +752,30 @@
     });
   }
 
+  function matchesSearch(f, query) {
+    if (!query) return true;
+    const haystack = (
+      f.name + ' ' +
+      (f.summary ? f.summary.join(' ') : '') + ' ' +
+      (f.html || '').replace(/<[^>]+>/g, '')
+    ).toLowerCase();
+    return haystack.includes(query);
+  }
+
+  function updateStoryList() {
+    const query = searchQuery.trim().toLowerCase();
+    const visible = rawFeatures.filter(f => activeCategories.has(f.category) && matchesSearch(f, query));
+    renderList(visible);
+  }
+
   function renderList(features) {
     const list = document.getElementById('list');
     list.innerHTML = '';
+
+    if (features.length === 0) {
+      list.innerHTML = `<div id="no-results">No stories match${searchQuery.trim() ? ` "${searchQuery.trim()}"` : ' the current filters'}.</div>`;
+      return;
+    }
 
     const sorted = [...features].sort((a, b) => b.count - a.count);
 
@@ -838,7 +906,13 @@
       }
       applyFilter();
       refreshGlobe();
+      updateStoryList();
     });
+  });
+
+  document.getElementById('search-box').addEventListener('input', (e) => {
+    searchQuery = e.target.value;
+    updateStoryList();
   });
 
   // ================= View switcher =================
@@ -889,7 +963,7 @@
     updateMeta(data);
     updateCounts();
     renderMarkers(rawFeatures);
-    renderList(rawFeatures);
+    updateStoryList();
     refreshGlobe();
   }
 
