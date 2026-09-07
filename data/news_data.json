@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T06:09:28.036784+00:00",
+  "generated_at": "2026-09-07T12:34:48.887402+00:00",
   "timespan": "2d",
   "feature_count": 100,
   "features": [
@@ -12,6 +12,7 @@
       "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-NVWID-020663' target='_blank'>Emergency Stabilization BAER McConnell, Humboldt, Nevada</a>",
       "summary": [
         "Type: Wildfires",
+        "Size: 500 acres",
         "Reported: Sep 03, 2026",
         "Source: IRWIN"
       ]
@@ -77,7 +78,8 @@
       "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp2026.tcw' target='_blank'>Tropical Storm Bang-Lang</a>",
       "summary": [
         "Type: Severe Storms",
-        "Reported: Aug 30, 2026",
+        "Peak winds: 35 kts (~40 mph)",
+        "Tracked for 3 days (since Aug 27, 2026)",
         "Source: JTWC"
       ]
     },
@@ -129,6 +131,8 @@
       "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-MTMCD-000777' target='_blank'>Wildfire Ayers Pond, Prairie, Montana</a>",
       "summary": [
         "Type: Wildfires",
+        "Size: 566 acres",
+        "Location note: 25 Miles SE from Terry, MT",
         "Reported: Sep 03, 2026",
         "Source: IRWIN"
       ]
@@ -194,7 +198,8 @@
       "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp2126.tcw' target='_blank'>Tropical Storm Etau</a>",
       "summary": [
         "Type: Severe Storms",
-        "Reported: Aug 30, 2026",
+        "Peak winds: 30 kts (~35 mph)",
+        "Tracked for 4 days (since Aug 27, 2026)",
         "Source: JTWC"
       ]
     },
@@ -233,20 +238,23 @@
       "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-MTLG14-000775' target='_blank'>Wildfire Snow, Custer, Montana</a>",
       "summary": [
         "Type: Wildfires",
+        "Size: 1,100 acres",
+        "Location note: 30 Miles E from Miles City, MT",
         "Reported: Sep 02, 2026",
         "Source: IRWIN"
       ]
     },
     {
       "category": "climate",
-      "lat": 26.2,
-      "lon": 132.1,
+      "lat": 27.1,
+      "lon": 132.6,
       "name": "Tropical Storm Krovanh",
       "count": 1,
       "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp2226.tcw' target='_blank'>Tropical Storm Krovanh</a>",
       "summary": [
         "Type: Severe Storms",
-        "Reported: Sep 07, 2026",
+        "Peak winds: 30 kts (~35 mph)",
+        "Tracked for 6 days (since Sep 01, 2026)",
         "Source: JTWC"
       ]
     },
@@ -285,7 +293,8 @@
       "html": "<a href='https://www.metoc.navy.mil/jtwc/products/cp0126.tcw' target='_blank'>Tropical Storm Lala</a>",
       "summary": [
         "Type: Severe Storms",
-        "Reported: Aug 28, 2026",
+        "Peak winds: 35 kts (~40 mph)",
+        "Tracked for 16 days (since Aug 12, 2026)",
         "Source: JTWC"
       ]
     },
@@ -298,6 +307,7 @@
       "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-ORHEPN-000600' target='_blank'>Wildfire Ruggs, Morrow, Oregon</a>",
       "summary": [
         "Type: Wildfires",
+        "Size: 650 acres",
         "Reported: Aug 31, 2026",
         "Source: IRWIN"
       ]
@@ -337,6 +347,8 @@
       "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-TXTXS-267913' target='_blank'>Wildfire Harris, Throckmorton, Texas</a>",
       "summary": [
         "Type: Wildfires",
+        "Size: 500 acres",
+        "Location note: 4 Miles NW from Woodson, TX",
         "Reported: Aug 31, 2026",
         "Source: IRWIN"
       ]
@@ -376,6 +388,7 @@
       "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-OKANA-002690' target='_blank'>Wildfire SOUTH RAILROAD, Comanche, Oklahoma</a>",
       "summary": [
         "Type: Wildfires",
+        "Size: 500 acres",
         "Reported: Aug 30, 2026",
         "Source: IRWIN"
       ]
@@ -415,6 +428,8 @@
       "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-OKOKSC-260966' target='_blank'>Wildfire Alexander Trail Fire, Pushmataha, Oklahoma</a>",
       "summary": [
         "Type: Wildfires",
+        "Size: 1,400 acres",
+        "Location note: 5 Miles W from Nashoba, OK",
         "Reported: Aug 30, 2026",
         "Source: IRWIN"
       ]
@@ -454,6 +469,8 @@
       "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-OKOKS-260966' target='_blank'>Wildfire Alexander Trail, Pushmataha, Oklahoma</a>",
       "summary": [
         "Type: Wildfires",
+        "Size: 1,600 acres",
+        "Location note: 5 Miles W from Nashoba, OK",
         "Reported: Aug 30, 2026",
         "Source: IRWIN"
       ]
@@ -480,6 +497,8 @@
       "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-NMN4S-000549' target='_blank'>Wildfire 4V, San Miguel, New Mexico</a>",
       "summary": [
         "Type: Wildfires",
+        "Size: 1,000 acres",
+        "Location note: 40 Miles NW from Tucumcari, NM",
         "Reported: Aug 29, 2026",
         "Source: IRWIN"
       ]
@@ -493,7 +512,8 @@
       "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp1826.tcw' target='_blank'>Tropical Storm Narra</a>",
       "summary": [
         "Type: Severe Storms",
-        "Reported: Aug 25, 2026",
+        "Peak winds: 25 kts (~29 mph)",
+        "Tracked for 4 days (since Aug 21, 2026)",
         "Source: JTWC"
       ]
     },
@@ -506,6 +526,8 @@
       "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-OKOMA-002688' target='_blank'>Wildfire WRIGHT, Hughes, Oklahoma</a>",
       "summary": [
         "Type: Wildfires",
+        "Size: 608 acres",
+        "Location note: 5 Miles SW from Dustin, OK",
         "Reported: Aug 29, 2026",
         "Source: IRWIN"
       ]
@@ -519,7 +541,8 @@
       "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp1726.tcw' target='_blank'>Typhoon Saudel</a>",
       "summary": [
         "Type: Severe Storms",
-        "Reported: Sep 03, 2026",
+        "Peak winds: 40 kts (~46 mph)",
+        "Tracked for 15 days (since Aug 19, 2026)",
         "Source: JTWC"
       ]
     },
@@ -532,6 +555,8 @@
       "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-OKANA-002686' target='_blank'>Wildfire RAILROAD SOUTH, Comanche, Oklahoma</a>",
       "summary": [
         "Type: Wildfires",
+        "Size: 515 acres",
+        "Location note: 3 Miles E from Indiahoma, OK",
         "Reported: Aug 29, 2026",
         "Source: IRWIN"
       ]
@@ -545,6 +570,8 @@
       "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-TXTXS-267823' target='_blank'>Wildfire McKee Draw, Edwards, Texas</a>",
       "summary": [
         "Type: Wildfires",
+        "Size: 4,416 acres",
+        "Location note: 13 Miles NW from Rocksprings, TX",
         "Reported: Aug 29, 2026",
         "Source: IRWIN"
       ]
@@ -558,6 +585,8 @@
       "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-TXTXS-267801' target='_blank'>Wildfire West Fork, Sutton, Texas</a>",
       "summary": [
         "Type: Wildfires",
+        "Size: 961 acres",
+        "Location note: 25 Miles SW from Junction, TX",
         "Reported: Aug 28, 2026",
         "Source: IRWIN"
       ]
@@ -571,6 +600,8 @@
       "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-MTCES-266405' target='_blank'>Wildfire Roe 2, Beaverhead, Montana</a>",
       "summary": [
         "Type: Wildfires",
+        "Size: 978 acres",
+        "Location note: 20 Miles S from Dillon, MT",
         "Reported: Aug 27, 2026",
         "Source: IRWIN"
       ]
@@ -584,6 +615,8 @@
       "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-UTBRS-200695' target='_blank'>Wildfire Brushy Canyon, Box Elder, Utah</a>",
       "summary": [
         "Type: Wildfires",
+        "Size: 10,002 acres",
+        "Location note: 4 Miles N from Promontory, UT",
         "Reported: Aug 27, 2026",
         "Source: IRWIN"
       ]
@@ -603,14 +636,15 @@
     },
     {
       "category": "climate",
-      "lat": 24,
-      "lon": -123,
+      "lat": 24.2,
+      "lon": -123.4,
       "name": "Hurricane Marie",
       "count": 1,
       "html": "<a href='https://www.metoc.navy.mil/jtwc/products/ep1326.tcw' target='_blank'>Hurricane Marie</a>",
       "summary": [
         "Type: Severe Storms",
-        "Reported: Sep 07, 2026",
+        "Peak winds: 55 kts (~63 mph)",
+        "Tracked for 6 days (since Sep 01, 2026)",
         "Source: JTWC"
       ]
     },
@@ -623,7 +657,8 @@
       "html": "<a href='https://www.nhc.noaa.gov/archive/2026/EDOUARD.shtml' target='_blank'>Tropical Storm Edouard</a>",
       "summary": [
         "Type: Severe Storms",
-        "Reported: Sep 02, 2026",
+        "Peak winds: 30 kts (~35 mph)",
+        "Tracked for 1 day (since Sep 01, 2026)",
         "Source: NOAA_NHC"
       ]
     },
@@ -663,6 +698,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 58,999",
+        "Global rank: #1 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -676,6 +712,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 13,328",
+        "Global rank: #2 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -689,6 +726,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 8,816",
+        "Global rank: #3 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -702,6 +740,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 7,241",
+        "Global rank: #4 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -715,6 +754,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 6,175",
+        "Global rank: #6 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -728,6 +768,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 4,923",
+        "Global rank: #7 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -741,6 +782,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 4,425",
+        "Global rank: #8 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -754,6 +796,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 674",
+        "Global rank: #30 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -767,6 +810,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 3",
+        "Global rank: #121 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -780,6 +824,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 91",
+        "Global rank: #56 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -793,6 +838,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 36",
+        "Global rank: #68 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -806,6 +852,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 7,025",
+        "Global rank: #5 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -819,6 +866,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 2,092",
+        "Global rank: #14 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -832,6 +880,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 2,772",
+        "Global rank: #12 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -845,6 +894,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 3,283",
+        "Global rank: #10 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -858,6 +908,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 816",
+        "Global rank: #26 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -871,6 +922,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 288",
+        "Global rank: #35 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -884,6 +936,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 2",
+        "Global rank: #130 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -897,6 +950,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 51",
+        "Global rank: #64 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -910,6 +964,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 10",
+        "Global rank: #100 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -923,6 +978,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 3,866",
+        "Global rank: #9 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -936,6 +992,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 1,898",
+        "Global rank: #17 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -949,6 +1006,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 1,811",
+        "Global rank: #19 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -962,6 +1020,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 2,825",
+        "Global rank: #11 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -975,6 +1034,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 583",
+        "Global rank: #31 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -988,6 +1048,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 119",
+        "Global rank: #48 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1001,6 +1062,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 1",
+        "Global rank: #160 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1014,6 +1076,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 37",
+        "Global rank: #67 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1027,6 +1090,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 2,390",
+        "Global rank: #13 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1040,6 +1104,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 135",
+        "Global rank: #45 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1053,6 +1118,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 912",
+        "Global rank: #24 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1066,6 +1132,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 1,924",
+        "Global rank: #15 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1079,6 +1146,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 401",
+        "Global rank: #32 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1092,6 +1160,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 112",
+        "Global rank: #50 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1105,6 +1174,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 34",
+        "Global rank: #71 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1118,6 +1188,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 1,901",
+        "Global rank: #16 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1131,6 +1202,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 93",
+        "Global rank: #55 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1144,6 +1216,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 812",
+        "Global rank: #28 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1157,6 +1230,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 1,526",
+        "Global rank: #20 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1170,6 +1244,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 246",
+        "Global rank: #36 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1183,6 +1258,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 108",
+        "Global rank: #51 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1196,6 +1272,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 28",
+        "Global rank: #78 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1209,6 +1286,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 1,861",
+        "Global rank: #18 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1222,6 +1300,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 58",
+        "Global rank: #62 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1235,6 +1314,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 101",
+        "Global rank: #54 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1248,6 +1328,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 1,115",
+        "Global rank: #22 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1261,6 +1342,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 162",
+        "Global rank: #42 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1274,6 +1356,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 5",
+        "Global rank: #115 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1287,6 +1370,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 22",
+        "Global rank: #82 of 162 countries tracked",
         "Source: ACLED"
       ]
     },
@@ -1300,6 +1384,7 @@
       "summary": [
         "Type: Political violence & conflict (country total)",
         "Events in 2026: 1,223",
+        "Global rank: #21 of 162 countries tracked",
         "Source: ACLED"
       ]
     }

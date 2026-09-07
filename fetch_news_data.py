@@ -200,6 +200,55 @@ def _format_eonet_date(iso_date: str) -> str:
         return iso_date
 
 
+def _format_magnitude(value, unit: str):
+    """Turn EONET's raw magnitude into a readable stat. Only wildfires
+    (acres) and storms (knots) reliably carry this -- floods/drought from
+    GDACS don't, so this returns None for those rather than inventing
+    a number."""
+    if value is None or not unit:
+        return None
+    if unit == "acres":
+        return f"Size: {value:,.0f} acres"
+    if unit == "kts":
+        mph = round(value * 1.15078)
+        return f"Peak winds: {value:.0f} kts (~{mph} mph)"
+    return f"Magnitude: {value} {unit}"
+
+
+def _build_eonet_summary(event: dict, geometry: list, event_type: str, source_name: str) -> list:
+    """Build as many genuinely-informative points as the event actually
+    supports. EONET's fields vary a lot by source: wildfires (IRWIN) often
+    carry acreage and a plain-language location note; storms (JTWC/NOAA)
+    are tracked over many days with wind-speed readings; floods (GDACS)
+    typically carry none of that, just a place and a date -- so their
+    summary stays short rather than padded with invented detail."""
+    summary = [f"Type: {event_type}"]
+
+    mag = _format_magnitude(geometry[-1].get("magnitudeValue"), geometry[-1].get("magnitudeUnit"))
+    if mag:
+        summary.append(mag)
+
+    description = (event.get("description") or "").strip()
+    if description:
+        summary.append(f"Location note: {description}")
+
+    if len(geometry) > 1:
+        first_dt = geometry[0].get("date", "")
+        last_dt = geometry[-1].get("date", "")
+        try:
+            d0 = datetime.fromisoformat(first_dt.replace("Z", "+00:00"))
+            d1 = datetime.fromisoformat(last_dt.replace("Z", "+00:00"))
+            days = max(1, round((d1 - d0).total_seconds() / 86400))
+            summary.append(f"Tracked for {days} day{'s' if days != 1 else ''} (since {_format_eonet_date(first_dt)})")
+        except ValueError:
+            pass
+    else:
+        summary.append(f"Reported: {_format_eonet_date(geometry[-1].get('date', ''))}")
+
+    summary.append(f"Source: {source_name}")
+    return summary
+
+
 def _fetch_eonet_events(category: str, status: str, limit: int, days: int = None) -> list:
     params = {"status": status, "limit": str(limit), "category": category}
     if days:
@@ -238,7 +287,6 @@ def _fetch_eonet_events(category: str, status: str, limit: int, days: int = None
         link = sources[0]["url"] if sources else "#"
         source_name = sources[0]["id"] if sources else "Unknown"
         event_type = event.get("categories", [{}])[0].get("title", "Event")
-        reported = _format_eonet_date(geometry[-1].get("date", ""))
 
         features_out.append({
             "category": "climate",
@@ -247,11 +295,7 @@ def _fetch_eonet_events(category: str, status: str, limit: int, days: int = None
             "name": title,
             "count": 1,  # EONET events are individually-tracked incidents, not article counts
             "html": f"<a href='{link}' target='_blank'>{title}</a>",
-            "summary": [
-                f"Type: {event_type}",
-                f"Reported: {reported}",
-                f"Source: {source_name}",
-            ],
+            "summary": _build_eonet_summary(event, geometry, event_type, source_name),
         })
 
     return features_out
@@ -298,8 +342,11 @@ def load_acled_countries(path: str) -> list:
         return []
 
     year = payload.get("year", "unknown")
+    countries = payload.get("countries", [])
+    total_countries = len(countries)
+
     features_out = []
-    for c in payload.get("countries", []):
+    for rank, c in enumerate(countries, start=1):
         count = c["count"]
         features_out.append({
             "category": "conflict",
@@ -311,6 +358,7 @@ def load_acled_countries(path: str) -> list:
             "summary": [
                 "Type: Political violence & conflict (country total)",
                 f"Events in {year}: {count:,}",
+                f"Global rank: #{rank} of {total_countries} countries tracked",
                 "Source: ACLED",
             ],
         })

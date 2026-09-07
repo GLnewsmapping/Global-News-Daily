@@ -15,7 +15,7 @@
     --paper: #E8E6DE;
     --muted: #8B94A3;
     --conflict: #E2572B;
-    --climate: #2FA88C;
+    --climate: #1859D1;
     --political: #4C7BD9;
     --shipping: #D9A441;
   }
@@ -535,10 +535,7 @@
       headline = (f.html || '').replace(/<[^>]+>/g, '').trim() || 'No headline available';
     }
 
-    const count = f.count || 1;
-    const size = Math.max(0.3, Math.min(1.3, 0.3 + Math.log2(count + 1) * 0.25));
-
-    return { category: f.category, lat: f.lat, lng: f.lon, place: f.name, headline, url, size, summary: f.summary || null };
+    return { category: f.category, lat: f.lat, lng: f.lon, place: f.name, headline, url, count: f.count || 1, summary: f.summary || null };
   }
 
   function summaryHtml(f) {
@@ -587,7 +584,7 @@
     .pointLng('lng')
     .pointColor(d => COLORS[d.category])
     .pointAltitude(0.01)
-    .pointRadius(d => 0.35 + d.size * 0.5)
+    .pointRadius(0.55) // uniform size across all categories -- count scales too wildly between sources to mean anything visually
     .pointLabel(d => `<div style="font-family:Inter,sans-serif;font-size:12px;padding:4px 2px;">${d.place}</div>`)
     .onPointClick(showPanel)
     .ringsData([])
@@ -595,7 +592,7 @@
       const [r, g, b] = hexToRgb(COLORS[d.category]);
       return t => `rgba(${r}, ${g}, ${b}, ${Math.sqrt(1 - t)})`;
     })
-    .ringMaxRadius(d => 3 + d.size * 2.5)
+    .ringMaxRadius(4)
     .ringPropagationSpeed(0.9)
     .ringRepeatPeriod(2400)
     .labelsData(CONTINENT_LABELS.map(c => ({ ...c, type: 'continent' })))
@@ -658,7 +655,7 @@
 
   function refreshGlobe() {
     world.pointsData(visibleGlobeEvents());
-    world.ringsData(visibleGlobeEvents().filter(d => d.size > 0.7));
+    world.ringsData(visibleGlobeEvents().filter(d => d.category !== 'conflict' && d.count >= PULSE_THRESHOLD));
   }
 
   function refreshGlobeLabels() {
@@ -700,18 +697,16 @@
     getComputedStyle(document.documentElement).getPropertyValue(`--${category}`).trim()
     || getComputedStyle(document.documentElement).getPropertyValue('--climate').trim();
 
-  function radiusFor(count) {
-    return Math.max(5, Math.min(22, 5 + Math.log2(count + 1) * 3.5));
-  }
+  const MARKER_RADIUS = 8; // uniform size across all categories -- count scales too wildly between sources (ACLED's 10,000s vs EONET's always-1) to mean anything visually
 
   function renderMarkers(features) {
     mapMarkers.forEach(({ marker }) => map.removeLayer(marker));
     mapMarkers = [];
 
     features.forEach((f) => {
-      if (f.count >= PULSE_THRESHOLD) {
+      if (f.category !== 'conflict' && f.count >= PULSE_THRESHOLD) {
         const halo = L.circleMarker([f.lat, f.lon], {
-          radius: radiusFor(f.count),
+          radius: MARKER_RADIUS,
           className: 'pulse-marker',
           color: colorFor(f.category),
           weight: 1,
@@ -722,7 +717,7 @@
       }
 
       const marker = L.circleMarker([f.lat, f.lon], {
-        radius: radiusFor(f.count),
+        radius: MARKER_RADIUS,
         color: colorFor(f.category),
         weight: 1,
         fillColor: colorFor(f.category),
