@@ -513,7 +513,6 @@
     'medium': { color: 'rgba(217, 164, 65, 0.5)', stroke: 0.45 },
   };
   const BORDER_COLOR_GLOBE = 'rgba(0, 0, 0, 0.85)'; // matches --borders (black)
-  const BORDER_STROKE_GLOBE = 0.55;
 
   // ---------- Shared state ----------
   let currentView = 'globe';
@@ -523,7 +522,7 @@
   let globeEvents = [];   // same data, adapted for the globe renderer
   let LANES = [];
   let lanesVisible = false;
-  let BORDERS = [];
+  let COUNTRY_POLYGONS = []; // GeoJSON features, used for both the visible border stroke and hover-name detection
   let bordersVisible = false;
   let mapMarkers = []; // { category, marker, isHalo? }
   let CHOKEPOINTS = [];
@@ -627,12 +626,18 @@
     .pathPoints(d => d.path)
     .pathPointLat(p => p[0])
     .pathPointLng(p => p[1])
-    .pathColor(d => d.type === 'border' ? BORDER_COLOR_GLOBE : (GLOBE_LANE_STYLE[d.volume]?.color || GLOBE_LANE_STYLE.medium.color))
-    .pathStroke(d => d.type === 'border' ? BORDER_STROKE_GLOBE : (GLOBE_LANE_STYLE[d.volume]?.stroke || GLOBE_LANE_STYLE.medium.stroke))
-    .pathLabel(d => d.type === 'border'
-      ? `<div style="font-family:Inter,sans-serif;font-size:12px;padding:4px 2px;">${d.country}</div>`
-      : `<div style="font-family:Inter,sans-serif;font-size:12px;max-width:220px;padding:4px 2px;"><strong>${d.name}</strong><br>${d.note}</div>`)
-    .pathTransitionDuration(0);
+    .pathColor(d => GLOBE_LANE_STYLE[d.volume]?.color || GLOBE_LANE_STYLE.medium.color)
+    .pathStroke(d => GLOBE_LANE_STYLE[d.volume]?.stroke || GLOBE_LANE_STYLE.medium.stroke)
+    .pathLabel(d => `<div style="font-family:Inter,sans-serif;font-size:12px;max-width:220px;padding:4px 2px;"><strong>${d.name}</strong><br>${d.note}</div>`)
+    .pathTransitionDuration(0)
+    .polygonsData([])
+    .polygonGeoJsonGeometry('geometry')
+    .polygonCapColor(() => 'rgba(0, 0, 0, 0)')
+    .polygonSideColor(() => 'rgba(0, 0, 0, 0)')
+    .polygonStrokeColor(() => BORDER_COLOR_GLOBE)
+    .polygonAltitude(0.0015)
+    .polygonLabel(d => `<div style="font-family:Inter,sans-serif;font-size:12px;padding:4px 2px;">${d.properties.name}</div>`)
+    .polygonsTransitionDuration(0);
 
   // three.js doesn't default the renderer to the display's actual pixel
   // density -- without this, the canvas renders at 1x and gets upscaled by
@@ -867,14 +872,6 @@
   }
   loadLanes();
 
-  function refreshGlobePaths() {
-    const combined = [
-      ...(lanesVisible ? LANES.map(l => ({ ...l, type: 'lane' })) : []),
-      ...(bordersVisible ? BORDERS.map(b => ({ ...b, type: 'border' })) : []),
-    ];
-    world.pathsData(combined);
-  }
-
   document.getElementById('lanes-toggle').addEventListener('click', (e) => {
     lanesVisible = !lanesVisible;
     e.currentTarget.classList.toggle('off', !lanesVisible);
@@ -883,28 +880,29 @@
     } else {
       map.removeLayer(lanesLayer);
     }
-    refreshGlobePaths();
+    world.pathsData(lanesVisible ? LANES : []);
   });
 
   // ================= Country borders (shared, reference layer) =================
+  // Uses each library's native GeoJSON support rather than hand-rolled ring
+  // extraction: Leaflet's L.geoJSON correctly handles multi-part countries
+  // and holes (e.g. Lesotho inside South Africa) on its own, and globe.gl's
+  // polygon layer both draws the stroke AND gives us hover-name detection
+  // for free via a real (invisibly-filled) polygon per country.
   const bordersLayer = L.layerGroup();
 
   async function loadBorders() {
     try {
-      const res = await fetch('data/country_borders.json', { cache: 'no-store' });
+      const res = await fetch('data/country_polygons.json', { cache: 'no-store' });
       if (!res.ok) return;
       const data = await res.json();
-      BORDERS = data.borders || [];
+      COUNTRY_POLYGONS = data.features || [];
 
       const borderColor = getComputedStyle(document.documentElement).getPropertyValue('--borders').trim();
-      BORDERS.forEach((b) => {
-        L.polyline(b.path, {
-          color: borderColor,
-          weight: 2,
-          opacity: 0.85,
-          interactive: false,
-        }).addTo(bordersLayer);
-      });
+      L.geoJSON(data, {
+        style: { color: borderColor, weight: 2, opacity: 0.85, fill: true, fillOpacity: 0 },
+        onEachFeature: (feature, layer) => layer.bindTooltip(feature.properties.name, { sticky: true }),
+      }).addTo(bordersLayer);
     } catch (e) { /* borders are optional -- fail silently */ }
   }
   loadBorders();
@@ -917,7 +915,7 @@
     } else {
       map.removeLayer(bordersLayer);
     }
-    refreshGlobePaths();
+    world.polygonsData(bordersVisible ? COUNTRY_POLYGONS : []);
   });
 
   // ================= Maritime chokepoints (shared) =================
