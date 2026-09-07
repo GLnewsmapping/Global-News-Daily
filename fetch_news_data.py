@@ -5,22 +5,28 @@ Pulls today's geolocated events for three categories and saves them as a
 single combined JSON file that the viewers (index.html, map.html, globe.html)
 load directly:
 
-  - conflict: ACLED (manually-updated country totals) with a GDELT fallback
+  - conflict: GDELT's raw bulk event export files (updated every 15 min),
+    filtered to CAMEO's protest/coercion/violence codes -- real individual
+    incidents (battles, assaults, riots, protests), not a yearly total.
   - climate: NASA's EONET API (real tracked natural events -- wildfires,
     storms, floods, drought). No API key, no rate limit.
-  - political: GDELT's raw bulk event export files (updated every 15 min,
-    not the rate-limited DOC 2.0 search API), filtered to CAMEO event codes
-    for diplomatic/economic cooperation, agreements, aid, and sanctions --
-    i.e. nation-state actions that affect geopolitics (trade deals, treaties,
-    diplomatic visits, sanctions), not general political news.
+  - political: the same GDELT bulk event files, filtered instead to CAMEO
+    codes for diplomatic/economic cooperation, agreements, aid, and
+    sanctions -- i.e. nation-state actions that affect geopolitics (trade
+    deals, treaties, diplomatic visits, sanctions), not general political
+    news.
+
+Conflict and political both read the bulk files rather than GDELT's DOC 2.0
+search API, which is aggressively rate-limited from every network this was
+tested on, GitHub Actions runners included -- the bulk files are plain
+static file hosting with no such limit.
 
 Usage:
     python fetch_news_data.py
-    python fetch_news_data.py --timespan 3d --target-locations 150
+    python fetch_news_data.py --gdelt-bulk-hours 24 --target-locations 150
     python fetch_news_data.py --out data/news_data.json
 
-Docs: https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/
-      http://data.gdeltproject.org/gdeltv2/ (raw event files)
+Docs: http://data.gdeltproject.org/gdeltv2/ (raw event files)
       https://www.gdeltproject.org/data/documentation/GDELT-Event_Codebook-V2.0.pdf
       https://eonet.gsfc.nasa.gov/docs/v3
 """
@@ -32,7 +38,6 @@ import json
 import os
 import re
 import sys
-import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -40,7 +45,6 @@ import zipfile
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 
-GDELT_ENDPOINT = "https://api.gdeltproject.org/api/v2/doc/doc"
 GDELT_BULK_BASE = "https://data.gdeltproject.org/gdeltv2"
 EONET_ENDPOINT = "https://eonet.gsfc.nasa.gov/api/v3/events"
 EONET_CATEGORIES = "drought,floods,severeStorms,wildfires,tempExtremes"
@@ -59,6 +63,19 @@ CAMEO_ROOT_LABELS = {
     "07": "Provided aid",
     "12": "Rejected cooperation",
     "16": "Reduced relations / sanctions",
+}
+# Same CAMEO taxonomy, opposite end of it: root codes 14/17-20 are GDELT's
+# protest/coercion/violence categories -- the same real-world ground ACLED
+# covers (battles, violence against civilians, riots, protests), just
+# machine-coded from wire reporting every 15 minutes instead of a manually
+# re-exported yearly country total.
+CONFLICT_ROOT_CODES = {"14", "17", "18", "19", "20"}
+CONFLICT_ROOT_LABELS = {
+    "14": "Protest",
+    "17": "Coercion",
+    "18": "Assault",
+    "19": "Armed clash",
+    "20": "Mass violence",
 }
 # A handful of specific 3-digit codes worth a more precise label than their
 # root category -- only ones we're confident about, everything else falls
@@ -84,6 +101,8 @@ ACTOR_TYPE_LABELS = {
     "LEG": "legislature", "COP": "police", "OPP": "opposition group",
     "ELI": "business/elite figure", "CVL": "civilian group",
     "CRM": "criminal group", "LAB": "labor group",
+    "REB": "rebel group", "INS": "insurgent group", "SEP": "separatist group",
+    "UAF": "unaligned armed forces", "PTY": "political party",
 }
 
 
@@ -142,75 +161,6 @@ def balance_by_region(features: list, target: int) -> list:
         for r in order
     ))
     return selected
-
-# Tune these queries to taste. GDELT supports boolean OR/AND and phrase
-# matching in quotes. Single generic words (bare "attack", "president",
-# "congress"...) pull in a lot of unrelated matches, so these favor specific
-# phrases over loose single terms to keep results on-topic.
-QUERIES = {
-    "conflict": (
-        '(war OR "armed conflict" OR airstrike OR "air strike" OR shelling OR '
-        '"armed clash" OR insurgency OR militant OR ceasefire OR '
-        '"military offensive" OR "rebel attack") sourcelang:english'
-    ),
-}
-
-
-def fetch_category(category: str, query: str, timespan: str, maxrecords: int) -> list:
-    """Fetch one category from GDELT and return a list of feature dicts."""
-    params = {
-        "query": query,
-        "mode": "geojson",
-        "timespan": timespan,
-        "maxrecords": str(maxrecords),
-    }
-    url = f"{GDELT_ENDPOINT}?{urllib.parse.urlencode(params)}"
-
-    req = urllib.request.Request(url, headers={"User-Agent": "news-map-hobby-project/0.1"})
-
-    for attempt in range(3):
-        try:
-            with urllib.request.urlopen(req, timeout=30) as resp:
-                raw = resp.read().decode("utf-8")
-            break
-        except urllib.error.HTTPError as exc:
-            if exc.code == 429 and attempt < 2:
-                wait = 10 * (attempt + 1)
-                print(f"  ! rate-limited fetching '{category}', retrying in {wait}s...", file=sys.stderr)
-                time.sleep(wait)
-                continue
-            print(f"  ! failed to fetch '{category}': {exc}", file=sys.stderr)
-            return []
-        except urllib.error.URLError as exc:
-            print(f"  ! failed to fetch '{category}': {exc}", file=sys.stderr)
-            return []
-
-    try:
-        payload = json.loads(raw)
-    except json.JSONDecodeError:
-        print(f"  ! GDELT returned non-JSON for '{category}' (likely rate-limited or bad query)", file=sys.stderr)
-        return []
-
-    features_out = []
-    for feature in payload.get("features", []):
-        geom = feature.get("geometry", {})
-        coords = geom.get("coordinates")
-        props = feature.get("properties", {})
-
-        if not coords or len(coords) != 2:
-            continue
-
-        lon, lat = coords
-        features_out.append({
-            "category": category,
-            "lat": lat,
-            "lon": lon,
-            "name": props.get("name", "Unknown location"),
-            "count": props.get("count", 1),
-            "html": props.get("html", ""),  # raw article links from GDELT
-        })
-
-    return features_out
 
 
 def _eonet_point(geometry_entry: dict):
@@ -371,50 +321,6 @@ def fetch_eonet_climate(limit: int, wildfire_cap: int = 15) -> list:
     return features
 
 
-def load_acled_countries(path: str) -> list:
-    """Load country-level conflict intensity from a manually-exported ACLED
-    spreadsheet, pre-processed by convert_acled_countries.py into
-    {country, lat, lon, count, year} entries. Optional -- if the file isn't
-    there (never converted, or user hasn't re-exported), this just returns
-    an empty list and conflict falls back to whatever GDELT provides.
-
-    Note: this is one marker per COUNTRY (a yearly total), not individual
-    incidents like GDELT/EONET give -- ACLED's per-event export with
-    coordinates needs a more advanced access tier than a free account gets.
-    """
-    try:
-        with open(path, encoding="utf-8") as f:
-            payload = json.load(f)
-    except FileNotFoundError:
-        return []
-    except json.JSONDecodeError:
-        print(f"  ! {path} is not valid JSON", file=sys.stderr)
-        return []
-
-    year = payload.get("year", "unknown")
-    countries = payload.get("countries", [])
-    total_countries = len(countries)
-
-    features_out = []
-    for rank, c in enumerate(countries, start=1):
-        count = c["count"]
-        features_out.append({
-            "category": "conflict",
-            "lat": c["lat"],
-            "lon": c["lon"],
-            "name": c["country"],
-            "count": count,
-            "html": f"<a href='https://acleddata.com/' target='_blank'>{c['country']}: political violence &amp; conflict events</a>",
-            "summary": [
-                "Type: Political violence & conflict (country total)",
-                f"Events in {year}: {count:,}",
-                f"Global rank: #{rank} of {total_countries} countries tracked",
-                "Source: ACLED",
-            ],
-        })
-    return features_out
-
-
 def _gdelt_bulk_timestamps(hours: int) -> list:
     """GDELT publishes a new file every 15 minutes, named by UTC timestamp.
     Step back an extra 15 minutes from now before starting, since the very
@@ -515,15 +421,97 @@ def fetch_gdelt_bulk_political(hours: int, limit: int) -> list:
     return features
 
 
+def fetch_gdelt_bulk_conflict(hours: int, limit: int) -> list:
+    """Conflict via the same GDELT bulk event files as political, filtered
+    to CAMEO's protest/coercion/violence codes instead of cooperation codes
+    -- real individual incidents (battles, assaults, riots, protests)
+    refreshed every 15 minutes, in place of the old ACLED yearly country
+    totals, so "conflict" actually means real-time like the rest of the
+    site rather than a once-a-year snapshot.
+
+    Unlike political, this doesn't require two distinct countries as
+    actors -- most conflict (a government vs. a domestic rebel group, a
+    protest against a country's own government) is single-country by
+    nature, so that check would throw out most genuine conflict events.
+    """
+    seen_urls = set()
+    features = []
+
+    for ts in _gdelt_bulk_timestamps(hours):
+        for row in _fetch_gdelt_bulk_file(ts):
+            if len(row) < 61:
+                continue
+
+            root_code = row[28]
+            if root_code not in CONFLICT_ROOT_CODES:
+                continue
+
+            url = row[60]
+            if not url or url in seen_urls:
+                continue  # one source article often generates several rows (per actor/location mentioned)
+
+            try:
+                lat, lon = float(row[56]), float(row[57])
+            except ValueError:
+                continue
+            if lat == 0 and lon == 0:
+                continue
+
+            seen_urls.add(url)
+
+            event_code = row[26]
+            label = CAMEO_CODE_LABELS.get(event_code) or CONFLICT_ROOT_LABELS.get(root_code, "Conflict event")
+            place = row[52] or "Unknown location"
+            actor1_name = _actor_label(row[6].title(), row[12]) if row[6] else None
+            actor2_name = _actor_label(row[16].title(), row[22]) if row[16] else None
+
+            if actor1_name and actor2_name:
+                actors_str = f"{actor1_name} vs {actor2_name}"
+                title = f"{label}: {actors_str}"
+            elif actor1_name or actor2_name:
+                actors_str = actor1_name or actor2_name
+                title = f"{label}: {actors_str}"
+            else:
+                actors_str = "Not identified in wire report"
+                title = f"{label} in {place}"
+
+            try:
+                date_str = datetime.strptime(row[1], "%Y%m%d").strftime("%b %d, %Y")
+            except ValueError:
+                date_str = row[1]
+            try:
+                num_articles = max(1, int(float(row[33])))
+            except ValueError:
+                num_articles = 1
+
+            features.append({
+                "category": "conflict",
+                "lat": lat,
+                "lon": lon,
+                "name": title,
+                "count": num_articles,
+                "html": f"<a href='{url}' target='_blank'>{title}</a>",
+                "summary": [
+                    f"Type: {label}",
+                    f"Actors: {actors_str}",
+                    f"Location: {place}",
+                    f"Reported: {date_str}",
+                    "Source: GDELT (bulk event data)",
+                ],
+            })
+
+            if len(features) >= limit:
+                return features
+
+    return features
+
+
 def main():
     parser = argparse.ArgumentParser(description="Fetch daily geolocated news for the map viewer.")
-    parser.add_argument("--timespan", default="2d", help="GDELT timespan, e.g. 1d, 6h, 3d (default: 2d)")
-    parser.add_argument("--maxrecords", type=int, default=250, help="Max records per category, up to 250 -- GDELT's own cap (default: 250)")
     parser.add_argument("--target-locations", type=int, default=100, help="Cap on total locations, spread across world regions (default: 100)")
     parser.add_argument("--eonet-limit", type=int, default=100, help="Max EONET events to fetch for climate (default: 100)")
     parser.add_argument("--wildfire-cap", type=int, default=15, help="Max wildfires within that (US-heavy IRWIN source, capped to avoid dominating) (default: 15)")
-    parser.add_argument("--acled-file", default="data/acled_country_events.json", help="Pre-processed ACLED country data from convert_acled_countries.py, optional (default: data/acled_country_events.json)")
-    parser.add_argument("--gdelt-bulk-hours", type=int, default=12, help="Hours of GDELT bulk event files to scan for political/geopolitical actions (default: 12)")
+    parser.add_argument("--gdelt-bulk-hours", type=int, default=12, help="Hours of GDELT bulk event files to scan for conflict/political actions (default: 12)")
     parser.add_argument("--out", default="data/news_data.json", help="Output path (default: data/news_data.json)")
     parser.add_argument("--archive-dir", default="data/archive", help="Directory to keep one dated snapshot per day for the timeline feature (default: data/archive)")
     parser.add_argument("--archive-days", type=int, default=30, help="Days of dated snapshots to keep before pruning the oldest (default: 30)")
@@ -531,12 +519,6 @@ def main():
     args = parser.parse_args()
 
     all_features = []
-    for category, query in QUERIES.items():
-        print(f"Fetching '{category}' events (timespan={args.timespan})...")
-        features = fetch_category(category, query, args.timespan, args.maxrecords)
-        print(f"  -> {len(features)} locations")
-        all_features.extend(features)
-        time.sleep(6)  # GDELT asks for at least 5s between requests per IP
 
     print("Fetching 'climate' events from NASA EONET...")
     climate_features = fetch_eonet_climate(args.eonet_limit, args.wildfire_cap)
@@ -548,18 +530,16 @@ def main():
     print(f"  -> {len(political_features)} locations")
     all_features.extend(political_features)
 
-    acled_features = load_acled_countries(args.acled_file)
-    if acled_features:
-        print(f"Loaded {len(acled_features)} countries from ACLED ({args.acled_file})")
-        all_features.extend(acled_features)
+    print(f"Fetching 'conflict' events from GDELT bulk data ({args.gdelt_bulk_hours}h window)...")
+    conflict_features = fetch_gdelt_bulk_conflict(args.gdelt_bulk_hours, args.target_locations)
+    print(f"  -> {len(conflict_features)} locations")
+    all_features.extend(conflict_features)
 
     print(f"\n{len(all_features)} locations fetched before region balancing.")
 
-    # Balance per category, not across the whole pool: ACLED's country
-    # totals (tens of thousands of events) would otherwise always outrank
-    # EONET's individually-tracked events (count=1) within any region they
-    # share, silently crowding climate out of e.g. Europe. Each category
-    # gets its own fair share of the overall target instead.
+    # Balance per category, not across the whole pool -- otherwise whichever
+    # category has the most raw hits that hour would crowd the others out of
+    # any region they share. Each category gets its own fair share instead.
     by_category = defaultdict(list)
     for f in all_features:
         by_category[f["category"]].append(f)
@@ -572,7 +552,6 @@ def main():
 
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "timespan": args.timespan,
         "feature_count": len(all_features),
         "features": all_features,
     }
@@ -582,7 +561,7 @@ def main():
 
     print(f"\nSaved {len(all_features)} total locations to {args.out}")
     if len(all_features) == 0:
-        print("No results came back -- check your internet connection or try a longer --timespan.")
+        print("No results came back -- check your internet connection or try a longer --gdelt-bulk-hours.")
 
     if not args.no_archive:
         save_archive_snapshot(output, args.archive_dir, args.archive_days)

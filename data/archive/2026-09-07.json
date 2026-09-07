@@ -1,6 +1,5 @@
 {
-  "generated_at": "2026-09-07T14:26:40.156746+00:00",
-  "timespan": "2d",
+  "generated_at": "2026-09-07T16:12:39.974236+00:00",
   "feature_count": 99,
   "features": [
     {
@@ -449,420 +448,28 @@
     },
     {
       "category": "political",
-      "lat": -10.0,
-      "lon": -55.0,
-      "name": "Economic or material cooperation: Brazil \u2194 Vietnam",
-      "count": 1,
-      "html": "<a href='https://djmag.com/news/alok-adam-beyer-and-argy-link-new-single-keep' target='_blank'>Economic or material cooperation: Brazil \u2194 Vietnam</a>",
-      "summary": [
-        "Type: Economic or material cooperation",
-        "Actors: Brazil \u2194 Vietnam",
-        "Reported: Sep 07, 2025",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 25.0,
-      "lon": 45.0,
-      "name": "Reduced relations / sanctions: Oman \u2194 Saudi",
-      "count": 10,
-      "html": "<a href='https://www.gdnonline.com:443/Details/1405640/Oman-says-it-evacuated-16-crew-members-of-Saudi-Sidr-vessel-attacked-by-Iran' target='_blank'>Reduced relations / sanctions: Oman \u2194 Saudi</a>",
-      "summary": [
-        "Type: Reduced relations / sanctions",
-        "Actors: Oman \u2194 Saudi",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 36.0,
-      "lon": 138.0,
-      "name": "Diplomatic visit: Japanese \u2194 Thailand",
-      "count": 10,
-      "html": "<a href='https://idrw.org/five-japanese-f-2-fighters-have-stopover-in-thailand-on-their-way-to-india/' target='_blank'>Diplomatic visit: Japanese \u2194 Thailand</a>",
+      "lat": 53.0,
+      "lon": -8.0,
+      "name": "Diplomatic visit: The European Union (international org) \u2194 Ireland",
+      "count": 20,
+      "html": "<a href='https://www.prokerala.com/news/articles/a1809601.html' target='_blank'>Diplomatic visit: The European Union (international org) \u2194 Ireland</a>",
       "summary": [
         "Type: Diplomatic visit",
-        "Actors: Japanese \u2194 Thailand",
+        "Actors: The European Union (international org) \u2194 Ireland",
         "Reported: Sep 07, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "political",
-      "lat": -24.6464,
-      "lon": 25.9119,
-      "name": "Diplomatic visit: Angola \u2194 Ghana",
-      "count": 8,
-      "html": "<a href='https://www.thesouthafrican.com/news/africa/caf-champions-league-biggest-winners-and-losers-from-the-opening-weekend/' target='_blank'>Diplomatic visit: Angola \u2194 Ghana</a>",
-      "summary": [
-        "Type: Diplomatic visit",
-        "Actors: Angola \u2194 Ghana",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 42.1497,
-      "lon": -74.9384,
-      "name": "Rejected cooperation: Israel \u2194 Russia",
-      "count": 6,
-      "html": "<a href='https://www.israelnationalnews.com/news/432844' target='_blank'>Rejected cooperation: Israel \u2194 Russia</a>",
-      "summary": [
-        "Type: Rejected cooperation",
-        "Actors: Israel \u2194 Russia",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 72.0,
-      "lon": -40.0,
-      "name": "Diplomatic cooperation: European \u2194 Greenland",
-      "count": 4,
-      "html": "<a href='https://abcnews.com/International/wireStory/eu-chief-unveils-232-million-greenland-package-tensions-136252951' target='_blank'>Diplomatic cooperation: European \u2194 Greenland</a>",
-      "summary": [
-        "Type: Diplomatic cooperation",
-        "Actors: European \u2194 Greenland",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 41.3833,
-      "lon": 2.18333,
-      "name": "Diplomatic consultation: Spain \u2194 Portugal",
+      "lat": -29.0,
+      "lon": 26.0,
+      "name": "Economic cooperation: Africa \u2194 The Us",
       "count": 10,
-      "html": "<a href='https://ianslive.in/ins-sudarshini-departs-spains-barcelona-after-concluding-port-call--20260907183747' target='_blank'>Diplomatic consultation: Spain \u2194 Portugal</a>",
-      "summary": [
-        "Type: Diplomatic consultation",
-        "Actors: Spain \u2194 Portugal",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": -25.0,
-      "lon": 135.0,
-      "name": "Diplomatic cooperation: Australia \u2194 United Kingdom",
-      "count": 2,
-      "html": "<a href='https://www.nme.com/news/film/the-inbetweeners-3-reunion-movie-confirmed-netflix-3967342' target='_blank'>Diplomatic cooperation: Australia \u2194 United Kingdom</a>",
-      "summary": [
-        "Type: Diplomatic cooperation",
-        "Actors: Australia \u2194 United Kingdom",
-        "Reported: Aug 08, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 23.7231,
-      "lon": 90.4086,
-      "name": "Diplomatic consultation: Bangladesh \u2194 Myanmar",
-      "count": 10,
-      "html": "<a href='https://www.bssnews.net/news-flash/421873' target='_blank'>Diplomatic consultation: Bangladesh \u2194 Myanmar</a>",
-      "summary": [
-        "Type: Diplomatic consultation",
-        "Actors: Bangladesh \u2194 Myanmar",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 17.0425,
-      "lon": 54.1653,
-      "name": "Diplomatic visit: Rwanda (government) \u2194 Oman",
-      "count": 10,
-      "html": "<a href='https://timesofoman.com/article/176608-president-of-rwanda-arrives-in-oman' target='_blank'>Diplomatic visit: Rwanda (government) \u2194 Oman</a>",
-      "summary": [
-        "Type: Diplomatic visit",
-        "Actors: Rwanda (government) \u2194 Oman",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 1.0,
-      "lon": 114.0,
-      "name": "Reduced relations / sanctions: Malaysia \u2194 Indonesia",
-      "count": 10,
-      "html": "<a href='https://www.freemalaysiatoday.com/category/opinion/2026/09/07/who-benefits-from-the-burning' target='_blank'>Reduced relations / sanctions: Malaysia \u2194 Indonesia</a>",
-      "summary": [
-        "Type: Reduced relations / sanctions",
-        "Actors: Malaysia \u2194 Indonesia",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": -2.0,
-      "lon": 30.0,
-      "name": "Diplomatic visit: Oman \u2194 Rwanda",
-      "count": 6,
-      "html": "<a href='https://timesofoman.com/article/176610-hm-the-sultan-receives-president-of-rwanda' target='_blank'>Diplomatic visit: Oman \u2194 Rwanda</a>",
-      "summary": [
-        "Type: Diplomatic visit",
-        "Actors: Oman \u2194 Rwanda",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 32.9866,
-      "lon": -83.6487,
-      "name": "Diplomatic visit: Austria \u2194 United States",
-      "count": 4,
-      "html": "<a href='https://www.wjcl.com/article/effingham-county-salzburger-heritage-day/73629885' target='_blank'>Diplomatic visit: Austria \u2194 United States</a>",
-      "summary": [
-        "Type: Diplomatic visit",
-        "Actors: Austria \u2194 United States",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 60.0,
-      "lon": 100.0,
-      "name": "Provided aid: Vilnius \u2194 Belarus (civilian group)",
-      "count": 2,
-      "html": "<a href='https://www.delfi.lt/en/politics/lithuania-expels-22-belarusians-due-to-national-security-threat-120300674' target='_blank'>Provided aid: Vilnius \u2194 Belarus (civilian group)</a>",
-      "summary": [
-        "Type: Provided aid",
-        "Actors: Vilnius \u2194 Belarus (civilian group)",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 54.0,
-      "lon": -4.0,
-      "name": "Diplomatic cooperation: Finnish \u2194 British",
-      "count": 10,
-      "html": "<a href='https://www.dailysabah.com/arts/capture-the-city-istanbul-celebrates-200-years-of-photography/news' target='_blank'>Diplomatic cooperation: Finnish \u2194 British</a>",
-      "summary": [
-        "Type: Diplomatic cooperation",
-        "Actors: Finnish \u2194 British",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": -25.0,
-      "lon": 135.0,
-      "name": "Diplomatic cooperation: United Kingdom \u2194 Australia",
-      "count": 1,
-      "html": "<a href='https://retailtimes.co.uk/mr-chens-brings-its-authentic-range-of-asian-dumplings-to-the-tesco-freezer-aisle/' target='_blank'>Diplomatic cooperation: United Kingdom \u2194 Australia</a>",
-      "summary": [
-        "Type: Diplomatic cooperation",
-        "Actors: United Kingdom \u2194 Australia",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 27.7167,
-      "lon": 85.3167,
-      "name": "Provided aid: China \u2194 Nepalese (government)",
-      "count": 8,
-      "html": "<a href='https://kashmirlife.net/nepal-flood-death-toll-rises-to-1344-thousands-still-missing-450594/' target='_blank'>Provided aid: China \u2194 Nepalese (government)</a>",
-      "summary": [
-        "Type: Provided aid",
-        "Actors: China \u2194 Nepalese (government)",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 31.5,
-      "lon": 34.75,
-      "name": "Diplomatic consultation: United Kingdom \u2194 Palestine",
-      "count": 10,
-      "html": "<a href='https://www.qatarliving.com/en/article/hh-the-amir-and-uk-prime-minister-discuss-palestine-strait-of-hormuz-tensions' target='_blank'>Diplomatic consultation: United Kingdom \u2194 Palestine</a>",
-      "summary": [
-        "Type: Diplomatic consultation",
-        "Actors: United Kingdom \u2194 Palestine",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 2.6931,
-      "lon": 101.75,
-      "name": "Diplomatic consultation: Bahrain \u2194 Malaysia",
-      "count": 10,
-      "html": "<a href='https://www.thestar.com.my/news/nation/2026/09/07/need-for-speed-govt-agencies-urged-to-expedite-approvals-for-sepang-f1-race' target='_blank'>Diplomatic consultation: Bahrain \u2194 Malaysia</a>",
-      "summary": [
-        "Type: Diplomatic consultation",
-        "Actors: Bahrain \u2194 Malaysia",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": -22.0,
-      "lon": 24.0,
-      "name": "Diplomatic consultation: Angola \u2194 Botswana (government)",
-      "count": 3,
-      "html": "<a href='https://allafrica.com/stories/202609070381.html' target='_blank'>Diplomatic consultation: Angola \u2194 Botswana (government)</a>",
-      "summary": [
-        "Type: Diplomatic consultation",
-        "Actors: Angola \u2194 Botswana (government)",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 38.8951,
-      "lon": -77.0364,
-      "name": "Expressed intent to cooperate: United States \u2194 Iran",
-      "count": 4,
-      "html": "<a href='https://metro.co.uk/2026/09/07/chinas-nostradamus-makes-5-grim-predictions-2027-29553201/' target='_blank'>Expressed intent to cooperate: United States \u2194 Iran</a>",
-      "summary": [
-        "Type: Expressed intent to cooperate",
-        "Actors: United States \u2194 Iran",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 72.0,
-      "lon": -40.0,
-      "name": "Expressed intent to cooperate: Greenland \u2194 United States",
-      "count": 2,
-      "html": "<a href='https://www.internazionale.it/ultime-notizie-reuters/2026/09/07/eu-to-give-greenland-a-cash-boost-amid-trump-annexation-drive' target='_blank'>Expressed intent to cooperate: Greenland \u2194 United States</a>",
-      "summary": [
-        "Type: Expressed intent to cooperate",
-        "Actors: Greenland \u2194 United States",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 54.0,
-      "lon": -4.0,
-      "name": "Rejected cooperation: Nigeria \u2194 United Kingdom",
-      "count": 10,
-      "html": "<a href='https://www.opinionnigeria.com/company-voluntary-arrangements-under-cama-2020-a-bold-reform-or-a-weak-tool-by-oluwaleye-adedoyin-grace/' target='_blank'>Rejected cooperation: Nigeria \u2194 United Kingdom</a>",
-      "summary": [
-        "Type: Rejected cooperation",
-        "Actors: Nigeria \u2194 United Kingdom",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 28.6667,
-      "lon": 77.2167,
-      "name": "Diplomatic consultation: Amit (NGO) \u2194 Abdullah (government)",
-      "count": 4,
-      "html": "<a href='https://www.deccanchronicle.com/nation/srinagar-omar-abdullah-outlines-talks-with-home-minister-criticises-communal-discrimination-1985542' target='_blank'>Diplomatic consultation: Amit (NGO) \u2194 Abdullah (government)</a>",
-      "summary": [
-        "Type: Diplomatic consultation",
-        "Actors: Amit (NGO) \u2194 Abdullah (government)",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 25.0,
-      "lon": 45.0,
-      "name": "Diplomatic visit: Saudi \u2194 San Diego",
-      "count": 7,
-      "html": "<a href='https://www.bbc.co.uk/sounds/play/w3ct8mcj' target='_blank'>Diplomatic visit: Saudi \u2194 San Diego</a>",
-      "summary": [
-        "Type: Diplomatic visit",
-        "Actors: Saudi \u2194 San Diego",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 39.9289,
-      "lon": 116.388,
-      "name": "Economic cooperation: Beijing \u2194 Japan",
-      "count": 6,
-      "html": "<a href='https://asia.nikkei.com/economy/trade/china-imposes-anti-dumping-measures-on-key-chipmaking-material-from-japan' target='_blank'>Economic cooperation: Beijing \u2194 Japan</a>",
+      "html": "<a href='https://www.news24.com/business/opinion/wandile-sihlobo-sa-farm-exports-surge-with-africa-taking-40-20260907-0697' target='_blank'>Economic cooperation: Africa \u2194 The Us</a>",
       "summary": [
         "Type: Economic cooperation",
-        "Actors: Beijing \u2194 Japan",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 32.0,
-      "lon": -5.0,
-      "name": "Diplomatic visit: Africa \u2194 Morocco",
-      "count": 2,
-      "html": "<a href='https://www.trbusiness.com/regional-news/middle-east/meadfa-announces-programme-for-25th-anniversary-conference/283009' target='_blank'>Diplomatic visit: Africa \u2194 Morocco</a>",
-      "summary": [
-        "Type: Diplomatic visit",
-        "Actors: Africa \u2194 Morocco",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 39.828175,
-      "lon": -98.5795,
-      "name": "Diplomatic visit: British \u2194 American",
-      "count": 3,
-      "html": "<a href='https://www.newvision.co.ug/category/business/weekly-market-wrap-shares-worth-sh117-b-excha-NV_240138_092026' target='_blank'>Diplomatic visit: British \u2194 American</a>",
-      "summary": [
-        "Type: Diplomatic visit",
-        "Actors: British \u2194 American",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 48.0,
-      "lon": 68.0,
-      "name": "Diplomatic consultation: Kazakhstan \u2194 Samsung (multinational company)",
-      "count": 2,
-      "html": "<a href='https://www.trend.az/casia/kazakhstan/4221457.html' target='_blank'>Diplomatic consultation: Kazakhstan \u2194 Samsung (multinational company)</a>",
-      "summary": [
-        "Type: Diplomatic consultation",
-        "Actors: Kazakhstan \u2194 Samsung (multinational company)",
-        "Reported: Sep 07, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 51.5,
-      "lon": -0.116667,
-      "name": "Rejected cooperation: United Kingdom \u2194 Venezuela",
-      "count": 10,
-      "html": "<a href='https://www.zerohedge.com/precious-metals/central-banks-bought-23-tonnes-gold-july' target='_blank'>Rejected cooperation: United Kingdom \u2194 Venezuela</a>",
-      "summary": [
-        "Type: Rejected cooperation",
-        "Actors: United Kingdom \u2194 Venezuela",
+        "Actors: Africa \u2194 The Us",
         "Reported: Sep 07, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -871,504 +478,929 @@
       "category": "political",
       "lat": 28.6,
       "lon": 77.2,
-      "name": "Diplomatic visit: New Delhi \u2194 Colombo",
-      "count": 3,
-      "html": "<a href='https://www.lankanewspapers.com/2026/09/07/indian-defence-minister-rajnath-singh-arrives-in-sri-lanka-to-strengthen-bilateral-defence-ties' target='_blank'>Diplomatic visit: New Delhi \u2194 Colombo</a>",
+      "name": "Diplomatic consultation: Africa \u2194 New Delhi",
+      "count": 12,
+      "html": "<a href='https://www.prokerala.com/news/articles/a1809610.html' target='_blank'>Diplomatic consultation: Africa \u2194 New Delhi</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Africa \u2194 New Delhi",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 23.0,
+      "lon": -102.0,
+      "name": "Diplomatic visit: Beijing \u2194 Mexican",
+      "count": 10,
+      "html": "<a href='http://www.mexicostar.com/news/279291946/wang-yi-says-china-and-mexico-have-become-mutually-beneficial-partners' target='_blank'>Diplomatic visit: Beijing \u2194 Mexican</a>",
       "summary": [
         "Type: Diplomatic visit",
-        "Actors: New Delhi \u2194 Colombo",
+        "Actors: Beijing \u2194 Mexican",
         "Reported: Sep 07, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "political",
-      "lat": 26.2706,
-      "lon": 56.3892,
-      "name": "Expressed intent to cooperate: Iran \u2194 Oman",
-      "count": 6,
-      "html": "<a href='https://dominicanrepublicpost.com/can-iran-enforce-a-restricted-zone-in-the-strait-of-hormuz/' target='_blank'>Expressed intent to cooperate: Iran \u2194 Oman</a>",
+      "lat": 21.4267,
+      "lon": 39.8261,
+      "name": "Diplomatic consultation: Iran \u2194 Turkiye",
+      "count": 10,
+      "html": "<a href='https://dunyanews.tv/en/World/971777-russian-foreign-minister-says-iran-could-join-makkah-defence-pact-in-f' target='_blank'>Diplomatic consultation: Iran \u2194 Turkiye</a>",
       "summary": [
-        "Type: Expressed intent to cooperate",
-        "Actors: Iran \u2194 Oman",
-        "Reported: Aug 08, 2026",
+        "Type: Diplomatic consultation",
+        "Actors: Iran \u2194 Turkiye",
+        "Reported: Sep 07, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "political",
-      "lat": 36.0,
-      "lon": 138.0,
-      "name": "Provided aid: Africa \u2194 Europe",
-      "count": 5,
-      "html": "<a href='https://finance.yahoo.com/markets/stocks/articles/interpreting-hewlett-packard-enterprise-hpe-131502406.html' target='_blank'>Provided aid: Africa \u2194 Europe</a>",
+      "lat": 46.1667,
+      "lon": 152.0,
+      "name": "Diplomatic visit: Japan \u2194 Russian",
+      "count": 4,
+      "html": "<a href='http://www.newzealandstar.com/news/279291940/emblem-shattering-monument-in-russia-sparks-outcry-in-japan' target='_blank'>Diplomatic visit: Japan \u2194 Russian</a>",
+      "summary": [
+        "Type: Diplomatic visit",
+        "Actors: Japan \u2194 Russian",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 1.366667,
+      "lon": 103.8,
+      "name": "Diplomatic consultation: Luc Frieden (government) \u2194 Lawrence",
+      "count": 8,
+      "html": "<a href='https://www.chronicle.lu/category/luxembourg/63222-pm-frieden-discusses-bilateral-cooperation-during-singapore-visit' target='_blank'>Diplomatic consultation: Luc Frieden (government) \u2194 Lawrence</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Luc Frieden (government) \u2194 Lawrence",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": -23.8167,
+      "lon": 133.733,
+      "name": "Provided aid: The Us \u2194 Australian",
+      "count": 10,
+      "html": "<a href='https://www.theguardian.com/australia-news/2026/sep/08/grassroots-labor-pressure-group-albanese-government-us-military-war-machine' target='_blank'>Provided aid: The Us \u2194 Australian</a>",
       "summary": [
         "Type: Provided aid",
-        "Actors: Africa \u2194 Europe",
+        "Actors: The Us \u2194 Australian",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": -12.05,
+      "lon": -77.05,
+      "name": "Diplomatic visit: Buenos Aires \u2194 Lima",
+      "count": 4,
+      "html": "<a href='https://www.elciudadano.com/en/connections-and-photographic-evidence-unravel-a-regional-network-of-far-right-contacts-involving-cerimedo-fujimori-and-kast/09/07/' target='_blank'>Diplomatic visit: Buenos Aires \u2194 Lima</a>",
+      "summary": [
+        "Type: Diplomatic visit",
+        "Actors: Buenos Aires \u2194 Lima",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 50.4333,
+      "lon": 30.5167,
+      "name": "Expressed intent to cooperate: Nato (international org) \u2194 Ukraine",
+      "count": 10,
+      "html": "<a href='https://en.interfax.com.ua/news/general/1199982.html' target='_blank'>Expressed intent to cooperate: Nato (international org) \u2194 Ukraine</a>",
+      "summary": [
+        "Type: Expressed intent to cooperate",
+        "Actors: Nato (international org) \u2194 Ukraine",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": -13.5,
+      "lon": 34.0,
+      "name": "Diplomatic consultation: Malawi \u2194 Eastern Cape",
+      "count": 10,
+      "html": "<a href='https://www.news24.com/southafrica/crime-and-courts/eastern-cape-sounds-human-trafficking-alarm-as-two-girl-victims-return-to-sa-from-malawi-20260907-0781' target='_blank'>Diplomatic consultation: Malawi \u2194 Eastern Cape</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Malawi \u2194 Eastern Cape",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 27.7167,
+      "lon": 85.3167,
+      "name": "Diplomatic consultation: Kathmandu \u2194 New York",
+      "count": 8,
+      "html": "<a href='https://kathmandupost.com/national/2026/09/07/pm-shah-to-make-brief-new-york-trip-for-un-general-assembly' target='_blank'>Diplomatic consultation: Kathmandu \u2194 New York</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Kathmandu \u2194 New York",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 34.0522,
+      "lon": -118.244,
+      "name": "Diplomatic consultation: Qatar \u2194 Los Angeles",
+      "count": 10,
+      "html": "<a href='https://www.dailystar.co.uk/news/latest-news/adult-star-spent-250k-security-37635969' target='_blank'>Diplomatic consultation: Qatar \u2194 Los Angeles</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Qatar \u2194 Los Angeles",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 25.0,
+      "lon": 45.0,
+      "name": "Signed formal agreement: Afghanistan (government) \u2194 Saudi Arabia",
+      "count": 10,
+      "html": "<a href='https://www.ariananews.af/saudi-energy-group-signs-major-afghanistan-deals-covering-gas-exploration-and-pipeline-plans/' target='_blank'>Signed formal agreement: Afghanistan (government) \u2194 Saudi Arabia</a>",
+      "summary": [
+        "Type: Signed formal agreement",
+        "Actors: Afghanistan (government) \u2194 Saudi Arabia",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 35.0,
+      "lon": 105.0,
+      "name": "Signed formal agreement: The Us \u2194 Iran",
+      "count": 6,
+      "html": "<a href='https://ventureburn.com/goldman-sachs-oil-price-risk/' target='_blank'>Signed formal agreement: The Us \u2194 Iran</a>",
+      "summary": [
+        "Type: Signed formal agreement",
+        "Actors: The Us \u2194 Iran",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": -25.0,
+      "lon": 135.0,
+      "name": "Diplomatic visit: Australian \u2194 China",
+      "count": 2,
+      "html": "<a href='https://www.freshplaza.com/north-america/article/9870374/bank-shares-economic-insights-with-oceania-exporters-to-boost-asia-trade/' target='_blank'>Diplomatic visit: Australian \u2194 China</a>",
+      "summary": [
+        "Type: Diplomatic visit",
+        "Actors: Australian \u2194 China",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 47.0,
+      "lon": 20.0,
+      "name": "Economic cooperation: Bulgaria \u2194 Hungary",
+      "count": 8,
+      "html": "<a href='https://www.freshplaza.com/north-america/article/9870486/greek-stone-fruit-exports-showed-strong-growth-in-2026/' target='_blank'>Economic cooperation: Bulgaria \u2194 Hungary</a>",
+      "summary": [
+        "Type: Economic cooperation",
+        "Actors: Bulgaria \u2194 Hungary",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 10.0,
+      "lon": 8.0,
+      "name": "Diplomatic consultation: Africa \u2194 Nigerian",
+      "count": 10,
+      "html": "<a href='https://techcabal.com/2026/09/07/nigeria-needs-62-5-million-nins-in-six-months-to-meet-target/' target='_blank'>Diplomatic consultation: Africa \u2194 Nigerian</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Africa \u2194 Nigerian",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 27.7167,
+      "lon": 85.3167,
+      "name": "Diplomatic consultation: China \u2194 Nepal",
+      "count": 6,
+      "html": "<a href='http://www.japanherald.com/news/279291873/explainer-5-key-questions-about-mudslide-on-china-nepal-border' target='_blank'>Diplomatic consultation: China \u2194 Nepal</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: China \u2194 Nepal",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 64.1833,
+      "lon": -51.75,
+      "name": "Diplomatic consultation: Brussels \u2194 Greenland",
+      "count": 8,
+      "html": "<a href='https://jowhar.com/eu-pledges-e200m-to-greenland-as-trump-renews-territorial-threats/' target='_blank'>Diplomatic consultation: Brussels \u2194 Greenland</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Brussels \u2194 Greenland",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 32.0667,
+      "lon": 34.7667,
+      "name": "Economic cooperation: Buenos Aires \u2194 Israel",
+      "count": 8,
+      "html": "<a href='https://www.investmentwatchblog.com/britain-was-at-war-with-argentina-israel-was-still-selling-weapons-to-buenos-aires/' target='_blank'>Economic cooperation: Buenos Aires \u2194 Israel</a>",
+      "summary": [
+        "Type: Economic cooperation",
+        "Actors: Buenos Aires \u2194 Israel",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 37.5664,
+      "lon": 127.0,
+      "name": "Diplomatic consultation: South Korea \u2194 Singapore",
+      "count": 5,
+      "html": "<a href='https://www.upi.com/Top_News/World-News/2026/09/07/CJ-CheilJedang-opens-technical-center-in-Singapore/4801788786866/' target='_blank'>Diplomatic consultation: South Korea \u2194 Singapore</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: South Korea \u2194 Singapore",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 46.0,
+      "lon": 2.0,
+      "name": "Diplomatic visit: China \u2194 France",
+      "count": 8,
+      "html": "<a href='https://www.dailymail.com/news/article-16111835/killer-Asian-hornet-Somerset-England.html' target='_blank'>Diplomatic visit: China \u2194 France</a>",
+      "summary": [
+        "Type: Diplomatic visit",
+        "Actors: China \u2194 France",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": -33.9167,
+      "lon": 18.4167,
+      "name": "Diplomatic visit: Africa \u2194 South African",
+      "count": 4,
+      "html": "<a href='https://gazette.com/2026/09/07/civil-rights-groups-urge-a-halt-to-south-africa-data-centers-boom-amid-water-and-power-fears/' target='_blank'>Diplomatic visit: Africa \u2194 South African</a>",
+      "summary": [
+        "Type: Diplomatic visit",
+        "Actors: Africa \u2194 South African",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 19.35,
+      "lon": 72.8,
+      "name": "Diplomatic consultation: Mumbai \u2194 Tyre",
+      "count": 6,
+      "html": "<a href='https://www.freepressjournal.in/mumbai/60-year-old-woman-crushed-under-best-wet-lease-bus-tyre-in-worli-after-alighting-from-taxi-at-signal' target='_blank'>Diplomatic consultation: Mumbai \u2194 Tyre</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Mumbai \u2194 Tyre",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 39.828175,
+      "lon": -98.5795,
+      "name": "Diplomatic visit: Europe \u2194 United States",
+      "count": 5,
+      "html": "<a href='https://blueprint.ng/dangote-refinery-sets-minimum-subscription-for-1-6bn-ipo/' target='_blank'>Diplomatic visit: Europe \u2194 United States</a>",
+      "summary": [
+        "Type: Diplomatic visit",
+        "Actors: Europe \u2194 United States",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 35.75,
+      "lon": 51.5148,
+      "name": "Expressed intent to cooperate: Tehran \u2194 Oman (government)",
+      "count": 7,
+      "html": "<a href='https://www.al-monitor.com/originals/2026/09/iran-announce-new-gulf-restricted-zone-hormuz-route-what-we-know' target='_blank'>Expressed intent to cooperate: Tehran \u2194 Oman (government)</a>",
+      "summary": [
+        "Type: Expressed intent to cooperate",
+        "Actors: Tehran \u2194 Oman (government)",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 26.2667,
+      "lon": 105.817,
+      "name": "Expressed intent to cooperate: Africa (government) \u2194 China",
+      "count": 4,
+      "html": "<a href='https://www.businessday.co.za/opinion/2026-09-07-adam-sissison-sas-mastery-in-economic-foreign-policy-own-goals/' target='_blank'>Expressed intent to cooperate: Africa (government) \u2194 China</a>",
+      "summary": [
+        "Type: Expressed intent to cooperate",
+        "Actors: Africa (government) \u2194 China",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 51.5,
+      "lon": -0.116667,
+      "name": "Diplomatic consultation: Colombia \u2194 Ecuador",
+      "count": 6,
+      "html": "<a href='https://www.euro-petrole.com/gran-tierra-energy-inc-announces-agreement-to-sell-its-colombia-and-ecuador-business-to-maurel-prom-and-reposition-the-company-for-fully-financed-growth-n-i-30597' target='_blank'>Diplomatic consultation: Colombia \u2194 Ecuador</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Colombia \u2194 Ecuador",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": -25.7069,
+      "lon": 28.2294,
+      "name": "Diplomatic consultation: Africa \u2194 Pretoria",
+      "count": 2,
+      "html": "<a href='https://www.bizcommunity.com/article/mass-timber-and-timber-frame-training-heads-to-pretoria-308838a' target='_blank'>Diplomatic consultation: Africa \u2194 Pretoria</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Africa \u2194 Pretoria",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 28.6667,
+      "lon": 77.2167,
+      "name": "Diplomatic consultation: Kathmandu \u2194 Us Ambassador (government)",
+      "count": 5,
+      "html": "<a href='https://kathmandupost.com/national/2026/09/07/in-a-surprise-to-the-foreign-ministry-rubio-calls-lamichhane' target='_blank'>Diplomatic consultation: Kathmandu \u2194 Us Ambassador (government)</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Kathmandu \u2194 Us Ambassador (government)",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 35.7449,
+      "lon": -86.7489,
+      "name": "Diplomatic cooperation: Tennessee \u2194 Athens",
+      "count": 5,
+      "html": "<a href='http://www.dailypostathenian.com/news/article_d2fc2ffe-4be1-4746-a8de-6a823634d6f4.html' target='_blank'>Diplomatic cooperation: Tennessee \u2194 Athens</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: Tennessee \u2194 Athens",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 31.4167,
+      "lon": 34.3333,
+      "name": "Imposed sanctions or embargo: United Kingdom \u2194 Israel",
+      "count": 6,
+      "html": "<a href='https://www.thenationalnews.com/news/mena/2026/09/07/israeli-military-ordered-to-prepare-for-all-out-war-on-palestinian-authority/' target='_blank'>Imposed sanctions or embargo: United Kingdom \u2194 Israel</a>",
+      "summary": [
+        "Type: Imposed sanctions or embargo",
+        "Actors: United Kingdom \u2194 Israel",
         "Reported: Sep 07, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "conflict",
-      "lat": 48.657532515563794,
-      "lon": 31.27377208442636,
-      "name": "Ukraine",
-      "count": 58999,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Ukraine: political violence &amp; conflict events</a>",
+      "lat": 5.55,
+      "lon": -0.216667,
+      "name": "Coercion: Ghana vs London",
+      "count": 16,
+      "html": "<a href='https://thebftonline.com/article/ghana-becomes-first-node-of-africa-s-continental-advanced-manufacturing-network' target='_blank'>Coercion: Ghana vs London</a>",
       "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 58,999",
-        "Global rank: #1 of 162 countries tracked",
-        "Source: ACLED"
+        "Type: Coercion",
+        "Actors: Ghana vs London",
+        "Location: Accra, Greater Accra, Ghana",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "conflict",
-      "lat": 59.039434214106194,
-      "lon": 98.6704990698032,
-      "name": "Russia",
-      "count": 13328,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Russia: political violence &amp; conflict events</a>",
+      "lat": 25.3667,
+      "lon": 94.8167,
+      "name": "Armed clash: Security Force (police)",
+      "count": 20,
+      "html": "<a href='https://www.prokerala.com/news/articles/a1809606.html' target='_blank'>Armed clash: Security Force (police)</a>",
       "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 13,328",
-        "Global rank: #2 of 162 countries tracked",
-        "Source: ACLED"
+        "Type: Armed clash",
+        "Actors: Security Force (police)",
+        "Location: Kuki, Sagain, Myanmar",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "conflict",
-      "lat": 33.91160170722086,
-      "lon": 35.89651946324749,
-      "name": "Lebanon",
-      "count": 8816,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Lebanon: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 8,816",
-        "Global rank: #3 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": -11.524630416426652,
-      "lon": -54.355206608256424,
-      "name": "Brazil",
-      "count": 7241,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Brazil: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 7,241",
-        "Global rank: #4 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 19.901227931399873,
-      "lon": 97.08892285397344,
-      "name": "Myanmar",
-      "count": 6175,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Myanmar: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 6,175",
-        "Global rank: #6 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 9.61029352034213,
-      "lon": 8.147714845256194,
-      "name": "Nigeria",
-      "count": 4923,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Nigeria: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 4,923",
-        "Global rank: #7 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 23.87436068093592,
-      "lon": -101.55399731630118,
-      "name": "Mexico",
-      "count": 4425,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Mexico: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 4,425",
-        "Global rank: #8 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 0.15591979959037652,
-      "lon": 113.96538246847302,
-      "name": "Indonesia",
-      "count": 674,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Indonesia: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 674",
-        "Global rank: #30 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": -17.822470952336204,
-      "lon": 177.98144613732626,
-      "name": "Fiji",
-      "count": 3,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Fiji: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 3",
-        "Global rank: #121 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 46.6423682169416,
-      "lon": 2.1940236627886227,
-      "name": "France",
-      "count": 91,
-      "html": "<a href='https://acleddata.com/' target='_blank'>France: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 91",
-        "Global rank: #56 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 47.641465195176835,
-      "lon": 66.3759193479301,
-      "name": "Kazakhstan",
-      "count": 36,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Kazakhstan: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 36",
-        "Global rank: #68 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 31.930818736453883,
-      "lon": 35.24251184154588,
-      "name": "Palestine",
-      "count": 7025,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Palestine: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 7,025",
-        "Global rank: #5 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": -1.5642721388853116,
-      "lon": -78.4630326109714,
-      "name": "Ecuador",
-      "count": 2092,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Ecuador: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 2,092",
-        "Global rank: #14 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 30.116188371410882,
-      "lon": 69.08835090769651,
-      "name": "Pakistan",
-      "count": 2772,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Pakistan: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 2,772",
-        "Global rank: #12 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 6.524534573103924,
-      "lon": 45.40037867243972,
-      "name": "Somalia",
-      "count": 3283,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Somalia: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 3,283",
-        "Global rank: #10 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 18.883520486983567,
-      "lon": -72.89291379842,
-      "name": "Haiti",
-      "count": 816,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Haiti: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 816",
-        "Global rank: #26 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 15.586542251094242,
-      "lon": 121.82208941416745,
-      "name": "Philippines",
-      "count": 288,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Philippines: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 288",
-        "Global rank: #35 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": -25.697337673983082,
-      "lon": 134.02277170916162,
-      "name": "Australia",
-      "count": 2,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Australia: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 2",
-        "Global rank: #130 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 39.42012261727978,
-      "lon": 23.110368936161876,
-      "name": "Greece",
-      "count": 51,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Greece: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 51",
-        "Global rank: #64 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": -20.28142317475198,
-      "lon": 57.56415671066546,
-      "name": "Mauritius",
+      "lat": 15.3547,
+      "lon": 44.2067,
+      "name": "Armed clash: The Un (international org)",
       "count": 10,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Mauritius: political violence &amp; conflict events</a>",
+      "html": "<a href='https://www.aljazeera.com/features/2026/9/7/breaks-my-heart-yemen-jab-shortages-spark-fears-for-millions-of-children' target='_blank'>Armed clash: The Un (international org)</a>",
       "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 10",
-        "Global rank: #100 of 162 countries tracked",
-        "Source: ACLED"
+        "Type: Armed clash",
+        "Actors: The Un (international org)",
+        "Location: Sanaa, San\u0091a', Yemen",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "conflict",
-      "lat": 32.906023742890056,
-      "lon": 54.237077001065444,
-      "name": "Iran",
-      "count": 3866,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Iran: political violence &amp; conflict events</a>",
+      "lat": 29.7633,
+      "lon": -95.3633,
+      "name": "Coercion: Authorities (government)",
+      "count": 10,
+      "html": "<a href='https://abc13.com/post/person-fatally-shot-another-injured-apartment-complex-southwest-houston-police-say/19801966/' target='_blank'>Coercion: Authorities (government)</a>",
       "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 3,866",
-        "Global rank: #9 of 162 countries tracked",
-        "Source: ACLED"
+        "Type: Coercion",
+        "Actors: Authorities (government)",
+        "Location: Houston, Texas, United States",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "conflict",
-      "lat": 4.187753877352739,
-      "lon": -72.6445066243485,
-      "name": "Colombia",
-      "count": 1898,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Colombia: political violence &amp; conflict events</a>",
+      "lat": 55.8333,
+      "lon": -4.25,
+      "name": "Assault: Asylum Seeker",
+      "count": 10,
+      "html": "<a href='https://www.heraldscotland.com/news/26529191.police-appeal-glasgow-fire-site-hit-online-asylum-rumours/' target='_blank'>Assault: Asylum Seeker</a>",
       "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 1,898",
-        "Global rank: #17 of 162 countries tracked",
-        "Source: ACLED"
+        "Type: Assault",
+        "Actors: Asylum Seeker",
+        "Location: Glasgow, Glasgow City, United Kingdom",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "conflict",
-      "lat": 23.586300567746722,
-      "lon": 81.17300408530181,
-      "name": "India",
-      "count": 1811,
-      "html": "<a href='https://acleddata.com/' target='_blank'>India: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 1,811",
-        "Global rank: #19 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 6.294168487480992,
-      "lon": 12.948474142398263,
-      "name": "Cameroon",
-      "count": 2825,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Cameroon: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 2,825",
-        "Global rank: #11 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 15.820878515352684,
-      "lon": -90.31219349119617,
-      "name": "Guatemala",
-      "count": 583,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Guatemala: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 583",
-        "Global rank: #31 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 38.07325481105728,
-      "lon": 104.69113855849604,
-      "name": "China",
-      "count": 119,
-      "html": "<a href='https://acleddata.com/' target='_blank'>China: political violence &amp; conflict events</a>",
-      "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 119",
-        "Global rank: #48 of 162 countries tracked",
-        "Source: ACLED"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": -9.613104734596515,
-      "lon": 160.16475795033884,
-      "name": "Solomon Islands",
+      "lat": 60.0,
+      "lon": 100.0,
+      "name": "Armed clash: Russian",
       "count": 1,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Solomon Islands: political violence &amp; conflict events</a>",
+      "html": "<a href='https://en.interfax.com.ua/news/general/1199924.html' target='_blank'>Armed clash: Russian</a>",
       "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 1",
-        "Global rank: #160 of 162 countries tracked",
-        "Source: ACLED"
+        "Type: Armed clash",
+        "Actors: Russian",
+        "Location: Russia",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "conflict",
-      "lat": 44.02679870131969,
-      "lon": 20.85677444395745,
-      "name": "Serbia",
-      "count": 37,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Serbia: political violence &amp; conflict events</a>",
+      "lat": 7.07306,
+      "lon": 125.613,
+      "name": "Coercion: Department Of Agriculture (government) vs Quezon",
+      "count": 6,
+      "html": "<a href='https://www.sunstar.com.ph/davao/davao-fruits-off-to-cebu-baguio-after-quezon-city' target='_blank'>Coercion: Department Of Agriculture (government) vs Quezon</a>",
       "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 37",
-        "Global rank: #67 of 162 countries tracked",
-        "Source: ACLED"
+        "Type: Coercion",
+        "Actors: Department Of Agriculture (government) vs Quezon",
+        "Location: Davao, Davao City, Philippines",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "conflict",
-      "lat": 35.09751106058316,
-      "lon": 38.5117323139514,
-      "name": "Syria",
-      "count": 2390,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Syria: political violence &amp; conflict events</a>",
+      "lat": 11.0,
+      "lon": -10.0,
+      "name": "Coercion: Migrant (civilian group)",
+      "count": 10,
+      "html": "<a href='https://thepoint.gm/africa/gambia/national-news/immigration-intercepts-76-suspected-would-be-migrants' target='_blank'>Coercion: Migrant (civilian group)</a>",
       "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 2,390",
-        "Global rank: #13 of 162 countries tracked",
-        "Source: ACLED"
+        "Type: Coercion",
+        "Actors: Migrant (civilian group)",
+        "Location: Guinea",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "conflict",
-      "lat": -37.82938283049967,
-      "lon": -70.76863431739216,
-      "name": "Chile",
-      "count": 135,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Chile: political violence &amp; conflict events</a>",
+      "lat": 26.8,
+      "lon": 82.2,
+      "name": "Armed clash: Colonel (military)",
+      "count": 10,
+      "html": "<a href='https://organiser.org/2026/09/07/378882/bharat/ceo-of-ayodhya-ram-mandir-a-warrior-administrator-at-the-helm/' target='_blank'>Armed clash: Colonel (military)</a>",
       "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 135",
-        "Global rank: #45 of 162 countries tracked",
-        "Source: ACLED"
+        "Type: Armed clash",
+        "Actors: Colonel (military)",
+        "Location: Ayodhya, Uttar Pradesh, India",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "conflict",
-      "lat": 23.673728665121,
-      "lon": 90.43212562608613,
-      "name": "Bangladesh",
-      "count": 912,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Bangladesh: political violence &amp; conflict events</a>",
+      "lat": 35.75,
+      "lon": 51.5148,
+      "name": "Armed clash: Iranian vs Naval (military)",
+      "count": 10,
+      "html": "<a href='https://organiser.org/2026/09/07/379214/world/west-asia-conflict-iran-eyes-exclusion-zone-near-hormuz-us-strikes-oil-tankers-war-escalates-as-truce-collapses/' target='_blank'>Armed clash: Iranian vs Naval (military)</a>",
       "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 912",
-        "Global rank: #24 of 162 countries tracked",
-        "Source: ACLED"
+        "Type: Armed clash",
+        "Actors: Iranian vs Naval (military)",
+        "Location: Tehran, Tehran, Iran",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "conflict",
-      "lat": -3.338629596207896,
-      "lon": 23.419827574282188,
-      "name": "Democratic Republic of Congo",
-      "count": 1924,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Democratic Republic of Congo: political violence &amp; conflict events</a>",
+      "lat": 41.5834,
+      "lon": -72.7622,
+      "name": "Armed clash: Small Town (civilian group)",
+      "count": 10,
+      "html": "<a href='https://i95rock.com/win-cash-tease-fall-2026/' target='_blank'>Armed clash: Small Town (civilian group)</a>",
       "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 1,924",
-        "Global rank: #15 of 162 countries tracked",
-        "Source: ACLED"
+        "Type: Armed clash",
+        "Actors: Small Town (civilian group)",
+        "Location: Connecticut, United States",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "conflict",
-      "lat": 14.740370695750006,
-      "lon": -86.49251679006962,
-      "name": "Honduras",
-      "count": 401,
-      "html": "<a href='https://acleddata.com/' target='_blank'>Honduras: political violence &amp; conflict events</a>",
+      "lat": 46.4639,
+      "lon": 30.7386,
+      "name": "Assault: Odesa (civilian group) vs Mitsubishi (multinational company)",
+      "count": 10,
+      "html": "<a href='https://en.interfax.com.ua/news/general/1199971.html' target='_blank'>Assault: Odesa (civilian group) vs Mitsubishi (multinational company)</a>",
       "summary": [
-        "Type: Political violence & conflict (country total)",
-        "Events in 2026: 401",
-        "Global rank: #32 of 162 countries tracked",
-        "Source: ACLED"
+        "Type: Assault",
+        "Actors: Odesa (civilian group) vs Mitsubishi (multinational company)",
+        "Location: Odesa, Odes'ka Oblast, Ukraine",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 7.07306,
+      "lon": 125.613,
+      "name": "Coercion: Philippine",
+      "count": 3,
+      "html": "<a href='https://davaotoday.com/headline/activists-cry-foul-over-double-standard-as-vp-sara-duterte-posts-bail/' target='_blank'>Coercion: Philippine</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Philippine",
+        "Location: Davao, Davao City, Philippines",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 10.5231,
+      "lon": 7.44028,
+      "name": "Armed clash: Kaduna vs Lawyer (judiciary)",
+      "count": 10,
+      "html": "<a href='https://blueprint.ng/southern-kaduna-killings-el-rufais-family-hands-ultimatum-to-defence-minister/' target='_blank'>Armed clash: Kaduna vs Lawyer (judiciary)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Kaduna vs Lawyer (judiciary)",
+        "Location: Kaduna, Kaduna, Nigeria",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 20.9667,
+      "lon": 72.9,
+      "name": "Coercion: Surat",
+      "count": 8,
+      "html": "<a href='https://www.hindustantimes.com/cities/others/case-against-cops-after-abduction-accused-escapes-from-moving-train-101788792203506.html' target='_blank'>Coercion: Surat</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Surat",
+        "Location: Surat, Gujarat, India",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 31.5,
+      "lon": 34.75,
+      "name": "Armed clash: Israeli (military) vs Village (civilian group)",
+      "count": 8,
+      "html": "<a href='https://www.al-monitor.com/originals/2026/09/two-palestinians-killed-israeli-stabbed-west-bank-settler-violence-flares' target='_blank'>Armed clash: Israeli (military) vs Village (civilian group)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Israeli (military) vs Village (civilian group)",
+        "Location: Israel",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 39.828175,
+      "lon": -98.5795,
+      "name": "Armed clash: Public Sector (government)",
+      "count": 10,
+      "html": "<a href='https://www.finanznachrichten.de/nachrichten-2026-09/69512661-digitunity-inc-digitunity-releases-national-framework-to-address-computer-ownership-gap-affecting-32-9-million-people-in-the-u-s-200.htm' target='_blank'>Armed clash: Public Sector (government)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Public Sector (government)",
+        "Location: United States",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 59.8944,
+      "lon": 30.2642,
+      "name": "Coercion: Ministry (government) vs Russia",
+      "count": 10,
+      "html": "<a href='http://www.heraldglobe.com/news/279291917/moscow-orders-german-consulate-to-shut-in-tit-for-tat-move' target='_blank'>Coercion: Ministry (government) vs Russia</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Ministry (government) vs Russia",
+        "Location: Petersburg, Sankt-Peterburg, Russia",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 35.0,
+      "lon": 105.0,
+      "name": "Coercion: Kathmandu",
+      "count": 2,
+      "html": "<a href='https://www.kob.com/ap-top-news/nepal-holds-a-day-of-mourning-after-floods-kill-at-least-1300-people/' target='_blank'>Coercion: Kathmandu</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Kathmandu",
+        "Location: China",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 8.0,
+      "lon": 38.0,
+      "name": "Armed clash: Africa",
+      "count": 10,
+      "html": "<a href='https://www.uneca.org/stories/eca-and-partners-advance-eccas-regional-data-governance-framework' target='_blank'>Armed clash: Africa</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Africa",
+        "Location: Ethiopia",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 27.25,
+      "lon": 80.75,
+      "name": "Coercion: Police (police)",
+      "count": 6,
+      "html": "<a href='https://www.rediff.com/news/report/delhi-teen-murdered-over-social-media-remarks-juvenile-among-two-held/20260907.htm' target='_blank'>Coercion: Police (police)</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Police (police)",
+        "Location: Uttar Pradesh, Uttar Pradesh, India",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 26.1418,
+      "lon": 47.1712,
+      "name": "Armed clash: Saudi",
+      "count": 7,
+      "html": "<a href='https://www.siasat.com/iran-warns-south-korea-against-involvement-in-strait-of-hormuz-3538054/' target='_blank'>Armed clash: Saudi</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Saudi",
+        "Location: Khabb, Ar Riya?, Saudi Arabia",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 35.7449,
+      "lon": -86.7489,
+      "name": "Armed clash: Nashville vs Employee (labor group)",
+      "count": 10,
+      "html": "<a href='https://abcnews.com/US/frito-lay-employee-killed-stray-bullet-sams-club/story?id=136251711' target='_blank'>Armed clash: Nashville vs Employee (labor group)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Nashville vs Employee (labor group)",
+        "Location: Tennessee, United States",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 55.7522,
+      "lon": 37.6156,
+      "name": "Coercion: Judge (judiciary)",
+      "count": 10,
+      "html": "<a href='https://www.themoscowtimes.com/2026/09/07/moscow-police-general-and-gas-station-executives-arrested-in-fuel-theft-scheme-a93654' target='_blank'>Coercion: Judge (judiciary)</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Judge (judiciary)",
+        "Location: Moscow, Moskva, Russia",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 4.78917,
+      "lon": 6.99861,
+      "name": "Assault: Residents (civilian group)",
+      "count": 10,
+      "html": "<a href='https://www.thisdaylive.com/2026/09/07/imo-community-seeks-govts-intervention-over-alleged-security-brutality/' target='_blank'>Assault: Residents (civilian group)</a>",
+      "summary": [
+        "Type: Assault",
+        "Actors: Residents (civilian group)",
+        "Location: Port Harcourt, Rivers, Nigeria",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 25.6,
+      "lon": 85.1167,
+      "name": "Coercion: Convicts (criminal group)",
+      "count": 6,
+      "html": "<a href='https://www.prokerala.com/news/articles/a1809602.html' target='_blank'>Coercion: Convicts (criminal group)</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Convicts (criminal group)",
+        "Location: Patna, Bihar, India",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 31.4167,
+      "lon": 34.3333,
+      "name": "Armed clash: West Bank vs Israel",
+      "count": 6,
+      "html": "<a href='https://www.channelnewsasia.com/world/board-peaces-mladenov-says-gaza-west-bank-escalation-makes-two-state-solution-impossible-6367321' target='_blank'>Armed clash: West Bank vs Israel</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: West Bank vs Israel",
+        "Location: Gaza, Israel (general), Israel",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 25.0333,
+      "lon": -77.4,
+      "name": "Armed clash: Minist Of Housing (government)",
+      "count": 8,
+      "html": "<a href='https://www.tribune242.com/news/2026/sep/07/pintard-presses-pm-on-ellis-contracts/' target='_blank'>Armed clash: Minist Of Housing (government)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Minist Of Housing (government)",
+        "Location: New Providence, Bahamas, The (general), Bahamas, The",
+        "Reported: Sep 06, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 51.5,
+      "lon": -0.116667,
+      "name": "Coercion: United Kingdom vs Israel",
+      "count": 8,
+      "html": "<a href='https://www.investmentwatchblog.com/britain-was-at-war-with-argentina-israel-was-still-selling-weapons-to-buenos-aires/' target='_blank'>Coercion: United Kingdom vs Israel</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: United Kingdom vs Israel",
+        "Location: London, London, City of, United Kingdom",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": -24.1833,
+      "lon": 30.2667,
+      "name": "Coercion: Africa",
+      "count": 5,
+      "html": "<a href='https://www.sowetan.co.za/news/2026-09-07-explainer-how-emufuleni-arrests-are-linked-to-accountants-murder/' target='_blank'>Coercion: Africa</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Africa",
+        "Location: Masilo, Limpopo, South Africa",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 28.4785,
+      "lon": 65.6436,
+      "name": "Coercion: Pakistan",
+      "count": 6,
+      "html": "<a href='https://tribune.com.pk/story/2627969/ptis-barrister-gohar-warns-against-dividing-provinces-without-broad-public-consensus' target='_blank'>Coercion: Pakistan</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Pakistan",
+        "Location: Balochistan, Balochistan, Pakistan",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 30.05,
+      "lon": 31.25,
+      "name": "Assault: Egypt",
+      "count": 5,
+      "html": "<a href='https://nypost.com/2026/09/07/world-news/flashy-egyptian-tv-host-sentenced-to-death-to-appeal/' target='_blank'>Assault: Egypt</a>",
+      "summary": [
+        "Type: Assault",
+        "Actors: Egypt",
+        "Location: Cairo, Al Qahirah, Egypt",
+        "Reported: Sep 07, 2025",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 34.0983,
+      "lon": -118.327,
+      "name": "Coercion: United States vs Publication (media outlet)",
+      "count": 8,
+      "html": "<a href='https://www.boredpanda.com/hollywood-co-stars-friendship-fell-apart/' target='_blank'>Coercion: United States vs Publication (media outlet)</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: United States vs Publication (media outlet)",
+        "Location: Hollywood, California, United States",
+        "Reported: Sep 07, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     }
   ]

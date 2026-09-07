@@ -18,11 +18,11 @@ jobs:
         with:
           python-version: '3.12'
 
-      # fetch_news_data.py has zero external dependencies (stdlib only),
-      # so no pip install step is needed here. ACLED conflict data isn't
-      # refreshed by this workflow -- data/acled_country_events.json stays
-      # whatever it was last manually converted to (see README).
-      - name: Fetch latest climate/political/conflict-fallback data
+      # fetch_news_data.py has zero external dependencies (stdlib only), so
+      # no pip install step is needed here. All three categories (conflict,
+      # climate, political) are fully live sources now -- nothing here needs
+      # a manual re-export/conversion step anymore.
+      - name: Fetch latest conflict/climate/political data
         run: python fetch_news_data.py
 
       - name: Commit and push if the data changed
