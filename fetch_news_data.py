@@ -36,6 +36,7 @@ Docs: http://data.gdeltproject.org/gdeltv2/ (raw event files)
 
 import argparse
 import glob
+import html
 import io
 import json
 import os
@@ -46,6 +47,7 @@ import urllib.parse
 import urllib.request
 import zipfile
 from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 
 GDELT_BULK_BASE = "https://data.gdeltproject.org/gdeltv2"
@@ -257,6 +259,22 @@ CONFLICT_ZONE_COUNTRY_FIPS = {
     "Venezuela": ["VE"], "Yemen": ["YM"],
 }
 
+# A handful of Wikipedia's "major wars" entries are classified there for
+# cartel/gang violence, not an organized armed conflict most people would
+# picture as "a war zone". That alone might be a defensible judgment call
+# to leave in -- but the real problem, confirmed by inspecting actual
+# fetched headlines: these countries (the US above all) generate an
+# enormous volume of ordinary daily crime and court reporting that GDELT's
+# assault/armed-clash event codes can't distinguish from cartel violence,
+# and that volume drowned out genuine signal -- letting completely
+# unrelated stories (a decades-old criminal sentencing, a medical-investment
+# PR release) through as if they were conflict-zone violence. Excluded
+# rather than trusting the source's tier classification for this cluster.
+CONFLICT_ZONE_EXCLUDED_COUNTRIES = {
+    "United States", "Mexico", "Belize", "Guatemala", "Honduras",
+    "El Salvador", "Nicaragua",
+}
+
 
 def fetch_conflict_zone_fips_codes() -> set:
     """Live-derive the current set of active-conflict-zone FIPS country
@@ -294,6 +312,8 @@ def fetch_conflict_zone_fips_codes() -> set:
     if len(countries) < 10:
         print(f"  ! Wikipedia conflict-zone list looked too small ({len(countries)} countries) -- page structure may have changed, skipping geo-filter", file=sys.stderr)
         return set()
+
+    countries -= CONFLICT_ZONE_EXCLUDED_COUNTRIES
 
     fips_codes = set()
     unmapped = []
@@ -786,6 +806,171 @@ def fetch_gdelt_bulk_conflict(hours: int, limit: int) -> list:
     return features[:limit]
 
 
+# Titles that mean the fetch hit a bot-block, paywall, or geo-restriction
+# page rather than the actual article -- using one of these as a story's
+# headline would be worse than the synthesized label it's meant to
+# replace, since it reads as a real (if odd) headline rather than an error.
+JUNK_TITLE_PATTERNS = (
+    "unavailable in your location", "just a moment", "access denied",
+    "are you a human", "are you a robot", "attention required",
+    "enable javascript", "page not found", "403 forbidden",
+    "404 not found", "subscribe to continue", "subscribe now",
+)
+
+
+def _fetch_page_title_and_description(url: str, timeout: int = 6):
+    """Fetch a page and pull its real <title> and meta description, so a
+    story can show what its source article is actually about instead of
+    a label synthesized from GDELT's event classification (which is
+    sometimes flatly wrong about what the article even covers). Regex-
+    based on purpose -- stdlib only, and good enough for two near-
+    universal, well-formed tags without needing a full HTML parser.
+    Reads a bounded number of bytes since both tags always sit near the
+    top of a page's <head>, keeping this fast even on large pages."""
+    req = urllib.request.Request(url, headers={"User-Agent": "news-map-hobby-project/0.1"})
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            raw = resp.read(200_000)
+    except Exception:
+        return None, None
+
+    text = raw.decode("utf-8", errors="replace")
+
+    title = None
+    m = re.search(r"<title[^>]*>(.*?)</title>", text, re.IGNORECASE | re.DOTALL)
+    if m:
+        title = html.unescape(re.sub(r"\s+", " ", m.group(1))).strip() or None
+        if title and any(p in title.lower() for p in JUNK_TITLE_PATTERNS):
+            title = None  # a bot-block/geo-block/error page's title, not the article's
+
+    description = None
+    m = re.search(
+        r'<meta[^>]+(?:property|name)=["\'](?:og:)?description["\'][^>]*content=["\']([^"\']*)["\']',
+        text, re.IGNORECASE,
+    ) or re.search(
+        r'<meta[^>]+content=["\']([^"\']*)["\'][^>]*(?:property|name)=["\'](?:og:)?description["\']',
+        text, re.IGNORECASE,
+    )
+    if m:
+        description = html.unescape(re.sub(r"\s+", " ", m.group(1))).strip() or None
+
+    return title, description
+
+
+# A lightweight relevance check on the article's own real title/description
+# (once fetched above) -- catches stories where GDELT's event classification
+# and the conflict-zone geo-filter both technically matched, but the real
+# article has nothing to do with armed conflict at all. Confirmed necessary
+# by inspecting real output: high-news-volume conflict-zone countries
+# (China, India, Pakistan, Nigeria, Colombia...) let through airline PR,
+# stock-trade reports, tax disputes, and entertainment news, since GDELT's
+# assault/armed-clash codes fire on all sorts of unrelated content located
+# in a country that also happens to have a real internal conflict somewhere
+# within it. Favors precision over recall -- specific, mostly-unambiguous
+# violence/war terms, deliberately avoiding a bare "war" (too many idioms:
+# "trade war", "war on drugs", "culture war" would all false-positive).
+CONFLICT_RELEVANCE_KEYWORDS = (
+    "armed conflict", "airstrike", "air strike", "artillery", "shelling",
+    "missile strike", "drone strike", "gunfire", "gunmen", "militant",
+    "insurgent", "insurgency", "rebel", "ceasefire", "cease-fire",
+    "offensive", "front line", "frontline", "war zone", "warzone",
+    "troops", "soldiers", "military operation", "clash", "casualties",
+    "bombing", "bombed", "ambush", "siege", "invasion", "warplane",
+    "rocket attack", "mortar", "combat", "skirmish", "military raid",
+    "cross-border raid", "blockade",
+    "martial law", "battlefield", "killed in fighting", "wounded in",
+    "shot dead", "gun battle", "firefight", "warlord", "paramilitary",
+    "peacekeeping", "humanitarian corridor", "coup", "uprising", "junta",
+    "occupation", "displaced by", "shelled", "attacked by", "fighters",
+    "extremist", "terrorist", "terrorism",
+)
+
+
+# Word-boundary matching, not substring containment -- "fighters" as a
+# plain substring check matches inside "Firefighters", the same way "coup"
+# would match inside "coupon". Compiled once at import time since this
+# runs per-story.
+_CONFLICT_RELEVANCE_PATTERN = re.compile(
+    r"\b(?:" + "|".join(re.escape(kw) for kw in CONFLICT_RELEVANCE_KEYWORDS) + r")\b",
+    re.IGNORECASE,
+)
+
+
+def _is_conflict_relevant(title: str, description: str) -> bool:
+    text = f"{title or ''} {description or ''}"
+    return bool(_CONFLICT_RELEVANCE_PATTERN.search(text))
+
+
+def enrich_with_real_headlines(features: list, categories=("conflict", "political"), max_workers: int = 12) -> None:
+    """Conflict and political headlines are synthesized from GDELT's own
+    event classification ("Armed clash: Police"), not the article's real
+    headline -- and that classification is sometimes flatly wrong about
+    what the linked article is actually about. This fetches each story's
+    real <title> (and meta description, if present) and swaps them in,
+    closing the gap between what the summary claims happened and what
+    the source actually says -- and incidentally surfaces GDELT
+    misclassifications instead of stating them as settled fact, since a
+    wrong event-type guess becomes obvious once the real headline shows.
+
+    For conflict specifically, a story whose real content turns out to
+    have nothing to do with armed conflict (see CONFLICT_RELEVANCE_KEYWORDS)
+    is dropped from `features` entirely rather than just relabeled --
+    a wrong headline is one thing, but a story about airline business
+    class or a tax dispute has no business in a conflict feed regardless
+    of what its headline says. Political isn't filtered this way (out of
+    scope for now; its own mismatches are a separate, smaller issue).
+
+    Mutates `features` in place. Any fetch that fails, times out, or
+    finds no title leaves that story's existing synthesized label
+    untouched and does NOT drop it -- benefit of the doubt when we
+    simply couldn't check, rather than penalizing a blocked/slow site.
+    """
+    targets = [f for f in features if f.get("category") in categories]
+    if not targets:
+        return
+
+    def url_of(feature):
+        m = re.search(r"href='([^']+)'", feature.get("html", ""))
+        return m.group(1) if m else None
+
+    to_drop = []
+    with ThreadPoolExecutor(max_workers=max_workers) as pool:
+        future_to_target = {}
+        for f in targets:
+            url = url_of(f)
+            if url:
+                future_to_target[pool.submit(_fetch_page_title_and_description, url)] = (f, url)
+
+        fetched = 0
+        for future in as_completed(future_to_target):
+            feature, url = future_to_target[future]
+            try:
+                title, description = future.result()
+            except Exception:
+                title, description = None, None
+            if not title:
+                continue
+
+            if feature["category"] == "conflict" and not _is_conflict_relevant(title, description):
+                to_drop.append(feature)
+                continue
+
+            fetched += 1
+            feature["name"] = title
+            feature["html"] = f"<a href='{url}' target='_blank'>{title}</a>"
+            if description:
+                if len(description) > 200:
+                    description = description[:197].rstrip() + "..."
+                feature["summary"] = [description] + feature["summary"]
+
+    if to_drop:
+        drop_ids = {id(f) for f in to_drop}
+        features[:] = [f for f in features if id(f) not in drop_ids]
+
+    print(f"  Enriched {fetched} of {len(targets)} conflict/political stories with real article headlines"
+          + (f", dropped {len(to_drop)} conflict stories whose real content had nothing to do with armed conflict" if to_drop else ""))
+
+
 def main():
     parser = argparse.ArgumentParser(description="Fetch daily geolocated news for the map viewer.")
     parser.add_argument("--target-locations", type=int, default=100, help="Cap on total locations, spread across world regions (default: 100)")
@@ -796,6 +981,7 @@ def main():
     parser.add_argument("--archive-dir", default="data/archive", help="Directory to keep one dated snapshot per day for the timeline feature (default: data/archive)")
     parser.add_argument("--archive-days", type=int, default=30, help="Days of dated snapshots to keep before pruning the oldest (default: 30)")
     parser.add_argument("--no-archive", action="store_true", help="Skip writing/pruning the dated archive snapshot")
+    parser.add_argument("--no-headline-fetch", action="store_true", help="Skip fetching real article headlines for conflict/political (faster for local dev iteration)")
     args = parser.parse_args()
 
     all_features = []
@@ -811,8 +997,20 @@ def main():
     all_features.extend(political_features)
 
     print(f"Fetching 'conflict' events from GDELT bulk data ({args.gdelt_bulk_hours}h window)...")
-    conflict_features = fetch_gdelt_bulk_conflict(args.gdelt_bulk_hours, args.target_locations)
-    print(f"  -> {len(conflict_features)} locations")
+    # Fetches a larger pool than the display target -- confirmed empirically
+    # that a large majority of real-violence-in-a-conflict-zone matches
+    # still turn out (once you read the real article) to have nothing to
+    # do with armed conflict, especially from high-news-volume conflict-zone
+    # countries. Filtering for relevance happens on this larger pool, before
+    # capping down to the display target below, rather than after -- doing
+    # it after would mean rejecting most of an already-small, already-capped
+    # set and ending up with far too few conflict stories to show.
+    conflict_features = fetch_gdelt_bulk_conflict(args.gdelt_bulk_hours, args.target_locations * 2)
+    print(f"  -> {len(conflict_features)} locations before relevance filtering")
+    if not args.no_headline_fetch:
+        print("  Checking conflict stories against their real article content...")
+        enrich_with_real_headlines(conflict_features, categories=("conflict",))
+        print(f"  -> {len(conflict_features)} locations after relevance filtering")
     all_features.extend(conflict_features)
 
     print(f"\n{len(all_features)} locations fetched before region balancing.")
@@ -834,6 +1032,10 @@ def main():
         # that shouldn't lose out to spreading picks across regions.
         guaranteed_top = 10 if category == "conflict" else 0
         all_features.extend(balance_by_region(feats, per_category_target, guaranteed_top))
+
+    if not args.no_headline_fetch:
+        print("\nFetching real article headlines for political stories...")
+        enrich_with_real_headlines(all_features, categories=("political",))
 
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
