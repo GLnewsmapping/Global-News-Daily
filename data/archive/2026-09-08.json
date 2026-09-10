@@ -1,0 +1,1442 @@
+{
+  "generated_at": "2026-09-08T06:05:59.990412+00:00",
+  "feature_count": 99,
+  "features": [
+    {
+      "category": "climate",
+      "lat": 41.517567,
+      "lon": -117.74215,
+      "name": "Emergency Stabilization BAER McConnell, Humboldt, Nevada",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-NVWID-020663' target='_blank'>Emergency Stabilization BAER McConnell, Humboldt, Nevada</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Size: 500 acres",
+        "Reported: Sep 03, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 36.56328098359691,
+      "lon": 137.18696935262963,
+      "name": "Flood in Japan",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104140' target='_blank'>Flood in Japan</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Sep 02, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 56.087554434864494,
+      "lon": 22.14237195052825,
+      "name": "Flood in Lithuania",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104138' target='_blank'>Flood in Lithuania</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 31, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 28.305420970588237,
+      "lon": 69.64171470588235,
+      "name": "Flood in Pakistan",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104136' target='_blank'>Flood in Pakistan</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 30, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 34.428947428693185,
+      "lon": 35.842888813068186,
+      "name": "Flood in Lebanon",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104129' target='_blank'>Flood in Lebanon</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 28, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 34.1,
+      "lon": 165.9,
+      "name": "Tropical Storm Bang-Lang",
+      "count": 1,
+      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp2026.tcw' target='_blank'>Tropical Storm Bang-Lang</a>",
+      "summary": [
+        "Type: Severe Storms",
+        "Peak winds: 35 kts (~40 mph)",
+        "Tracked for 3 days (since Aug 27, 2026)",
+        "Source: JTWC"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": -45.00063900666984,
+      "lon": 169.37733538844688,
+      "name": "Flood in New Zealand",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104126' target='_blank'>Flood in New Zealand</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 26, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 9.568931313604303,
+      "lon": -13.6339676,
+      "name": "Flood in Guinea",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104117' target='_blank'>Flood in Guinea</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 22, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 46.65069,
+      "lon": -104.83045,
+      "name": "Wildfire Ayers Pond, Prairie, Montana",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-MTMCD-000777' target='_blank'>Wildfire Ayers Pond, Prairie, Montana</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Size: 566 acres",
+        "Location note: 25 Miles SE from Terry, MT",
+        "Reported: Sep 03, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 13.973494413604302,
+      "lon": 107.999556,
+      "name": "Flood in Vietnam",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104141' target='_blank'>Flood in Vietnam</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Sep 02, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 47.367264422285714,
+      "lon": 12.80637679457143,
+      "name": "Flood in Austria",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104137' target='_blank'>Flood in Austria</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 30, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 27.792046945847563,
+      "lon": 85.48509754132895,
+      "name": "Flood in Nepal",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104124' target='_blank'>Flood in Nepal</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 25, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 39.06238610452484,
+      "lon": 34.224948188887694,
+      "name": "Flood in T\u00fcrkiye",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104131' target='_blank'>Flood in T\u00fcrkiye</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 27, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 31.7,
+      "lon": 166.8,
+      "name": "Tropical Storm Etau",
+      "count": 1,
+      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp2126.tcw' target='_blank'>Tropical Storm Etau</a>",
+      "summary": [
+        "Type: Severe Storms",
+        "Peak winds: 30 kts (~35 mph)",
+        "Tracked for 4 days (since Aug 27, 2026)",
+        "Source: JTWC"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": -32.84662894265403,
+      "lon": 138.15080248720378,
+      "name": "Flood in Australia",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104119' target='_blank'>Flood in Australia</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 23, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 14.879642913604302,
+      "lon": -15.8851484,
+      "name": "Flood in Senegal",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104113' target='_blank'>Flood in Senegal</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 18, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 46.48575,
+      "lon": -105.185017,
+      "name": "Wildfire Snow, Custer, Montana",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-MTLG14-000775' target='_blank'>Wildfire Snow, Custer, Montana</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Size: 1,100 acres",
+        "Location note: 30 Miles E from Miles City, MT",
+        "Reported: Sep 02, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 30.3,
+      "lon": 132.6,
+      "name": "Tropical Storm Krovanh",
+      "count": 1,
+      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp2226.tcw' target='_blank'>Tropical Storm Krovanh</a>",
+      "summary": [
+        "Type: Severe Storms",
+        "Peak winds: 30 kts (~35 mph)",
+        "Tracked for 7 days (since Sep 01, 2026)",
+        "Source: JTWC"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 52.06322570844622,
+      "lon": -9.510024692191235,
+      "name": "Flood in Ireland",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104127' target='_blank'>Flood in Ireland</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 26, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 38.1,
+      "lon": -179.1,
+      "name": "Tropical Storm Lala",
+      "count": 1,
+      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/cp0126.tcw' target='_blank'>Tropical Storm Lala</a>",
+      "summary": [
+        "Type: Severe Storms",
+        "Peak winds: 35 kts (~40 mph)",
+        "Tracked for 16 days (since Aug 12, 2026)",
+        "Source: JTWC"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 45.253405,
+      "lon": -119.69069,
+      "name": "Wildfire Ruggs, Morrow, Oregon",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-ORHEPN-000600' target='_blank'>Wildfire Ruggs, Morrow, Oregon</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Size: 650 acres",
+        "Reported: Aug 31, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 35.30100849090909,
+      "lon": 126.57581320909092,
+      "name": "Flood in South Korea",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104133' target='_blank'>Flood in South Korea</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 28, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 42.01258642865497,
+      "lon": 42.844023445614035,
+      "name": "Flood in Georgia",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104128' target='_blank'>Flood in Georgia</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 26, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 33.05632251,
+      "lon": -99.07646449,
+      "name": "Wildfire Harris, Throckmorton, Texas",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-TXTXS-267913' target='_blank'>Wildfire Harris, Throckmorton, Texas</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Size: 500 acres",
+        "Location note: 4 Miles NW from Woodson, TX",
+        "Reported: Aug 31, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 15.090101805386418,
+      "lon": 120.5505380735363,
+      "name": "Flood in Philippines",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104130' target='_blank'>Flood in Philippines</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 27, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 41.74294337470793,
+      "lon": 23.47269031341964,
+      "name": "Flood in Bulgaria",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104120' target='_blank'>Flood in Bulgaria</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 23, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 34.6084,
+      "lon": -98.7205,
+      "name": "Wildfire SOUTH RAILROAD, Comanche, Oklahoma",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-OKANA-002690' target='_blank'>Wildfire SOUTH RAILROAD, Comanche, Oklahoma</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Size: 500 acres",
+        "Reported: Aug 30, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 14.009381906428573,
+      "lon": 107.17211393563026,
+      "name": "Flood in Cambodia",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104132' target='_blank'>Flood in Cambodia</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 27, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 48.22728456442595,
+      "lon": 15.790745877721179,
+      "name": "Flood in Austria",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104115' target='_blank'>Flood in Austria</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 19, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 34.4777778,
+      "lon": -95.2966667,
+      "name": "Wildfire Alexander Trail Fire, Pushmataha, Oklahoma",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-OKOKSC-260966' target='_blank'>Wildfire Alexander Trail Fire, Pushmataha, Oklahoma</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Size: 1,400 acres",
+        "Location note: 5 Miles W from Nashoba, OK",
+        "Reported: Aug 30, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 40.09255575178571,
+      "lon": 124.5021684532967,
+      "name": "Flood in North Korea",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104125' target='_blank'>Flood in North Korea</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 22, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 49.44856919676259,
+      "lon": 15.226649712410072,
+      "name": "Flood in Czech Republic",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104118' target='_blank'>Flood in Czech Republic</a>",
+      "summary": [
+        "Type: Floods",
+        "Reported: Aug 19, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 34.4777778,
+      "lon": -95.2966667,
+      "name": "Wildfire Alexander Trail, Pushmataha, Oklahoma",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-OKOKS-260966' target='_blank'>Wildfire Alexander Trail, Pushmataha, Oklahoma</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Size: 1,600 acres",
+        "Location note: 5 Miles W from Nashoba, OK",
+        "Reported: Aug 30, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 38.8951,
+      "lon": -77.0364,
+      "name": "Diplomatic cooperation: American \u2194 Macedonia",
+      "count": 10,
+      "html": "<a href='https://www.miragenews.com/north-macedonia-national-day-8-september-1740231/' target='_blank'>Diplomatic cooperation: American \u2194 Macedonia</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: American \u2194 Macedonia",
+        "Location: Washington, District of Columbia, United States",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 4.6,
+      "lon": -74.0833,
+      "name": "Signed formal agreement: United Arab Emirates \u2194 Colombia (criminal group)",
+      "count": 2,
+      "html": "<a href='https://www.irishmirror.ie/blow-kinahan-cartel-gardai-colombian-37636798' target='_blank'>Signed formal agreement: United Arab Emirates \u2194 Colombia (criminal group)</a>",
+      "summary": [
+        "Type: Signed formal agreement",
+        "Actors: United Arab Emirates \u2194 Colombia (criminal group)",
+        "Location: Bogota, Cundinamarca, Colombia",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 1.13333,
+      "lon": 31.35,
+      "name": "Diplomatic consultation: Cairo \u2194 Uganda",
+      "count": 10,
+      "html": "<a href='https://cairoscene.com/News/Egypt-Uganda-Explore-Joint-Christian-Pilgrimage-Routes' target='_blank'>Diplomatic consultation: Cairo \u2194 Uganda</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Cairo \u2194 Uganda",
+        "Location: Namugongo, Kibale, Uganda",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": -6.17444,
+      "lon": 106.829,
+      "name": "Rejected cooperation: Melanesian \u2194 Indonesia",
+      "count": 10,
+      "html": "<a href='https://www.scoop.co.nz/stories/WO2609/S00060/west-papuan-group-urges-jakarta-to-put-words-into-action-on-un-visit.htm' target='_blank'>Rejected cooperation: Melanesian \u2194 Indonesia</a>",
+      "summary": [
+        "Type: Rejected cooperation",
+        "Actors: Melanesian \u2194 Indonesia",
+        "Location: Jakarta, Jakarta Raya, Indonesia",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 31.4167,
+      "lon": 34.3333,
+      "name": "Provided aid: Israeli \u2194 Gaza",
+      "count": 12,
+      "html": "<a href='https://www.bunburymail.com.au/story/9346292/let-down-zomi-slain-aid-workers-mates-want-justice/' target='_blank'>Provided aid: Israeli \u2194 Gaza</a>",
+      "summary": [
+        "Type: Provided aid",
+        "Actors: Israeli \u2194 Gaza",
+        "Location: Gaza, Israel (general), Israel",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 54.7667,
+      "lon": 11.5,
+      "name": "Expressed intent to cooperate: German \u2194 Denmark",
+      "count": 20,
+      "html": "<a href='https://www.business-standard.com/markets/capital-market-news/hle-glascoat-rises-after-securing-supply-contract-worth-20-56-million-euro-126090800266_1.html' target='_blank'>Expressed intent to cooperate: German \u2194 Denmark</a>",
+      "summary": [
+        "Type: Expressed intent to cooperate",
+        "Actors: German \u2194 Denmark",
+        "Location: Lolland, Sj\u00e6and, Denmark",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": -28.5464,
+      "lon": 150.307,
+      "name": "Diplomatic cooperation: Australia (government) \u2194 Lawrence (government)",
+      "count": 20,
+      "html": "<a href='https://www.mudgeeguardian.com.au/story/9346263/tributes-for-father-and-daughter-killed-in-plane-crash/' target='_blank'>Diplomatic cooperation: Australia (government) \u2194 Lawrence (government)</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: Australia (government) \u2194 Lawrence (government)",
+        "Location: Goondiwindi, Queensland, Australia",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 41.3167,
+      "lon": 69.25,
+      "name": "Economic cooperation: Serbia \u2194 Uzbekistan",
+      "count": 5,
+      "html": "<a href='https://www.trend.az/casia/uzbekistan/4221448.html' target='_blank'>Economic cooperation: Serbia \u2194 Uzbekistan</a>",
+      "summary": [
+        "Type: Economic cooperation",
+        "Actors: Serbia \u2194 Uzbekistan",
+        "Location: Tashkent, Toshkent Shahri, Uzbekistan",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 60.0,
+      "lon": 100.0,
+      "name": "Diplomatic cooperation: Russia (government) \u2194 The Us",
+      "count": 5,
+      "html": "<a href='https://www.afr.com/world/europe/germany-s-election-winning-extremists-can-count-on-maga-20260908-p60vc2' target='_blank'>Diplomatic cooperation: Russia (government) \u2194 The Us</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: Russia (government) \u2194 The Us",
+        "Location: Russia",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 19.0,
+      "lon": -72.416667,
+      "name": "Diplomatic visit: Africa \u2194 Cuba",
+      "count": 8,
+      "html": "<a href='https://www.pambazuka.org/taxonomy/term/15744' target='_blank'>Diplomatic visit: Africa \u2194 Cuba</a>",
+      "summary": [
+        "Type: Diplomatic visit",
+        "Actors: Africa \u2194 Cuba",
+        "Location: Haiti",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 4.6,
+      "lon": -74.0833,
+      "name": "Expressed intent to cooperate: Argentina \u2194 Brazil",
+      "count": 2,
+      "html": "<a href='https://www.koreaherald.com/article/10866491' target='_blank'>Expressed intent to cooperate: Argentina \u2194 Brazil</a>",
+      "summary": [
+        "Type: Expressed intent to cooperate",
+        "Actors: Argentina \u2194 Brazil",
+        "Location: Bogota, Cundinamarca, Colombia",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": -3.5,
+      "lon": 30.0,
+      "name": "Diplomatic visit: Burundian \u2194 Kenya",
+      "count": 8,
+      "html": "<a href='https://www.jacarandafm.com/news/news/burundians-rush-to-leave-kenya-after-crackdown/' target='_blank'>Diplomatic visit: Burundian \u2194 Kenya</a>",
+      "summary": [
+        "Type: Diplomatic visit",
+        "Actors: Burundian \u2194 Kenya",
+        "Location: Burundi",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 17.9667,
+      "lon": 102.6,
+      "name": "Diplomatic visit: Chinese \u2194 Laos",
+      "count": 8,
+      "html": "<a href='http://eng.chinamil.com.cn/2025xb/C_251453/EC/16484230.html' target='_blank'>Diplomatic visit: Chinese \u2194 Laos</a>",
+      "summary": [
+        "Type: Diplomatic visit",
+        "Actors: Chinese \u2194 Laos",
+        "Location: Vientiane, (LA11), Laos",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 31.4167,
+      "lon": 34.3333,
+      "name": "Provided aid: Israeli \u2194 Gaza",
+      "count": 10,
+      "html": "<a href='https://www.batemansbaypost.com.au/story/9346292/let-down-zomi-slain-aid-workers-mates-want-justice/' target='_blank'>Provided aid: Israeli \u2194 Gaza</a>",
+      "summary": [
+        "Type: Provided aid",
+        "Actors: Israeli \u2194 Gaza",
+        "Location: Gaza, Israel (general), Israel",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 43.0,
+      "lon": 25.0,
+      "name": "Provided aid: Turkey \u2194 Bulgaria",
+      "count": 10,
+      "html": "<a href='http://www.strategypage.com/%5Cqnd%5Crussia%5Carticles%5C202609076632.aspx' target='_blank'>Provided aid: Turkey \u2194 Bulgaria</a>",
+      "summary": [
+        "Type: Provided aid",
+        "Actors: Turkey \u2194 Bulgaria",
+        "Location: Bulgaria",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": -25.0,
+      "lon": 135.0,
+      "name": "Diplomatic consultation: Australia \u2194 Kiwi",
+      "count": 5,
+      "html": "<a href='https://www.scoop.co.nz/stories/PO2609/S00058/number-of-migrating-kiwis-is-not-growing-says-pm-but-thousands-are-still-leaving.htm' target='_blank'>Diplomatic consultation: Australia \u2194 Kiwi</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Australia \u2194 Kiwi",
+        "Location: Australia",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 28.0024,
+      "lon": 84.6201,
+      "name": "Provided aid: Nepal \u2194 London",
+      "count": 4,
+      "html": "<a href='https://www.newsandstar.co.uk/news/26528643.carlisle-gurkha-spicy-raises-1-326-nepal-flood-victims/' target='_blank'>Provided aid: Nepal \u2194 London</a>",
+      "summary": [
+        "Type: Provided aid",
+        "Actors: Nepal \u2194 London",
+        "Location: Gurkha, Nepal (general), Nepal",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 60.0,
+      "lon": 100.0,
+      "name": "Diplomatic visit: Russian \u2194 Kyiv",
+      "count": 2,
+      "html": "<a href='https://www.dw.com/en/ukraine-updates-kyiv-strikes-kravchenko/live-79153168' target='_blank'>Diplomatic visit: Russian \u2194 Kyiv</a>",
+      "summary": [
+        "Type: Diplomatic visit",
+        "Actors: Russian \u2194 Kyiv",
+        "Location: Russia",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 27.8333,
+      "lon": -81.717,
+      "name": "Expressed intent to cooperate: Bahama \u2194 Florida",
+      "count": 8,
+      "html": "<a href='https://www.winnipegfreepress.com/world/2026/09/07/us-coast-guard-joins-bahamas-search-for-missing-plane-carrying-4-family-members-heading-to-florida' target='_blank'>Expressed intent to cooperate: Bahama \u2194 Florida</a>",
+      "summary": [
+        "Type: Expressed intent to cooperate",
+        "Actors: Bahama \u2194 Florida",
+        "Location: Florida, United States",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": -2.0,
+      "lon": -77.5,
+      "name": "Diplomatic consultation: Ecuador \u2194 El Salvador",
+      "count": 2,
+      "html": "<a href='https://www.thehindu.com/news/international/us-sinks-an-ecuadorian-ship-in-the-pacific-it-alleges-is-tied-to-drug-trafficking/article71441244.ece' target='_blank'>Diplomatic consultation: Ecuador \u2194 El Salvador</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Ecuador \u2194 El Salvador",
+        "Location: Ecuador",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 5.34111,
+      "lon": -4.02806,
+      "name": "Diplomatic visit: Africa \u2194 Abidjan",
+      "count": 7,
+      "html": "<a href='https://artdaily.com/news/199979/Parcours-des-Mondes-celebrates-25-years-with-art-spanning-continents-and-centuries-in-Paris' target='_blank'>Diplomatic visit: Africa \u2194 Abidjan</a>",
+      "summary": [
+        "Type: Diplomatic visit",
+        "Actors: Africa \u2194 Abidjan",
+        "Location: Abidjan, Lagunes, Cote D'ivoire",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 1.366667,
+      "lon": 103.8,
+      "name": "Diplomatic cooperation: Singapore \u2194 Nepal",
+      "count": 8,
+      "html": "<a href='https://www.ibtimes.co.in/snake-curry-black-magic-racist-posts-target-indians-singapore-pm-home-minister-condemn-905572' target='_blank'>Diplomatic cooperation: Singapore \u2194 Nepal</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: Singapore \u2194 Nepal",
+        "Location: Singapore",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 31.666667,
+      "lon": 35.25,
+      "name": "Reduced relations / sanctions: United Kingdom (government) \u2194 West Bank (civilian group)",
+      "count": 10,
+      "html": "<a href='https://www.bbc.com/news/articles/c4grdjnle22o' target='_blank'>Reduced relations / sanctions: United Kingdom (government) \u2194 West Bank (civilian group)</a>",
+      "summary": [
+        "Type: Reduced relations / sanctions",
+        "Actors: United Kingdom (government) \u2194 West Bank (civilian group)",
+        "Location: West Bank",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 56.0,
+      "lon": 10.0,
+      "name": "Expressed intent to cooperate: Greenland \u2194 China",
+      "count": 10,
+      "html": "<a href='http://en.ce.cn/main/latest/202609/t20260908_3200497.shtml' target='_blank'>Expressed intent to cooperate: Greenland \u2194 China</a>",
+      "summary": [
+        "Type: Expressed intent to cooperate",
+        "Actors: Greenland \u2194 China",
+        "Location: Denmark",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 41.3167,
+      "lon": 69.25,
+      "name": "Diplomatic visit: United Arab Emirates \u2194 Uzbekistan",
+      "count": 3,
+      "html": "<a href='http://www.cacianalyst.org/publications/analytical-articles/item/13985-uzbekistans-next-competitive-advantage-is-talent.html' target='_blank'>Diplomatic visit: United Arab Emirates \u2194 Uzbekistan</a>",
+      "summary": [
+        "Type: Diplomatic visit",
+        "Actors: United Arab Emirates \u2194 Uzbekistan",
+        "Location: Tashkent, Toshkent Shahri, Uzbekistan",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 38.8951,
+      "lon": -77.0364,
+      "name": "Economic cooperation: American \u2194 Canada",
+      "count": 8,
+      "html": "<a href='https://www.messenger-inquirer.com/ap/ap_international_news/what-to-know-about-canada-s-escalating-trade-war-with-the-us-as-carney-retaliates/article_7c1a7bd5-2de4-5e28-8db2-9938e84e7cb4.html' target='_blank'>Economic cooperation: American \u2194 Canada</a>",
+      "summary": [
+        "Type: Economic cooperation",
+        "Actors: American \u2194 Canada",
+        "Location: Washington, District of Columbia, United States",
+        "Reported: Sep 08, 2025",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 9.1,
+      "lon": 37.25,
+      "name": "Diplomatic consultation: Ethiopian \u2194 United States",
+      "count": 2,
+      "html": "<a href='https://allafrica.com/stories/202609080046.html' target='_blank'>Diplomatic consultation: Ethiopian \u2194 United States</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Ethiopian \u2194 United States",
+        "Location: Bishoftu, Oromiya, Ethiopia",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 35.0,
+      "lon": 105.0,
+      "name": "Diplomatic consultation: German \u2194 Philippine",
+      "count": 7,
+      "html": "<a href='https://insideretail.asia/2026/09/08/aldi-meets-dali-german-retailer-takes-stake-in-philippine-grocer/' target='_blank'>Diplomatic consultation: German \u2194 Philippine</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: German \u2194 Philippine",
+        "Location: China",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 31.4167,
+      "lon": 34.3333,
+      "name": "Economic cooperation: Germany \u2194 Israel",
+      "count": 10,
+      "html": "<a href='https://www.afr.com/world/north-america/why-the-climate-activists-have-pivoted-to-palestine-20260907-p60v36' target='_blank'>Economic cooperation: Germany \u2194 Israel</a>",
+      "summary": [
+        "Type: Economic cooperation",
+        "Actors: Germany \u2194 Israel",
+        "Location: Gaza, Israel (general), Israel",
+        "Reported: Aug 09, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 55.7522,
+      "lon": 37.6156,
+      "name": "Diplomatic cooperation: Moscow \u2194 China",
+      "count": 10,
+      "html": "<a href='https://www.zerohedge.com/geopolitical/central-asia-escaping-backyard-label' target='_blank'>Diplomatic cooperation: Moscow \u2194 China</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: Moscow \u2194 China",
+        "Location: Moscow, Moskva, Russia",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 28.0,
+      "lon": 84.0,
+      "name": "Provided aid: Nepal \u2194 China (government)",
+      "count": 3,
+      "html": "<a href='http://www.bjreview.com.cn/World/202609/t20260908_800446073.html' target='_blank'>Provided aid: Nepal \u2194 China (government)</a>",
+      "summary": [
+        "Type: Provided aid",
+        "Actors: Nepal \u2194 China (government)",
+        "Location: Nepal",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 48.0667,
+      "lon": -66.3667,
+      "name": "Economic or material cooperation: Canada (university) \u2194 Albert (business/elite figure)",
+      "count": 6,
+      "html": "<a href='http://www.massey.ac.nz/about/news/new-research-examines-how-farmers-view-data-sharing-in-an-increasingly-digital-agricultural-sector/' target='_blank'>Economic or material cooperation: Canada (university) \u2194 Albert (business/elite figure)</a>",
+      "summary": [
+        "Type: Economic or material cooperation",
+        "Actors: Canada (university) \u2194 Albert (business/elite figure)",
+        "Location: Dalhousie, New Brunswick, Canada",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 9.0,
+      "lon": 49.0,
+      "name": "Diplomatic consultation: Karachi \u2194 Somali",
+      "count": 2,
+      "html": "<a href='https://asianews.network/karachi-police-briefly-detain-protesting-family-members-of-pakistani-sailors-held-hostage-by-somali-pirates/' target='_blank'>Diplomatic consultation: Karachi \u2194 Somali</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Karachi \u2194 Somali",
+        "Location: Puntland, Somalia (general), Somalia",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 44.7244,
+      "lon": 37.7675,
+      "name": "Armed clash: Naval (military)",
+      "count": 10,
+      "html": "<a href='http://www.strategypage.com/%5Chtmw%5Chtsurf%5Carticles%5C202609076810.aspx' target='_blank'>Armed clash: Naval (military)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Naval (military)",
+        "Location: Novorossiysk, Krasnodarskiy Kray, Russia",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 60.0,
+      "lon": -96.0,
+      "name": "Armed clash: Company (company)",
+      "count": 10,
+      "html": "<a href='https://toronto.citynews.ca/2026/09/08/canadas-retaliatory-tariffs-on-u-s-goods-officially-in-effect/' target='_blank'>Armed clash: Company (company)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Company (company)",
+        "Location: Canada",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": -34.5875,
+      "lon": -58.6725,
+      "name": "Armed clash: Hospital",
+      "count": 10,
+      "html": "<a href='https://www.express.co.uk/news/world/2246450/50-people-evacuated-fire-hospital' target='_blank'>Armed clash: Hospital</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Hospital",
+        "Location: Buenos Aires, Distrito Federal, Argentina",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 27.0529,
+      "lon": 79.3583,
+      "name": "Assault: Police (police)",
+      "count": 14,
+      "html": "<a href='https://news.webindia123.com/news/Articles/India/20260908/4496026.html' target='_blank'>Assault: Police (police)</a>",
+      "summary": [
+        "Type: Assault",
+        "Actors: Police (police)",
+        "Location: Manipur, Uttar Pradesh, India",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": -35.2833,
+      "lon": 149.217,
+      "name": "Coercion: Australia vs Israel",
+      "count": 12,
+      "html": "<a href='https://www.bunburymail.com.au/story/9346292/let-down-zomi-slain-aid-workers-mates-want-justice/' target='_blank'>Coercion: Australia vs Israel</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Australia vs Israel",
+        "Location: Canberra, Australian Capital Territory, Australia",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 14.0,
+      "lon": -14.0,
+      "name": "Coercion: Belgium",
+      "count": 10,
+      "html": "<a href='https://www.pambazuka.org/taxonomy/term/15728' target='_blank'>Coercion: Belgium</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Belgium",
+        "Location: Senegal",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 33.3386,
+      "lon": 44.3939,
+      "name": "Armed clash: Baghdad vs The Us",
+      "count": 10,
+      "html": "<a href='https://www.thenationalnews.com/news/mena/2026/09/08/us-air-defence-exit-from-iraq-risks-creating-wider-regional-security-gap/' target='_blank'>Armed clash: Baghdad vs The Us</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Baghdad vs The Us",
+        "Location: Baghdad, Baghdad, Iraq",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 12.9333,
+      "lon": 100.883,
+      "name": "Coercion: Interior Minist (government) vs Israeli",
+      "count": 4,
+      "html": "<a href='https://asianews.network/thai-deportation-rules-draw-foreign-media-attention/' target='_blank'>Coercion: Interior Minist (government) vs Israeli</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Interior Minist (government) vs Israeli",
+        "Location: Pattaya, Chon Buri, Thailand",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 67.2995,
+      "lon": 37.5509,
+      "name": "Armed clash: Russian",
+      "count": 10,
+      "html": "<a href='http://www.strategypage.com/%5Cqnd%5Crussia%5Carticles%5C202609076632.aspx' target='_blank'>Armed clash: Russian</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Russian",
+        "Location: Kola Peninsula, Murmanskaya Oblast', Russia",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 31.106,
+      "lon": -97.6475,
+      "name": "Armed clash: Police (police)",
+      "count": 10,
+      "html": "<a href='https://foxsanantonio.com/newsletter-daily/crime-stoppers-searching-for-suspects-in-2018-murder-of-herion-chase-up-to-5000-reward' target='_blank'>Armed clash: Police (police)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Police (police)",
+        "Location: Texas, United States",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": -34.5875,
+      "lon": -58.6725,
+      "name": "Armed clash: Buenos Aires",
+      "count": 6,
+      "html": "<a href='https://www.aol.co.uk/articles/patients-staff-evacuated-huge-fire-045600000.html' target='_blank'>Armed clash: Buenos Aires</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Buenos Aires",
+        "Location: Buenos Aires, Distrito Federal, Argentina",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 24.8667,
+      "lon": 67.05,
+      "name": "Armed clash: Police (police) vs Robber (criminal group)",
+      "count": 10,
+      "html": "<a href='https://dunyanews.tv/en/Crime/971859-three-suspected-dacoits-killed-in-karachi-encounter-' target='_blank'>Armed clash: Police (police) vs Robber (criminal group)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Police (police) vs Robber (criminal group)",
+        "Location: Karachi, Sindh, Pakistan",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": -25.0,
+      "lon": 135.0,
+      "name": "Coercion: Companies (company)",
+      "count": 10,
+      "html": "<a href='https://economictimes.indiatimes.com/tech/technology/australia-threatens-hefty-fines-if-big-tech-fails-duty-of-care/articleshow/133907660.cms' target='_blank'>Coercion: Companies (company)</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Companies (company)",
+        "Location: Australia",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": -26.2,
+      "lon": 28.0833,
+      "name": "Coercion: Media (media outlet)",
+      "count": 10,
+      "html": "<a href='https://www.businessday.co.za/opinion/2026-09-08-kamohelo-chauke-section27s-troubling-choice-in-representing-tlaleng-mofokeng/' target='_blank'>Coercion: Media (media outlet)</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Media (media outlet)",
+        "Location: Johannesburg, Gauteng, South Africa",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 16.8892,
+      "lon": 42.5511,
+      "name": "Assault: Yemen vs Saudi",
+      "count": 10,
+      "html": "<a href='https://www.al-monitor.com/originals/2026/09/saudi-led-coalition-yemen-says-73-injured-houthi-attacks-kingdom' target='_blank'>Assault: Yemen vs Saudi</a>",
+      "summary": [
+        "Type: Assault",
+        "Actors: Yemen vs Saudi",
+        "Location: Jazan, Jizan, Saudi Arabia",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 2.9802,
+      "lon": 102.928,
+      "name": "Coercion: Attorney General (government)",
+      "count": 4,
+      "html": "<a href='https://aliran.com/thinking-allowed-online/tabung-hajis-day-of-reckoning' target='_blank'>Coercion: Attorney General (government)</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Attorney General (government)",
+        "Location: Tabung Haji, Pahang, Malaysia",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 55.5833,
+      "lon": -3.83333,
+      "name": "Assault: Police (police) vs Scottish",
+      "count": 10,
+      "html": "<a href='https://www.dailyrecord.co.uk/news/scottish-news/hundreds-scots-cops-spat-bitten-37636339' target='_blank'>Assault: Police (police) vs Scottish</a>",
+      "summary": [
+        "Type: Assault",
+        "Actors: Police (police) vs Scottish",
+        "Location: Lanarkshire, South Lanarkshire, United Kingdom",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 18.1064,
+      "lon": -77.4675,
+      "name": "Coercion: President (government) vs School (university)",
+      "count": 10,
+      "html": "<a href='https://jamaica-gleaner.com/article/news/20260908/two-primary-schools-merged-3-closed' target='_blank'>Coercion: President (government) vs School (university)</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: President (government) vs School (university)",
+        "Location: Chantilly, Manchester, Jamaica",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 4.6,
+      "lon": -74.0833,
+      "name": "Coercion: Boss (company) vs United Arab Emirates",
+      "count": 2,
+      "html": "<a href='https://www.irishmirror.ie/blow-kinahan-cartel-gardai-colombian-37636798' target='_blank'>Coercion: Boss (company) vs United Arab Emirates</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Boss (company) vs United Arab Emirates",
+        "Location: Bogota, Cundinamarca, Colombia",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 27.1484,
+      "lon": 79.4903,
+      "name": "Armed clash: Actor (business/elite figure)",
+      "count": 10,
+      "html": "<a href='https://www.hindustantimes.com/entertainment/bollywood/rajesh-sharma-reveals-real-reason-behind-hospitalisation-on-prabhas-fauzi-set-dismisses-earlier-claims-101788835570653.html' target='_blank'>Armed clash: Actor (business/elite figure)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Actor (business/elite figure)",
+        "Location: Dhakuria, Uttar Pradesh, India",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": -33.8833,
+      "lon": 151.217,
+      "name": "Coercion: Government (government) vs Media (media outlet)",
+      "count": 10,
+      "html": "<a href='https://dunyanews.tv/en/Technology/971871-australia-targets-social-media-algorithms-with-new-userchoice-rules' target='_blank'>Coercion: Government (government) vs Media (media outlet)</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Government (government) vs Media (media outlet)",
+        "Location: Sydney, New South Wales, Australia",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 9.08333,
+      "lon": 7.53333,
+      "name": "Armed clash: Commanding Officer (military) vs Abuja",
+      "count": 10,
+      "html": "<a href='https://dailypost.ng/2026/09/08/kuje-prison-officer-found-dead-after-allegedly-firing-at-commander/' target='_blank'>Armed clash: Commanding Officer (military) vs Abuja</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Commanding Officer (military) vs Abuja",
+        "Location: Abuja, Abuja Federal Capital Territory, Nigeria",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 31.7667,
+      "lon": 35.2333,
+      "name": "Assault: Business (company)",
+      "count": 10,
+      "html": "<a href='https://imemc.org/article/israeli-forces-intensify-ongoing-invasion-of-anata-shufat/' target='_blank'>Assault: Business (company)</a>",
+      "summary": [
+        "Type: Assault",
+        "Actors: Business (company)",
+        "Location: Jerusalem, Israel (general), Israel",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 14.5833,
+      "lon": 121.083,
+      "name": "Coercion: Philippine",
+      "count": 4,
+      "html": "<a href='https://asianews.network/philippine-house-panel-proposes-social-media-ban-for-kids/' target='_blank'>Coercion: Philippine</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Philippine",
+        "Location: Pasig City, City of Pasig, Philippines",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 39.5,
+      "lon": -8.0,
+      "name": "Coercion: Company (company) vs Portugal",
+      "count": 8,
+      "html": "<a href='https://www.businessday.co.za/companies/company-strategy/2026-09-08-portuguese-pharmaceutical-group-fhc-moves-into-sterile-injectables/' target='_blank'>Coercion: Company (company) vs Portugal</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Company (company) vs Portugal",
+        "Location: Portugal",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 31.1801,
+      "lon": -91.8749,
+      "name": "Assault: Prosecutor (judiciary)",
+      "count": 10,
+      "html": "<a href='https://www.thenews.com.pk/latest/1415331-ex-louisiana-mayor-misty-roberts-complete-90-day-sentence-for-raping-16-year-old-boy' target='_blank'>Assault: Prosecutor (judiciary)</a>",
+      "summary": [
+        "Type: Assault",
+        "Actors: Prosecutor (judiciary)",
+        "Location: Louisiana, United States",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 27.0529,
+      "lon": 79.3583,
+      "name": "Coercion: Police (police) vs Worker (labor group)",
+      "count": 8,
+      "html": "<a href='https://timesofindia.indiatimes.com/city/delhi/cctv-captures-accused-fleeing-moments-after-manipuri-musician-beaten-to-death-in-delhi/articleshow/133907533.cms' target='_blank'>Coercion: Police (police) vs Worker (labor group)</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Police (police) vs Worker (labor group)",
+        "Location: Manipur, Uttar Pradesh, India",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": -25.0,
+      "lon": 135.0,
+      "name": "Armed clash: Producer (company) vs Australia",
+      "count": 10,
+      "html": "<a href='https://www.queenslandcountrylife.com.au/story/9333288/sonya-comiskey-awards-finalist-drives-agtech-adoption-for-farmers/' target='_blank'>Armed clash: Producer (company) vs Australia</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Producer (company) vs Australia",
+        "Location: Australia",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": -6.0,
+      "lon": 35.0,
+      "name": "Coercion: Business (company)",
+      "count": 5,
+      "html": "<a href='https://dailynews.co.tz/cross-border-trade-lifts-postal-business/' target='_blank'>Coercion: Business (company)</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Business (company)",
+        "Location: Tanzania",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 31.5,
+      "lon": 34.75,
+      "name": "Armed clash: Armed Men (unaligned armed forces) vs Neighborhood (civilian group)",
+      "count": 10,
+      "html": "<a href='https://yalibnan.com/2026/09/08/cracks-in-the-shiite-duo-residents-refuse-to-be-hezbollahs-human-shields/' target='_blank'>Armed clash: Armed Men (unaligned armed forces) vs Neighborhood (civilian group)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Armed Men (unaligned armed forces) vs Neighborhood (civilian group)",
+        "Location: Israel",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 16.45,
+      "lon": 120.55,
+      "name": "Coercion: Philippine",
+      "count": 2,
+      "html": "<a href='https://www.philstar.com/headlines/2026/09/08/2554855/govt-seek-romualdez-transfer-pnp-hospital-says-remulla' target='_blank'>Coercion: Philippine</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Philippine",
+        "Location: Philippine, Benguet, Philippines",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 44.8186,
+      "lon": 20.4681,
+      "name": "Coercion: Army (military)",
+      "count": 7,
+      "html": "<a href='https://www.aljazeera.com/opinions/2026/9/8/burying-mladic-were-no-lessons-learned' target='_blank'>Coercion: Army (military)</a>",
+      "summary": [
+        "Type: Coercion",
+        "Actors: Army (military)",
+        "Location: Belgrade, Serbia (general),",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 40.3736,
+      "lon": -82.7755,
+      "name": "Armed clash: Toledo",
+      "count": 10,
+      "html": "<a href='https://www.13abc.com/2026/09/08/toledo-woman-turning-lupus-battle-into-wig-giveaway-others-gets-helping-hand/' target='_blank'>Armed clash: Toledo</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Toledo",
+        "Location: Ohio, United States",
+        "Reported: Sep 08, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    }
+  ]
+}
