@@ -6,8 +6,11 @@ single combined JSON file that the viewers (index.html, map.html, globe.html)
 load directly:
 
   - conflict: GDELT's raw bulk event export files (updated every 15 min),
-    filtered to CAMEO's protest/coercion/violence codes -- real individual
-    incidents (battles, assaults, riots, protests), not a yearly total.
+    filtered to real violence (battles, assaults, riots, violent
+    repression) happening inside a currently-active conflict zone -- real
+    wars and armed conflicts, not any violent incident anywhere. Which
+    countries count as an active conflict zone is itself pulled live from
+    Wikipedia's "List of ongoing armed conflicts" rather than hardcoded.
   - climate: NASA's EONET API (real tracked natural events -- wildfires,
     storms, floods, drought). No API key, no rate limit.
   - political: the same GDELT bulk event files, filtered instead to CAMEO
@@ -48,6 +51,7 @@ from datetime import datetime, timedelta, timezone
 GDELT_BULK_BASE = "https://data.gdeltproject.org/gdeltv2"
 EONET_ENDPOINT = "https://eonet.gsfc.nasa.gov/api/v3/events"
 EONET_CATEGORIES = "drought,floods,severeStorms,wildfires,tempExtremes"
+WIKIPEDIA_API = "https://en.wikipedia.org/w/api.php"
 
 # CAMEO root event codes covering nation-state cooperation/friction that
 # affects geopolitics -- trade, treaties, diplomacy, aid, sanctions -- as
@@ -186,6 +190,100 @@ def _is_generic_actor_name(name: str) -> bool:
 # to political, where a company genuinely can be the actor (a firm signing
 # a deal, taking a sanction) -- this is specific to violence.
 IMPLAUSIBLE_VIOLENCE_ACTOR_TYPES = {"BUS", "MNC", "EDU", "MED", "ELI"}
+
+# "Conflict" means real wars and armed conflicts, not any violent incident
+# anywhere -- an assault in Vermont or a prison fight in Minnesota isn't a
+# war, even though it's real violence. This narrows conflict events down to
+# ones happening inside a currently-active conflict zone, sourced live from
+# Wikipedia's crowd-sourced, actively-maintained "List of ongoing armed
+# conflicts" rather than a list we'd have to hand-update ourselves as wars
+# start, end, or shift. Only the two most severe tiers on that page (1,000+
+# combat deaths/year -- "major wars" and "minor wars" in its own
+# terminology) are used; the lower tiers mix in things like cartel/gang
+# violence that read more like organized crime than a war zone.
+CONFLICT_ZONE_TABLE_IDS = ("conflicts10000", "conflicts1000")
+
+# Wikipedia's country names -> FIPS 10-4 codes, since that's what GDELT's
+# own ActionGeo_CountryCode field actually uses (confirmed empirically --
+# it's NOT ISO 3166; e.g. Ukraine is FIPS "UP", not ISO "UA"). Verified
+# against the FIPS 10-4 reference table, not guessed. Palestine maps to
+# both Gaza Strip and West Bank, since FIPS predates a unified Palestine
+# code and splits it into those two historical entities.
+CONFLICT_ZONE_COUNTRY_FIPS = {
+    "Afghanistan": ["AF"], "Algeria": ["AG"], "Bahrain": ["BA"],
+    "Bangladesh": ["BG"], "Belarus": ["BO"], "Belize": ["BH"],
+    "Benin": ["BN"], "Burkina Faso": ["UV"], "Burundi": ["BY"],
+    "Cameroon": ["CM"], "Central African Republic": ["CT"], "Chad": ["CD"],
+    "China": ["CH"], "Colombia": ["CO"],
+    "Democratic Republic of the Congo": ["CG"], "Ecuador": ["EC"],
+    "Egypt": ["EG"], "El Salvador": ["ES"], "Eritrea": ["ER"],
+    "Ethiopia": ["ET"], "Guatemala": ["GT"], "Haiti": ["HA"],
+    "Honduras": ["HO"], "India": ["IN"], "Iran": ["IR"], "Iraq": ["IZ"],
+    "Israel": ["IS"], "Ivory Coast": ["IV"], "Jordan": ["JO"],
+    "Kenya": ["KE"], "Kuwait": ["KU"], "Lebanon": ["LE"], "Libya": ["LY"],
+    "Mali": ["ML"], "Mauritania": ["MR"], "Mexico": ["MX"],
+    "Morocco": ["MO"], "Myanmar": ["BM"], "Nicaragua": ["NU"],
+    "Niger": ["NG"], "Nigeria": ["NI"], "Oman": ["MU"],
+    "Pakistan": ["PK"], "Palestine": ["GZ", "WE"], "Qatar": ["QA"],
+    "Russia": ["RS"], "Rwanda": ["RW"], "Saudi Arabia": ["SA"],
+    "Somalia": ["SO"], "Somaliland": ["SO"], "South Sudan": ["OD"],
+    "Sudan": ["SU"], "Syria": ["SY"], "Tajikistan": ["TI"],
+    "Thailand": ["TH"], "Togo": ["TO"], "Tunisia": ["TS"],
+    "Turkey": ["TU"], "Uganda": ["UG"], "Ukraine": ["UP"],
+    "United Arab Emirates": ["AE"], "United States": ["US"],
+    "Venezuela": ["VE"], "Yemen": ["YM"],
+}
+
+
+def fetch_conflict_zone_fips_codes() -> set:
+    """Live-derive the current set of active-conflict-zone FIPS country
+    codes from Wikipedia rather than hand-maintaining a static list.
+    Falls back to an empty set (meaning: don't geo-filter at all, rather
+    than filtering everything out) if the fetch fails or the page
+    structure looks different than expected, so a Wikipedia hiccup
+    degrades the site gracefully instead of hollowing out the category.
+    """
+    params = {
+        "action": "parse",
+        "page": "List_of_ongoing_armed_conflicts",
+        "prop": "wikitext",
+        "format": "json",
+    }
+    url = f"{WIKIPEDIA_API}?{urllib.parse.urlencode(params)}"
+    req = urllib.request.Request(url, headers={"User-Agent": "news-map-hobby-project/0.1"})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            payload = json.loads(resp.read().decode("utf-8"))
+        wikitext = payload["parse"]["wikitext"]["*"]
+    except (urllib.error.URLError, urllib.error.HTTPError, KeyError, json.JSONDecodeError) as exc:
+        print(f"  ! failed to fetch conflict-zone list from Wikipedia: {exc}", file=sys.stderr)
+        return set()
+
+    countries = set()
+    for table_id in CONFLICT_ZONE_TABLE_IDS:
+        start = wikitext.find(f'id="{table_id}"')
+        if start == -1:
+            continue
+        end = wikitext.find("\n|}", start)
+        block = wikitext[start:end if end != -1 else None]
+        countries.update(m.strip() for m in re.findall(r"\{\{flag\|([^}|]+)", block))
+
+    if len(countries) < 10:
+        print(f"  ! Wikipedia conflict-zone list looked too small ({len(countries)} countries) -- page structure may have changed, skipping geo-filter", file=sys.stderr)
+        return set()
+
+    fips_codes = set()
+    unmapped = []
+    for name in countries:
+        codes = CONFLICT_ZONE_COUNTRY_FIPS.get(name)
+        if codes:
+            fips_codes.update(codes)
+        else:
+            unmapped.append(name)
+    if unmapped:
+        print(f"  ! conflict-zone countries with no FIPS mapping (add to CONFLICT_ZONE_COUNTRY_FIPS): {', '.join(sorted(unmapped))}", file=sys.stderr)
+
+    return fips_codes
 
 # Rough geographic buckets used only to keep the final selection from being
 # dominated by whichever regions English-language wire services cover most
@@ -558,11 +656,13 @@ def fetch_gdelt_bulk_political(hours: int, limit: int) -> list:
 
 def fetch_gdelt_bulk_conflict(hours: int, limit: int) -> list:
     """Conflict via the same GDELT bulk event files as political, filtered
-    to real violence only -- military/security force action (assault,
-    armed clashes, mass violence) or a protest that turned violent (riots,
-    violent repression) -- refreshed every 15 minutes, in place of the old
-    ACLED yearly country totals, so "conflict" actually means real-time
-    like the rest of the site rather than a once-a-year snapshot.
+    to real violence -- military/security force action (assault, armed
+    clashes, mass violence) or a protest that turned violent (riots,
+    violent repression) -- happening inside a currently-active conflict
+    zone (see fetch_conflict_zone_fips_codes), refreshed every 15 minutes,
+    in place of the old ACLED yearly country totals, so "conflict" means
+    real wars and armed conflicts around the world, tracked in real time,
+    rather than any violent incident anywhere.
 
     Unlike political, this doesn't require two distinct countries as
     actors -- most conflict (a government vs. a domestic rebel group, a
@@ -572,6 +672,10 @@ def fetch_gdelt_bulk_conflict(hours: int, limit: int) -> list:
     Also scans the entire requested window before picking winners rather
     than stopping at `limit` rows -- see fetch_gdelt_bulk_political for why.
     """
+    conflict_zone_fips = fetch_conflict_zone_fips_codes()
+    if conflict_zone_fips:
+        print(f"  Active conflict zones (from Wikipedia): {len(conflict_zone_fips)} country codes")
+
     seen_urls = set()
     features = []
     _SAFETY_CAP = 6000
@@ -587,6 +691,9 @@ def fetch_gdelt_bulk_conflict(hours: int, limit: int) -> list:
             event_code = row[26]
             if root_code not in CONFLICT_ROOT_CODES and event_code not in CONFLICT_VIOLENT_SUBCODES:
                 continue
+
+            if conflict_zone_fips and row[53] not in conflict_zone_fips:
+                continue  # real violence, but not in a currently-active conflict zone
 
             url = row[60]
             if not url or url in seen_urls:
