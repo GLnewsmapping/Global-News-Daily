@@ -177,6 +177,16 @@ GENERIC_ACTOR_NAMES = set(_DEMONYMS) | {d + "s" for d in _DEMONYMS} | {
 def _is_generic_actor_name(name: str) -> bool:
     return name.strip().lower() in GENERIC_ACTOR_NAMES
 
+# For conflict specifically: GDELT's actor extraction sometimes tags an
+# incidentally-mentioned company, outlet, or institution as if it were a
+# participant in the violence itself -- "Armed clash: Companies vs Europe",
+# "Armed clash: Landlord (company)". A business isn't a plausible party to
+# an armed clash or an assault, so these actor types are treated as if no
+# actor had been extracted, the same way generic demonyms are. Not applied
+# to political, where a company genuinely can be the actor (a firm signing
+# a deal, taking a sanction) -- this is specific to violence.
+IMPLAUSIBLE_VIOLENCE_ACTOR_TYPES = {"BUS", "MNC", "EDU", "MED", "ELI"}
+
 # Rough geographic buckets used only to keep the final selection from being
 # dominated by whichever regions English-language wire services cover most
 # heavily on a given day. Boxes are approximate and checked in order, so put
@@ -593,10 +603,11 @@ def fetch_gdelt_bulk_conflict(hours: int, limit: int) -> list:
 
             label = CAMEO_CODE_LABELS.get(event_code) or CONFLICT_ROOT_LABELS.get(root_code, "Conflict event")
             place = row[52] or "Unknown location"
-            actor1_raw = _title_case(row[6]) if row[6] and not _is_generic_actor_name(row[6]) else None
-            actor2_raw = _title_case(row[16]) if row[16] and not _is_generic_actor_name(row[16]) else None
-            actor1_name = _actor_label(actor1_raw, row[12]) if actor1_raw else None
-            actor2_name = _actor_label(actor2_raw, row[22]) if actor2_raw else None
+            actor1_type, actor2_type = row[12], row[22]
+            actor1_raw = _title_case(row[6]) if row[6] and not _is_generic_actor_name(row[6]) and actor1_type not in IMPLAUSIBLE_VIOLENCE_ACTOR_TYPES else None
+            actor2_raw = _title_case(row[16]) if row[16] and not _is_generic_actor_name(row[16]) and actor2_type not in IMPLAUSIBLE_VIOLENCE_ACTOR_TYPES else None
+            actor1_name = _actor_label(actor1_raw, actor1_type) if actor1_raw else None
+            actor2_name = _actor_label(actor2_raw, actor2_type) if actor2_raw else None
 
             if actor1_name and actor2_name:
                 actors_str = f"{actor1_name} vs {actor2_name}"
