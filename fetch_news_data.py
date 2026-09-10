@@ -181,6 +181,29 @@ GENERIC_ACTOR_NAMES = set(_DEMONYMS) | {d + "s" for d in _DEMONYMS} | {
 def _is_generic_actor_name(name: str) -> bool:
     return name.strip().lower() in GENERIC_ACTOR_NAMES
 
+
+def _is_place_name_actor(actor_name: str, geo_type: str, geo_fullname: str) -> bool:
+    """GDELT occasionally extracts a bare place name mentioned in the
+    article text and tags it as if it were an actor -- a US state
+    ("Kansas"), or a city referenced in passing ("Kyiv" in a story
+    actually located in Florida) -- not a real participant. Detected
+    generically rather than from a hardcoded gazetteer: GDELT resolves
+    its own geography for each actor, so if that resolution is
+    sub-national (a US state/city or world city/state -- geo types 2-5,
+    not a bare country) and the actor's name matches the city/region part
+    of that resolution specifically, it's a place, not a person, group,
+    or institution. The country part is deliberately excluded from this
+    check -- a country genuinely can be a real actor ("Ukraine",
+    "China"), unlike a city or state.
+    """
+    if not actor_name or geo_type not in ("2", "3", "4", "5") or not geo_fullname:
+        return False
+    parts = [p.strip() for p in geo_fullname.split(",") if p.strip()]
+    if len(parts) < 2:
+        return False
+    name_lower = actor_name.strip().lower()
+    return any(name_lower == p.lower() for p in parts[:-1])  # every part except the trailing country
+
 # For conflict specifically: GDELT's actor extraction sometimes tags an
 # incidentally-mentioned company, outlet, or institution as if it were a
 # participant in the violence itself -- "Armed clash: Companies vs Europe",
@@ -616,6 +639,8 @@ def fetch_gdelt_bulk_political(hours: int, limit: int) -> list:
             actor2_raw = _title_case(row[16] or actor2_country)
             if _is_generic_actor_name(actor1_raw) or _is_generic_actor_name(actor2_raw):
                 continue  # a bare nationality/ethnic word isn't a real identified actor
+            if _is_place_name_actor(actor1_raw, row[35], row[36]) or _is_place_name_actor(actor2_raw, row[43], row[44]):
+                continue  # a stray city/state name mentioned in the article, not a real actor
 
             seen_urls.add(url)
 
@@ -711,8 +736,14 @@ def fetch_gdelt_bulk_conflict(hours: int, limit: int) -> list:
             label = CAMEO_CODE_LABELS.get(event_code) or CONFLICT_ROOT_LABELS.get(root_code, "Conflict event")
             place = row[52] or "Unknown location"
             actor1_type, actor2_type = row[12], row[22]
-            actor1_raw = _title_case(row[6]) if row[6] and not _is_generic_actor_name(row[6]) and actor1_type not in IMPLAUSIBLE_VIOLENCE_ACTOR_TYPES else None
-            actor2_raw = _title_case(row[16]) if row[16] and not _is_generic_actor_name(row[16]) and actor2_type not in IMPLAUSIBLE_VIOLENCE_ACTOR_TYPES else None
+            actor1_ok = (row[6] and not _is_generic_actor_name(row[6])
+                         and actor1_type not in IMPLAUSIBLE_VIOLENCE_ACTOR_TYPES
+                         and not _is_place_name_actor(row[6], row[35], row[36]))
+            actor2_ok = (row[16] and not _is_generic_actor_name(row[16])
+                         and actor2_type not in IMPLAUSIBLE_VIOLENCE_ACTOR_TYPES
+                         and not _is_place_name_actor(row[16], row[43], row[44]))
+            actor1_raw = _title_case(row[6]) if actor1_ok else None
+            actor2_raw = _title_case(row[16]) if actor2_ok else None
             actor1_name = _actor_label(actor1_raw, actor1_type) if actor1_raw else None
             actor2_name = _actor_label(actor2_raw, actor2_type) if actor2_raw else None
 

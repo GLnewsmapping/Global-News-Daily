@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T15:16:27.864164+00:00",
+  "generated_at": "2026-09-10T15:24:22.811018+00:00",
   "feature_count": 99,
   "features": [
     {
@@ -492,15 +492,15 @@
     },
     {
       "category": "political",
-      "lat": 55.7522,
-      "lon": 37.6156,
-      "name": "Diplomatic consultation: Moscow \u2194 The US (government)",
-      "count": 30,
-      "html": "<a href='http://www.middleeaststar.com/news/279297801/trump-envoys-shocked-by-ukrainian-officials-behavior-rada-mp' target='_blank'>Diplomatic consultation: Moscow \u2194 The US (government)</a>",
+      "lat": 54.0,
+      "lon": -4.0,
+      "name": "Reduced relations / sanctions: Israel \u2194 United Kingdom (government)",
+      "count": 24,
+      "html": "<a href='https://www.yahoo.com/news/politics/articles/thousands-protest-ljubljana-slovenia-opens-025438448.html' target='_blank'>Reduced relations / sanctions: Israel \u2194 United Kingdom (government)</a>",
       "summary": [
-        "Type: Diplomatic consultation",
-        "Actors: Moscow \u2194 The US (government)",
-        "Location: Moscow, Moskva, Russia",
+        "Type: Reduced relations / sanctions",
+        "Actors: Israel \u2194 United Kingdom (government)",
+        "Location: United Kingdom",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -552,15 +552,15 @@
     },
     {
       "category": "political",
-      "lat": 6.45306,
-      "lon": 3.39583,
-      "name": "Diplomatic visit: Lagos \u2194 New York",
+      "lat": -2.0,
+      "lon": 30.0,
+      "name": "Diplomatic cooperation: Rockefeller Foundation (NGO) \u2194 African Development Bank (international org)",
       "count": 10,
-      "html": "<a href='http://silverbirdtv.com/sanwo-olu-lagos-is-building-the-ground-for-africas-next-generation-of-investors/' target='_blank'>Diplomatic visit: Lagos \u2194 New York</a>",
+      "html": "<a href='https://www.africa.com/business/as-international-aid-shrinks-africa-must-become-investment-ready' target='_blank'>Diplomatic cooperation: Rockefeller Foundation (NGO) \u2194 African Development Bank (international org)</a>",
       "summary": [
-        "Type: Diplomatic visit",
-        "Actors: Lagos \u2194 New York",
-        "Location: Lagos, Lagos, Nigeria",
+        "Type: Diplomatic cooperation",
+        "Actors: Rockefeller Foundation (NGO) \u2194 African Development Bank (international org)",
+        "Location: Rwanda",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -582,30 +582,30 @@
     },
     {
       "category": "political",
-      "lat": -33.8833,
-      "lon": 151.217,
-      "name": "Expressed intent to cooperate: Sydney \u2194 London",
+      "lat": -10.0,
+      "lon": -76.0,
+      "name": "Provided aid: Ishares (multinational company) \u2194 Peru",
       "count": 10,
-      "html": "<a href='https://www.thereminder.ca/airbus-unveils-22-hour-nonstop-plane-jet-lag-wont-vanish/' target='_blank'>Expressed intent to cooperate: Sydney \u2194 London</a>",
+      "html": "<a href='https://www.themarketsdaily.com/2026/09/10/298787-shares-in-ishares-msci-peru-and-global-exposure-etf-epu-bought-by-one-capital-management-llc.html' target='_blank'>Provided aid: Ishares (multinational company) \u2194 Peru</a>",
       "summary": [
-        "Type: Expressed intent to cooperate",
-        "Actors: Sydney \u2194 London",
-        "Location: Sydney, New South Wales, Australia",
+        "Type: Provided aid",
+        "Actors: Ishares (multinational company) \u2194 Peru",
+        "Location: Peru",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "political",
-      "lat": -12.05,
-      "lon": -77.05,
-      "name": "Diplomatic consultation: Lima \u2194 United States (government)",
+      "lat": -25.0,
+      "lon": 135.0,
+      "name": "Expressed intent to cooperate: Nvidia (multinational company) \u2194 Australia",
       "count": 10,
-      "html": "<a href='https://www.riotimesonline.com/rubio-lima-keiko-fujimori-visit-september-2026/' target='_blank'>Diplomatic consultation: Lima \u2194 United States (government)</a>",
+      "html": "<a href='https://www.thehindubusinessline.com/info-tech/nvidia-plans-major-expansion-of-data-centre-capacity-in-australia-to-meet-ai-demand/article71450101.ece' target='_blank'>Expressed intent to cooperate: Nvidia (multinational company) \u2194 Australia</a>",
       "summary": [
-        "Type: Diplomatic consultation",
-        "Actors: Lima \u2194 United States (government)",
-        "Location: Lima, Lima, Peru",
+        "Type: Expressed intent to cooperate",
+        "Actors: Nvidia (multinational company) \u2194 Australia",
+        "Location: Australia",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -627,126 +627,6 @@
     },
     {
       "category": "political",
-      "lat": 54.0,
-      "lon": -4.0,
-      "name": "Reduced relations / sanctions: Israel \u2194 United Kingdom (government)",
-      "count": 24,
-      "html": "<a href='https://www.yahoo.com/news/politics/articles/thousands-protest-ljubljana-slovenia-opens-025438448.html' target='_blank'>Reduced relations / sanctions: Israel \u2194 United Kingdom (government)</a>",
-      "summary": [
-        "Type: Reduced relations / sanctions",
-        "Actors: Israel \u2194 United Kingdom (government)",
-        "Location: United Kingdom",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 24.7667,
-      "lon": 67.3333,
-      "name": "Diplomatic consultation: Karachi \u2194 Qatar",
-      "count": 10,
-      "html": "<a href='https://en.dailypakistan.com.pk/10-Sep-2026/major-qatari-lng-shipment-reaches-pakistan-amid-hormuz-tensions' target='_blank'>Diplomatic consultation: Karachi \u2194 Qatar</a>",
-      "summary": [
-        "Type: Diplomatic consultation",
-        "Actors: Karachi \u2194 Qatar",
-        "Location: Port Qasim, Sindh, Pakistan",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 25.0478,
-      "lon": 121.532,
-      "name": "Diplomatic visit: Taipei \u2194 United States",
-      "count": 12,
-      "html": "<a href='https://focustaiwan.tw:443/politics/202609100020' target='_blank'>Diplomatic visit: Taipei \u2194 United States</a>",
-      "summary": [
-        "Type: Diplomatic visit",
-        "Actors: Taipei \u2194 United States",
-        "Location: Taipei, T'ai-pei, Taiwan",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 25.2867,
-      "lon": 51.5333,
-      "name": "Provided aid: Africa \u2194 Doha",
-      "count": 10,
-      "html": "<a href='https://www.africa-newsroom.com/press/lesotho-participates-in-the-meeting-of-the-africa-regional-ministerial-midterm-review-of-the-doha-programme-of-action-for-the-least-developed-countries' target='_blank'>Provided aid: Africa \u2194 Doha</a>",
-      "summary": [
-        "Type: Provided aid",
-        "Actors: Africa \u2194 Doha",
-        "Location: Doha, Ad Daw?ah, Qatar",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": -2.0,
-      "lon": 30.0,
-      "name": "Diplomatic cooperation: Rockefeller Foundation (NGO) \u2194 African Development Bank (international org)",
-      "count": 10,
-      "html": "<a href='https://www.africa.com/business/as-international-aid-shrinks-africa-must-become-investment-ready' target='_blank'>Diplomatic cooperation: Rockefeller Foundation (NGO) \u2194 African Development Bank (international org)</a>",
-      "summary": [
-        "Type: Diplomatic cooperation",
-        "Actors: Rockefeller Foundation (NGO) \u2194 African Development Bank (international org)",
-        "Location: Rwanda",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 47.1167,
-      "lon": 51.8833,
-      "name": "Economic cooperation: Kazakhstan \u2194 China",
-      "count": 10,
-      "html": "<a href='https://timesca.com/kazakhstan-oil-exports-routes-beyond-cpc/' target='_blank'>Economic cooperation: Kazakhstan \u2194 China</a>",
-      "summary": [
-        "Type: Economic cooperation",
-        "Actors: Kazakhstan \u2194 China",
-        "Location: Atyrau, Atyrau, Kazakhstan",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": -10.0,
-      "lon": -76.0,
-      "name": "Provided aid: Ishares (multinational company) \u2194 Peru",
-      "count": 10,
-      "html": "<a href='https://www.themarketsdaily.com/2026/09/10/298787-shares-in-ishares-msci-peru-and-global-exposure-etf-epu-bought-by-one-capital-management-llc.html' target='_blank'>Provided aid: Ishares (multinational company) \u2194 Peru</a>",
-      "summary": [
-        "Type: Provided aid",
-        "Actors: Ishares (multinational company) \u2194 Peru",
-        "Location: Peru",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 43.6667,
-      "lon": -79.4167,
-      "name": "Expressed intent to cooperate: Argentina \u2194 Mexico",
-      "count": 10,
-      "html": "<a href='https://thestarphoenix.com/press-releases/globe-newswire/canada-steps-up-to-support-global-cancer-care-with-first-contribution-to-iaeas-rays-of-hope-initiative/' target='_blank'>Expressed intent to cooperate: Argentina \u2194 Mexico</a>",
-      "summary": [
-        "Type: Expressed intent to cooperate",
-        "Actors: Argentina \u2194 Mexico",
-        "Location: Toronto, Ontario, Canada",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
       "lat": 50.4333,
       "lon": 30.5167,
       "name": "Diplomatic visit: Canada \u2194 Ukraine",
@@ -762,15 +642,15 @@
     },
     {
       "category": "political",
-      "lat": 33.7,
-      "lon": 73.1667,
-      "name": "Economic cooperation: Pakistan \u2194 Qatar",
+      "lat": 24.7667,
+      "lon": 67.3333,
+      "name": "Diplomatic consultation: Karachi \u2194 Qatar",
       "count": 10,
-      "html": "<a href='https://news.az/news/pakistan-resumes-lng-imports-from-qatar-after-july' target='_blank'>Economic cooperation: Pakistan \u2194 Qatar</a>",
+      "html": "<a href='https://en.dailypakistan.com.pk/10-Sep-2026/major-qatari-lng-shipment-reaches-pakistan-amid-hormuz-tensions' target='_blank'>Diplomatic consultation: Karachi \u2194 Qatar</a>",
       "summary": [
-        "Type: Economic cooperation",
-        "Actors: Pakistan \u2194 Qatar",
-        "Location: Islamabad, Islamabad, Pakistan",
+        "Type: Diplomatic consultation",
+        "Actors: Karachi \u2194 Qatar",
+        "Location: Port Qasim, Sindh, Pakistan",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -822,15 +702,45 @@
     },
     {
       "category": "political",
-      "lat": 60.0,
-      "lon": -96.0,
-      "name": "Diplomatic cooperation: Canada \u2194 Victoria",
+      "lat": 47.1167,
+      "lon": 51.8833,
+      "name": "Economic cooperation: Kazakhstan \u2194 China",
       "count": 10,
-      "html": "<a href='https://www.navaltoday.com/2026/09/10/babcock-extends-seaspans-support-for-canadas-victoria-class-subs' target='_blank'>Diplomatic cooperation: Canada \u2194 Victoria</a>",
+      "html": "<a href='https://timesca.com/kazakhstan-oil-exports-routes-beyond-cpc/' target='_blank'>Economic cooperation: Kazakhstan \u2194 China</a>",
       "summary": [
-        "Type: Diplomatic cooperation",
-        "Actors: Canada \u2194 Victoria",
-        "Location: Canada",
+        "Type: Economic cooperation",
+        "Actors: Kazakhstan \u2194 China",
+        "Location: Atyrau, Atyrau, Kazakhstan",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": -54.0,
+      "lon": -70.0,
+      "name": "Expressed intent to cooperate: Chile \u2194 Falklands (company)",
+      "count": 10,
+      "html": "<a href='https://en.mercopress.com/2026/09/10/argentina-claims-chile-is-committed-to-no-logistic-support-for-falklands-oil-industry' target='_blank'>Expressed intent to cooperate: Chile \u2194 Falklands (company)</a>",
+      "summary": [
+        "Type: Expressed intent to cooperate",
+        "Actors: Chile \u2194 Falklands (company)",
+        "Location: Tierra Del Fuego, Chile (general), Chile",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 43.6667,
+      "lon": -79.4167,
+      "name": "Expressed intent to cooperate: Argentina \u2194 Mexico",
+      "count": 10,
+      "html": "<a href='https://thestarphoenix.com/press-releases/globe-newswire/canada-steps-up-to-support-global-cancer-care-with-first-contribution-to-iaeas-rays-of-hope-initiative/' target='_blank'>Expressed intent to cooperate: Argentina \u2194 Mexico</a>",
+      "summary": [
+        "Type: Expressed intent to cooperate",
+        "Actors: Argentina \u2194 Mexico",
+        "Location: Toronto, Ontario, Canada",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -852,15 +762,15 @@
     },
     {
       "category": "political",
-      "lat": 24.0,
-      "lon": 90.0,
-      "name": "Diplomatic cooperation: Bangladesh \u2194 Sri Lanka",
+      "lat": 30.0,
+      "lon": 70.0,
+      "name": "Economic cooperation: Saudi Arabia \u2194 Serbia",
       "count": 10,
-      "html": "<a href='https://www.tamilguardian.com/content/sri-lanka-told-reforms-are-stalling-ngos-demand-international-investigation-un' target='_blank'>Diplomatic cooperation: Bangladesh \u2194 Sri Lanka</a>",
+      "html": "<a href='https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/08/chinas-hq-17ae-shorad-system-to-boost-pakistani-drone-defence-as-india-tensions-simmer' target='_blank'>Economic cooperation: Saudi Arabia \u2194 Serbia</a>",
       "summary": [
-        "Type: Diplomatic cooperation",
-        "Actors: Bangladesh \u2194 Sri Lanka",
-        "Location: Bangladesh",
+        "Type: Economic cooperation",
+        "Actors: Saudi Arabia \u2194 Serbia",
+        "Location: Pakistan",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -912,15 +822,30 @@
     },
     {
       "category": "political",
-      "lat": 18.25,
-      "lon": -77.5,
-      "name": "Diplomatic cooperation: Guyana \u2194 Mexico",
+      "lat": 60.0,
+      "lon": 100.0,
+      "name": "Diplomatic cooperation: China \u2194 Brazil",
       "count": 10,
-      "html": "<a href='https://www.energy-pedia.com/news/jamaica/united-oil-gas-announces-drilling-rig-and-long-lead-availability-study-205250' target='_blank'>Diplomatic cooperation: Guyana \u2194 Mexico</a>",
+      "html": "<a href='https://aninews.in/news/world/asia/permanent-unsc-seats-to-de-dollarisation-brics8217-role-in-making-room-for-global-south-in-post-colonial-world20260910122220/' target='_blank'>Diplomatic cooperation: China \u2194 Brazil</a>",
       "summary": [
         "Type: Diplomatic cooperation",
-        "Actors: Guyana \u2194 Mexico",
-        "Location: Jamaica",
+        "Actors: China \u2194 Brazil",
+        "Location: Russia",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 60.0,
+      "lon": -96.0,
+      "name": "Diplomatic cooperation: Canada \u2194 Victoria",
+      "count": 10,
+      "html": "<a href='https://www.navaltoday.com/2026/09/10/babcock-extends-seaspans-support-for-canadas-victoria-class-subs' target='_blank'>Diplomatic cooperation: Canada \u2194 Victoria</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: Canada \u2194 Victoria",
+        "Location: Canada",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -942,15 +867,15 @@
     },
     {
       "category": "political",
-      "lat": 27.7167,
-      "lon": 85.3167,
-      "name": "Diplomatic visit: Tibet \u2194 Nepal",
+      "lat": 33.7,
+      "lon": 73.1667,
+      "name": "Economic cooperation: Pakistan \u2194 Qatar",
       "count": 10,
-      "html": "<a href='https://www.asiaone.com:443/singapore/singapore-humanitarian-assistance-package-nepal-floods' target='_blank'>Diplomatic visit: Tibet \u2194 Nepal</a>",
+      "html": "<a href='https://news.az/news/pakistan-resumes-lng-imports-from-qatar-after-july' target='_blank'>Economic cooperation: Pakistan \u2194 Qatar</a>",
       "summary": [
-        "Type: Diplomatic visit",
-        "Actors: Tibet \u2194 Nepal",
-        "Location: Kathmandu, Bagmati, Nepal",
+        "Type: Economic cooperation",
+        "Actors: Pakistan \u2194 Qatar",
+        "Location: Islamabad, Islamabad, Pakistan",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -966,6 +891,81 @@
         "Type: Diplomatic cooperation",
         "Actors: The US \u2194 China",
         "Location: China",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 21.4267,
+      "lon": 39.8261,
+      "name": "Reduced relations / sanctions: Algeria \u2194 Abu Dhabi",
+      "count": 10,
+      "html": "<a href='http://www.jpost.com/international/article-908264' target='_blank'>Reduced relations / sanctions: Algeria \u2194 Abu Dhabi</a>",
+      "summary": [
+        "Type: Reduced relations / sanctions",
+        "Actors: Algeria \u2194 Abu Dhabi",
+        "Location: Mecca, Makkah, Saudi Arabia",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": -26.2,
+      "lon": 28.0833,
+      "name": "Diplomatic cooperation: Netflix (multinational company) \u2194 Africa",
+      "count": 10,
+      "html": "<a href='https://htxt.co.za/2026/09/the-local-originals-netflix-has-planned-between-now-and-the-years-end/' target='_blank'>Diplomatic cooperation: Netflix (multinational company) \u2194 Africa</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: Netflix (multinational company) \u2194 Africa",
+        "Location: Johannesburg, Gauteng, South Africa",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 18.25,
+      "lon": -77.5,
+      "name": "Diplomatic cooperation: Guyana \u2194 Mexico",
+      "count": 10,
+      "html": "<a href='https://www.energy-pedia.com/news/jamaica/united-oil-gas-announces-drilling-rig-and-long-lead-availability-study-205250' target='_blank'>Diplomatic cooperation: Guyana \u2194 Mexico</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: Guyana \u2194 Mexico",
+        "Location: Jamaica",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 52.0,
+      "lon": 20.0,
+      "name": "Economic or material cooperation: Estonia \u2194 Nato (international org)",
+      "count": 12,
+      "html": "<a href='http://www.bignewsnetwork.com/news/279298804/croatia-to-purchase-rocket-launcher-from-s-korea' target='_blank'>Economic or material cooperation: Estonia \u2194 Nato (international org)</a>",
+      "summary": [
+        "Type: Economic or material cooperation",
+        "Actors: Estonia \u2194 Nato (international org)",
+        "Location: Poland",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 24.0,
+      "lon": 90.0,
+      "name": "Diplomatic cooperation: Bangladesh \u2194 Sri Lanka",
+      "count": 10,
+      "html": "<a href='https://www.tamilguardian.com/content/sri-lanka-told-reforms-are-stalling-ngos-demand-international-investigation-un' target='_blank'>Diplomatic cooperation: Bangladesh \u2194 Sri Lanka</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: Bangladesh \u2194 Sri Lanka",
+        "Location: Bangladesh",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -1049,12 +1049,12 @@
       "category": "conflict",
       "lat": 45.7326,
       "lon": -93.9196,
-      "name": "Assault: Minnesota vs Prison (police)",
+      "name": "Assault: Prison (police)",
       "count": 20,
-      "html": "<a href='https://www.duluthnewstribune.com/news/minnesota/ex-minnesota-state-patrol-trooper-sentenced-to-27-years-in-prison-for-recording-sexual-abuse-of-toddler' target='_blank'>Assault: Minnesota vs Prison (police)</a>",
+      "html": "<a href='https://www.duluthnewstribune.com/news/minnesota/ex-minnesota-state-patrol-trooper-sentenced-to-27-years-in-prison-for-recording-sexual-abuse-of-toddler' target='_blank'>Assault: Prison (police)</a>",
       "summary": [
         "Type: Assault",
-        "Actors: Minnesota vs Prison (police)",
+        "Actors: Prison (police)",
         "Location: Minnesota, United States",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
@@ -1079,12 +1079,12 @@
       "category": "conflict",
       "lat": 44.0407,
       "lon": -72.7093,
-      "name": "Assault: Vermont",
+      "name": "Assault in Vermont, United States",
       "count": 20,
-      "html": "<a href='https://www.wcjb.com/2026/09/10/man-wanted-vermont-child-sex-assault-charge-arrested-marion-county/' target='_blank'>Assault: Vermont</a>",
+      "html": "<a href='https://www.wcjb.com/2026/09/10/man-wanted-vermont-child-sex-assault-charge-arrested-marion-county/' target='_blank'>Assault in Vermont, United States</a>",
       "summary": [
         "Type: Assault",
-        "Actors: Vermont",
+        "Actors: Not identified in wire report",
         "Location: Vermont, United States",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
@@ -1124,12 +1124,12 @@
       "category": "conflict",
       "lat": 26.6406,
       "lon": -81.8723,
-      "name": "Armed clash: Kyiv",
+      "name": "Armed clash in Fort Myers, Florida, United States",
       "count": 15,
-      "html": "<a href='https://www.mynbc5.com/article/ukraine-family-future-florida-war-us/73666440' target='_blank'>Armed clash: Kyiv</a>",
+      "html": "<a href='https://www.mynbc5.com/article/ukraine-family-future-florida-war-us/73666440' target='_blank'>Armed clash in Fort Myers, Florida, United States</a>",
       "summary": [
         "Type: Armed clash",
-        "Actors: Kyiv",
+        "Actors: Not identified in wire report",
         "Location: Fort Myers, Florida, United States",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
@@ -1199,12 +1199,12 @@
       "category": "conflict",
       "lat": 11.9964,
       "lon": 8.51667,
-      "name": "Assault: Kano vs Police (police)",
+      "name": "Assault: Police (police)",
       "count": 10,
-      "html": "<a href='https://www.premiumtimesng.com/news/top-news/908592-two-arrested-over-murder-of-kano-social-media-influencer.html' target='_blank'>Assault: Kano vs Police (police)</a>",
+      "html": "<a href='https://www.premiumtimesng.com/news/top-news/908592-two-arrested-over-murder-of-kano-social-media-influencer.html' target='_blank'>Assault: Police (police)</a>",
       "summary": [
         "Type: Assault",
-        "Actors: Kano vs Police (police)",
+        "Actors: Police (police)",
         "Location: Kano, Kano, Nigeria",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
@@ -1394,12 +1394,12 @@
       "category": "conflict",
       "lat": 37.6922,
       "lon": -97.3375,
-      "name": "Armed clash: Kansas",
+      "name": "Armed clash in Wichita, Kansas, United States",
       "count": 10,
-      "html": "<a href='https://www.kwch.com/2026/09/10/coolest-afternoon-almost-three-months-wichita/' target='_blank'>Armed clash: Kansas</a>",
+      "html": "<a href='https://www.kwch.com/2026/09/10/coolest-afternoon-almost-three-months-wichita/' target='_blank'>Armed clash in Wichita, Kansas, United States</a>",
       "summary": [
         "Type: Armed clash",
-        "Actors: Kansas",
+        "Actors: Not identified in wire report",
         "Location: Wichita, Kansas, United States",
         "Reported: Sep 03, 2026",
         "Source: GDELT (bulk event data)"
