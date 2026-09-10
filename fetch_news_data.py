@@ -110,6 +110,61 @@ def _actor_label(name: str, type_code: str) -> str:
     tag = ACTOR_TYPE_LABELS.get(type_code)
     return f"{name} ({tag})" if tag else name
 
+# Python's .title() mangles acronyms it title-cases word-by-word (US -> Us,
+# UK -> Uk) -- these are the ones that actually show up as GDELT country/
+# actor names, fixed back up after title-casing rather than skipping
+# .title() entirely (which would leave genuinely-lowercase raw names alone).
+_ACRONYM_FIXES = {"Us": "US", "Uk": "UK", "Un": "UN", "Eu": "EU", "Uae": "UAE", "Usa": "USA"}
+
+
+def _title_case(name: str) -> str:
+    return " ".join(_ACRONYM_FIXES.get(word, word) for word in name.title().split(" "))
+
+# GDELT's actor extraction sometimes comes back with a bare nationality/
+# ethnic/religious adjective instead of an actual named person, group, or
+# institution -- "Chinese", "Muslims", "Westerners" aren't a real identified
+# actor, just noise from the underlying NLP (and pinning a violent or
+# coercive action on an entire nationality/religion as if it were a named
+# party is a real accuracy and fairness problem, not just a vague one).
+# Treated as if no actor had been extracted at all. Demonyms are covered
+# broadly (most UN member states) rather than patched one miss at a time.
+_DEMONYMS = """
+afghan albanian algerian american andorran angolan argentine argentinian
+armenian australian austrian azerbaijani bahamian bahraini bangladeshi
+barbadian belarusian belgian belizean beninese bhutanese bolivian bosnian
+botswanan brazilian british bruneian bulgarian burkinabe burmese burundian
+cambodian cameroonian canadian chadian chilean chinese colombian comoran
+congolese costa rican croatian cuban cypriot czech danish djiboutian
+dominican dutch ecuadorian egyptian salvadoran eritrean estonian ethiopian
+fijian finnish french gabonese gambian georgian german ghanaian greek
+grenadian guatemalan guinean guyanese haitian honduran hungarian icelandic
+indian indonesian iranian iraqi irish israeli italian ivorian jamaican
+japanese jordanian kazakh kenyan kosovar kuwaiti kyrgyz lao laotian latvian
+lebanese liberian libyan lithuanian luxembourgish macedonian malagasy
+malawian malaysian maldivian malian maltese mauritanian mauritian mexican
+moldovan mongolian montenegrin moroccan mozambican namibian nepali nepalese
+nicaraguan nigerien nigerian norwegian omani pakistani palauan palestinian
+panamanian paraguayan peruvian filipino polish portuguese qatari romanian
+russian rwandan salvadoran samoan saudi senegalese serbian seychellois
+singaporean slovak slovenian somali surinamese swazi swedish swiss syrian
+taiwanese tajik tanzanian thai togolese tongan trinidadian tunisian turkish
+turkmen ugandan ukrainian emirati uruguayan uzbek venezuelan vietnamese
+yemeni zambian zimbabwean
+""".split()
+GENERIC_ACTOR_NAMES = set(_DEMONYMS) | {d + "s" for d in _DEMONYMS} | {
+    "european", "europeans", "african", "africans", "asian", "asians",
+    "western", "westerners", "eastern", "arab", "arabs", "muslim", "muslims",
+    "islamic", "islamist", "islamists", "christian", "christians", "jewish",
+    "jews", "hindu", "hindus", "buddhist", "buddhists", "catholic", "catholics",
+    "protestant", "protestants", "sunni", "sunnis", "shia", "shiite", "shiites",
+    "men", "man", "woman", "women", "people", "person", "individuals",
+    "unidentified", "unidentified actor", "unknown",
+}
+
+
+def _is_generic_actor_name(name: str) -> bool:
+    return name.strip().lower() in GENERIC_ACTOR_NAMES
+
 # Rough geographic buckets used only to keep the final selection from being
 # dominated by whichever regions English-language wire services cover most
 # heavily on a given day. Boxes are approximate and checked in order, so put
@@ -134,33 +189,47 @@ def region_for(lat: float, lon: float) -> str:
     return "Other"
 
 
-def balance_by_region(features: list, target: int) -> list:
+def balance_by_region(features: list, target: int, guaranteed_top: int = 0) -> list:
     """Cap the result at `target` while spreading it across regions instead
     of just taking the top N by count (which would skew toward wherever
-    English-language coverage happens to be heaviest that day)."""
+    English-language coverage happens to be heaviest that day).
+
+    `guaranteed_top` carves out that many of the single highest-count
+    features first, unconditionally, before region-balancing the rest --
+    so a real spike (many outlets covering the same event) always makes
+    the cut instead of possibly losing out to region diversity, while the
+    remaining slots still get spread across regions as before.
+    """
     if len(features) <= target:
         return features
 
+    by_count = sorted(features, key=lambda f: f.get("count", 1), reverse=True)
+    guaranteed, pool = by_count[:guaranteed_top], by_count[guaranteed_top:]
+    remaining_target = target - len(guaranteed)
+
     buckets = defaultdict(list)
-    for f in features:
+    for f in pool:
         buckets[region_for(f["lat"], f["lon"])].append(f)
     for bucket in buckets.values():
         bucket.sort(key=lambda f: f.get("count", 1), reverse=True)
 
     order = list(buckets.keys())
     selected = []
-    while len(selected) < target and any(buckets[r] for r in order):
+    while len(selected) < remaining_target and any(buckets[r] for r in order):
         for r in order:
-            if len(selected) >= target:
+            if len(selected) >= remaining_target:
                 break
             if buckets[r]:
                 selected.append(buckets[r].pop(0))
 
-    print("  region spread: " + ", ".join(
+    spread = ", ".join(
         f"{r}={sum(1 for f in selected if region_for(f['lat'], f['lon']) == r)}"
         for r in order
-    ))
-    return selected
+    )
+    if guaranteed:
+        spread += f" (+{len(guaranteed)} guaranteed top-count)"
+    print("  region spread: " + spread)
+    return guaranteed + selected
 
 
 def _eonet_point(geometry_entry: dict):
@@ -356,11 +425,22 @@ def fetch_gdelt_bulk_political(hours: int, limit: int) -> list:
     cooperation/agreements/aid/sanctions between two distinct countries --
     i.e. nation-state actions affecting geopolitics, not general political
     news (elections, court rulings, etc, which this deliberately excludes).
+
+    Scans the entire requested window before picking winners, rather than
+    stopping as soon as `limit` rows are found -- GDELT files are dense
+    enough that stopping early means only ever seeing the most recent hour
+    or so (files are scanned newest-first), which silently biases toward
+    "most recent" instead of "most covered" and undermines sorting by
+    article count later. `_SAFETY_CAP` just bounds runtime/memory if hours
+    is set very high; it isn't meant to be hit in normal use.
     """
     seen_urls = set()
     features = []
+    _SAFETY_CAP = 6000
 
     for ts in _gdelt_bulk_timestamps(hours):
+        if len(features) >= _SAFETY_CAP:
+            break
         for row in _fetch_gdelt_bulk_file(ts):
             if len(row) < 61:
                 continue
@@ -384,13 +464,18 @@ def fetch_gdelt_bulk_political(hours: int, limit: int) -> list:
             if lat == 0 and lon == 0:
                 continue
 
+            actor1_raw = _title_case(row[6] or actor1_country)
+            actor2_raw = _title_case(row[16] or actor2_country)
+            if _is_generic_actor_name(actor1_raw) or _is_generic_actor_name(actor2_raw):
+                continue  # a bare nationality/ethnic word isn't a real identified actor
+
             seen_urls.add(url)
 
             event_code = row[26]
             label = CAMEO_CODE_LABELS.get(event_code) or CAMEO_ROOT_LABELS.get(root_code, "Diplomatic/political action")
             place = row[52] or "Unknown location"
-            actor1_name = _actor_label((row[6] or actor1_country).title(), row[12])
-            actor2_name = _actor_label((row[16] or actor2_country).title(), row[22])
+            actor1_name = _actor_label(actor1_raw, row[12])
+            actor2_name = _actor_label(actor2_raw, row[22])
             try:
                 date_str = datetime.strptime(row[1], "%Y%m%d").strftime("%b %d, %Y")
             except ValueError:
@@ -417,10 +502,8 @@ def fetch_gdelt_bulk_political(hours: int, limit: int) -> list:
                 ],
             })
 
-            if len(features) >= limit:
-                return features
-
-    return features
+    features.sort(key=lambda f: f["count"], reverse=True)
+    return features[:limit]
 
 
 def fetch_gdelt_bulk_conflict(hours: int, limit: int) -> list:
@@ -435,11 +518,17 @@ def fetch_gdelt_bulk_conflict(hours: int, limit: int) -> list:
     actors -- most conflict (a government vs. a domestic rebel group, a
     protest against a country's own government) is single-country by
     nature, so that check would throw out most genuine conflict events.
+
+    Also scans the entire requested window before picking winners rather
+    than stopping at `limit` rows -- see fetch_gdelt_bulk_political for why.
     """
     seen_urls = set()
     features = []
+    _SAFETY_CAP = 6000
 
     for ts in _gdelt_bulk_timestamps(hours):
+        if len(features) >= _SAFETY_CAP:
+            break
         for row in _fetch_gdelt_bulk_file(ts):
             if len(row) < 61:
                 continue
@@ -464,8 +553,10 @@ def fetch_gdelt_bulk_conflict(hours: int, limit: int) -> list:
             event_code = row[26]
             label = CAMEO_CODE_LABELS.get(event_code) or CONFLICT_ROOT_LABELS.get(root_code, "Conflict event")
             place = row[52] or "Unknown location"
-            actor1_name = _actor_label(row[6].title(), row[12]) if row[6] else None
-            actor2_name = _actor_label(row[16].title(), row[22]) if row[16] else None
+            actor1_raw = _title_case(row[6]) if row[6] and not _is_generic_actor_name(row[6]) else None
+            actor2_raw = _title_case(row[16]) if row[16] and not _is_generic_actor_name(row[16]) else None
+            actor1_name = _actor_label(actor1_raw, row[12]) if actor1_raw else None
+            actor2_name = _actor_label(actor2_raw, row[22]) if actor2_raw else None
 
             if actor1_name and actor2_name:
                 actors_str = f"{actor1_name} vs {actor2_name}"
@@ -502,10 +593,8 @@ def fetch_gdelt_bulk_conflict(hours: int, limit: int) -> list:
                 ],
             })
 
-            if len(features) >= limit:
-                return features
-
-    return features
+    features.sort(key=lambda f: f["count"], reverse=True)
+    return features[:limit]
 
 
 def main():
@@ -549,8 +638,13 @@ def main():
     per_category_target = max(1, args.target_locations // max(1, len(active_categories)))
 
     all_features = []
-    for feats in by_category.values():
-        all_features.extend(balance_by_region(feats, per_category_target))
+    for category, feats in by_category.items():
+        # The 10 conflict stories with the most corroborating articles are
+        # always included, region diversity aside -- a real spike (many
+        # outlets covering the same event) is exactly the kind of story
+        # that shouldn't lose out to spreading picks across regions.
+        guaranteed_top = 10 if category == "conflict" else 0
+        all_features.extend(balance_by_region(feats, per_category_target, guaranteed_top))
 
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),

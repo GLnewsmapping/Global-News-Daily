@@ -31,16 +31,18 @@ python fetch_news_data.py --eonet-limit 150
 python fetch_news_data.py --out data/news_data.json
 ```
 
-**Conflict & political (GDELT bulk event files):** both categories read the same raw bulk event files at `data.gdeltproject.org/gdeltv2/*.export.CSV.zip`, published every 15 minutes -- plain static file hosting, not the rate-limited DOC 2.0 search API (which is aggressively throttled from every network this was tested on, GitHub Actions runners included). `--gdelt-bulk-hours` (default 12) controls how many hours of files to scan. The two categories are just different CAMEO event-code filters over the same files:
+**Conflict & political (GDELT bulk event files):** both categories read the same raw bulk event files at `data.gdeltproject.org/gdeltv2/*.export.CSV.zip`, published every 15 minutes -- plain static file hosting, not the rate-limited DOC 2.0 search API (which is aggressively throttled from every network this was tested on, GitHub Actions runners included). `--gdelt-bulk-hours` (default 12) controls how many hours of files to scan -- both fetchers scan the *entire* window before picking winners (rather than stopping as soon as they find enough matches), since files are scanned newest-first and stopping early would silently bias toward "most recent" over "most covered." The two categories are just different CAMEO event-code filters over the same files:
 
-- **Conflict** -- root codes `14, 17, 18, 19, 20` (protest, coercion, assault, armed clash, mass violence): real individual incidents, not a yearly country total.
+- **Conflict** -- root codes `14, 17, 18, 19, 20` (protest, coercion, assault, armed clash, mass violence): real individual incidents, not a yearly country total. The 10 stories with the most corroborating articles are always included in the final selection regardless of region spread (see `guaranteed_top` in `balance_by_region`) -- a real spike in coverage shouldn't lose out to spreading picks across regions.
 - **Political** -- root codes `03, 04, 05, 06, 07, 12, 16` (diplomatic cooperation, aid, sanctions, reduced relations): nation-state actions that affect geopolitics, not general political news.
+
+Both filter out events where GDELT's actor extraction came back with a bare nationality/ethnic/religious adjective ("Chinese", "Islamic", "Muslims") instead of an actual named person, group, or institution -- treated as if no actor had been identified, rather than shown as if it were a specific entity (see `GENERIC_ACTOR_NAMES`).
 
 **Climate (NASA EONET):** no API key, no rate limit. Each event is one real tracked incident, so its "article count" is always 1, unlike GDELT's per-event article tallies.
 
 EONET's *open* wildfire feed is fed almost entirely by IRWIN (the US interagency wildfire tracker), so wildfires are capped tightly (`--wildfire-cap`, default 15) to avoid the US burying every other country. Floods/storms/drought/temperature-extremes are pulled across a wider 21-day window with `status=all`, which gives genuinely global coverage instead.
 
-Each category is region-balanced independently before merging (rather than one shared pool) -- otherwise whichever category has the most raw hits in a given window would crowd the others out of any region they share.
+Each category is region-balanced independently before merging (rather than one shared pool) -- otherwise whichever category has the most raw hits in a given window would crowd the others out of any region they share. The story list in `index.html` sorts by article count within whatever categories are active, so the highest-coverage stories naturally surface at the top.
 
 ## Daily archive (groundwork for a timeline feature)
 
