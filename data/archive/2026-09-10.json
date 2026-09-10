@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T14:34:36.353121+00:00",
+  "generated_at": "2026-09-10T14:49:42.363580+00:00",
   "feature_count": 99,
   "features": [
     {
@@ -537,15 +537,15 @@
     },
     {
       "category": "political",
-      "lat": -37.8167,
-      "lon": 144.967,
-      "name": "Expressed intent to cooperate: Nvidia (multinational company) \u2194 Australia",
-      "count": 14,
-      "html": "<a href='https://www.begadistrictnews.com.au/story/9347640/ai-powerhouse-nvidia-partners-with-eight-aussie-firms/' target='_blank'>Expressed intent to cooperate: Nvidia (multinational company) \u2194 Australia</a>",
+      "lat": -2.0,
+      "lon": 30.0,
+      "name": "Diplomatic cooperation: Rockefeller Foundation (NGO) \u2194 African Development Bank (international org)",
+      "count": 10,
+      "html": "<a href='https://www.africa.com/business/as-international-aid-shrinks-africa-must-become-investment-ready' target='_blank'>Diplomatic cooperation: Rockefeller Foundation (NGO) \u2194 African Development Bank (international org)</a>",
       "summary": [
-        "Type: Expressed intent to cooperate",
-        "Actors: Nvidia (multinational company) \u2194 Australia",
-        "Location: Melbourne, Victoria, Australia",
+        "Type: Diplomatic cooperation",
+        "Actors: Rockefeller Foundation (NGO) \u2194 African Development Bank (international org)",
+        "Location: Rwanda",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -582,15 +582,15 @@
     },
     {
       "category": "political",
-      "lat": 8.0,
-      "lon": 1.166667,
-      "name": "Expressed intent to cooperate: Africa \u2194 Togo",
+      "lat": -33.8833,
+      "lon": 151.217,
+      "name": "Expressed intent to cooperate: Sydney \u2194 London",
       "count": 10,
-      "html": "<a href='https://www.world-nuclear-news.org/articles/africa-must-be-part-of-global-nuclear-renaissance-says-togolese-leader' target='_blank'>Expressed intent to cooperate: Africa \u2194 Togo</a>",
+      "html": "<a href='https://www.thereminder.ca/airbus-unveils-22-hour-nonstop-plane-jet-lag-wont-vanish/' target='_blank'>Expressed intent to cooperate: Sydney \u2194 London</a>",
       "summary": [
         "Type: Expressed intent to cooperate",
-        "Actors: Africa \u2194 Togo",
-        "Location: Togo",
+        "Actors: Sydney \u2194 London",
+        "Location: Sydney, New South Wales, Australia",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -612,15 +612,15 @@
     },
     {
       "category": "political",
-      "lat": 32.7831,
-      "lon": -96.8067,
-      "name": "Diplomatic visit: Canada \u2194 Dallas",
-      "count": 12,
-      "html": "<a href='https://medicinehatnews.com/news/national-news/2026/09/09/trade-tensions-with-canada-not-on-the-minds-of-many-republicans-at-convention/' target='_blank'>Diplomatic visit: Canada \u2194 Dallas</a>",
+      "lat": 43.6667,
+      "lon": -79.4167,
+      "name": "Expressed intent to cooperate: Argentina \u2194 Mexico",
+      "count": 10,
+      "html": "<a href='https://thestarphoenix.com/press-releases/globe-newswire/canada-steps-up-to-support-global-cancer-care-with-first-contribution-to-iaeas-rays-of-hope-initiative/' target='_blank'>Expressed intent to cooperate: Argentina \u2194 Mexico</a>",
       "summary": [
-        "Type: Diplomatic visit",
-        "Actors: Canada \u2194 Dallas",
-        "Location: Dallas, Texas, United States",
+        "Type: Expressed intent to cooperate",
+        "Actors: Argentina \u2194 Mexico",
+        "Location: Toronto, Ontario, Canada",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -672,15 +672,15 @@
     },
     {
       "category": "political",
-      "lat": -33.8833,
-      "lon": 151.217,
-      "name": "Expressed intent to cooperate: Sydney \u2194 London",
+      "lat": 8.0,
+      "lon": 1.166667,
+      "name": "Expressed intent to cooperate: Africa \u2194 Togo",
       "count": 10,
-      "html": "<a href='https://www.thereminder.ca/airbus-unveils-22-hour-nonstop-plane-jet-lag-wont-vanish/' target='_blank'>Expressed intent to cooperate: Sydney \u2194 London</a>",
+      "html": "<a href='https://www.world-nuclear-news.org/articles/africa-must-be-part-of-global-nuclear-renaissance-says-togolese-leader' target='_blank'>Expressed intent to cooperate: Africa \u2194 Togo</a>",
       "summary": [
         "Type: Expressed intent to cooperate",
-        "Actors: Sydney \u2194 London",
-        "Location: Sydney, New South Wales, Australia",
+        "Actors: Africa \u2194 Togo",
+        "Location: Togo",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -717,15 +717,15 @@
     },
     {
       "category": "political",
-      "lat": -16.5433,
-      "lon": 31.9617,
-      "name": "Diplomatic visit: Ariana \u2194 Zimbabwe",
+      "lat": -25.0,
+      "lon": 135.0,
+      "name": "Expressed intent to cooperate: Nvidia (multinational company) \u2194 Australia",
       "count": 10,
-      "html": "<a href='https://www.proactiveinvestors.co.uk/companies/news/1098352/sunda-energy-sintana-energy-ilika-ariana-resources-mp-evans-small-cap-snapshot-1098352.html' target='_blank'>Diplomatic visit: Ariana \u2194 Zimbabwe</a>",
+      "html": "<a href='https://www.thehindubusinessline.com/info-tech/nvidia-plans-major-expansion-of-data-centre-capacity-in-australia-to-meet-ai-demand/article71450101.ece' target='_blank'>Expressed intent to cooperate: Nvidia (multinational company) \u2194 Australia</a>",
       "summary": [
-        "Type: Diplomatic visit",
-        "Actors: Ariana \u2194 Zimbabwe",
-        "Location: Dokwe, Mashonaland Central, Zimbabwe",
+        "Type: Expressed intent to cooperate",
+        "Actors: Nvidia (multinational company) \u2194 Australia",
+        "Location: Australia",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -747,15 +747,15 @@
     },
     {
       "category": "political",
-      "lat": 43.6667,
-      "lon": -79.4167,
-      "name": "Expressed intent to cooperate: Argentina \u2194 Mexico",
+      "lat": 60.0,
+      "lon": -96.0,
+      "name": "Diplomatic cooperation: Canada \u2194 Victoria",
       "count": 10,
-      "html": "<a href='https://thestarphoenix.com/press-releases/globe-newswire/canada-steps-up-to-support-global-cancer-care-with-first-contribution-to-iaeas-rays-of-hope-initiative/' target='_blank'>Expressed intent to cooperate: Argentina \u2194 Mexico</a>",
+      "html": "<a href='https://www.navaltoday.com/2026/09/10/babcock-extends-seaspans-support-for-canadas-victoria-class-subs' target='_blank'>Diplomatic cooperation: Canada \u2194 Victoria</a>",
       "summary": [
-        "Type: Expressed intent to cooperate",
-        "Actors: Argentina \u2194 Mexico",
-        "Location: Toronto, Ontario, Canada",
+        "Type: Diplomatic cooperation",
+        "Actors: Canada \u2194 Victoria",
+        "Location: Canada",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -807,15 +807,15 @@
     },
     {
       "category": "political",
-      "lat": -25.0,
-      "lon": 135.0,
-      "name": "Expressed intent to cooperate: Nvidia (multinational company) \u2194 Australia",
+      "lat": -16.5433,
+      "lon": 31.9617,
+      "name": "Diplomatic visit: Ariana \u2194 Zimbabwe",
       "count": 10,
-      "html": "<a href='https://www.thehindubusinessline.com/info-tech/nvidia-plans-major-expansion-of-data-centre-capacity-in-australia-to-meet-ai-demand/article71450101.ece' target='_blank'>Expressed intent to cooperate: Nvidia (multinational company) \u2194 Australia</a>",
+      "html": "<a href='https://www.proactiveinvestors.co.uk/companies/news/1098352/sunda-energy-sintana-energy-ilika-ariana-resources-mp-evans-small-cap-snapshot-1098352.html' target='_blank'>Diplomatic visit: Ariana \u2194 Zimbabwe</a>",
       "summary": [
-        "Type: Expressed intent to cooperate",
-        "Actors: Nvidia (multinational company) \u2194 Australia",
-        "Location: Australia",
+        "Type: Diplomatic visit",
+        "Actors: Ariana \u2194 Zimbabwe",
+        "Location: Dokwe, Mashonaland Central, Zimbabwe",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -852,30 +852,30 @@
     },
     {
       "category": "political",
-      "lat": -26.2,
-      "lon": 28.0833,
-      "name": "Diplomatic cooperation: Netflix (multinational company) \u2194 Africa",
+      "lat": -33.8833,
+      "lon": 151.217,
+      "name": "Diplomatic consultation: Sydney \u2194 Abc Radio (media outlet)",
       "count": 10,
-      "html": "<a href='https://htxt.co.za/2026/09/the-local-originals-netflix-has-planned-between-now-and-the-years-end/' target='_blank'>Diplomatic cooperation: Netflix (multinational company) \u2194 Africa</a>",
+      "html": "<a href='https://www.abc.net.au/news/2026-09-10/grace-tame-clarifies-statements-made-during-abc-interview/107139142' target='_blank'>Diplomatic consultation: Sydney \u2194 Abc Radio (media outlet)</a>",
       "summary": [
-        "Type: Diplomatic cooperation",
-        "Actors: Netflix (multinational company) \u2194 Africa",
-        "Location: Johannesburg, Gauteng, South Africa",
+        "Type: Diplomatic consultation",
+        "Actors: Sydney \u2194 Abc Radio (media outlet)",
+        "Location: Sydney, New South Wales, Australia",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "political",
-      "lat": 60.0,
-      "lon": -96.0,
-      "name": "Diplomatic cooperation: Canada \u2194 Victoria",
+      "lat": 18.25,
+      "lon": -77.5,
+      "name": "Diplomatic cooperation: Guyana \u2194 Mexico",
       "count": 10,
-      "html": "<a href='https://www.navaltoday.com/2026/09/10/babcock-extends-seaspans-support-for-canadas-victoria-class-subs' target='_blank'>Diplomatic cooperation: Canada \u2194 Victoria</a>",
+      "html": "<a href='https://www.energy-pedia.com/news/jamaica/united-oil-gas-announces-drilling-rig-and-long-lead-availability-study-205250' target='_blank'>Diplomatic cooperation: Guyana \u2194 Mexico</a>",
       "summary": [
         "Type: Diplomatic cooperation",
-        "Actors: Canada \u2194 Victoria",
-        "Location: Canada",
+        "Actors: Guyana \u2194 Mexico",
+        "Location: Jamaica",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -927,15 +927,15 @@
     },
     {
       "category": "political",
-      "lat": -33.8833,
-      "lon": 151.217,
-      "name": "Diplomatic consultation: Sydney \u2194 Abc Radio (media outlet)",
+      "lat": -26.2,
+      "lon": 28.0833,
+      "name": "Diplomatic cooperation: Netflix (multinational company) \u2194 Africa",
       "count": 10,
-      "html": "<a href='https://www.abc.net.au/news/2026-09-10/grace-tame-clarifies-statements-made-during-abc-interview/107139142' target='_blank'>Diplomatic consultation: Sydney \u2194 Abc Radio (media outlet)</a>",
+      "html": "<a href='https://htxt.co.za/2026/09/the-local-originals-netflix-has-planned-between-now-and-the-years-end/' target='_blank'>Diplomatic cooperation: Netflix (multinational company) \u2194 Africa</a>",
       "summary": [
-        "Type: Diplomatic consultation",
-        "Actors: Sydney \u2194 Abc Radio (media outlet)",
-        "Location: Sydney, New South Wales, Australia",
+        "Type: Diplomatic cooperation",
+        "Actors: Netflix (multinational company) \u2194 Africa",
+        "Location: Johannesburg, Gauteng, South Africa",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -957,75 +957,30 @@
     },
     {
       "category": "political",
-      "lat": -6.0,
-      "lon": 35.0,
-      "name": "Expressed intent to cooperate: Kenya \u2194 Tanzania",
+      "lat": 38.8951,
+      "lon": -77.0364,
+      "name": "Expressed intent to cooperate: Africa \u2194 Washington",
       "count": 10,
-      "html": "<a href='https://www.thecitizen.co.tz/tanzania/news/national/kenya-prepares-to-host-15th-mara-day-as-tanzania-joins-conservation-talks-5590212' target='_blank'>Expressed intent to cooperate: Kenya \u2194 Tanzania</a>",
+      "html": "<a href='https://english.aawsat.com/arab-world/5316658-washington-supports-deeper-security-economic-cooperation-algeria' target='_blank'>Expressed intent to cooperate: Africa \u2194 Washington</a>",
       "summary": [
         "Type: Expressed intent to cooperate",
-        "Actors: Kenya \u2194 Tanzania",
-        "Location: Tanzania",
+        "Actors: Africa \u2194 Washington",
+        "Location: Washington, District of Columbia, United States",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "conflict",
-      "lat": 54.0,
-      "lon": -4.0,
-      "name": "Coercion: Europe",
-      "count": 90,
-      "html": "<a href='https://www.heraldseries.co.uk/news/national/26537458.mayors-given-power-impose-tourist-tax/' target='_blank'>Coercion: Europe</a>",
+      "lat": 31.7667,
+      "lon": 35.2333,
+      "name": "Armed clash in Jerusalem, Israel (general), Israel",
+      "count": 32,
+      "html": "<a href='http://www.bostonstar.com/news/279294417/israel-hits-back-at-uk-shuts-consulate-in-east-jerusalem' target='_blank'>Armed clash in Jerusalem, Israel (general), Israel</a>",
       "summary": [
-        "Type: Coercion",
-        "Actors: Europe",
-        "Location: United Kingdom",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": -35.2833,
-      "lon": 149.217,
-      "name": "Coercion: Australia",
-      "count": 50,
-      "html": "<a href='https://www.bordermail.com.au/story/9348016/australia-pursuing-sanctions-after-trade-ban-snub/' target='_blank'>Coercion: Australia</a>",
-      "summary": [
-        "Type: Coercion",
-        "Actors: Australia",
-        "Location: Canberra, Australian Capital Territory, Australia",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": -33.8833,
-      "lon": 151.217,
-      "name": "Coercion: Europe vs Media (media outlet)",
-      "count": 50,
-      "html": "<a href='http://www.orlandoecho.com/news/279294469/france-pushes-eu-ban-on-social-media-for-children' target='_blank'>Coercion: Europe vs Media (media outlet)</a>",
-      "summary": [
-        "Type: Coercion",
-        "Actors: Europe vs Media (media outlet)",
-        "Location: Sydney, New South Wales, Australia",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 31.4167,
-      "lon": 34.3333,
-      "name": "Coercion: Foreign National vs Israel",
-      "count": 40,
-      "html": "<a href='http://www.bostonstar.com/news/279294417/israel-hits-back-at-uk-shuts-consulate-in-east-jerusalem' target='_blank'>Coercion: Foreign National vs Israel</a>",
-      "summary": [
-        "Type: Coercion",
-        "Actors: Foreign National vs Israel",
-        "Location: Gaza, Israel (general), Israel",
+        "Type: Armed clash",
+        "Actors: Not identified in wire report",
+        "Location: Jerusalem, Israel (general), Israel",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -1092,21 +1047,6 @@
     },
     {
       "category": "conflict",
-      "lat": 31.7667,
-      "lon": 35.2333,
-      "name": "Coercion: Foreign National vs Israel",
-      "count": 24,
-      "html": "<a href='http://www.thailandnews.net/news/279294417/in-diplomatic-row-over-west-bank-israel-shuts-british-consulate' target='_blank'>Coercion: Foreign National vs Israel</a>",
-      "summary": [
-        "Type: Coercion",
-        "Actors: Foreign National vs Israel",
-        "Location: Jerusalem, Israel (general), Israel",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "conflict",
       "lat": 53.3331,
       "lon": -6.24889,
       "name": "Assault: Ireland (legislature) vs Ryanair (multinational company)",
@@ -1122,60 +1062,15 @@
     },
     {
       "category": "conflict",
-      "lat": 49.75,
-      "lon": 6.166667,
-      "name": "Coercion: Police (police) vs Luxembourg",
+      "lat": 45.7326,
+      "lon": -93.9196,
+      "name": "Assault: Minnesota vs Prison (police)",
       "count": 20,
-      "html": "<a href='https://www.chronicle.lu/category/luxembourg/63297-police-report-several-arrests-following-altercations-in-luxembourg-city' target='_blank'>Coercion: Police (police) vs Luxembourg</a>",
+      "html": "<a href='https://www.duluthnewstribune.com/news/minnesota/ex-minnesota-state-patrol-trooper-sentenced-to-27-years-in-prison-for-recording-sexual-abuse-of-toddler' target='_blank'>Assault: Minnesota vs Prison (police)</a>",
       "summary": [
-        "Type: Coercion",
-        "Actors: Police (police) vs Luxembourg",
-        "Location: Luxembourg",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 38.4623,
-      "lon": -92.302,
-      "name": "Coercion: Judge (judiciary) vs United States",
-      "count": 20,
-      "html": "<a href='https://www.advocate-news.com/2026/09/10/missouri-contempt-hearing-redistricting-dispute/' target='_blank'>Coercion: Judge (judiciary) vs United States</a>",
-      "summary": [
-        "Type: Coercion",
-        "Actors: Judge (judiciary) vs United States",
-        "Location: Missouri, United States",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 19.45,
-      "lon": 84.2667,
-      "name": "Coercion: Chief Justice (judiciary)",
-      "count": 20,
-      "html": "<a href='https://www.moneycontrol.com/news/india/abhishek-banerjee-s-pa-sumit-roy-arrested-after-supreme-court-rejects-pre-arrest-bail-plea-14027069.html' target='_blank'>Coercion: Chief Justice (judiciary)</a>",
-      "summary": [
-        "Type: Coercion",
-        "Actors: Chief Justice (judiciary)",
-        "Location: Mohana, Orissa, India",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 31.0,
-      "lon": 36.0,
-      "name": "Coercion: The US vs Immigrant (civilian group)",
-      "count": 20,
-      "html": "<a href='https://www.boredpanda.com/donald-trump-superhero-reference-lanterns-hit-with-memes-trolling-scenes/?cexp_id=161075&_f=featured&cexp_var=11' target='_blank'>Coercion: The US vs Immigrant (civilian group)</a>",
-      "summary": [
-        "Type: Coercion",
-        "Actors: The US vs Immigrant (civilian group)",
-        "Location: Jordan",
+        "Type: Assault",
+        "Actors: Minnesota vs Prison (police)",
+        "Location: Minnesota, United States",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -1197,45 +1092,15 @@
     },
     {
       "category": "conflict",
-      "lat": -25.0,
-      "lon": 135.0,
-      "name": "Coercion in Australia",
+      "lat": 1.0,
+      "lon": 114.0,
+      "name": "Armed clash in Borneo, Indonesia (general), Indonesia",
       "count": 20,
-      "html": "<a href='https://www.smh.com.au/national/from-linkedin-approach-to-prison-australian-expat-jailed-for-being-china-spy-asset-20260910-p60w9z.html' target='_blank'>Coercion in Australia</a>",
+      "html": "<a href='https://www.2news.com/news/national/japan-deploys-equipment-to-indonesias-borneo-to-help-fight-wildfires-causing-toxic-haze/article_6c912797-0b86-5a33-b264-a5188d2c09de.html' target='_blank'>Armed clash in Borneo, Indonesia (general), Indonesia</a>",
       "summary": [
-        "Type: Coercion",
+        "Type: Armed clash",
         "Actors: Not identified in wire report",
-        "Location: Australia",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 11.1132,
-      "lon": 7.72518,
-      "name": "Coercion: Public Relations Officer (government) vs Abuja",
-      "count": 12,
-      "html": "<a href='https://www.nigerianeye.com/2026/09/police-arrest-woman-over-fake-opay.html' target='_blank'>Coercion: Public Relations Officer (government) vs Abuja</a>",
-      "summary": [
-        "Type: Coercion",
-        "Actors: Public Relations Officer (government) vs Abuja",
-        "Location: Zaria, Kaduna, Nigeria",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 55.95,
-      "lon": -3.2,
-      "name": "Coercion: Europe",
-      "count": 20,
-      "html": "<a href='https://www.aol.co.uk/articles/mayors-given-power-impose-tourist-070129000.html' target='_blank'>Coercion: Europe</a>",
-      "summary": [
-        "Type: Coercion",
-        "Actors: Europe",
-        "Location: Edinburgh, Edinburgh, City of, United Kingdom",
+        "Location: Borneo, Indonesia (general), Indonesia",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -1257,90 +1122,15 @@
     },
     {
       "category": "conflict",
-      "lat": 13.0833,
-      "lon": 80.2833,
-      "name": "Armed clash: Producer (company)",
+      "lat": 39.9289,
+      "lon": 116.388,
+      "name": "Armed clash: Military (military)",
       "count": 20,
-      "html": "<a href='https://ianslive.in/mohanlals-l370-makers-caution-public-of-fake-audition-calls--20260910080445' target='_blank'>Armed clash: Producer (company)</a>",
+      "html": "<a href='https://www.pressenza.com/2026/09/the-aircraft-carrier-china-does-not-need-to-build/' target='_blank'>Armed clash: Military (military)</a>",
       "summary": [
         "Type: Armed clash",
-        "Actors: Producer (company)",
-        "Location: Chennai, Tamil Nadu, India",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 35.75,
-      "lon": 51.5148,
-      "name": "Coercion: Protester (opposition group)",
-      "count": 18,
-      "html": "<a href='https://www.aol.co.uk/articles/dozens-iran-protesters-sent-gallows-120800000.html' target='_blank'>Coercion: Protester (opposition group)</a>",
-      "summary": [
-        "Type: Coercion",
-        "Actors: Protester (opposition group)",
-        "Location: Tehran, Tehran, Iran",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 1.0,
-      "lon": 114.0,
-      "name": "Armed clash in Borneo, Indonesia (general), Indonesia",
-      "count": 20,
-      "html": "<a href='https://www.2news.com/news/national/japan-deploys-equipment-to-indonesias-borneo-to-help-fight-wildfires-causing-toxic-haze/article_6c912797-0b86-5a33-b264-a5188d2c09de.html' target='_blank'>Armed clash in Borneo, Indonesia (general), Indonesia</a>",
-      "summary": [
-        "Type: Armed clash",
-        "Actors: Not identified in wire report",
-        "Location: Borneo, Indonesia (general), Indonesia",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": -25.0,
-      "lon": 135.0,
-      "name": "Coercion: Corporation (company) vs Boston",
-      "count": 20,
-      "html": "<a href='https://www.newswiretoday.com/news/186820/Rocket-Software-Launches-Rocket-z-and-Assurance-a-Risk-and-Compliance-Portfolio-for-IBM-Z-Environments/' target='_blank'>Coercion: Corporation (company) vs Boston</a>",
-      "summary": [
-        "Type: Coercion",
-        "Actors: Corporation (company) vs Boston",
-        "Location: Australia",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": -30.0,
-      "lon": 26.0,
-      "name": "Coercion: Television (media outlet)",
-      "count": 10,
-      "html": "<a href='https://www.businessday.co.za/opinion/2026-09-10-phil-pelucha-ai-isnt-the-risk-in-this-election-impatience-is/' target='_blank'>Coercion: Television (media outlet)</a>",
-      "summary": [
-        "Type: Coercion",
-        "Actors: Television (media outlet)",
-        "Location: South Africa",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 53.0,
-      "lon": -8.0,
-      "name": "Coercion: Ireland vs Settlement (civilian group)",
-      "count": 20,
-      "html": "<a href='http://europe.chinadaily.com.cn/a/202609/10/WS6aa20890e4b06d4aa055d431.html' target='_blank'>Coercion: Ireland vs Settlement (civilian group)</a>",
-      "summary": [
-        "Type: Coercion",
-        "Actors: Ireland vs Settlement (civilian group)",
-        "Location: Ireland",
+        "Actors: Military (military)",
+        "Location: Beijing, Beijing, China",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -1362,15 +1152,15 @@
     },
     {
       "category": "conflict",
-      "lat": 23.7231,
-      "lon": 90.4086,
-      "name": "Armed clash: State Minist (government)",
-      "count": 10,
-      "html": "<a href='https://www.tpr.org/news/2026-09-10/whatever-happened-to-the-measles-outbreak-that-shocked-a-country-this-year' target='_blank'>Armed clash: State Minist (government)</a>",
+      "lat": 13.0833,
+      "lon": 80.2833,
+      "name": "Armed clash: Producer (company)",
+      "count": 20,
+      "html": "<a href='https://ianslive.in/mohanlals-l370-makers-caution-public-of-fake-audition-calls--20260910080445' target='_blank'>Armed clash: Producer (company)</a>",
       "summary": [
         "Type: Armed clash",
-        "Actors: State Minist (government)",
-        "Location: Dhaka, Dhaka, Bangladesh",
+        "Actors: Producer (company)",
+        "Location: Chennai, Tamil Nadu, India",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -1392,15 +1182,15 @@
     },
     {
       "category": "conflict",
-      "lat": 39.9289,
-      "lon": 116.388,
-      "name": "Armed clash: Military (military)",
-      "count": 20,
-      "html": "<a href='https://www.pressenza.com/2026/09/the-aircraft-carrier-china-does-not-need-to-build/' target='_blank'>Armed clash: Military (military)</a>",
+      "lat": 55.7522,
+      "lon": 37.6156,
+      "name": "Assault in Moscow, Moskva, Russia",
+      "count": 12,
+      "html": "<a href='https://www.chronicle.lu/category/international/63281-strike-on-sumy-shopping-centre-kills-2-governor-says' target='_blank'>Assault in Moscow, Moskva, Russia</a>",
       "summary": [
-        "Type: Armed clash",
-        "Actors: Military (military)",
-        "Location: Beijing, Beijing, China",
+        "Type: Assault",
+        "Actors: Not identified in wire report",
+        "Location: Moscow, Moskva, Russia",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -1422,30 +1212,45 @@
     },
     {
       "category": "conflict",
-      "lat": 12.55,
-      "lon": 6.63333,
-      "name": "Coercion: Diocese",
+      "lat": -30.0,
+      "lon": -71.0,
+      "name": "Assault: Investor (company)",
       "count": 10,
-      "html": "<a href='https://www.vanguardngr.com/2026/09/anglican-church-bans-immediate-burial-of-relatives-sets-2-week-minimum-timeframe/' target='_blank'>Coercion: Diocese</a>",
+      "html": "<a href='https://www.juniorminingnetwork.com/junior-miner-news/press-releases/3524-tsx-venture/irr/210753-irruptive-metals-announces-closing-of-c-60-million-bought-deal-private-placement.html' target='_blank'>Assault: Investor (company)</a>",
       "summary": [
-        "Type: Coercion",
-        "Actors: Diocese",
-        "Location: Kogi, Nigeria (general), Nigeria",
+        "Type: Assault",
+        "Actors: Investor (company)",
+        "Location: Chile",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "conflict",
-      "lat": 51.5,
-      "lon": -0.116667,
-      "name": "Coercion: Europe",
-      "count": 18,
-      "html": "<a href='https://www.hertsad.co.uk/news/national/26537458.mayors-given-power-impose-tourist-tax/' target='_blank'>Coercion: Europe</a>",
+      "lat": -17.8178,
+      "lon": 31.0447,
+      "name": "Armed clash: Harare vs Zimbabwe",
+      "count": 10,
+      "html": "<a href='https://www.maravipost.com/missing-zimbabwe-catholic-priest-fr-regis-chikuni-found-dead/' target='_blank'>Armed clash: Harare vs Zimbabwe</a>",
       "summary": [
-        "Type: Coercion",
-        "Actors: Europe",
-        "Location: London, London, City of, United Kingdom",
+        "Type: Armed clash",
+        "Actors: Harare vs Zimbabwe",
+        "Location: Harare, Mashonaland East, Zimbabwe",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 24.0,
+      "lon": 121.0,
+      "name": "Assault: Business (company) vs Rajasthan",
+      "count": 10,
+      "html": "<a href='https://www.business-standard.com/markets/capital-market-news/kanohar-electricals-ipo-subscribed-90-59-times-126091001181_1.html' target='_blank'>Assault: Business (company) vs Rajasthan</a>",
+      "summary": [
+        "Type: Assault",
+        "Actors: Business (company) vs Rajasthan",
+        "Location: Taiwan",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -1461,6 +1266,201 @@
         "Type: Armed clash",
         "Actors: Kyiv",
         "Location: Fort Myers, Florida, United States",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 23.7231,
+      "lon": 90.4086,
+      "name": "Armed clash: President (government)",
+      "count": 15,
+      "html": "<a href='https://www.bssnews.net/news-flash/423257' target='_blank'>Armed clash: President (government)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: President (government)",
+        "Location: Dhaka, Dhaka, Bangladesh",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 32.0,
+      "lon": 53.0,
+      "name": "Armed clash: Police (police)",
+      "count": 10,
+      "html": "<a href='https://www.bbc.co.uk/news/articles/c62mqzj5vnpo' target='_blank'>Armed clash: Police (police)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Police (police)",
+        "Location: Iran",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 52.1333,
+      "lon": -10.3,
+      "name": "Assault: Ryanair (multinational company)",
+      "count": 10,
+      "html": "<a href='https://www.maldonandburnhamstandard.co.uk/news/national/26538896.ryanair-boss-accused-trivialising-rape/' target='_blank'>Assault: Ryanair (multinational company)</a>",
+      "summary": [
+        "Type: Assault",
+        "Actors: Ryanair (multinational company)",
+        "Location: Burnham, Kerry, Ireland",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": -25.9653,
+      "lon": 32.5892,
+      "name": "Armed clash: Police (police)",
+      "count": 10,
+      "html": "<a href='https://allafrica.com/stories/202609100418.html' target='_blank'>Armed clash: Police (police)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Police (police)",
+        "Location: Maputo, Maputo, Mozambique",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 32.9793,
+      "lon": 118.852,
+      "name": "Armed clash: Cargo Vessel (company) vs China",
+      "count": 10,
+      "html": "<a href='https://www.rediff.com/news/report/cargo-vessel-fire-at-china-shipyard-kills-20-xi-jinping-orders-probe/20260910.htm' target='_blank'>Armed clash: Cargo Vessel (company) vs China</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Cargo Vessel (company) vs China",
+        "Location: Shandong, Jiangsu, China",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 42.1497,
+      "lon": -74.9384,
+      "name": "Armed clash: Washington vs Terrorist (unaligned armed forces)",
+      "count": 15,
+      "html": "<a href='https://ianslive.in/passage-of-time-must-never-dim-trump-renews-never-forget-vow-on-911-anniversary--20260910060003' target='_blank'>Armed clash: Washington vs Terrorist (unaligned armed forces)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Washington vs Terrorist (unaligned armed forces)",
+        "Location: New York, United States",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 24.0,
+      "lon": 90.0,
+      "name": "Armed clash: Landlord (company)",
+      "count": 10,
+      "html": "<a href='https://www.thebusinessdesk.com/eastmidlands/news/2114694-landlord-loses-630000-tax-battle-after-decade-long-dispute/' target='_blank'>Armed clash: Landlord (company)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Landlord (company)",
+        "Location: Bangladesh",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 32.0,
+      "lon": 53.0,
+      "name": "Armed clash: The US",
+      "count": 10,
+      "html": "<a href='https://dailypost.ng/2026/09/10/crude-oil-prices-top-101-barrel-as-iran-us-conflict-persists-in-strait-of-hormuz/' target='_blank'>Armed clash: The US</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: The US",
+        "Location: Iran",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 53.3331,
+      "lon": -6.24889,
+      "name": "Assault: Gazette (media outlet) vs Ryanair (multinational company)",
+      "count": 10,
+      "html": "<a href='https://www.islingtongazette.co.uk/news/national/26538896.ryanair-boss-accused-trivialising-rape/' target='_blank'>Assault: Gazette (media outlet) vs Ryanair (multinational company)</a>",
+      "summary": [
+        "Type: Assault",
+        "Actors: Gazette (media outlet) vs Ryanair (multinational company)",
+        "Location: Dublin, Dublin, Ireland",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 11.9964,
+      "lon": 8.51667,
+      "name": "Assault: Kano vs Police (police)",
+      "count": 10,
+      "html": "<a href='https://www.premiumtimesng.com/news/top-news/908592-two-arrested-over-murder-of-kano-social-media-influencer.html' target='_blank'>Assault: Kano vs Police (police)</a>",
+      "summary": [
+        "Type: Assault",
+        "Actors: Kano vs Police (police)",
+        "Location: Kano, Kano, Nigeria",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 35.0,
+      "lon": 105.0,
+      "name": "Assault: Firefighter (government)",
+      "count": 10,
+      "html": "<a href='https://www.asiaone.com/entertainment/ah-boys-to-firefighters-kiki-darling-hari-kishen-balakrishnan-jack-neo' target='_blank'>Assault: Firefighter (government)</a>",
+      "summary": [
+        "Type: Assault",
+        "Actors: Firefighter (government)",
+        "Location: China",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 40.2222,
+      "lon": -111.659,
+      "name": "Armed clash: Police Officer (police) vs Activist (opposition group)",
+      "count": 12,
+      "html": "<a href='https://wgme.com/news/nation-world/a-conversation-with-uvus-president-one-year-after-charlie-kirks-death' target='_blank'>Armed clash: Police Officer (police) vs Activist (opposition group)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Police Officer (police) vs Activist (opposition group)",
+        "Location: Utah Valley University, Utah, United States",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 28.0,
+      "lon": 84.0,
+      "name": "Armed clash: Police (police)",
+      "count": 10,
+      "html": "<a href='https://peoplesreview.com.np/2026/09/10/a-year-of-gen-z-protest-new-faces-in-government-old-system-persists/' target='_blank'>Armed clash: Police (police)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Police (police)",
+        "Location: Nepal",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]

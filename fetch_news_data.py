@@ -64,18 +64,29 @@ CAMEO_ROOT_LABELS = {
     "12": "Rejected cooperation",
     "16": "Reduced relations / sanctions",
 }
-# Same CAMEO taxonomy, opposite end of it: root codes 14/17-20 are GDELT's
-# protest/coercion/violence categories -- the same real-world ground ACLED
-# covers (battles, violence against civilians, riots, protests), just
-# machine-coded from wire reporting every 15 minutes instead of a manually
-# re-exported yearly country total.
-CONFLICT_ROOT_CODES = {"14", "17", "18", "19", "20"}
+# Conflict means real violence -- military/security force action or a
+# protest that turned violent -- not the full CAMEO 14/17-20 "friction"
+# range, which also covers plenty of non-violent ground (peaceful
+# marches, strikes, boycotts, curfews, arrests, property seizure, cyber
+# attacks). Root codes 18/19/20 are kept in full since every code under
+# them is inherently violent; roots 14 (PROTEST) and 17 (COERCE) are
+# collapsed down to just their violent sub-codes via CONFLICT_VIOLENT_SUBCODES
+# below -- confirmed against GDELT's own CAMEO codebook, not guessed.
+CONFLICT_ROOT_CODES = {"18", "19", "20"}
 CONFLICT_ROOT_LABELS = {
-    "14": "Protest",
-    "17": "Coercion",
     "18": "Assault",
     "19": "Armed clash",
     "20": "Mass violence",
+}
+# The only violent slices of PROTEST (14) and COERCE (17): 145/1451-1454
+# is CAMEO's "protest violently, riot" (as opposed to 140-144, peaceful
+# demonstrations/hunger strikes/strikes/blockades); 175 is "use tactics
+# of violent repression" (as opposed to 170-174/176, arrests, curfews,
+# property seizure, deportation, cyberattacks -- coercive but not violent).
+CONFLICT_VIOLENT_SUBCODES = {"145", "1451", "1452", "1453", "1454", "175"}
+CONFLICT_SUBCODE_LABELS = {
+    "145": "Riot", "1451": "Riot", "1452": "Riot", "1453": "Riot", "1454": "Riot",
+    "175": "Violent repression",
 }
 # A handful of specific 3-digit codes worth a more precise label than their
 # root category -- only ones we're confident about, everything else falls
@@ -86,6 +97,7 @@ CAMEO_CODE_LABELS = {
     "061": "Economic cooperation",
     "070": "Provided aid",
     "163": "Imposed sanctions or embargo",
+    **CONFLICT_SUBCODE_LABELS,
 }
 # GDELT tags a country code onto an actor even when the actor itself is a
 # company, university, or media outlet merely located in that country (e.g.
@@ -536,11 +548,11 @@ def fetch_gdelt_bulk_political(hours: int, limit: int) -> list:
 
 def fetch_gdelt_bulk_conflict(hours: int, limit: int) -> list:
     """Conflict via the same GDELT bulk event files as political, filtered
-    to CAMEO's protest/coercion/violence codes instead of cooperation codes
-    -- real individual incidents (battles, assaults, riots, protests)
-    refreshed every 15 minutes, in place of the old ACLED yearly country
-    totals, so "conflict" actually means real-time like the rest of the
-    site rather than a once-a-year snapshot.
+    to real violence only -- military/security force action (assault,
+    armed clashes, mass violence) or a protest that turned violent (riots,
+    violent repression) -- refreshed every 15 minutes, in place of the old
+    ACLED yearly country totals, so "conflict" actually means real-time
+    like the rest of the site rather than a once-a-year snapshot.
 
     Unlike political, this doesn't require two distinct countries as
     actors -- most conflict (a government vs. a domestic rebel group, a
@@ -562,7 +574,8 @@ def fetch_gdelt_bulk_conflict(hours: int, limit: int) -> list:
                 continue
 
             root_code = row[28]
-            if root_code not in CONFLICT_ROOT_CODES:
+            event_code = row[26]
+            if root_code not in CONFLICT_ROOT_CODES and event_code not in CONFLICT_VIOLENT_SUBCODES:
                 continue
 
             url = row[60]
@@ -578,7 +591,6 @@ def fetch_gdelt_bulk_conflict(hours: int, limit: int) -> list:
 
             seen_urls.add(url)
 
-            event_code = row[26]
             label = CAMEO_CODE_LABELS.get(event_code) or CONFLICT_ROOT_LABELS.get(root_code, "Conflict event")
             place = row[52] or "Unknown location"
             actor1_raw = _title_case(row[6]) if row[6] and not _is_generic_actor_name(row[6]) else None
