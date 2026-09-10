@@ -901,6 +901,45 @@ def _is_conflict_relevant(title: str, description: str) -> bool:
     return bool(_CONFLICT_RELEVANCE_PATTERN.search(text))
 
 
+# Same idea as CONFLICT_RELEVANCE_KEYWORDS, for political: GDELT's
+# diplomatic cooperation/sanctions codes fire on all sorts of unrelated
+# content that just happens to feature two countries or a public figure
+# in the same article (a Country Music Association Awards story, Arctic
+# conservation coverage, a travel-magazine piece have all been seen in
+# real output). Unlike conflict, a bare "war" is fine here -- "trade war"
+# is exactly the kind of thing this category should cover.
+POLITICAL_RELEVANCE_KEYWORDS = (
+    "diplomatic", "diplomacy", "diplomat", "embassy", "consulate",
+    "ambassador", "treaty", "summit", "bilateral", "multilateral",
+    "sanction", "tariff", "trade deal", "trade agreement", "trade war",
+    "foreign minister", "foreign ministry", "state visit",
+    "official visit", "head of state", "prime minister",
+    "diplomatic ties", "diplomatic relations", "foreign policy", "accord",
+    "pact", "alliance", "united nations", "security council", "nato",
+    "foreign aid", "aid package", "peace talks", "peace deal",
+    "negotiations", "geopolitical", "geopolitics", "foreign relations",
+    "credentials", "memorandum of understanding", "defense pact",
+    "security pact", "arms deal", "extradition", "recall its ambassador",
+    "expel", "consular", "foreign secretary", "ministry of foreign affairs",
+    "international relations", "cooperation agreement",
+    "joint declaration", "strategic partnership", "diplomatic row",
+    "diplomatic crisis", "state department", "envoy",
+)
+
+_POLITICAL_RELEVANCE_PATTERN = re.compile(
+    r"\b(?:" + "|".join(re.escape(kw) for kw in POLITICAL_RELEVANCE_KEYWORDS) + r")\b",
+    re.IGNORECASE,
+)
+
+
+def _is_political_relevant(title: str, description: str) -> bool:
+    text = f"{title or ''} {description or ''}"
+    return bool(_POLITICAL_RELEVANCE_PATTERN.search(text))
+
+
+_RELEVANCE_CHECKS = {"conflict": _is_conflict_relevant, "political": _is_political_relevant}
+
+
 def enrich_with_real_headlines(features: list, categories=("conflict", "political"), max_workers: int = 12) -> None:
     """Conflict and political headlines are synthesized from GDELT's own
     event classification ("Armed clash: Police"), not the article's real
@@ -912,13 +951,12 @@ def enrich_with_real_headlines(features: list, categories=("conflict", "politica
     misclassifications instead of stating them as settled fact, since a
     wrong event-type guess becomes obvious once the real headline shows.
 
-    For conflict specifically, a story whose real content turns out to
-    have nothing to do with armed conflict (see CONFLICT_RELEVANCE_KEYWORDS)
-    is dropped from `features` entirely rather than just relabeled --
-    a wrong headline is one thing, but a story about airline business
-    class or a tax dispute has no business in a conflict feed regardless
-    of what its headline says. Political isn't filtered this way (out of
-    scope for now; its own mismatches are a separate, smaller issue).
+    A story whose real content has nothing to do with its category (see
+    CONFLICT_RELEVANCE_KEYWORDS / POLITICAL_RELEVANCE_KEYWORDS) is dropped
+    from `features` entirely rather than just relabeled -- a wrong
+    headline is one thing, but a story about a music awards show or a
+    tax dispute has no business in either feed regardless of what its
+    headline says.
 
     Mutates `features` in place. Any fetch that fails, times out, or
     finds no title leaves that story's existing synthesized label
@@ -951,7 +989,8 @@ def enrich_with_real_headlines(features: list, categories=("conflict", "politica
             if not title:
                 continue
 
-            if feature["category"] == "conflict" and not _is_conflict_relevant(title, description):
+            relevance_check = _RELEVANCE_CHECKS.get(feature["category"])
+            if relevance_check and not relevance_check(title, description):
                 to_drop.append(feature)
                 continue
 
@@ -967,8 +1006,8 @@ def enrich_with_real_headlines(features: list, categories=("conflict", "politica
         drop_ids = {id(f) for f in to_drop}
         features[:] = [f for f in features if id(f) not in drop_ids]
 
-    print(f"  Enriched {fetched} of {len(targets)} conflict/political stories with real article headlines"
-          + (f", dropped {len(to_drop)} conflict stories whose real content had nothing to do with armed conflict" if to_drop else ""))
+    print(f"  Enriched {fetched} of {len(targets)} stories with real article headlines"
+          + (f", dropped {len(to_drop)} whose real content didn't match their category" if to_drop else ""))
 
 
 def main():
@@ -991,20 +1030,25 @@ def main():
     print(f"  -> {len(climate_features)} locations")
     all_features.extend(climate_features)
 
+    # Both political and conflict fetch a larger pool than the display
+    # target -- confirmed empirically for both that a large majority of
+    # CAMEO-code matches still turn out (once you read the real article)
+    # to have nothing to do with the category, especially from high-
+    # news-volume countries. Filtering for relevance happens on this
+    # larger pool, before capping down to the display target below,
+    # rather than after -- doing it after would mean rejecting most of
+    # an already-small, already-capped set and ending up with far too
+    # few stories to show.
     print(f"Fetching 'political' events from GDELT bulk data ({args.gdelt_bulk_hours}h window)...")
-    political_features = fetch_gdelt_bulk_political(args.gdelt_bulk_hours, args.target_locations)
-    print(f"  -> {len(political_features)} locations")
+    political_features = fetch_gdelt_bulk_political(args.gdelt_bulk_hours, args.target_locations * 2)
+    print(f"  -> {len(political_features)} locations before relevance filtering")
+    if not args.no_headline_fetch:
+        print("  Checking political stories against their real article content...")
+        enrich_with_real_headlines(political_features, categories=("political",))
+        print(f"  -> {len(political_features)} locations after relevance filtering")
     all_features.extend(political_features)
 
     print(f"Fetching 'conflict' events from GDELT bulk data ({args.gdelt_bulk_hours}h window)...")
-    # Fetches a larger pool than the display target -- confirmed empirically
-    # that a large majority of real-violence-in-a-conflict-zone matches
-    # still turn out (once you read the real article) to have nothing to
-    # do with armed conflict, especially from high-news-volume conflict-zone
-    # countries. Filtering for relevance happens on this larger pool, before
-    # capping down to the display target below, rather than after -- doing
-    # it after would mean rejecting most of an already-small, already-capped
-    # set and ending up with far too few conflict stories to show.
     conflict_features = fetch_gdelt_bulk_conflict(args.gdelt_bulk_hours, args.target_locations * 2)
     print(f"  -> {len(conflict_features)} locations before relevance filtering")
     if not args.no_headline_fetch:
@@ -1032,10 +1076,6 @@ def main():
         # that shouldn't lose out to spreading picks across regions.
         guaranteed_top = 10 if category == "conflict" else 0
         all_features.extend(balance_by_region(feats, per_category_target, guaranteed_top))
-
-    if not args.no_headline_fetch:
-        print("\nFetching real article headlines for political stories...")
-        enrich_with_real_headlines(all_features, categories=("political",))
 
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),

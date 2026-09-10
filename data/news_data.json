@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T17:50:12.090489+00:00",
+  "generated_at": "2026-09-10T17:57:14.145776+00:00",
   "feature_count": 99,
   "features": [
     {
@@ -477,22 +477,6 @@
     },
     {
       "category": "political",
-      "lat": 31.106,
-      "lon": -97.6475,
-      "name": "Ella Langley leads Country Music Association Awards nods | Warrington Guardian",
-      "count": 44,
-      "html": "<a href='https://www.warringtonguardian.co.uk/news/national/26539431.ella-langley-leads-country-music-association-awards-nods/' target='_blank'>Ella Langley leads Country Music Association Awards nods | Warrington Guardian</a>",
-      "summary": [
-        "Langley\u2019s Be Her and Choosin\u2019 Texas both nabbed nominations for single of the year.",
-        "Type: Diplomatic visit",
-        "Actors: Male \u2194 United States",
-        "Location: Texas, United States",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
       "lat": -22.9,
       "lon": -43.2333,
       "name": "Xinhua Headlines: Xi to attend New Delhi summit to boost greater BRICS cooperation",
@@ -556,16 +540,16 @@
     },
     {
       "category": "political",
-      "lat": 24.8667,
-      "lon": 67.05,
-      "name": "PM Shehbaz stresses digital payments, polio eradication in Gates Foundation meeting",
+      "lat": 12.1508,
+      "lon": -86.2683,
+      "name": "Nicaragua orders closure of its embassy in Santo Domingo amid deepening diplomatic rift | DR1.com",
       "count": 10,
-      "html": "<a href='https://tribune.com.pk/story/2628566/pm-shehbaz-stresses-digital-payments-polio-eradication-in-meeting-with-gates-foundation-team' target='_blank'>PM Shehbaz stresses digital payments, polio eradication in Gates Foundation meeting</a>",
+      "html": "<a href='https://dr1.com/forums/threads/nicaragua-orders-closure-of-its-embassy-in-santo-domingo-amid-deepening-diplomatic-rift.419717/' target='_blank'>Nicaragua orders closure of its embassy in Santo Domingo amid deepening diplomatic rift | DR1.com</a>",
       "summary": [
-        "Hails foundation for its role in polio eradication, health, nutrition, and financial inclusion",
-        "Type: Diplomatic consultation",
-        "Actors: Gates Foundation (NGO) \u2194 Pakistan",
-        "Location: Karachi, Sindh, Pakistan",
+        "Daniel Ortega / List\u00edn Diario The Nicaraguan government has decided to shutter its embassy in Santo Domingo, the Ministry of Foreign Relations (Mirex)...",
+        "Type: Reduced relations / sanctions",
+        "Actors: Nicaragua \u2194 Santo Domingo (government)",
+        "Location: Managua, Managua, Nicaragua",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -588,32 +572,46 @@
     },
     {
       "category": "political",
-      "lat": 85.0,
-      "lon": 0.0,
-      "name": "The Last Ice Area: Protecting the Arctic\ufffds longest lasting refuge | WebWire",
+      "lat": 24.7667,
+      "lon": 67.3333,
+      "name": "Diplomatic consultation: Karachi \u2194 Qatar",
       "count": 10,
-      "html": "<a href='https://www.webwire.com/ViewPressRel.asp?aId=360294' target='_blank'>The Last Ice Area: Protecting the Arctic\ufffds longest lasting refuge | WebWire</a>",
+      "html": "<a href='https://en.dailypakistan.com.pk/10-Sep-2026/major-qatari-lng-shipment-reaches-pakistan-amid-hormuz-tensions' target='_blank'>Diplomatic consultation: Karachi \u2194 Qatar</a>",
       "summary": [
-        "As the Arctic warms at an alarming rate, one vast expanse of sea ice is expected to outlast the rest. But safeguarding this Arctic refuge will require protecting not only the Last Ice Area itself,...",
-        "Type: Diplomatic visit",
-        "Actors: Canada \u2194 Greenland",
-        "Location: Arctic Ocean, ,",
+        "Type: Diplomatic consultation",
+        "Actors: Karachi \u2194 Qatar",
+        "Location: Port Qasim, Sindh, Pakistan",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "political",
-      "lat": 19.5,
-      "lon": -80.666667,
-      "name": "Cond\u00e9 Nast Traveller invites you to A Taste of the Cayman Islands at Wild by Tart this month | CN Traveller",
+      "lat": 60.0,
+      "lon": 100.0,
+      "name": "Diplomatic cooperation: China \u2194 Brazil",
       "count": 10,
-      "html": "<a href='https://www.cntraveller.com/article/conde-nast-traveller-invites-you-to-a-taste-of-the-cayman-islands' target='_blank'>Cond\u00e9 Nast Traveller invites you to A Taste of the Cayman Islands at Wild by Tart this month | CN Traveller</a>",
+      "html": "<a href='https://aninews.in/news/world/asia/permanent-unsc-seats-to-de-dollarisation-brics8217-role-in-making-room-for-global-south-in-post-colonial-world20260910122220/' target='_blank'>Diplomatic cooperation: China \u2194 Brazil</a>",
       "summary": [
-        "Join us at Belgravia's Wild by Tart for a dinner to discover one of the Cayman Islands' most celebrated culinary voices",
         "Type: Diplomatic cooperation",
-        "Actors: London \u2194 Cayman Island",
-        "Location: Cayman Islands",
+        "Actors: China \u2194 Brazil",
+        "Location: Russia",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": -54.0,
+      "lon": -70.0,
+      "name": "Argentina claims Chile is committed to no logistic support for Falklands\u2019 oil industry \u2014 MercoPress",
+      "count": 10,
+      "html": "<a href='https://en.mercopress.com/2026/09/10/argentina-claims-chile-is-committed-to-no-logistic-support-for-falklands-oil-industry' target='_blank'>Argentina claims Chile is committed to no logistic support for Falklands\u2019 oil industry \u2014 MercoPress</a>",
+      "summary": [
+        "The Argentine government has insisted, following the recent presidential Summit between Javie Milei and Chilean leaded Jose Antonio Kast, that their Andean neighbor will continue to strongly suppor...",
+        "Type: Expressed intent to cooperate",
+        "Actors: Chile \u2194 Falklands (company)",
+        "Location: Tierra Del Fuego, Chile (general), Chile",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -667,156 +665,47 @@
     },
     {
       "category": "political",
-      "lat": 24.7667,
-      "lon": 67.3333,
-      "name": "Diplomatic consultation: Karachi \u2194 Qatar",
-      "count": 10,
-      "html": "<a href='https://en.dailypakistan.com.pk/10-Sep-2026/major-qatari-lng-shipment-reaches-pakistan-amid-hormuz-tensions' target='_blank'>Diplomatic consultation: Karachi \u2194 Qatar</a>",
-      "summary": [
-        "Type: Diplomatic consultation",
-        "Actors: Karachi \u2194 Qatar",
-        "Location: Port Qasim, Sindh, Pakistan",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 8.0,
-      "lon": -2.0,
-      "name": "What's powering Ghana's economic growth? | CNBC Africa",
-      "count": 10,
-      "html": "<a href='https://www.cnbcafrica.com/media/7789050809345/whats-powering-ghanas-economic-growth' target='_blank'>What's powering Ghana's economic growth? | CNBC Africa</a>",
-      "summary": [
-        "Latest GDP number shows that the 6 per cent growth recorded by Ghana in the second quarter of this year was powered by the services sector with information and communication technology expanding by...",
-        "Type: Diplomatic consultation",
-        "Actors: Africa \u2194 Ghana",
-        "Location: Ghana",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 47.1167,
-      "lon": 51.8833,
-      "name": "Kazakhstan Seeks Oil Export Alternatives After Latest CPC Disruption - The Times Of Central Asia",
-      "count": 10,
-      "html": "<a href='https://timesca.com/kazakhstan-oil-exports-routes-beyond-cpc/' target='_blank'>Kazakhstan Seeks Oil Export Alternatives After Latest CPC Disruption - The Times Of Central Asia</a>",
-      "summary": [
-        "Kazakhstan is expanding oil export routes across the Caspian and to China after another disruption at the CPC terminal near Novorossiysk.",
-        "Type: Economic cooperation",
-        "Actors: Kazakhstan \u2194 China",
-        "Location: Atyrau, Atyrau, Kazakhstan",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 42.8333,
-      "lon": -80.3333,
-      "name": "'We will never forget': Waterford honours veterans through banner program | Brantford Expositor",
-      "count": 10,
-      "html": "<a href='https://www.brantfordexpositor.ca:443/news/local-news/we-will-never-forget-waterford-honours-veterans-through-banner-program/wcm/7af9d326-4459-45d2-b409-7f28ac97ab45' target='_blank'>'We will never forget': Waterford honours veterans through banner program | Brantford Expositor</a>",
-      "summary": [
-        "Type: Diplomatic cooperation",
-        "Actors: Pole \u2194 Waterford",
-        "Location: Norfolk County, Ontario, Canada",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 13.0,
-      "lon": 122.0,
-      "name": "Philippines pushes platform accountability, seeks ASEAN backing for tougher social media rules | Biometric Update",
-      "count": 10,
-      "html": "<a href='https://www.biometricupdate.com/202609/philippines-pushes-platform-accountability-seeks-asean-backing-for-tougher-social-media-rules' target='_blank'>Philippines pushes platform accountability, seeks ASEAN backing for tougher social media rules | Biometric Update</a>",
-      "summary": [
-        "DICT said it expects a bill imposing stronger regulations on social media platforms to be passed into law within two months.",
-        "Type: Diplomatic consultation",
-        "Actors: Asean (international org) \u2194 Pilipinas",
-        "Location: Philippines",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 54.0,
-      "lon": -4.0,
-      "name": "Australia pursuing sanctions after trade ban snub | The Border Mail | Wodonga, VIC",
-      "count": 15,
-      "html": "<a href='https://www.bordermail.com.au/story/9348016/australia-pursuing-sanctions-after-trade-ban-snub/' target='_blank'>Australia pursuing sanctions after trade ban snub | The Border Mail | Wodonga, VIC</a>",
-      "summary": [
-        "The prime minister has defended a decision not to follow the UK in announcing trade bans on Israeli...",
-        "Type: Diplomatic consultation",
-        "Actors: Anthony Albanese (government) \u2194 United Kingdom",
-        "Location: United Kingdom",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 32.0,
-      "lon": 53.0,
-      "name": "Iran\u2019s new maritime restrictions put Hormuz under greater strain",
-      "count": 10,
-      "html": "<a href='https://www.azernews.az/analysis/263670.html' target='_blank'>Iran\u2019s new maritime restrictions put Hormuz under greater strain</a>",
-      "summary": [
-        "The problem of transit through the Strait of Hormuz is beginning to affect an increasing number of countries. The volume of liquefied natural gas (LNG) transported through the strait has already fa...",
-        "Type: Economic cooperation",
-        "Actors: Qatar \u2194 United Arab Emirates",
-        "Location: Iran",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 30.0,
-      "lon": 70.0,
-      "name": "China\u2019s HQ-17AE Shorad system to boost Pakistani drone defence as India tensions simmer | The Star",
-      "count": 10,
-      "html": "<a href='https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/08/chinas-hq-17ae-shorad-system-to-boost-pakistani-drone-defence-as-india-tensions-simmer' target='_blank'>China\u2019s HQ-17AE Shorad system to boost Pakistani drone defence as India tensions simmer | The Star</a>",
-      "summary": [
-        "Successful integration with other foreign systems by Pakistan would strengthen China's export case 'considerably', analyst notes",
-        "Type: Economic cooperation",
-        "Actors: Saudi Arabia \u2194 Serbia",
-        "Location: Pakistan",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": -2.0,
-      "lon": 30.0,
-      "name": "As International Aid Shrinks, Africa Must Become Investment Ready | africa.com",
-      "count": 10,
-      "html": "<a href='https://www.africa.com/business/as-international-aid-shrinks-africa-must-become-investment-ready' target='_blank'>As International Aid Shrinks, Africa Must Become Investment Ready | africa.com</a>",
-      "summary": [
-        "Type: Diplomatic cooperation",
-        "Actors: Rockefeller Foundation (NGO) \u2194 African Development Bank (international org)",
-        "Location: Rwanda",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
       "lat": 60.0,
       "lon": -96.0,
-      "name": "Economic or material cooperation: Canada \u2194 Afghanistan",
+      "name": "IDFA urges Canada, US to return to trade negotiations | TheFencePost.com",
       "count": 10,
-      "html": "<a href='https://www.afghanislamicpress.com/en/index.php/news/107562' target='_blank'>Economic or material cooperation: Canada \u2194 Afghanistan</a>",
+      "html": "<a href='https://www.thefencepost.com/news/idfa-urges-canada-us-to-return-to-trade-negotiations/' target='_blank'>IDFA urges Canada, US to return to trade negotiations | TheFencePost.com</a>",
       "summary": [
-        "Type: Economic or material cooperation",
-        "Actors: Canada \u2194 Afghanistan",
+        "Noting President Trump\u2019s plan to ban whey imports from Canada on Sept. 29, the International Dairy Foods Association on Wednesday urged U.S. and Canadian trade negotiators to come back to the table...",
+        "Type: Economic cooperation",
+        "Actors: United States \u2194 Canada",
         "Location: Canada",
+        "Reported: Sep 10, 2025",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 25.0,
+      "lon": 17.0,
+      "name": "Algeria suspends diplomatic relations with UAE after months of tensions | Middle East Eye",
+      "count": 8,
+      "html": "<a href='https://www.middleeasteye.net/news/algeria-severs-diplomatic-relations-dwarf-state-uae' target='_blank'>Algeria suspends diplomatic relations with UAE after months of tensions | Middle East Eye</a>",
+      "summary": [
+        "Algeria's president had previously called the gulf country a 'midget state' that was interfering in North Africa",
+        "Type: Reduced relations / sanctions",
+        "Actors: Algeria \u2194 United Arab Emirates",
+        "Location: Libya",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 28.6,
+      "lon": 77.2,
+      "name": "Signed formal agreement: Embraer (multinational company) \u2194 Hindalco Industries (multinational company)",
+      "count": 10,
+      "html": "<a href='https://aninews.in/news/business/embraer-steps-up-india-manufacturing-push-signals-deeper-aerospace-localisation20260910131857/' target='_blank'>Signed formal agreement: Embraer (multinational company) \u2194 Hindalco Industries (multinational company)</a>",
+      "summary": [
+        "Type: Signed formal agreement",
+        "Actors: Embraer (multinational company) \u2194 Hindalco Industries (multinational company)",
+        "Location: New Delhi, Delhi, India",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -839,16 +728,16 @@
     },
     {
       "category": "political",
-      "lat": 52.0,
-      "lon": 20.0,
-      "name": "Croatia to purchase rocket launcher from S. Korea",
-      "count": 12,
-      "html": "<a href='http://www.bignewsnetwork.com/news/279298804/croatia-to-purchase-rocket-launcher-from-s-korea' target='_blank'>Croatia to purchase rocket launcher from S. Korea</a>",
+      "lat": 54.0,
+      "lon": -4.0,
+      "name": "Australia pursuing sanctions after trade ban snub | The Border Mail | Wodonga, VIC",
+      "count": 15,
+      "html": "<a href='https://www.bordermail.com.au/story/9348016/australia-pursuing-sanctions-after-trade-ban-snub/' target='_blank'>Australia pursuing sanctions after trade ban snub | The Border Mail | Wodonga, VIC</a>",
       "summary": [
-        "ZAGREB, Sept. 10 (Xinhua) -- Croatia signed a contract with South Korean company Hanwha Aerospace on Thursday to procure 18 Chunmoo K239 multiple rock.....",
-        "Type: Economic or material cooperation",
-        "Actors: Estonia \u2194 Nato (international org)",
-        "Location: Poland",
+        "The prime minister has defended a decision not to follow the UK in announcing trade bans on Israeli...",
+        "Type: Diplomatic consultation",
+        "Actors: Anthony Albanese (government) \u2194 United Kingdom",
+        "Location: United Kingdom",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -871,15 +760,46 @@
     },
     {
       "category": "political",
+      "lat": 23.0,
+      "lon": -102.0,
+      "name": "Economic cooperation: Brazil \u2194 Ferrara",
+      "count": 10,
+      "html": "<a href='https://www.foodbev.com/news/notco-sells-brazil-operations-to-ferrara-reportedly-shuts-down-mexico-business' target='_blank'>Economic cooperation: Brazil \u2194 Ferrara</a>",
+      "summary": [
+        "Type: Economic cooperation",
+        "Actors: Brazil \u2194 Ferrara",
+        "Location: Mexico",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": -30.0,
+      "lon": 26.0,
+      "name": "Middle Powers in a Changing Geopolitical Landscape - SAIIA",
+      "count": 8,
+      "html": "<a href='https://saiia.org.za/event/middle-powers-changing-geopolitical-landscape/' target='_blank'>Middle Powers in a Changing Geopolitical Landscape - SAIIA</a>",
+      "summary": [
+        "On 14 September, SAIIA\u2019s Western Cape branch will host H.E. Anne Beathe Kristiansen to discuss the opportunities \u2013 and challenges \u2013 facing middle powers as the geopolitical landscape is reshaped.",
+        "Type: Diplomatic consultation",
+        "Actors: Africa \u2194 Western Cape",
+        "Location: South Africa",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
       "lat": 33.7,
       "lon": 73.1667,
-      "name": "Pakistan resumes LNG imports from Qatar after July | News.az",
-      "count": 10,
-      "html": "<a href='https://news.az/news/pakistan-resumes-lng-imports-from-qatar-after-july' target='_blank'>Pakistan resumes LNG imports from Qatar after July | News.az</a>",
+      "name": "Pakistan says no decision on military action under Makkah pact yet",
+      "count": 8,
+      "html": "<a href='http://www.pakistantelegraph.com/news/279298288/pakistan-says-no-decision-on-military-action-under-makkah-pact-yet' target='_blank'>Pakistan says no decision on military action under Makkah pact yet</a>",
       "summary": [
-        "Al Marrouna, carrying LNG from Qatar\u2019s Ras Laffan terminal, transited through the Strait of Hormuz on Monday and docked at Port Qasim in the cou...",
-        "Type: Economic cooperation",
-        "Actors: Pakistan \u2194 Qatar",
+        "ISLAMABAD, Sept. 10 (Xinhua) -- Pakistan said on Thursday that no military action was currently under discussion under its Makkah Joint Defense Agreem.....",
+        "Type: Diplomatic consultation",
+        "Actors: Islamabad \u2194 Makkah",
         "Location: Islamabad, Islamabad, Pakistan",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
@@ -887,80 +807,94 @@
     },
     {
       "category": "political",
-      "lat": 8.0,
-      "lon": 1.166667,
-      "name": "Africa must be part of global nuclear renaissance, says Togolese leader - World Nuclear News",
+      "lat": 39.9289,
+      "lon": 116.388,
+      "name": "Expressed intent to cooperate: China \u2194 Taiwan",
       "count": 10,
-      "html": "<a href='https://www.world-nuclear-news.org/articles/africa-must-be-part-of-global-nuclear-renaissance-says-togolese-leader' target='_blank'>Africa must be part of global nuclear renaissance, says Togolese leader - World Nuclear News</a>",
+      "html": "<a href='https://aninews.in/news/world/asia/china8217s-grey-zone-pressure-on-taiwan-could-trigger-crisis-stanford-scholar-warns20260910192842/' target='_blank'>Expressed intent to cooperate: China \u2194 Taiwan</a>",
       "summary": [
-        "The African continent &quot;is not asking for a handout of nuclear technology&quot; and should be recognised as a market for such technology, Faure Essozimna Gnassingbe, President of Togo&#39;s Cou...",
         "Type: Expressed intent to cooperate",
-        "Actors: Africa \u2194 Togo",
-        "Location: Togo",
+        "Actors: China \u2194 Taiwan",
+        "Location: Beijing, Beijing, China",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "political",
-      "lat": 12.1508,
-      "lon": -86.2683,
-      "name": "Nicaragua orders closure of its embassy in Santo Domingo amid deepening diplomatic rift | DR1.com",
+      "lat": 36.7631,
+      "lon": 3.05056,
+      "name": "Algeria cuts diplomatic ties with UAE over 'provocative, hostile' actions - The Times of India",
       "count": 10,
-      "html": "<a href='https://dr1.com/forums/threads/nicaragua-orders-closure-of-its-embassy-in-santo-domingo-amid-deepening-diplomatic-rift.419717/' target='_blank'>Nicaragua orders closure of its embassy in Santo Domingo amid deepening diplomatic rift | DR1.com</a>",
+      "html": "<a href='https://timesofindia.indiatimes.com/world/middle-east/algeria-cuts-diplomatic-ties-with-uae-over-provocative-hostile-actions/articleshow/134019170.cms' target='_blank'>Algeria cuts diplomatic ties with UAE over 'provocative, hostile' actions - The Times of India</a>",
       "summary": [
-        "Daniel Ortega / List\u00edn Diario The Nicaraguan government has decided to shutter its embassy in Santo Domingo, the Ministry of Foreign Relations (Mirex)...",
+        "Middle East News: Algeria has severed diplomatic relations with the United Arab Emirates, bringing years of mounting tensions between the two countries to a formal rupt.",
+        "Type: Diplomatic visit",
+        "Actors: United Arab Emirates \u2194 Algeria",
+        "Location: Algiers, Alger, Algeria",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 21.4267,
+      "lon": 39.8261,
+      "name": "Algeria cuts diplomatic ties with Abu Dhabi | The Jerusalem Post",
+      "count": 10,
+      "html": "<a href='http://www.jpost.com/international/article-908264' target='_blank'>Algeria cuts diplomatic ties with Abu Dhabi | The Jerusalem Post</a>",
+      "summary": [
+        "While the reason for the move was not immediately clear, Algerian media outlets have strongly criticized the UAE in the past, accusing it of attempting to sow regional discord.",
         "Type: Reduced relations / sanctions",
-        "Actors: Nicaragua \u2194 Santo Domingo (government)",
-        "Location: Managua, Managua, Nicaragua",
+        "Actors: Algeria \u2194 Abu Dhabi",
+        "Location: Mecca, Makkah, Saudi Arabia",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "political",
-      "lat": 35.0,
-      "lon": 105.0,
-      "name": "Iran-China oil barter system keeps billions flowing despite US sanctions: Report - The Times of India",
+      "lat": 42.1,
+      "lon": -83.1,
+      "name": "Trump escalates Canada trade war with new alcohol threat",
       "count": 10,
-      "html": "<a href='https://timesofindia.indiatimes.com/business/international-business/iran-china-oil-barter-system-keeps-billions-flowing-despite-us-sanctions-report/articleshow/134013535.cms' target='_blank'>Iran-China oil barter system keeps billions flowing despite US sanctions: Report - The Times of India</a>",
+      "html": "<a href='https://www.thedrinksbusiness.com/2026/09/trump-escalates-canada-trade-war-with-new-alcohol-threat/' target='_blank'>Trump escalates Canada trade war with new alcohol threat</a>",
       "summary": [
-        "International Business News: Iran has been using a barter-like system to trade its oil for goods from China, allowing Tehran to bypass conventional international banking channels .",
-        "Type: Diplomatic cooperation",
-        "Actors: Reuters (media outlet) \u2194 China",
-        "Location: China",
-        "Reported: Sep 03, 2026",
+        "Donald Trump\u2019s latest escalation of the trade war with Canada could shut some Canadian alcohol out of the US from the end of this month, potentially affecting major drinks companies on both sides o...",
+        "Type: Reduced relations / sanctions",
+        "Actors: Canada \u2194 The US",
+        "Location: Amherstburg, Ontario, Canada",
+        "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "political",
-      "lat": 53.55,
-      "lon": 10.0,
-      "name": "Germany's connection to the September 11 attacks",
+      "lat": 14.6042,
+      "lon": 120.982,
+      "name": "Diplomatic consultation: Saudi Arabia \u2194 Philippine",
       "count": 10,
-      "html": "<a href='https://www.dw.com/en/9-11-25th-anniversary-germany-hamburg-cell/a-79202918' target='_blank'>Germany's connection to the September 11 attacks</a>",
+      "html": "<a href='https://www.arabnews.com/energy/philippines-begins-talks-with-saudi-arabia-on-strategic-oil-storage-project-3001204' target='_blank'>Diplomatic consultation: Saudi Arabia \u2194 Philippine</a>",
       "summary": [
-        "The 9/11 attacks were partly planned in Hamburg by the so-called Hamburg cell. A look back at a day that reshaped Germany's approach to national security.",
         "Type: Diplomatic consultation",
-        "Actors: Germany \u2194 The US",
-        "Location: Hamburg, Hamburg, Germany",
+        "Actors: Saudi Arabia \u2194 Philippine",
+        "Location: Manila, Manila, Philippines",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "political",
-      "lat": 25.5,
-      "lon": 51.25,
-      "name": "QatarEnergy secures interests offshore Angola | ORA",
+      "lat": 51.5,
+      "lon": 10.5,
+      "name": "Germany vows to be 'partner' to UAE on president's first state visit",
       "count": 10,
-      "html": "<a href='https://oilreviewafrica.com/exploration/exploration/qatarenergy-secures-interests-offshore-angola' target='_blank'>QatarEnergy secures interests offshore Angola | ORA</a>",
+      "html": "<a href='https://www.yahoo.com/news/world/articles/germany-vows-partner-uae-presidents-152044356.html' target='_blank'>Germany vows to be 'partner' to UAE on president's first state visit</a>",
       "summary": [
-        "Interests in Blocks 8 and 22 offshore the Republic of Angola has been secured by QatarEnergy, alongside its partners Shell and Sonangol E&P - Exploration - Qatarenergy secures interests offshore an...",
-        "Type: Signed formal agreement",
-        "Actors: Angola \u2194 Qatar",
-        "Location: Qatar",
+        "United Arab Emirates (UAE) President Sheikh Mohamed bin Zayed Al Nahyan was welcomed in Berlin on Thursday for a two-day state visit as Germany aims to deepen relations with the Gulf state. \"The wo...",
+        "Type: Diplomatic consultation",
+        "Actors: United Arab Emirates \u2194 Berlin",
+        "Location: Germany",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -968,30 +902,93 @@
     {
       "category": "political",
       "lat": 24.0,
-      "lon": 90.0,
-      "name": "Sri Lanka told reforms are stalling as NGOs demand international investigation at UN | Tamil Guardian",
+      "lon": 54.0,
+      "name": "Algeria cuts ties with UAE | Israel National News",
       "count": 10,
-      "html": "<a href='https://www.tamilguardian.com/content/sri-lanka-told-reforms-are-stalling-ngos-demand-international-investigation-un' target='_blank'>Sri Lanka told reforms are stalling as NGOs demand international investigation at UN | Tamil Guardian</a>",
+      "html": "<a href='https://www.israelnationalnews.com/flashes/693344' target='_blank'>Algeria cuts ties with UAE | Israel National News</a>",
       "summary": [
-        "Type: Diplomatic cooperation",
-        "Actors: Bangladesh \u2194 Sri Lanka",
-        "Location: Bangladesh",
+        "Algeria announced that it was severing relations with the United Arab Emirates, saying it had \u201cexhausted all means of preserving bilateral relations between the two countries.\" The",
+        "Type: Reduced relations / sanctions",
+        "Actors: Algeria \u2194 United Arab Emirates",
+        "Location: United Arab Emirates",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "political",
-      "lat": -16.5433,
-      "lon": 31.9617,
-      "name": "Sunda Energy, Sintana Energy, Ilika, Ariana Resources, MP Evans - Small Cap Snapshot | AIM:SNDA",
-      "count": 10,
-      "html": "<a href='https://www.proactiveinvestors.co.uk/companies/news/1098352/sunda-energy-sintana-energy-ilika-ariana-resources-mp-evans-small-cap-snapshot-1098352.html' target='_blank'>Sunda Energy, Sintana Energy, Ilika, Ariana Resources, MP Evans - Small Cap Snapshot | AIM:SNDA</a>",
+      "lat": 60.0,
+      "lon": -96.0,
+      "name": "JOINT STATEMENT BETWEEN THE MINISTER OF ENERGY AND NATURAL RESOURCES OF CANADA AND THE FIRST DEPUTY PRIME MINISTER OF UKRAINE, MINISTER OF ENERGY OF UKRAINE ON CANADA-UKRAINE ENERGY COOPERATION - Belleville Intelligencer",
+      "count": 8,
+      "html": "<a href='https://www.intelligencer.ca/press-releases/pr-newswire/joint-statement-between-the-minister-of-energy-and-natural-resources-of-canada-and-the-first-deputy-prime-minister-of-ukraine-minister-of-energy-of-ukraine-on-canada-ukraine-energy-cooperation/' target='_blank'>JOINT STATEMENT BETWEEN THE MINISTER OF ENERGY AND NATURAL RESOURCES OF CANADA AND THE FIRST DEPUTY PRIME MINISTER OF UKRAINE, MINISTER OF ENERGY OF UKRAINE ON CANADA-UKRAINE ENERGY COOPERATION - Belleville Intelligencer</a>",
       "summary": [
-        "Sunda Energy PLC (AIM:SNDA, FRA:GHA0) expects its New Zealand acquisition to complete around late September or early October. The producing assets averaged...",
+        "CALGARY, AB, Sept. 10, 2026 /CNW/ -- On September 10, 2026, Canada's Minister of Energy and Natural Resources Tim Hodgson and the First Deputy Prime",
+        "Type: Expressed intent to cooperate",
+        "Actors: Canada \u2194 Ukraine",
+        "Location: Canada",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 39.9289,
+      "lon": 116.388,
+      "name": "A Manufactured Trade War with Canada - American Thinker",
+      "count": 10,
+      "html": "<a href='https://www.americanthinker.com/articles/2026/09/a-manufactured-trade-war-with-canada/' target='_blank'>A Manufactured Trade War with Canada - American Thinker</a>",
+      "summary": [
+        "Perhaps more \"allied\" countries than we thought are currently led by people who are -- for all intents and purposes -- agents of the People's Republic of China.",
+        "Type: Economic cooperation",
+        "Actors: United States \u2194 Canada",
+        "Location: Beijing, Beijing, China",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 46.1026,
+      "lon": 2.76841,
+      "name": "Vi\u1ec7t Nam, France seek to deepen comprehensive strategic partnership",
+      "count": 10,
+      "html": "<a href='https://vietnamnews.vn/politics-laws/1799402/viet-nam-france-seek-to-deepen-comprehensive-strategic-partnership.html' target='_blank'>Vi\u1ec7t Nam, France seek to deepen comprehensive strategic partnership</a>",
+      "summary": [
+        "Minister of Foreign Affairs L\u00ea Ho\u00e0i Trung took the occasion to invite the French minister to visit Vi\u1ec7t Nam at a convenient time to continue discussions on concrete measures to promote bilateral re...",
+        "Type: Diplomatic consultation",
+        "Actors: France \u2194 Vietnam",
+        "Location: Barrot, Auvergne, France",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 22.5,
+      "lon": 58.25,
+      "name": "Signed formal agreement: Riyadh \u2194 Oman",
+      "count": 10,
+      "html": "<a href='https://www.arabnews.com/mining/oman-signs-154m-mining-exploration-deals-3001186' target='_blank'>Signed formal agreement: Riyadh \u2194 Oman</a>",
+      "summary": [
+        "Type: Signed formal agreement",
+        "Actors: Riyadh \u2194 Oman",
+        "Location: Sharqiyah, Al Mintaqah ash Sharqiyah, Oman",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 42.1497,
+      "lon": -74.9384,
+      "name": "Diplomatic visit: Jordan \u2194 Los Angeles",
+      "count": 8,
+      "html": "<a href='https://www.oann.com/entertainment/ella-langley-leads-country-music-association-awards-nods-with-mentor-miranda-lambert-close-behind/' target='_blank'>Diplomatic visit: Jordan \u2194 Los Angeles</a>",
+      "summary": [
         "Type: Diplomatic visit",
-        "Actors: Ariana \u2194 Zimbabwe",
-        "Location: Dokwe, Mashonaland Central, Zimbabwe",
+        "Actors: Jordan \u2194 Los Angeles",
+        "Location: New York, United States",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -1326,15 +1323,16 @@
     },
     {
       "category": "conflict",
-      "lat": 15.3547,
-      "lon": 44.2067,
-      "name": "Armed clash: Government Forces (military) vs Saudi Arabia",
+      "lat": 13.3195,
+      "lon": 43.2448,
+      "name": "An Israeli strike in Gaza kills at least 4, including children, and other Mideast developments | National News | 2news.com",
       "count": 10,
-      "html": "<a href='https://english.news.cn/20260910/32515fd1d72749f0a64d71a7565f87a5/c.html' target='_blank'>Armed clash: Government Forces (military) vs Saudi Arabia</a>",
+      "html": "<a href='https://www.2news.com/news/national/houthi-rebels-reach-strategic-port-city-in-yemen-and-other-mideast-developments/article_afc3da8a-899b-5a3a-b085-1c057a4c7a8a.html' target='_blank'>An Israeli strike in Gaza kills at least 4, including children, and other Mideast developments | National News | 2news.com</a>",
       "summary": [
+        "An Israeli strike killed at least four people in northern Gaza, including two children, hospital officials said Thursday. The Israeli military said the attack killed a militant.",
         "Type: Armed clash",
-        "Actors: Government Forces (military) vs Saudi Arabia",
-        "Location: Sanaa, San\u0091a', Yemen",
+        "Actors: Government (government)",
+        "Location: Mokha, Ta\u0091izz, Yemen",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -1389,15 +1387,15 @@
     },
     {
       "category": "conflict",
-      "lat": 16.1641,
-      "lon": 44.7769,
-      "name": "Armed clash: Government (government)",
+      "lat": 15.3547,
+      "lon": 44.2067,
+      "name": "Armed clash: Government Forces (military) vs Saudi Arabia",
       "count": 10,
-      "html": "<a href='https://www.arabnews.com/middle-east/yemen-fighting-intensifies-as-government-forces-push-on-multiple-fronts-3001185' target='_blank'>Armed clash: Government (government)</a>",
+      "html": "<a href='https://english.news.cn/20260910/32515fd1d72749f0a64d71a7565f87a5/c.html' target='_blank'>Armed clash: Government Forces (military) vs Saudi Arabia</a>",
       "summary": [
         "Type: Armed clash",
-        "Actors: Government (government)",
-        "Location: Al-Hazm, Al Jawf, Yemen",
+        "Actors: Government Forces (military) vs Saudi Arabia",
+        "Location: Sanaa, San\u0091a', Yemen",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -1406,11 +1404,10 @@
       "category": "conflict",
       "lat": 8.31667,
       "lon": 8.51667,
-      "name": "Blockade of Obi\u2019s motorcade violation of Peace Accord \u2013 NRM presidential candidate - QUICK NEWS AFRICA",
+      "name": "Armed clash: Nigeria",
       "count": 8,
-      "html": "<a href='https://quicknews-africa.net/blockade-of-obis-motorcade-violation-of-peace-accord-nrm-presidential-candidate/' target='_blank'>Blockade of Obi\u2019s motorcade violation of Peace Accord \u2013 NRM presidential candidate - QUICK NEWS AFRICA</a>",
+      "html": "<a href='https://quicknews-africa.net/blockade-of-obis-motorcade-violation-of-peace-accord-nrm-presidential-candidate/' target='_blank'>Armed clash: Nigeria</a>",
       "summary": [
-        "National Rescue Movement (NRM) Presidential Candidate, Dr Esther Okereke, has condemned the Tuesday blockade of Nigeria Democratic Congress (NDC) presidential candidate, Mr Peter Obi\u2019s motorcade in...",
         "Type: Armed clash",
         "Actors: Nigeria",
         "Location: Benue, Nigeria (general), Nigeria",
@@ -1452,16 +1449,15 @@
     },
     {
       "category": "conflict",
-      "lat": 31.4167,
-      "lon": 34.3333,
-      "name": "Family of four killed in Israeli strike on northern Gaza | Gaza News | Al Jazeera",
+      "lat": 16.1641,
+      "lon": 44.7769,
+      "name": "Armed clash: Government (government)",
       "count": 10,
-      "html": "<a href='https://www.aljazeera.com/news/2026/9/10/israeli-attacks-kill-at-least-four-palestinians-in-northern-gaza' target='_blank'>Family of four killed in Israeli strike on northern Gaza | Gaza News | Al Jazeera</a>",
+      "html": "<a href='https://www.arabnews.com/middle-east/yemen-fighting-intensifies-as-government-forces-push-on-multiple-fronts-3001185' target='_blank'>Armed clash: Government (government)</a>",
       "summary": [
-        "Israeli attacks on the occupied Palestinian territory continue despite a \u2018ceasefire\u2019 brokered in October.",
         "Type: Armed clash",
-        "Actors: Hospital",
-        "Location: Gaza, Israel (general), Israel",
+        "Actors: Government (government)",
+        "Location: Al-Hazm, Al Jawf, Yemen",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -1484,15 +1480,16 @@
     },
     {
       "category": "conflict",
-      "lat": 15.461,
-      "lon": 45.3253,
-      "name": "Armed clash: Government Forces (military) vs Ukraine",
+      "lat": 31.4167,
+      "lon": 34.3333,
+      "name": "Family of four killed in Israeli strike on northern Gaza | Gaza News | Al Jazeera",
       "count": 10,
-      "html": "<a href='https://www.arabnews.com/middle-east/government-drones-redraw-the-rules-of-war-in-yemen-3001182' target='_blank'>Armed clash: Government Forces (military) vs Ukraine</a>",
+      "html": "<a href='https://www.aljazeera.com/news/2026/9/10/israeli-attacks-kill-at-least-four-palestinians-in-northern-gaza' target='_blank'>Family of four killed in Israeli strike on northern Gaza | Gaza News | Al Jazeera</a>",
       "summary": [
+        "Israeli attacks on the occupied Palestinian territory continue despite a \u2018ceasefire\u2019 brokered in October.",
         "Type: Armed clash",
-        "Actors: Government Forces (military) vs Ukraine",
-        "Location: Marib, Ma'rib, Yemen",
+        "Actors: Hospital",
+        "Location: Gaza, Israel (general), Israel",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
