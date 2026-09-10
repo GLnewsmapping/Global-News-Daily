@@ -876,9 +876,30 @@
     controls.autoRotate = !userHasInteracted;
   }
 
+  // globe.gl's points are lit 3D cylinders (MeshLambertMaterial), so the
+  // same category color renders with a highlight/shadow gradient that
+  // shifts with the scene lighting and the point's position -- never
+  // quite the flat, exact hex shown in the sidebar/map. Moving the color
+  // from `color` (lit, diffuse) to `emissive` (self-lit, ignores scene
+  // lighting entirely) makes every point read as the true, uniform
+  // category color no matter where it sits on the globe. Guarded by
+  // "already black" so re-running this after a refresh is a no-op for
+  // points that were already patched.
+  function makePointsUnlit() {
+    world.scene().traverse(obj => {
+      if (obj.__globeObjType !== 'point') return;
+      const m = obj.material;
+      if (m.color.getHex() === 0x000000) return;
+      m.emissive.setHex(m.color.getHex());
+      m.color.setHex(0x000000);
+      m.needsUpdate = true;
+    });
+  }
+
   function refreshGlobe() {
     world.pointsData(visibleGlobeEvents());
     world.ringsData(visibleGlobeEvents().filter(d => d.category !== 'conflict' && d.count >= PULSE_THRESHOLD));
+    makePointsUnlit();
   }
 
   function refreshGlobeLabels() {
@@ -957,7 +978,7 @@
         color: colorFor(f.category),
         weight: 1,
         fillColor: colorFor(f.category),
-        fillOpacity: 0.55,
+        fillOpacity: 1, // fully opaque -- at 0.55 the satellite terrain/ocean underneath bled through and shifted the perceived color away from the true category hex
       });
 
       marker.bindPopup(

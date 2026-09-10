@@ -293,6 +293,13 @@ def _build_eonet_summary(event: dict, geometry: list, event_type: str, source_na
     summary stays short rather than padded with invented detail."""
     summary = [f"Type: {event_type}"]
 
+    # EONET's `closed` field is the ground truth for whether this is still
+    # unfolding or already resolved -- surfaced explicitly now that the
+    # feed deliberately mixes both kinds of story (see fetch_eonet_climate),
+    # so a reader isn't left guessing which one they're looking at.
+    closed_date = event.get("closed")
+    summary.append(f"Status: Ended {_format_eonet_date(closed_date)}" if closed_date else "Status: Still active")
+
     mag = _format_magnitude(geometry[-1].get("magnitudeValue"), geometry[-1].get("magnitudeUnit"))
     if mag:
         summary.append(mag)
@@ -308,13 +315,22 @@ def _build_eonet_summary(event: dict, geometry: list, event_type: str, source_na
             d0 = datetime.fromisoformat(first_dt.replace("Z", "+00:00"))
             d1 = datetime.fromisoformat(last_dt.replace("Z", "+00:00"))
             days = max(1, round((d1 - d0).total_seconds() / 86400))
-            summary.append(f"Tracked for {days} day{'s' if days != 1 else ''} (since {_format_eonet_date(first_dt)})")
+            verb = "Tracked for" if closed_date else "Tracking for"
+            summary.append(f"{verb} {days} day{'s' if days != 1 else ''} (since {_format_eonet_date(first_dt)})")
         except ValueError:
             pass
     else:
-        summary.append(f"Reported: {_format_eonet_date(geometry[-1].get('date', ''))}")
+        label = "Reported" if closed_date else "First reported"
+        summary.append(f"{label}: {_format_eonet_date(geometry[-1].get('date', ''))}")
 
-    summary.append(f"Source: {source_name}")
+    # Multiple independent trackers (e.g. JTWC + NOAA both tracking the same
+    # storm) is real corroboration worth showing, not just the first one.
+    source_names = [s["id"] for s in (event.get("sources") or []) if s.get("id")]
+    if len(source_names) > 1:
+        summary.append(f"Tracked by: {', '.join(source_names)}")
+    else:
+        summary.append(f"Source: {source_name}")
+
     return summary
 
 
@@ -378,14 +394,26 @@ def fetch_eonet_climate(limit: int, wildfire_cap: int = 15) -> list:
     Wildfires are capped tightly: EONET's "open" wildfire feed is fed almost
     entirely by IRWIN, the US interagency wildfire tracker, so pulling it
     without a cap buries every other category and country under US fires.
-    The other categories are fetched across a wider time window with
-    status=all (open + closed), which gives genuinely global coverage --
-    floods/storms/drought from Japan, Vietnam, Lithuania, etc, not just the US.
+
+    The rest of the budget is deliberately split between two different
+    kinds of story rather than one "all, last 21 days" query: status=open
+    events (no age limit -- they're still unfolding by definition, so a
+    45-day-old drought that's still active is exactly as "developing" as
+    one that started yesterday) for what's happening right now, and
+    status=closed events over a wider 45-day window for real settled
+    history -- confirmed via the live API that meaningful closed-event
+    depth exists well past 21 days, it just wasn't being reached before.
     """
     features = _fetch_eonet_events("wildfires", status="open", limit=wildfire_cap)
     remaining = max(0, limit - len(features))
+
+    open_budget = max(1, remaining // 2)
     features += _fetch_eonet_events(
-        "drought,floods,severeStorms,tempExtremes", status="all", limit=remaining, days=21
+        "drought,floods,severeStorms,tempExtremes", status="open", limit=open_budget
+    )
+    remaining = max(0, limit - len(features))
+    features += _fetch_eonet_events(
+        "drought,floods,severeStorms,tempExtremes", status="closed", limit=remaining, days=45
     )
     return features
 

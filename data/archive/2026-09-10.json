@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T14:14:50.566740+00:00",
+  "generated_at": "2026-09-10T14:34:36.353121+00:00",
   "feature_count": 99,
   "features": [
     {
@@ -11,10 +11,26 @@
       "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-FLFLS-1800147' target='_blank'>Wildfire S7, Broward, Florida</a>",
       "summary": [
         "Type: Wildfires",
+        "Status: Still active",
         "Size: 884 acres",
         "Location note: 3 Miles E from DEEM CITY, FL",
-        "Reported: Sep 04, 2026",
+        "First reported: Sep 04, 2026",
         "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 34.3,
+      "lon": 135.9,
+      "name": "Tropical Storm Krovanh",
+      "count": 1,
+      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp2226.tcw' target='_blank'>Tropical Storm Krovanh</a>",
+      "summary": [
+        "Type: Severe Storms",
+        "Status: Still active",
+        "Peak winds: 25 kts (~29 mph)",
+        "Tracking for 8 days (since Sep 01, 2026)",
+        "Source: JTWC"
       ]
     },
     {
@@ -26,6 +42,7 @@
       "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104147' target='_blank'>Flood in Islamic Republic of Iran</a>",
       "summary": [
         "Type: Floods",
+        "Status: Ended Sep 09, 2026",
         "Reported: Sep 06, 2026",
         "Source: GDACS"
       ]
@@ -39,6 +56,7 @@
       "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104146' target='_blank'>Flood in Indonesia</a>",
       "summary": [
         "Type: Floods",
+        "Status: Ended Sep 07, 2026",
         "Reported: Sep 05, 2026",
         "Source: GDACS"
       ]
@@ -52,6 +70,7 @@
       "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104144' target='_blank'>Flood in Poland</a>",
       "summary": [
         "Type: Floods",
+        "Status: Ended Sep 05, 2026",
         "Reported: Sep 04, 2026",
         "Source: GDACS"
       ]
@@ -65,20 +84,8 @@
       "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104145' target='_blank'>Flood in Peru</a>",
       "summary": [
         "Type: Floods",
+        "Status: Ended Sep 06, 2026",
         "Reported: Sep 04, 2026",
-        "Source: GDACS"
-      ]
-    },
-    {
-      "category": "climate",
-      "lat": 36.56328098359691,
-      "lon": 137.18696935262963,
-      "name": "Flood in Japan",
-      "count": 1,
-      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104140' target='_blank'>Flood in Japan</a>",
-      "summary": [
-        "Type: Floods",
-        "Reported: Sep 02, 2026",
         "Source: GDACS"
       ]
     },
@@ -91,6 +98,7 @@
       "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp2026.tcw' target='_blank'>Tropical Storm Bang-Lang</a>",
       "summary": [
         "Type: Severe Storms",
+        "Status: Ended Sep 04, 2026",
         "Peak winds: 35 kts (~40 mph)",
         "Tracked for 3 days (since Aug 27, 2026)",
         "Source: JTWC"
@@ -105,6 +113,7 @@
       "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104126' target='_blank'>Flood in New Zealand</a>",
       "summary": [
         "Type: Floods",
+        "Status: Ended Aug 28, 2026",
         "Reported: Aug 26, 2026",
         "Source: GDACS"
       ]
@@ -118,6 +127,7 @@
       "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104117' target='_blank'>Flood in Guinea</a>",
       "summary": [
         "Type: Floods",
+        "Status: Ended Aug 24, 2026",
         "Reported: Aug 22, 2026",
         "Source: GDACS"
       ]
@@ -131,10 +141,25 @@
       "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-SDPRA-000151' target='_blank'>Wildfire Needles, Oglala Lakota, South Dakota</a>",
       "summary": [
         "Type: Wildfires",
+        "Status: Still active",
         "Size: 6,018 acres",
         "Location note: 2 Miles E from Evergreen Community, SD",
-        "Reported: Sep 04, 2026",
+        "First reported: Sep 04, 2026",
         "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 36.56328098359691,
+      "lon": 137.18696935262963,
+      "name": "Flood in Japan",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104140' target='_blank'>Flood in Japan</a>",
+      "summary": [
+        "Type: Floods",
+        "Status: Ended Sep 04, 2026",
+        "Reported: Sep 02, 2026",
+        "Source: GDACS"
       ]
     },
     {
@@ -146,6 +171,7 @@
       "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104129' target='_blank'>Flood in Lebanon</a>",
       "summary": [
         "Type: Floods",
+        "Status: Ended Aug 30, 2026",
         "Reported: Aug 28, 2026",
         "Source: GDACS"
       ]
@@ -159,6 +185,7 @@
       "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104136' target='_blank'>Flood in Pakistan</a>",
       "summary": [
         "Type: Floods",
+        "Status: Ended Sep 01, 2026",
         "Reported: Aug 30, 2026",
         "Source: GDACS"
       ]
@@ -172,20 +199,22 @@
       "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104138' target='_blank'>Flood in Lithuania</a>",
       "summary": [
         "Type: Floods",
+        "Status: Ended Sep 01, 2026",
         "Reported: Aug 31, 2026",
         "Source: GDACS"
       ]
     },
     {
       "category": "climate",
-      "lat": 13.973494413604302,
-      "lon": 107.999556,
-      "name": "Flood in Vietnam",
+      "lat": -8.515162642857142,
+      "lon": -35.70344370985715,
+      "name": "Flood in Brazil",
       "count": 1,
-      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104141' target='_blank'>Flood in Vietnam</a>",
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104106' target='_blank'>Flood in Brazil</a>",
       "summary": [
         "Type: Floods",
-        "Reported: Sep 02, 2026",
+        "Status: Ended Aug 18, 2026",
+        "Reported: Aug 17, 2026",
         "Source: GDACS"
       ]
     },
@@ -198,6 +227,7 @@
       "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp2126.tcw' target='_blank'>Tropical Storm Etau</a>",
       "summary": [
         "Type: Severe Storms",
+        "Status: Ended Sep 04, 2026",
         "Peak winds: 30 kts (~35 mph)",
         "Tracked for 4 days (since Aug 27, 2026)",
         "Source: JTWC"
@@ -212,7 +242,22 @@
       "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104119' target='_blank'>Flood in Australia</a>",
       "summary": [
         "Type: Floods",
+        "Status: Ended Aug 25, 2026",
         "Reported: Aug 23, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 14.879642913604302,
+      "lon": -15.8851484,
+      "name": "Flood in Senegal",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104113' target='_blank'>Flood in Senegal</a>",
+      "summary": [
+        "Type: Floods",
+        "Status: Ended Aug 20, 2026",
+        "Reported: Aug 18, 2026",
         "Source: GDACS"
       ]
     },
@@ -225,10 +270,25 @@
       "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-MTEAS-000786' target='_blank'>Incident Complex Rattlesnake Complex, Prairie, Montana</a>",
       "summary": [
         "Type: Wildfires",
+        "Status: Still active",
         "Size: 15,582 acres",
         "Location note: 30 Miles E from Miles City, MT",
-        "Reported: Sep 04, 2026",
+        "First reported: Sep 04, 2026",
         "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 13.973494413604302,
+      "lon": 107.999556,
+      "name": "Flood in Vietnam",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104141' target='_blank'>Flood in Vietnam</a>",
+      "summary": [
+        "Type: Floods",
+        "Status: Ended Sep 04, 2026",
+        "Reported: Sep 02, 2026",
+        "Source: GDACS"
       ]
     },
     {
@@ -240,6 +300,7 @@
       "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104131' target='_blank'>Flood in T\u00fcrkiye</a>",
       "summary": [
         "Type: Floods",
+        "Status: Ended Aug 28, 2026",
         "Reported: Aug 27, 2026",
         "Source: GDACS"
       ]
@@ -253,6 +314,7 @@
       "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104124' target='_blank'>Flood in Nepal</a>",
       "summary": [
         "Type: Floods",
+        "Status: Ended Aug 27, 2026",
         "Reported: Aug 25, 2026",
         "Source: GDACS"
       ]
@@ -266,36 +328,66 @@
       "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104137' target='_blank'>Flood in Austria</a>",
       "summary": [
         "Type: Floods",
+        "Status: Ended Aug 31, 2026",
         "Reported: Aug 30, 2026",
         "Source: GDACS"
       ]
     },
     {
       "category": "climate",
-      "lat": 34.3,
-      "lon": 135.9,
-      "name": "Tropical Storm Krovanh",
+      "lat": -32.36436803616236,
+      "lon": -54.17374468523985,
+      "name": "Flood in Uruguay",
       "count": 1,
-      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp2226.tcw' target='_blank'>Tropical Storm Krovanh</a>",
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104112' target='_blank'>Flood in Uruguay</a>",
+      "summary": [
+        "Type: Floods",
+        "Status: Ended Aug 17, 2026",
+        "Reported: Aug 15, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 28.3,
+      "lon": 154.5,
+      "name": "Tropical Storm Nangka",
+      "count": 1,
+      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp1626.tcw' target='_blank'>Tropical Storm Nangka</a>",
       "summary": [
         "Type: Severe Storms",
+        "Status: Ended Aug 19, 2026",
         "Peak winds: 25 kts (~29 mph)",
-        "Tracked for 8 days (since Sep 01, 2026)",
+        "Tracked for 2 days (since Aug 13, 2026)",
         "Source: JTWC"
       ]
     },
     {
       "category": "climate",
-      "lat": 38.1,
-      "lon": -179.1,
-      "name": "Tropical Storm Lala",
+      "lat": -34.61668951585366,
+      "lon": 138.70337018495934,
+      "name": "Flood in Australia",
       "count": 1,
-      "html": "<a href='https://science.nasa.gov/earth/earth-observatory/lala-batters-hawaii/' target='_blank'>Tropical Storm Lala</a>",
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104085' target='_blank'>Flood in Australia</a>",
       "summary": [
-        "Type: Severe Storms",
-        "Peak winds: 35 kts (~40 mph)",
-        "Tracked for 16 days (since Aug 12, 2026)",
-        "Source: EO"
+        "Type: Floods",
+        "Status: Ended Aug 10, 2026",
+        "Reported: Aug 08, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 9.039818377815951,
+      "lon": 33.0476133238773,
+      "name": "Flood in South Sudan",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104110' target='_blank'>Flood in South Sudan</a>",
+      "summary": [
+        "Type: Floods",
+        "Status: Ended Aug 16, 2026",
+        "Reported: Aug 14, 2026",
+        "Source: GDACS"
       ]
     },
     {
@@ -307,22 +399,10 @@
       "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-NVWID-020663' target='_blank'>Emergency Stabilization BAER McConnell, Humboldt, Nevada</a>",
       "summary": [
         "Type: Wildfires",
+        "Status: Still active",
         "Size: 500 acres",
-        "Reported: Sep 03, 2026",
+        "First reported: Sep 03, 2026",
         "Source: IRWIN"
-      ]
-    },
-    {
-      "category": "climate",
-      "lat": 52.06322570844622,
-      "lon": -9.510024692191235,
-      "name": "Flood in Ireland",
-      "count": 1,
-      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104127' target='_blank'>Flood in Ireland</a>",
-      "summary": [
-        "Type: Floods",
-        "Reported: Aug 26, 2026",
-        "Source: GDACS"
       ]
     },
     {
@@ -334,117 +414,80 @@
       "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104133' target='_blank'>Flood in South Korea</a>",
       "summary": [
         "Type: Floods",
+        "Status: Ended Aug 30, 2026",
         "Reported: Aug 28, 2026",
         "Source: GDACS"
       ]
     },
     {
       "category": "climate",
-      "lat": 46.65069,
-      "lon": -104.83045,
-      "name": "Wildfire Ayers Pond, Prairie, Montana",
+      "lat": 41.75804206918103,
+      "lon": 44.83422274116379,
+      "name": "Flood in Georgia",
       "count": 1,
-      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-MTMCD-000777' target='_blank'>Wildfire Ayers Pond, Prairie, Montana</a>",
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104103' target='_blank'>Flood in Georgia</a>",
       "summary": [
-        "Type: Wildfires",
-        "Size: 566 acres",
-        "Location note: 25 Miles SE from Terry, MT",
-        "Reported: Sep 03, 2026",
-        "Source: IRWIN"
+        "Type: Floods",
+        "Status: Ended Aug 14, 2026",
+        "Reported: Aug 13, 2026",
+        "Source: GDACS"
       ]
     },
     {
       "category": "climate",
-      "lat": 42.01258642865497,
-      "lon": 42.844023445614035,
-      "name": "Flood in Georgia",
+      "lat": 14.596209413138544,
+      "lon": 99.11790238010836,
+      "name": "Flood in Thailand",
       "count": 1,
-      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104128' target='_blank'>Flood in Georgia</a>",
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104122' target='_blank'>Flood in Thailand</a>",
       "summary": [
         "Type: Floods",
+        "Status: Ended Aug 24, 2026",
+        "Reported: Aug 17, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 52.06322570844622,
+      "lon": -9.510024692191235,
+      "name": "Flood in Ireland",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104127' target='_blank'>Flood in Ireland</a>",
+      "summary": [
+        "Type: Floods",
+        "Status: Ended Aug 28, 2026",
         "Reported: Aug 26, 2026",
         "Source: GDACS"
       ]
     },
     {
       "category": "climate",
-      "lat": 15.090101805386418,
-      "lon": 120.5505380735363,
-      "name": "Flood in Philippines",
+      "lat": -12.224527737809186,
+      "lon": -76.94686481696114,
+      "name": "Flood in Peru",
       "count": 1,
-      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104130' target='_blank'>Flood in Philippines</a>",
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104071' target='_blank'>Flood in Peru</a>",
       "summary": [
         "Type: Floods",
-        "Reported: Aug 27, 2026",
+        "Status: Ended Aug 03, 2026",
+        "Reported: Aug 01, 2026",
         "Source: GDACS"
       ]
     },
     {
-      "category": "climate",
-      "lat": 46.48575,
-      "lon": -105.185017,
-      "name": "Wildfire Snow, Custer, Montana",
-      "count": 1,
-      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-MTLG14-000775' target='_blank'>Wildfire Snow, Custer, Montana</a>",
+      "category": "political",
+      "lat": 31.106,
+      "lon": -97.6475,
+      "name": "Diplomatic visit: Male \u2194 United States",
+      "count": 44,
+      "html": "<a href='https://www.warringtonguardian.co.uk/news/national/26539431.ella-langley-leads-country-music-association-awards-nods/' target='_blank'>Diplomatic visit: Male \u2194 United States</a>",
       "summary": [
-        "Type: Wildfires",
-        "Size: 1,100 acres",
-        "Location note: 30 Miles E from Miles City, MT",
-        "Reported: Sep 02, 2026",
-        "Source: IRWIN"
-      ]
-    },
-    {
-      "category": "climate",
-      "lat": 41.74294337470793,
-      "lon": 23.47269031341964,
-      "name": "Flood in Bulgaria",
-      "count": 1,
-      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104120' target='_blank'>Flood in Bulgaria</a>",
-      "summary": [
-        "Type: Floods",
-        "Reported: Aug 23, 2026",
-        "Source: GDACS"
-      ]
-    },
-    {
-      "category": "climate",
-      "lat": 14.009381906428573,
-      "lon": 107.17211393563026,
-      "name": "Flood in Cambodia",
-      "count": 1,
-      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104132' target='_blank'>Flood in Cambodia</a>",
-      "summary": [
-        "Type: Floods",
-        "Reported: Aug 27, 2026",
-        "Source: GDACS"
-      ]
-    },
-    {
-      "category": "climate",
-      "lat": 35.5693,
-      "lon": -103.7858,
-      "name": "Wildfire Fowl, Harding, New Mexico",
-      "count": 1,
-      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-NMN4S-000562' target='_blank'>Wildfire Fowl, Harding, New Mexico</a>",
-      "summary": [
-        "Type: Wildfires",
-        "Size: 822 acres",
-        "Reported: Sep 02, 2026",
-        "Source: IRWIN"
-      ]
-    },
-    {
-      "category": "climate",
-      "lat": 40.09255575178571,
-      "lon": 124.5021684532967,
-      "name": "Flood in North Korea",
-      "count": 1,
-      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104125' target='_blank'>Flood in North Korea</a>",
-      "summary": [
-        "Type: Floods",
-        "Reported: Aug 22, 2026",
-        "Source: GDACS"
+        "Type: Diplomatic visit",
+        "Actors: Male \u2194 United States",
+        "Location: Texas, United States",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
       ]
     },
     {
@@ -473,21 +516,6 @@
         "Type: Diplomatic visit",
         "Actors: China \u2194 New York (legislature)",
         "Location: New Delhi, Delhi, India",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 5.55,
-      "lon": -0.216667,
-      "name": "Diplomatic consultation: Africa \u2194 Ghana",
-      "count": 20,
-      "html": "<a href='http://www.businessghana.com/site/news/general/355854/Health-Ministry,-partners-sign-MoU-to-boost-local-vaccine-production' target='_blank'>Diplomatic consultation: Africa \u2194 Ghana</a>",
-      "summary": [
-        "Type: Diplomatic consultation",
-        "Actors: Africa \u2194 Ghana",
-        "Location: Accra, Greater Accra, Ghana",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -524,31 +552,46 @@
     },
     {
       "category": "political",
-      "lat": 32.7831,
-      "lon": -96.8067,
-      "name": "Diplomatic visit: Canada \u2194 Dallas",
-      "count": 12,
-      "html": "<a href='https://medicinehatnews.com/news/national-news/2026/09/09/trade-tensions-with-canada-not-on-the-minds-of-many-republicans-at-convention/' target='_blank'>Diplomatic visit: Canada \u2194 Dallas</a>",
+      "lat": 85.0,
+      "lon": 0.0,
+      "name": "Diplomatic visit: Canada \u2194 Greenland",
+      "count": 10,
+      "html": "<a href='https://www.webwire.com/ViewPressRel.asp?aId=360294' target='_blank'>Diplomatic visit: Canada \u2194 Greenland</a>",
       "summary": [
         "Type: Diplomatic visit",
-        "Actors: Canada \u2194 Dallas",
-        "Location: Dallas, Texas, United States",
+        "Actors: Canada \u2194 Greenland",
+        "Location: Arctic Ocean, ,",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "political",
-      "lat": 32.0667,
-      "lon": 34.7667,
-      "name": "Diplomatic consultation: Europe \u2194 Tel Aviv",
+      "lat": 35.75,
+      "lon": 51.5148,
+      "name": "Diplomatic cooperation: Africa \u2194 Iran",
       "count": 10,
-      "html": "<a href='https://www.marinij.com/2026/09/10/john-malkovich-cancels-tel-aviv-israel-performance-fake-promo-quotes/' target='_blank'>Diplomatic consultation: Europe \u2194 Tel Aviv</a>",
+      "html": "<a href='https://timesofindia.indiatimes.com/world/us/can-iran-hurt-trump-at-ballot-box-tehrans-new-war-strategy-explained/articleshow/134012454.cms' target='_blank'>Diplomatic cooperation: Africa \u2194 Iran</a>",
       "summary": [
-        "Type: Diplomatic consultation",
-        "Actors: Europe \u2194 Tel Aviv",
-        "Location: Tel Aviv, Tel Aviv, Israel",
-        "Reported: Sep 10, 2025",
+        "Type: Diplomatic cooperation",
+        "Actors: Africa \u2194 Iran",
+        "Location: Tehran, Tehran, Iran",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 8.0,
+      "lon": 1.166667,
+      "name": "Expressed intent to cooperate: Africa \u2194 Togo",
+      "count": 10,
+      "html": "<a href='https://www.world-nuclear-news.org/articles/africa-must-be-part-of-global-nuclear-renaissance-says-togolese-leader' target='_blank'>Expressed intent to cooperate: Africa \u2194 Togo</a>",
+      "summary": [
+        "Type: Expressed intent to cooperate",
+        "Actors: Africa \u2194 Togo",
+        "Location: Togo",
+        "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
@@ -569,15 +612,15 @@
     },
     {
       "category": "political",
-      "lat": 47.1167,
-      "lon": 51.8833,
-      "name": "Economic cooperation: Kazakhstan \u2194 China",
-      "count": 10,
-      "html": "<a href='https://timesca.com/kazakhstan-oil-exports-routes-beyond-cpc/' target='_blank'>Economic cooperation: Kazakhstan \u2194 China</a>",
+      "lat": 32.7831,
+      "lon": -96.8067,
+      "name": "Diplomatic visit: Canada \u2194 Dallas",
+      "count": 12,
+      "html": "<a href='https://medicinehatnews.com/news/national-news/2026/09/09/trade-tensions-with-canada-not-on-the-minds-of-many-republicans-at-convention/' target='_blank'>Diplomatic visit: Canada \u2194 Dallas</a>",
       "summary": [
-        "Type: Economic cooperation",
-        "Actors: Kazakhstan \u2194 China",
-        "Location: Atyrau, Atyrau, Kazakhstan",
+        "Type: Diplomatic visit",
+        "Actors: Canada \u2194 Dallas",
+        "Location: Dallas, Texas, United States",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -599,30 +642,15 @@
     },
     {
       "category": "political",
-      "lat": 33.7,
-      "lon": 73.1667,
-      "name": "Economic cooperation: Pakistan \u2194 Qatar",
+      "lat": 24.7667,
+      "lon": 67.3333,
+      "name": "Diplomatic consultation: Karachi \u2194 Qatar",
       "count": 10,
-      "html": "<a href='https://news.az/news/pakistan-resumes-lng-imports-from-qatar-after-july' target='_blank'>Economic cooperation: Pakistan \u2194 Qatar</a>",
+      "html": "<a href='https://en.dailypakistan.com.pk/10-Sep-2026/major-qatari-lng-shipment-reaches-pakistan-amid-hormuz-tensions' target='_blank'>Diplomatic consultation: Karachi \u2194 Qatar</a>",
       "summary": [
-        "Type: Economic cooperation",
-        "Actors: Pakistan \u2194 Qatar",
-        "Location: Islamabad, Islamabad, Pakistan",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": -16.5433,
-      "lon": 31.9617,
-      "name": "Diplomatic visit: Ariana \u2194 Zimbabwe",
-      "count": 10,
-      "html": "<a href='https://www.proactiveinvestors.co.uk/companies/news/1098352/sunda-energy-sintana-energy-ilika-ariana-resources-mp-evans-small-cap-snapshot-1098352.html' target='_blank'>Diplomatic visit: Ariana \u2194 Zimbabwe</a>",
-      "summary": [
-        "Type: Diplomatic visit",
-        "Actors: Ariana \u2194 Zimbabwe",
-        "Location: Dokwe, Mashonaland Central, Zimbabwe",
+        "Type: Diplomatic consultation",
+        "Actors: Karachi \u2194 Qatar",
+        "Location: Port Qasim, Sindh, Pakistan",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -659,30 +687,45 @@
     },
     {
       "category": "political",
-      "lat": 43.6667,
-      "lon": -79.4167,
-      "name": "Expressed intent to cooperate: Argentina \u2194 Mexico",
+      "lat": 47.1167,
+      "lon": 51.8833,
+      "name": "Economic cooperation: Kazakhstan \u2194 China",
       "count": 10,
-      "html": "<a href='https://thestarphoenix.com/press-releases/globe-newswire/canada-steps-up-to-support-global-cancer-care-with-first-contribution-to-iaeas-rays-of-hope-initiative/' target='_blank'>Expressed intent to cooperate: Argentina \u2194 Mexico</a>",
+      "html": "<a href='https://timesca.com/kazakhstan-oil-exports-routes-beyond-cpc/' target='_blank'>Economic cooperation: Kazakhstan \u2194 China</a>",
       "summary": [
-        "Type: Expressed intent to cooperate",
-        "Actors: Argentina \u2194 Mexico",
-        "Location: Toronto, Ontario, Canada",
+        "Type: Economic cooperation",
+        "Actors: Kazakhstan \u2194 China",
+        "Location: Atyrau, Atyrau, Kazakhstan",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "political",
-      "lat": 31.7667,
-      "lon": 35.2333,
-      "name": "Diplomatic consultation: Israel \u2194 The US",
+      "lat": 34.7167,
+      "lon": 32.5,
+      "name": "Diplomatic consultation: Cyprus \u2194 Welsh",
       "count": 10,
-      "html": "<a href='https://en.globes.co.il/en/article-new-initiative-seeks-500m-to-commercialize-israeli-life-science-1001554653' target='_blank'>Diplomatic consultation: Israel \u2194 The US</a>",
+      "html": "<a href='https://www.walesonline.co.uk/news/wales-news/emergency-landing-cardiff-airport-after-34597370' target='_blank'>Diplomatic consultation: Cyprus \u2194 Welsh</a>",
       "summary": [
         "Type: Diplomatic consultation",
-        "Actors: Israel \u2194 The US",
-        "Location: Jerusalem, Israel (general), Israel",
+        "Actors: Cyprus \u2194 Welsh",
+        "Location: Paphos International Airport, Paphos, Cyprus",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": -16.5433,
+      "lon": 31.9617,
+      "name": "Diplomatic visit: Ariana \u2194 Zimbabwe",
+      "count": 10,
+      "html": "<a href='https://www.proactiveinvestors.co.uk/companies/news/1098352/sunda-energy-sintana-energy-ilika-ariana-resources-mp-evans-small-cap-snapshot-1098352.html' target='_blank'>Diplomatic visit: Ariana \u2194 Zimbabwe</a>",
+      "summary": [
+        "Type: Diplomatic visit",
+        "Actors: Ariana \u2194 Zimbabwe",
+        "Location: Dokwe, Mashonaland Central, Zimbabwe",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -704,15 +747,15 @@
     },
     {
       "category": "political",
-      "lat": 60.0,
-      "lon": 100.0,
-      "name": "Diplomatic cooperation: China \u2194 Brazil",
+      "lat": 43.6667,
+      "lon": -79.4167,
+      "name": "Expressed intent to cooperate: Argentina \u2194 Mexico",
       "count": 10,
-      "html": "<a href='https://aninews.in/news/world/asia/permanent-unsc-seats-to-de-dollarisation-brics8217-role-in-making-room-for-global-south-in-post-colonial-world20260910122220/' target='_blank'>Diplomatic cooperation: China \u2194 Brazil</a>",
+      "html": "<a href='https://thestarphoenix.com/press-releases/globe-newswire/canada-steps-up-to-support-global-cancer-care-with-first-contribution-to-iaeas-rays-of-hope-initiative/' target='_blank'>Expressed intent to cooperate: Argentina \u2194 Mexico</a>",
       "summary": [
-        "Type: Diplomatic cooperation",
-        "Actors: China \u2194 Brazil",
-        "Location: Russia",
+        "Type: Expressed intent to cooperate",
+        "Actors: Argentina \u2194 Mexico",
+        "Location: Toronto, Ontario, Canada",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -734,30 +777,15 @@
     },
     {
       "category": "political",
-      "lat": 24.0,
-      "lon": 90.0,
-      "name": "Diplomatic cooperation: Bangladesh \u2194 Sri Lanka",
+      "lat": 33.7,
+      "lon": 73.1667,
+      "name": "Economic cooperation: Pakistan \u2194 Qatar",
       "count": 10,
-      "html": "<a href='https://www.tamilguardian.com/content/sri-lanka-told-reforms-are-stalling-ngos-demand-international-investigation-un' target='_blank'>Diplomatic cooperation: Bangladesh \u2194 Sri Lanka</a>",
+      "html": "<a href='https://news.az/news/pakistan-resumes-lng-imports-from-qatar-after-july' target='_blank'>Economic cooperation: Pakistan \u2194 Qatar</a>",
       "summary": [
-        "Type: Diplomatic cooperation",
-        "Actors: Bangladesh \u2194 Sri Lanka",
-        "Location: Bangladesh",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": -26.2,
-      "lon": 28.0833,
-      "name": "Diplomatic cooperation: Netflix (multinational company) \u2194 Africa",
-      "count": 10,
-      "html": "<a href='https://htxt.co.za/2026/09/the-local-originals-netflix-has-planned-between-now-and-the-years-end/' target='_blank'>Diplomatic cooperation: Netflix (multinational company) \u2194 Africa</a>",
-      "summary": [
-        "Type: Diplomatic cooperation",
-        "Actors: Netflix (multinational company) \u2194 Africa",
-        "Location: Johannesburg, Gauteng, South Africa",
+        "Type: Economic cooperation",
+        "Actors: Pakistan \u2194 Qatar",
+        "Location: Islamabad, Islamabad, Pakistan",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -795,6 +823,51 @@
     {
       "category": "political",
       "lat": 60.0,
+      "lon": 100.0,
+      "name": "Diplomatic cooperation: China \u2194 Brazil",
+      "count": 10,
+      "html": "<a href='https://aninews.in/news/world/asia/permanent-unsc-seats-to-de-dollarisation-brics8217-role-in-making-room-for-global-south-in-post-colonial-world20260910122220/' target='_blank'>Diplomatic cooperation: China \u2194 Brazil</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: China \u2194 Brazil",
+        "Location: Russia",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 21.4267,
+      "lon": 39.8261,
+      "name": "Reduced relations / sanctions: Algeria \u2194 Abu Dhabi",
+      "count": 10,
+      "html": "<a href='http://www.jpost.com/international/article-908264' target='_blank'>Reduced relations / sanctions: Algeria \u2194 Abu Dhabi</a>",
+      "summary": [
+        "Type: Reduced relations / sanctions",
+        "Actors: Algeria \u2194 Abu Dhabi",
+        "Location: Mecca, Makkah, Saudi Arabia",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": -26.2,
+      "lon": 28.0833,
+      "name": "Diplomatic cooperation: Netflix (multinational company) \u2194 Africa",
+      "count": 10,
+      "html": "<a href='https://htxt.co.za/2026/09/the-local-originals-netflix-has-planned-between-now-and-the-years-end/' target='_blank'>Diplomatic cooperation: Netflix (multinational company) \u2194 Africa</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: Netflix (multinational company) \u2194 Africa",
+        "Location: Johannesburg, Gauteng, South Africa",
+        "Reported: Sep 10, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 60.0,
       "lon": -96.0,
       "name": "Diplomatic cooperation: Canada \u2194 Victoria",
       "count": 10,
@@ -803,36 +876,6 @@
         "Type: Diplomatic cooperation",
         "Actors: Canada \u2194 Victoria",
         "Location: Canada",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 25.2522,
-      "lon": 55.28,
-      "name": "Expressed intent to cooperate: Nashville \u2194 Dubai",
-      "count": 10,
-      "html": "<a href='https://www.businessinsider.com/boring-company-raises-billions-as-demand-elon-musk-booms-2026-9' target='_blank'>Expressed intent to cooperate: Nashville \u2194 Dubai</a>",
-      "summary": [
-        "Type: Expressed intent to cooperate",
-        "Actors: Nashville \u2194 Dubai",
-        "Location: Dubai, Dubayy, United Arab Emirates",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": -54.0,
-      "lon": -70.0,
-      "name": "Expressed intent to cooperate: Chile \u2194 Falklands (company)",
-      "count": 10,
-      "html": "<a href='https://en.mercopress.com/2026/09/10/argentina-claims-chile-is-committed-to-no-logistic-support-for-falklands-oil-industry' target='_blank'>Expressed intent to cooperate: Chile \u2194 Falklands (company)</a>",
-      "summary": [
-        "Type: Expressed intent to cooperate",
-        "Actors: Chile \u2194 Falklands (company)",
-        "Location: Tierra Del Fuego, Chile (general), Chile",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -854,30 +897,15 @@
     },
     {
       "category": "political",
-      "lat": 27.7167,
-      "lon": 85.3167,
-      "name": "Diplomatic visit: Tibet \u2194 Nepal",
+      "lat": 24.0,
+      "lon": 90.0,
+      "name": "Diplomatic cooperation: Bangladesh \u2194 Sri Lanka",
       "count": 10,
-      "html": "<a href='https://www.asiaone.com:443/singapore/singapore-humanitarian-assistance-package-nepal-floods' target='_blank'>Diplomatic visit: Tibet \u2194 Nepal</a>",
+      "html": "<a href='https://www.tamilguardian.com/content/sri-lanka-told-reforms-are-stalling-ngos-demand-international-investigation-un' target='_blank'>Diplomatic cooperation: Bangladesh \u2194 Sri Lanka</a>",
       "summary": [
-        "Type: Diplomatic visit",
-        "Actors: Tibet \u2194 Nepal",
-        "Location: Kathmandu, Bagmati, Nepal",
-        "Reported: Sep 10, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": -6.0,
-      "lon": 35.0,
-      "name": "Expressed intent to cooperate: Kenya \u2194 Tanzania",
-      "count": 10,
-      "html": "<a href='https://www.thecitizen.co.tz/tanzania/news/national/kenya-prepares-to-host-15th-mara-day-as-tanzania-joins-conservation-talks-5590212' target='_blank'>Expressed intent to cooperate: Kenya \u2194 Tanzania</a>",
-      "summary": [
-        "Type: Expressed intent to cooperate",
-        "Actors: Kenya \u2194 Tanzania",
-        "Location: Tanzania",
+        "Type: Diplomatic cooperation",
+        "Actors: Bangladesh \u2194 Sri Lanka",
+        "Location: Bangladesh",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -914,30 +942,30 @@
     },
     {
       "category": "political",
-      "lat": 18.25,
-      "lon": -77.5,
-      "name": "Diplomatic cooperation: Guyana \u2194 Mexico",
+      "lat": 32.0667,
+      "lon": 34.7667,
+      "name": "Diplomatic consultation: Europe \u2194 Tel Aviv",
       "count": 10,
-      "html": "<a href='https://www.energy-pedia.com/news/jamaica/united-oil-gas-announces-drilling-rig-and-long-lead-availability-study-205250' target='_blank'>Diplomatic cooperation: Guyana \u2194 Mexico</a>",
+      "html": "<a href='https://www.marinij.com/2026/09/10/john-malkovich-cancels-tel-aviv-israel-performance-fake-promo-quotes/' target='_blank'>Diplomatic consultation: Europe \u2194 Tel Aviv</a>",
       "summary": [
-        "Type: Diplomatic cooperation",
-        "Actors: Guyana \u2194 Mexico",
-        "Location: Jamaica",
-        "Reported: Sep 10, 2026",
+        "Type: Diplomatic consultation",
+        "Actors: Europe \u2194 Tel Aviv",
+        "Location: Tel Aviv, Tel Aviv, Israel",
+        "Reported: Sep 10, 2025",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "political",
-      "lat": 24.0,
-      "lon": 54.0,
-      "name": "Reduced relations / sanctions: Algeria \u2194 United Arab Emirates",
+      "lat": -6.0,
+      "lon": 35.0,
+      "name": "Expressed intent to cooperate: Kenya \u2194 Tanzania",
       "count": 10,
-      "html": "<a href='https://www.israelnationalnews.com/flashes/693344' target='_blank'>Reduced relations / sanctions: Algeria \u2194 United Arab Emirates</a>",
+      "html": "<a href='https://www.thecitizen.co.tz/tanzania/news/national/kenya-prepares-to-host-15th-mara-day-as-tanzania-joins-conservation-talks-5590212' target='_blank'>Expressed intent to cooperate: Kenya \u2194 Tanzania</a>",
       "summary": [
-        "Type: Reduced relations / sanctions",
-        "Actors: Algeria \u2194 United Arab Emirates",
-        "Location: United Arab Emirates",
+        "Type: Expressed intent to cooperate",
+        "Actors: Kenya \u2194 Tanzania",
+        "Location: Tanzania",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -1079,15 +1107,15 @@
     },
     {
       "category": "conflict",
-      "lat": -37.8167,
-      "lon": 144.967,
-      "name": "Coercion: Melbourne",
-      "count": 24,
-      "html": "<a href='https://www.theage.com.au/national/victoria/violent-teen-house-guests-blamed-for-man-s-alleged-role-in-bar-wars-home-invasion-20260909-p60vqk.html' target='_blank'>Coercion: Melbourne</a>",
+      "lat": 53.3331,
+      "lon": -6.24889,
+      "name": "Assault: Ireland (legislature) vs Ryanair (multinational company)",
+      "count": 22,
+      "html": "<a href='https://www.tivysideadvertiser.co.uk/news/national/26538896.ryanair-boss-accused-trivialising-rape/' target='_blank'>Assault: Ireland (legislature) vs Ryanair (multinational company)</a>",
       "summary": [
-        "Type: Coercion",
-        "Actors: Melbourne",
-        "Location: Melbourne, Victoria, Australia",
+        "Type: Assault",
+        "Actors: Ireland (legislature) vs Ryanair (multinational company)",
+        "Location: Dublin, Dublin, Ireland",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -1289,15 +1317,15 @@
     },
     {
       "category": "conflict",
-      "lat": -26.2,
-      "lon": 28.0833,
-      "name": "Coercion: Company (company) vs Residents (civilian group)",
+      "lat": -30.0,
+      "lon": 26.0,
+      "name": "Coercion: Television (media outlet)",
       "count": 10,
-      "html": "<a href='https://www.sowetan.co.za/news/2026-09-10-living-like-pigs-neglect-leaves-madala-hostel-residents-in-crisis/' target='_blank'>Coercion: Company (company) vs Residents (civilian group)</a>",
+      "html": "<a href='https://www.businessday.co.za/opinion/2026-09-10-phil-pelucha-ai-isnt-the-risk-in-this-election-impatience-is/' target='_blank'>Coercion: Television (media outlet)</a>",
       "summary": [
         "Type: Coercion",
-        "Actors: Company (company) vs Residents (civilian group)",
-        "Location: Johannesburg, Gauteng, South Africa",
+        "Actors: Television (media outlet)",
+        "Location: South Africa",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
@@ -1336,12 +1364,12 @@
       "category": "conflict",
       "lat": 23.7231,
       "lon": 90.4086,
-      "name": "Assault: Bangladesh (police)",
+      "name": "Armed clash: State Minist (government)",
       "count": 10,
-      "html": "<a href='https://www.thedailystar.net/news/governance/news/law-and-order-bangladesh-has-visibly-improved-home-minister-4269621' target='_blank'>Assault: Bangladesh (police)</a>",
+      "html": "<a href='https://www.tpr.org/news/2026-09-10/whatever-happened-to-the-measles-outbreak-that-shocked-a-country-this-year' target='_blank'>Armed clash: State Minist (government)</a>",
       "summary": [
-        "Type: Assault",
-        "Actors: Bangladesh (police)",
+        "Type: Armed clash",
+        "Actors: State Minist (government)",
         "Location: Dhaka, Dhaka, Bangladesh",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
@@ -1394,15 +1422,15 @@
     },
     {
       "category": "conflict",
-      "lat": -25.9653,
-      "lon": 32.5892,
-      "name": "Armed clash: Police (police)",
+      "lat": 12.55,
+      "lon": 6.63333,
+      "name": "Coercion: Diocese",
       "count": 10,
-      "html": "<a href='https://allafrica.com/stories/202609100418.html' target='_blank'>Armed clash: Police (police)</a>",
+      "html": "<a href='https://www.vanguardngr.com/2026/09/anglican-church-bans-immediate-burial-of-relatives-sets-2-week-minimum-timeframe/' target='_blank'>Coercion: Diocese</a>",
       "summary": [
-        "Type: Armed clash",
-        "Actors: Police (police)",
-        "Location: Maputo, Maputo, Mozambique",
+        "Type: Coercion",
+        "Actors: Diocese",
+        "Location: Kogi, Nigeria (general), Nigeria",
         "Reported: Sep 10, 2026",
         "Source: GDELT (bulk event data)"
       ]
