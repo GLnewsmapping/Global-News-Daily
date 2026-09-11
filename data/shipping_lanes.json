@@ -23136,7 +23136,7 @@
     {
       "name": "Northern Sea Route",
       "volume": "arctic",
-      "note": "Russia's Arctic coastal route, Barents Sea to the Bering Strait via the Vilkitsky, Dmitry Laptev and Long straits -- see the Arctic Routes tab.",
+      "note": "Russia's Arctic coastal route, Barents Sea to the Bering Strait via the Kara Strait, Vilkitsky Strait and Long Strait -- see the Arctic Routes tab.",
       "path": [
         [
           69.5,
@@ -23147,12 +23147,24 @@
           58.5
         ],
         [
-          73.5,
-          78.0
+          74.5,
+          65.0
         ],
         [
-          79.0,
-          106.0
+          75.5,
+          80.0
+        ],
+        [
+          77.5,
+          90.0
+        ],
+        [
+          77.8,
+          108.0
+        ],
+        [
+          77.0,
+          110.0
         ],
         [
           76.5,
@@ -23163,8 +23175,12 @@
           141.0
         ],
         [
-          71.0,
-          158.0
+          74.0,
+          161.2
+        ],
+        [
+          70.2,
+          165.0
         ],
         [
           70.2,
@@ -23179,7 +23195,7 @@
     {
       "name": "Northern Sea Route",
       "volume": "arctic",
-      "note": "Russia's Arctic coastal route, Barents Sea to the Bering Strait via the Vilkitsky, Dmitry Laptev and Long straits -- see the Arctic Routes tab.",
+      "note": "Russia's Arctic coastal route, Barents Sea to the Bering Strait via the Kara Strait, Vilkitsky Strait and Long Strait -- see the Arctic Routes tab.",
       "path": [
         [
           69.8,
@@ -23198,39 +23214,71 @@
     {
       "name": "Northwest Passage",
       "volume": "arctic",
-      "note": "Through Canada's Arctic Archipelago via Lancaster Sound, Barrow Strait and M'Clure Strait to the Beaufort Sea -- see the Arctic Routes tab.",
+      "note": "Through Canada's Arctic Archipelago via Lancaster Sound, Barrow Strait, Viscount Melville Sound and M'Clure Strait to the Beaufort Sea -- see the Arctic Routes tab.",
       "path": [
         [
           72.0,
           -65.0
         ],
         [
-          74.25,
-          -84.0
+          73.0,
+          -70.0
         ],
         [
           74.3,
-          -95.5
+          -80.0
         ],
         [
           74.3,
-          -105.0
+          -91.0
         ],
         [
-          75.0,
-          -120.0
+          74.3,
+          -100.0
+        ],
+        [
+          74.2,
+          -108.0
+        ],
+        [
+          74.0,
+          -112.0
+        ],
+        [
+          74.5,
+          -116.0
+        ],
+        [
+          74.6,
+          -122.0
+        ],
+        [
+          74.2,
+          -127.0
         ],
         [
           72.0,
-          -128.0
+          -130.0
+        ],
+        [
+          71.0,
+          -145.0
+        ],
+        [
+          71.7,
+          -155.0
+        ],
+        [
+          71.3,
+          -157.0
         ],
         [
           70.3,
-          -140.0
+          -163.0
         ],
         [
-          71.5,
-          -157.0
+          69.0,
+          -167.5
         ],
         [
           66.5,
