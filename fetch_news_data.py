@@ -53,6 +53,7 @@ from datetime import datetime, timedelta, timezone
 GDELT_BULK_BASE = "https://data.gdeltproject.org/gdeltv2"
 EONET_ENDPOINT = "https://eonet.gsfc.nasa.gov/api/v3/events"
 EONET_CATEGORIES = "drought,floods,severeStorms,wildfires,tempExtremes"
+GDACS_EVENTLIST_ENDPOINT = "https://www.gdacs.org/gdacsapi/api/events/geteventlist/SEARCH"
 WIKIPEDIA_API = "https://en.wikipedia.org/w/api.php"
 
 # CAMEO root event codes covering nation-state cooperation/friction that
@@ -447,14 +448,70 @@ def _format_magnitude(value, unit: str):
     return f"Magnitude: {value} {unit}"
 
 
-def _build_eonet_summary(event: dict, geometry: list, event_type: str, source_name: str) -> list:
+def fetch_gdacs_alert_levels(eventtype: str = "FL") -> dict:
+    """GDACS (the source EONET pulls flood events from) assigns every event
+    an official Green/Orange/Red alert level reflecting expected
+    humanitarian impact -- real severity signal that EONET's own record
+    doesn't carry, since EONET's `description` field is almost always
+    empty for GDACS-sourced events (unlike IRWIN wildfires, which come
+    with a plain-language location note baked in). This is what closes
+    most of the detail gap between floods and the other climate event
+    types.
+
+    Fetched as a single bulk list call covering every current event of
+    the type, not one call per event -- GDACS's robots.txt asks for a
+    1-request/60-second crawl rate, which looping a per-event detail call
+    over ~25 floods a run would blow through. Same shape as the GDELT
+    bulk-file gotcha: read the bulk resource, not the per-item one.
+
+    Returns {eventid: {"alertlevel", "fromdate", "todate", "country"}}.
+    Empty dict on any failure -- callers should just skip the enrichment,
+    not treat a GDACS outage as a reason to drop flood data.
+
+    `alertlevel=Green,Orange,Red` is required -- GDACS's SEARCH endpoint
+    defaults to Orange/Red "significant event" alerts only (confirmed
+    live: without it, a known-current Green flood was simply absent from
+    the results), and nearly every EONET flood is Green-level."""
+    url = f"{GDACS_EVENTLIST_ENDPOINT}?eventlist={eventtype}&alertlevel=Green,Orange,Red"
+    req = urllib.request.Request(url, headers={"User-Agent": "news-map-hobby-project/0.1"})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            payload = json.loads(resp.read().decode("utf-8"))
+    except (urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError) as exc:
+        print(f"  ! failed to fetch GDACS alert levels: {exc}", file=sys.stderr)
+        return {}
+
+    out = {}
+    for feat in payload.get("features", []):
+        props = feat.get("properties", {})
+        eventid = props.get("eventid")
+        if eventid is None or not props.get("alertlevel"):
+            continue
+        out[eventid] = {
+            "alertlevel": props["alertlevel"],
+            "fromdate": props.get("fromdate"),
+            "todate": props.get("todate"),
+            "country": props.get("country"),
+        }
+    return out
+
+
+def _build_eonet_summary(event: dict, geometry: list, event_type: str, source_name: str, gdacs_alerts: dict = None) -> list:
     """Build as many genuinely-informative points as the event actually
     supports. EONET's fields vary a lot by source: wildfires (IRWIN) often
     carry acreage and a plain-language location note; storms (JTWC/NOAA)
     are tracked over many days with wind-speed readings; floods (GDACS)
-    typically carry none of that, just a place and a date -- so their
-    summary stays short rather than padded with invented detail."""
+    typically carry none of that, just a place and a date -- padded out
+    with a real GDACS alert level when `gdacs_alerts` has a match, rather
+    than staying at three bare lines."""
     summary = [f"Type: {event_type}"]
+
+    if gdacs_alerts:
+        source_url = (event.get("sources") or [{}])[0].get("url", "")
+        m = re.search(r"eventid=(\d+)", source_url)
+        info = gdacs_alerts.get(int(m.group(1))) if m else None
+        if info:
+            summary.append(f"GDACS alert level: {info['alertlevel']}")
 
     # EONET's `closed` field is the ground truth for whether this is still
     # unfolding or already resolved -- surfaced explicitly now that the
@@ -497,7 +554,7 @@ def _build_eonet_summary(event: dict, geometry: list, event_type: str, source_na
     return summary
 
 
-def _fetch_eonet_events(category: str, status: str, limit: int, days: int = None) -> list:
+def _fetch_eonet_events(category: str, status: str, limit: int, days: int = None, gdacs_alerts: dict = None) -> list:
     params = {"status": status, "limit": str(limit), "category": category}
     if days:
         params["days"] = str(days)
@@ -543,7 +600,7 @@ def _fetch_eonet_events(category: str, status: str, limit: int, days: int = None
             "name": title,
             "count": 1,  # EONET events are individually-tracked incidents, not article counts
             "html": f"<a href='{link}' target='_blank'>{title}</a>",
-            "summary": _build_eonet_summary(event, geometry, event_type, source_name),
+            "summary": _build_eonet_summary(event, geometry, event_type, source_name, gdacs_alerts),
         })
 
     return features_out
@@ -567,16 +624,18 @@ def fetch_eonet_climate(limit: int, wildfire_cap: int = 15) -> list:
     history -- confirmed via the live API that meaningful closed-event
     depth exists well past 21 days, it just wasn't being reached before.
     """
+    gdacs_alerts = fetch_gdacs_alert_levels("FL")
+
     features = _fetch_eonet_events("wildfires", status="open", limit=wildfire_cap)
     remaining = max(0, limit - len(features))
 
     open_budget = max(1, remaining // 2)
     features += _fetch_eonet_events(
-        "drought,floods,severeStorms,tempExtremes", status="open", limit=open_budget
+        "drought,floods,severeStorms,tempExtremes", status="open", limit=open_budget, gdacs_alerts=gdacs_alerts
     )
     remaining = max(0, limit - len(features))
     features += _fetch_eonet_events(
-        "drought,floods,severeStorms,tempExtremes", status="closed", limit=remaining, days=45
+        "drought,floods,severeStorms,tempExtremes", status="closed", limit=remaining, days=45, gdacs_alerts=gdacs_alerts
     )
     return features
 
