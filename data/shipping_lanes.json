@@ -23136,42 +23136,42 @@
     {
       "name": "Northern Sea Route",
       "volume": "arctic",
-      "note": "Russia's Arctic coastal route, Barents Sea to the Bering Strait -- see the Arctic Routes tab.",
+      "note": "Russia's Arctic coastal route, Barents Sea to the Bering Strait via the Vilkitsky, Dmitry Laptev and Long straits -- see the Arctic Routes tab.",
       "path": [
         [
-          70.0,
+          69.5,
           35.0
         ],
         [
-          70.5,
-          58.0
+          70.2,
+          58.5
         ],
         [
           73.5,
           78.0
         ],
         [
-          77.5,
-          104.0
+          79.0,
+          106.0
         ],
         [
-          76.0,
-          125.0
+          76.5,
+          120.0
         ],
         [
           74.0,
-          142.0
+          141.0
         ],
         [
           71.0,
-          161.0
+          158.0
         ],
         [
-          69.5,
-          178.5
+          70.2,
+          176.2
         ],
         [
-          69.2,
+          69.8,
           180.0
         ]
       ]
@@ -23179,18 +23179,14 @@
     {
       "name": "Northern Sea Route",
       "volume": "arctic",
-      "note": "Russia's Arctic coastal route, Barents Sea to the Bering Strait -- see the Arctic Routes tab.",
+      "note": "Russia's Arctic coastal route, Barents Sea to the Bering Strait via the Vilkitsky, Dmitry Laptev and Long straits -- see the Arctic Routes tab.",
       "path": [
         [
-          69.2,
+          69.8,
           -180.0
         ],
         [
-          69.0,
-          -179.5
-        ],
-        [
-          67.5,
+          67.8,
           -173.0
         ],
         [
@@ -23202,39 +23198,39 @@
     {
       "name": "Northwest Passage",
       "volume": "arctic",
-      "note": "Through Canada's Arctic Archipelago, Baffin Bay to the Beaufort Sea -- see the Arctic Routes tab.",
+      "note": "Through Canada's Arctic Archipelago via Lancaster Sound, Barrow Strait and M'Clure Strait to the Beaufort Sea -- see the Arctic Routes tab.",
       "path": [
         [
           72.0,
           -65.0
         ],
         [
-          74.2,
-          -80.0
+          74.25,
+          -84.0
         ],
         [
           74.3,
-          -93.0
+          -95.5
         ],
         [
-          74.5,
-          -108.0
+          74.3,
+          -105.0
         ],
         [
-          73.0,
-          -118.0
+          75.0,
+          -120.0
         ],
         [
-          71.0,
-          -126.0
+          72.0,
+          -128.0
         ],
         [
-          71.0,
+          70.3,
           -140.0
         ],
         [
-          70.0,
-          -156.0
+          71.5,
+          -157.0
         ],
         [
           66.5,
@@ -23248,15 +23244,15 @@
       "note": "Straight across the top of the world near the North Pole, through international waters -- see the Arctic Routes tab.",
       "path": [
         [
-          79.0,
-          5.0
+          79.5,
+          3.0
         ],
         [
-          82.0,
+          82.5,
           45.0
         ],
         [
-          84.5,
+          85.0,
           95.0
         ],
         [

@@ -27,7 +27,7 @@
     --climate: #1859D1;
     --political: #8355E8;
     --shipping: #D9A441;
-    --arctic-route: #228B22;
+    --arctic-route: #DC2626;
     --borders: #000000;
   }
   *{ box-sizing: border-box; }
@@ -649,7 +649,7 @@
     <div id="arctic-content">
       <span class="kicker">Emerging &middot; Not Live-Tracked</span>
       <h2>The Arctic's Three Shipping Lanes</h2>
-      <p class="intro">As Arctic sea ice keeps retreating, three very different sea routes across the top of the world are edging from theory toward reality. Unlike the rest of Dispatch, nothing below is live-tracked data — it's context for where global shipping may be headed, and why the nations racing to build icebreakers see them as more than search-and-rescue vessels. All three are also plotted in forest green on the Globe and Map tabs — switch the Shipping Lanes toggle on to see them.</p>
+      <p class="intro">As Arctic sea ice keeps retreating, three very different sea routes across the top of the world are edging from theory toward reality. Unlike the rest of Dispatch, nothing below is live-tracked data — it's context for where global shipping may be headed, and why the nations racing to build icebreakers see them as more than search-and-rescue vessels. All three are also plotted in red on the Globe and Map tabs — switch the Shipping Lanes toggle on to see them.</p>
 
       <div class="arctic-route">
         <h3><a href="https://en.wikipedia.org/wiki/Northern_Sea_Route" target="_blank">Northern Sea Route</a></h3>
@@ -717,7 +717,7 @@
     <p><a href="https://www.gdeltproject.org/" target="_blank" style="color:var(--political);">GDELT</a>'s global event database, filtered to diplomacy, aid, sanctions, and cooperation events.</p>
 
     <h3>Shipping lanes &amp; chokepoints</h3>
-    <p class="dim">Digitized trade-route geometry and the world's 10 busiest maritime chokepoints, compiled from public shipping and energy-transit data — a snapshot, not live vessel tracking. The three routes in forest green are the Arctic passages covered in the Arctic Routes tab — illustrative corridors, not precisely surveyed shipping geometry like the rest of the set.</p>
+    <p class="dim">Digitized trade-route geometry and the world's 10 busiest maritime chokepoints, compiled from public shipping and energy-transit data — a snapshot, not live vessel tracking. The three routes in red are the Arctic passages covered in the Arctic Routes tab — traced through their real named straits, but an illustrative corridor rather than precisely surveyed shipping geometry like the rest of the set.</p>
 
     <h3>Country borders</h3>
     <p class="dim">Natural Earth (1:110m Admin 0 Countries), public domain.</p>
@@ -763,7 +763,7 @@
     'very-high': { color: 'rgba(217, 164, 65, 0.9)', stroke: 1.1 },
     'high': { color: 'rgba(217, 164, 65, 0.7)', stroke: 0.75 },
     'medium': { color: 'rgba(217, 164, 65, 0.5)', stroke: 0.45 },
-    'arctic': { color: 'rgba(34, 139, 34, 0.9)', stroke: 1.0 },
+    'arctic': { color: 'rgba(220, 38, 38, 0.9)', stroke: 1.0 },
   };
   const BORDER_COLOR_GLOBE = 'rgba(0, 0, 0, 0.85)'; // matches --borders (black)
 
@@ -841,7 +841,7 @@
 
   const world = Globe()
     (document.getElementById('globeViz'))
-    .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
+    .globeImageUrl('img/earth-blue-marble.jpg')
     .bumpImageUrl('https://unpkg.com/three-globe/example/img/earth-topology.png')
     .backgroundImageUrl('https://unpkg.com/three-globe/example/img/night-sky.png')
     .backgroundColor('rgba(0,0,0,0)')

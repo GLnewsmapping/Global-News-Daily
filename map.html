@@ -18,6 +18,7 @@
     --climate: #2FA88C;
     --political: #4C7BD9;
     --shipping: #D9A441;
+    --arctic-route: #DC2626;
   }
   *{ box-sizing: border-box; }
   html, body{ height: 100%; margin: 0; }
@@ -327,6 +328,7 @@
     'very-high': { weight: 5, opacity: 0.9 },
     'high': { weight: 3.5, opacity: 0.8 },
     'medium': { weight: 2, opacity: 0.65 },
+    'arctic': { weight: 4, opacity: 0.9 },
   };
 
   const lanesLayer = L.layerGroup();
@@ -338,10 +340,11 @@
       if (!res.ok) return;
       const data = await res.json();
       const laneColor = getComputedStyle(document.documentElement).getPropertyValue('--shipping').trim();
+      const arcticColor = getComputedStyle(document.documentElement).getPropertyValue('--arctic-route').trim();
       (data.lanes || []).forEach((lane) => {
         const style = LANE_STYLE[lane.volume] || LANE_STYLE.medium;
         L.polyline(lane.path, {
-          color: laneColor,
+          color: lane.volume === 'arctic' ? arcticColor : laneColor,
           weight: style.weight,
           opacity: style.opacity,
         }).bindTooltip(`<strong>${lane.name}</strong><br>${lane.note}`, { sticky: true }).addTo(lanesLayer);
