@@ -58,6 +58,10 @@ Every run also writes a dated copy of that day's output to `data/archive/YYYY-MM
 
 Both viewers have an optional "Shipping Lanes" toggle showing the world's busiest maritime trade routes, in `data/shipping_lanes.json`. The route geometry is adapted from [newzealandpaul/Shipping-Lanes](https://github.com/newzealandpaul/Shipping-Lanes) (CC-BY 4.0), itself georeferenced from the CIA's "Map of the World's Oceans" (Oct 2012) — real digitized routes, not live AIS tracking, so treat it as a snapshot rather than current traffic.
 
+## Arctic Routes tab
+
+`index.html` has a third view tab, "Arctic Routes", alongside Globe and Map. Unlike everything else on the site, it's a static explainer, not live data — it covers the Northern Sea Route, Northwest Passage, and Transpolar Sea Route: how each would operate, their current legal/navigability status, and why icebreaker fleets (Russia's existing nuclear fleet, the US's "icebreaker gap" and its Polar/Arctic Security Cutter programs, Canada's fleet renewal) are becoming a strategic asset. Content reflects public reporting as of September 2026 and isn't refreshed by the fetch pipeline — it'll need a manual pass if any of it goes stale.
+
 ## Maritime chokepoints overlay
 
 `index.html` also has a "Chokepoints" toggle labeling the world's 10 most important maritime chokepoints, in `data/chokepoints.json`. Compiled from [Visual Capitalist](https://www.visualcapitalist.com/mapping-the-worlds-key-maritime-choke-points/), [Mappr](https://www.mappr.co/important-straits-chokepoints-world/), and US EIA world oil transit chokepoint reporting — ranked by a blend of oil-transit volume, share of world trade, and vessel-traffic count, since no single metric captures "importance" the same way across all ten.

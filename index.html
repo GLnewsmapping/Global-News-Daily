@@ -27,6 +27,7 @@
     --climate: #1859D1;
     --political: #8355E8;
     --shipping: #D9A441;
+    --arctic-route: #228B22;
     --borders: #000000;
   }
   *{ box-sizing: border-box; }
@@ -269,6 +270,60 @@
   .viz-layer{ position: absolute; inset: 0; opacity: 1; transition: opacity 350ms ease; pointer-events: auto; }
   .leaflet-container{ background: var(--ink); } /* matches the theme if the map's bounds ever leave a sliver of empty space at the edge */
   .viz-layer.hidden{ opacity: 0; pointer-events: none; }
+
+  /* ---------- Arctic routes tab ---------- */
+  #arctic-container{ overflow-y: auto; background: var(--ink); }
+  #arctic-content{ max-width: 760px; margin: 0 auto; padding: 64px 40px 80px; }
+  #arctic-content > .kicker{
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+  #arctic-content > h2{
+    font-family: 'Newsreader', serif;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 0.3px;
+    margin: 0 0 16px;
+  }
+  #arctic-content > p.intro{
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--paper);
+    max-width: 62ch;
+    margin: 0 0 48px;
+  }
+  .arctic-route{ padding: 28px 0; border-top: 1px solid var(--panel-line); }
+  .arctic-route h3{
+    font-family: 'Newsreader', serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 0 4px;
+    color: var(--paper);
+  }
+  .arctic-route .arctic-tag{
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--shipping);
+    margin-bottom: 14px;
+  }
+  .arctic-route p{ font-size: 13.5px; line-height: 1.7; color: var(--paper); margin: 0 0 12px; }
+  .arctic-route p:last-child{ margin-bottom: 0; }
+  .arctic-route a{ color: inherit; }
+  .arctic-route ul{ margin: 0; padding-left: 18px; }
+  .arctic-route li{ font-size: 13.5px; line-height: 1.7; margin-bottom: 10px; }
+  .arctic-route li:last-child{ margin-bottom: 0; }
+  .arctic-route p.dim{ color: var(--muted); font-size: 12px; margin-top: 24px; }
+  @media (max-width: 768px){
+    #arctic-content{ padding: 56px 20px 60px; }
+  }
   #vignette{
     position: absolute;
     inset: 0;
@@ -553,6 +608,7 @@
   <div id="view-switch">
     <button class="view-btn active" data-view="globe">Globe</button>
     <button class="view-btn" data-view="map">Map</button>
+    <button class="view-btn" data-view="arctic">Arctic Routes</button>
   </div>
   <div id="meta">
     <span id="meta-count">— locations</span>
@@ -589,6 +645,51 @@
 <div id="viz-wrap">
   <div id="globeViz" class="viz-layer"></div>
   <div id="map-container" class="viz-layer hidden"></div>
+  <div id="arctic-container" class="viz-layer hidden">
+    <div id="arctic-content">
+      <span class="kicker">Emerging &middot; Not Live-Tracked</span>
+      <h2>The Arctic's Three Shipping Lanes</h2>
+      <p class="intro">As Arctic sea ice keeps retreating, three very different sea routes across the top of the world are edging from theory toward reality. Unlike the rest of Dispatch, nothing below is live-tracked data — it's context for where global shipping may be headed, and why the nations racing to build icebreakers see them as more than search-and-rescue vessels. All three are also plotted in forest green on the Globe and Map tabs — switch the Shipping Lanes toggle on to see them.</p>
+
+      <div class="arctic-route">
+        <h3><a href="https://en.wikipedia.org/wiki/Northern_Sea_Route" target="_blank">Northern Sea Route</a></h3>
+        <span class="arctic-tag">Russia &middot; Barents Sea &rarr; Bering Strait</span>
+        <p>Running along Russia's entire Arctic coastline — the Kara, Laptev, East Siberian and Chukchi seas — the Northern Sea Route (NSR) links Europe to the Pacific without going anywhere near Suez. It's already the most operational of the three: Russia's own NSR Administration issues transit permits and requires ice-class hulls or an icebreaker escort for most of the roughly July-to-November sailing season.</p>
+        <p>The appeal is distance. A voyage from Yokohama to Rotterdam via Suez covers close to 20,000 km; via the NSR it's under 9,000 — a cut of roughly 40-50% depending on the specific ports, translating into real fuel and time savings when ice conditions cooperate.</p>
+        <p>Russia already operates the world's only fleet of nuclear-powered icebreakers — eight in service as of 2026, the most since Soviet times, including four new Project 22220 vessels (Arktika, Ural, Sibir, Yakutia) alongside two older Arktika-class ships, with three more under construction. Rosatom, which now administers the route, puts the fleet needed to sustain a fully commercial, longer-season NSR at 15-17 icebreakers — well above today's count.</p>
+        <p>The payoff for Russia is transit fees and a viable export corridor for Arctic LNG and oil. For Asian exporters and European importers, it's a shorter, lower-emission alternative to a Suez route that's periodically disrupted by chokepoint risk elsewhere — the Red Sea being the clearest recent example.</p>
+      </div>
+
+      <div class="arctic-route">
+        <h3><a href="https://en.wikipedia.org/wiki/Northwest_Passage" target="_blank">Northwest Passage</a></h3>
+        <span class="arctic-tag">Canada &middot; Baffin Bay &rarr; Beaufort Sea</span>
+        <p>Threading through Canada's Arctic Archipelago — Lancaster Sound, Barrow Strait, and a scatter of narrower channels beyond — the Northwest Passage (NWP) connects the Atlantic to the Pacific along North America's northern edge. It's the least commercially mature of the three: multi-year ice in its narrower channels keeps traffic sporadic, well behind the NSR's usage.</p>
+        <p>It's also legally contested. Canada considers the passage internal waters, based on baselines it drew around the Arctic Archipelago in 1985; the United States and others argue it's an international strait with a guaranteed right of transit passage under the UN Convention on the Law of the Sea. A 1988 bilateral agreement papers over the dispute — the US agrees to seek Canada's consent before sending icebreakers through — without resolving who's actually right.</p>
+        <p>Canada's response has been to rebuild its icebreaker fleet as much for sovereignty as for shipping: two new Polar Icebreakers, up to six Program Icebreakers, and new Arctic and Offshore Patrol Ships are all in progress under its National Shipbuilding Strategy, including the 158-metre CCGS Imnaryuaq, set to become the largest ship in the Coast Guard's Arctic fleet. In August 2026, the icebreaker CCGS Louis S. St-Laurent reached the North Pole — a capability demonstration as much as a science mission.</p>
+        <p>If it opens further, the NWP would give eastern North America a shorter Asia-Europe alternative to the Panama Canal. For Canada specifically, holding real icebreaking capacity is also what would let its internal-waters claim mean something in practice, not just on paper.</p>
+      </div>
+
+      <div class="arctic-route">
+        <h3><a href="https://en.wikipedia.org/wiki/Transpolar_Sea_Route" target="_blank">Transpolar Sea Route</a></h3>
+        <span class="arctic-tag">International Waters &middot; Fram Strait &rarr; Bering Strait</span>
+        <p>The most direct of the three, and the only one not owned by anybody: the Transpolar Sea Route (TSR) would run more or less straight across the top of the world near the North Pole itself, from the Fram Strait near Svalbard to the Bering Strait — clear of both Russian and Canadian coastal waters.</p>
+        <p>It's also the least ready. The central Arctic Ocean is still covered by thick, multi-year pack ice year-round, and no coastal state administers a permit system for it because none has jurisdiction — it's high seas. Climate projections suggest ice-breaking cargo ships could attempt seasonal crossings as early as the 2030s, with the route potentially functioning as a genuine third Asia-Europe corridor by around 2040; reliable, escort-free transit is a mid-century-or-later prospect at current warming rates.</p>
+        <p>That lack of ownership is exactly why it matters strategically. Nobody can charge a toll or grant/deny passage the way Russia does on the NSR — so the nations and shipping lines that build capable icebreaking fleets earliest get first use of a route nobody else can gatekeep. It's a real part of why states with no Arctic coastline at all, China chief among them, are investing in polar-capable ships well before the ice actually clears.</p>
+      </div>
+
+      <div class="arctic-route">
+        <h3>Why Icebreakers Are Becoming a Strategic Asset</h3>
+        <p>All three routes converge on the same bottleneck: none of them work at commercial scale without enough ice-capable ships to escort, resupply, and enforce them. That's turned icebreaker fleets from a niche capability into an active buildup.</p>
+        <ul>
+          <li><strong>Russia</strong> — 8 nuclear icebreakers in service as of 2026, the world's only fleet of its kind, with 3 more under construction. Treated as core national infrastructure for the NSR's export economy, not just polar science.</li>
+          <li><strong>United States</strong> — faces what's widely described as an "icebreaker gap." Its Polar Security Cutter program (3 heavy icebreakers) has slipped from a planned 2024 delivery to an estimated 2033. A faster-moving Arctic Security Cutter program — 6 lighter vessels, contracts finalized July 2026, split between a Louisiana shipyard and Finland's Rauma Marine Constructions — aims to start closing that gap by 2028-2031.</li>
+          <li><strong>Canada</strong> — rebuilding its Coast Guard icebreaker fleet specifically to back its Northwest Passage sovereignty claim, alongside genuine Arctic community resupply and science missions.</li>
+          <li><strong>China</strong> — calls itself a "near-Arctic state" and has been building its own icebreakers despite having no Arctic coastline at all, evidence that the strategic value of these fleets now extends well past the nations whose waters the routes actually run through.</li>
+        </ul>
+        <p class="dim">Unlike the rest of Dispatch, this page is a static explainer, not a live feed — route status, fleet counts, and program timelines here reflect public reporting as of September 2026 and will drift out of date.</p>
+      </div>
+    </div>
+  </div>
   <div id="vignette"></div>
   <div id="story-panel">
     <button class="close" onclick="hidePanel()">&times;</button>
@@ -616,7 +717,7 @@
     <p><a href="https://www.gdeltproject.org/" target="_blank" style="color:var(--political);">GDELT</a>'s global event database, filtered to diplomacy, aid, sanctions, and cooperation events.</p>
 
     <h3>Shipping lanes &amp; chokepoints</h3>
-    <p class="dim">Digitized trade-route geometry and the world's 10 busiest maritime chokepoints, compiled from public shipping and energy-transit data — a snapshot, not live vessel tracking.</p>
+    <p class="dim">Digitized trade-route geometry and the world's 10 busiest maritime chokepoints, compiled from public shipping and energy-transit data — a snapshot, not live vessel tracking. The three routes in forest green are the Arctic passages covered in the Arctic Routes tab — illustrative corridors, not precisely surveyed shipping geometry like the rest of the set.</p>
 
     <h3>Country borders</h3>
     <p class="dim">Natural Earth (1:110m Admin 0 Countries), public domain.</p>
@@ -656,11 +757,13 @@
     'very-high': { weight: 5, opacity: 0.9 },
     'high': { weight: 3.5, opacity: 0.8 },
     'medium': { weight: 2, opacity: 0.65 },
+    'arctic': { weight: 4, opacity: 0.9 },
   };
   const GLOBE_LANE_STYLE = {
     'very-high': { color: 'rgba(217, 164, 65, 0.9)', stroke: 1.1 },
     'high': { color: 'rgba(217, 164, 65, 0.7)', stroke: 0.75 },
     'medium': { color: 'rgba(217, 164, 65, 0.5)', stroke: 0.45 },
+    'arctic': { color: 'rgba(34, 139, 34, 0.9)', stroke: 1.0 },
   };
   const BORDER_COLOR_GLOBE = 'rgba(0, 0, 0, 0.85)'; // matches --borders (black)
 
@@ -1100,10 +1203,11 @@
       LANES = data.lanes || [];
 
       const laneColor = getComputedStyle(document.documentElement).getPropertyValue('--shipping').trim();
+      const arcticColor = getComputedStyle(document.documentElement).getPropertyValue('--arctic-route').trim();
       LANES.forEach((lane) => {
         const style = MAP_LANE_STYLE[lane.volume] || MAP_LANE_STYLE.medium;
         L.polyline(lane.path, {
-          color: laneColor,
+          color: lane.volume === 'arctic' ? arcticColor : laneColor,
           weight: style.weight,
           opacity: style.opacity,
         }).bindTooltip(`<strong>${lane.name}</strong><br>${lane.note}`, { sticky: true }).addTo(lanesLayer);
@@ -1255,6 +1359,7 @@
     document.querySelectorAll('.view-btn').forEach(b => b.classList.toggle('active', b.dataset.view === view));
     document.getElementById('globeViz').classList.toggle('hidden', view !== 'globe');
     document.getElementById('map-container').classList.toggle('hidden', view !== 'map');
+    document.getElementById('arctic-container').classList.toggle('hidden', view !== 'arctic');
 
     if (view === 'globe') {
       world.resumeAnimation?.();
@@ -1262,7 +1367,7 @@
     } else {
       hidePanel();
       world.pauseAnimation?.();
-      map.invalidateSize();
+      if (view === 'map') map.invalidateSize();
     }
   }
 
