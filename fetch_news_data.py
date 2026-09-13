@@ -1178,6 +1178,191 @@ def enrich_with_real_headlines(features: list, categories=("conflict", "politica
           + (f", dropped {len(to_drop)} whose real content didn't match their category" if to_drop else ""))
 
 
+# The globe/map are entirely WebGL/client-rendered, so a search crawler
+# gets no indexable text from index.html itself -- these plain static
+# pages exist purely so Google has real story text to index and rank,
+# built from the same per-day data already being archived for the
+# (separate, still-unbuilt) timeline scrubber feature.
+SITE_BASE_URL = "https://glnewsmapping.github.io/Global-News-Daily/"
+CATEGORY_LABELS = {"conflict": "Conflict", "climate": "Climate", "political": "Political"}
+CATEGORY_COLORS = {"conflict": "#E2572B", "climate": "#1859D1", "political": "#8355E8"}
+
+_BRIEF_STYLE = """
+  :root{ --ink:#12181F; --panel:#1B2430; --panel-line:#2B3644; --paper:#E8E6DE; --muted:#8B94A3; --amber:#D9A441; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--ink); color:var(--paper); font-family:'Inter',sans-serif; line-height:1.6; }
+  a{ color:var(--amber); }
+  .wrap{ max-width:720px; margin:0 auto; padding:32px 20px 80px; }
+  .back{ display:inline-block; font-size:13px; color:var(--muted); text-decoration:none; margin-bottom:28px; }
+  .back:hover{ color:var(--paper); }
+  .kicker{ display:block; font-size:11px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:var(--amber); margin-bottom:10px; }
+  h1{ font-family:'Newsreader',serif; font-weight:500; font-size:34px; margin:0 0 10px; }
+  header p{ color:var(--muted); font-size:14px; margin:0 0 36px; max-width:56ch; }
+  section{ margin-bottom:36px; }
+  section h2{ display:flex; align-items:center; gap:9px; font-family:'Inter',sans-serif; font-size:16px; font-weight:600; border-bottom:1px solid var(--panel-line); padding-bottom:10px; margin-bottom:4px; }
+  .dot{ width:9px; height:9px; border-radius:50%; flex-shrink:0; }
+  section h2 .count{ font-weight:400; color:var(--muted); }
+  ul.stories{ list-style:none; margin:0; padding:0; }
+  li.story{ padding:14px 0; border-bottom:1px solid var(--panel-line); }
+  .story-headline{ font-size:15px; font-weight:500; text-decoration:none; color:var(--paper); }
+  .story-headline:hover{ color:var(--amber); }
+  .story-lede{ font-size:13.5px; color:var(--muted); margin:6px 0; max-width:62ch; }
+  ul.story-meta{ list-style:none; margin:6px 0 0; padding:0; font-size:12px; color:var(--muted); }
+  ul.story-meta li{ display:inline; }
+  ul.story-meta li:not(:last-child)::after{ content:' \\2013 '; }
+  footer{ margin-top:40px; padding-top:20px; border-top:1px solid var(--panel-line); font-size:12.5px; color:var(--muted); }
+  ul.briefs{ list-style:none; margin:0; padding:0; }
+  ul.briefs li{ padding:9px 0; border-bottom:1px solid var(--panel-line); font-family:'JetBrains Mono',monospace; font-size:14px; }
+"""
+
+_BRIEF_HEAD_LINKS = """<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%2312181F' stroke='%23E8E6DE' stroke-width='4'/%3E%3Cpath d='M6 50h88M50 6v88M15 27c15 10 55 10 70 0M15 73c15-10 55-10 70 0' fill='none' stroke='%23E8E6DE' stroke-width='3' opacity='0.55'/%3E%3Ccircle cx='38' cy='40' r='5' fill='%23E2572B'/%3E%3Ccircle cx='62' cy='58' r='5' fill='%231859D1'/%3E%3Ccircle cx='55' cy='32' r='5' fill='%238355E8'/%3E%3C/svg%3E">"""
+
+
+def _story_url(feature: dict):
+    m = re.search(r"href='([^']+)'", feature.get("html", ""))
+    return m.group(1) if m else None
+
+
+def _brief_story_html(feature: dict) -> str:
+    url = _story_url(feature)
+    name = feature.get("name", "Untitled")
+    headline = (f'<a class="story-headline" href="{url}" target="_blank" rel="noopener">{name}</a>'
+                if url else f'<span class="story-headline">{name}</span>')
+    lede = feature.get("lede")
+    lede_html = f'<p class="story-lede">{lede}</p>' if lede else ""
+    meta = feature.get("summary") or []
+    meta_html = ("<ul class=\"story-meta\">" + "".join(f"<li>{line}</li>" for line in meta) + "</ul>") if meta else ""
+    return f'<li class="story">{headline}{lede_html}{meta_html}</li>'
+
+
+def _render_brief_page(output: dict, date_str: str) -> str:
+    by_category = defaultdict(list)
+    for f in output.get("features", []):
+        by_category[f["category"]].append(f)
+
+    sections = []
+    for cat in ("conflict", "climate", "political"):
+        feats = sorted(by_category.get(cat, []), key=lambda f: f.get("count", 1), reverse=True)
+        if not feats:
+            continue
+        items = "\n".join(_brief_story_html(f) for f in feats)
+        sections.append(
+            f'<section><h2><span class="dot" style="background:{CATEGORY_COLORS[cat]}"></span>'
+            f'{CATEGORY_LABELS[cat]} <span class="count">({len(feats)})</span></h2>'
+            f'<ul class="stories">{items}</ul></section>'
+        )
+
+    total = len(output.get("features", []))
+    page_url = f"{SITE_BASE_URL}brief/{date_str}.html"
+    description = f"{total} geolocated conflict, climate, and political events reported on {date_str}, sourced live from GDELT and NASA EONET."
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dispatch Daily Brief — {date_str}</title>
+<meta name="description" content="{description}">
+<link rel="canonical" href="{page_url}">
+{_BRIEF_HEAD_LINKS}
+<style>{_BRIEF_STYLE}</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../">&larr; Live globe &amp; map</a>
+  <header>
+    <span class="kicker">Dispatch Daily Brief</span>
+    <h1>{date_str}</h1>
+    <p>{description}</p>
+  </header>
+  {"".join(sections) or "<p>No events cleared the relevance filters for this day.</p>"}
+  <footer>
+    <p>Full interactive globe &amp; map: <a href="../">glnewsmapping.github.io/Global-News-Daily</a> &middot; <a href="./">all daily briefs</a></p>
+  </footer>
+</div>
+</body>
+</html>
+"""
+
+
+def _prune_old_briefs(brief_dir: str, keep_days: int):
+    cutoff = datetime.now(timezone.utc) - timedelta(days=keep_days)
+    for path in glob.glob(os.path.join(brief_dir, "*.html")):
+        stem = os.path.splitext(os.path.basename(path))[0]
+        if stem == "index":
+            continue
+        try:
+            day = datetime.strptime(stem, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+        except ValueError:
+            continue
+        if day < cutoff:
+            os.remove(path)
+            print(f"Pruned old brief page {path}")
+
+
+def _update_brief_index_and_sitemap(brief_dir: str, sitemap_path: str):
+    dates = sorted(
+        os.path.splitext(os.path.basename(p))[0]
+        for p in glob.glob(os.path.join(brief_dir, "*.html"))
+        if os.path.basename(p) != "index.html"
+    )
+    dates.reverse()
+
+    rows = "\n".join(f'<li><a href="{d}.html">{d}</a></li>' for d in dates)
+    index_html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dispatch Daily Briefs</title>
+<meta name="description" content="Daily archive of geolocated conflict, climate, and political events plotted by Dispatch.">
+<link rel="canonical" href="{SITE_BASE_URL}brief/">
+{_BRIEF_HEAD_LINKS}
+<style>{_BRIEF_STYLE}</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../">&larr; Live globe &amp; map</a>
+  <header>
+    <span class="kicker">Dispatch</span>
+    <h1>Daily Briefs</h1>
+    <p>One static page per day, generated alongside the live data refresh.</p>
+  </header>
+  <ul class="briefs">{rows}</ul>
+</div>
+</body>
+</html>
+"""
+    with open(os.path.join(brief_dir, "index.html"), "w", encoding="utf-8") as f:
+        f.write(index_html)
+
+    urls = [(SITE_BASE_URL, "1.0"), (f"{SITE_BASE_URL}brief/", "0.5")]
+    urls += [(f"{SITE_BASE_URL}brief/{d}.html", "0.6") for d in dates]
+    entries = "\n".join(
+        f"  <url>\n    <loc>{loc}</loc>\n    <changefreq>daily</changefreq>\n    <priority>{priority}</priority>\n  </url>"
+        for loc, priority in urls
+    )
+    with open(sitemap_path, "w", encoding="utf-8") as f:
+        f.write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{entries}\n</urlset>\n')
+
+
+def generate_daily_brief(output: dict, brief_dir: str, keep_days: int, sitemap_path: str = "sitemap.xml"):
+    """Static, crawlable per-day pages built from the same data as
+    data/archive/ -- see the module-level comment above for why these
+    exist. Pruned on the same keep_days window as the archive so brief
+    pages and their sitemap entries never outlive the data behind them."""
+    os.makedirs(brief_dir, exist_ok=True)
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    page_path = os.path.join(brief_dir, f"{today}.html")
+    with open(page_path, "w", encoding="utf-8") as f:
+        f.write(_render_brief_page(output, today))
+    print(f"Wrote daily brief to {page_path}")
+
+    _prune_old_briefs(brief_dir, keep_days)
+    _update_brief_index_and_sitemap(brief_dir, sitemap_path)
+
+
 def main():
     parser = argparse.ArgumentParser(description="Fetch daily geolocated news for the map viewer.")
     parser.add_argument("--target-locations", type=int, default=100, help="Cap on total locations, spread across world regions (default: 100)")
@@ -1188,6 +1373,8 @@ def main():
     parser.add_argument("--archive-dir", default="data/archive", help="Directory to keep one dated snapshot per day for the timeline feature (default: data/archive)")
     parser.add_argument("--archive-days", type=int, default=30, help="Days of dated snapshots to keep before pruning the oldest (default: 30)")
     parser.add_argument("--no-archive", action="store_true", help="Skip writing/pruning the dated archive snapshot")
+    parser.add_argument("--brief-dir", default="brief", help="Directory for the daily static SEO brief pages (default: brief)")
+    parser.add_argument("--no-brief", action="store_true", help="Skip generating/pruning the daily static brief page and sitemap.xml")
     parser.add_argument("--no-headline-fetch", action="store_true", help="Skip fetching real article headlines for conflict/political (faster for local dev iteration)")
     args = parser.parse_args()
 
@@ -1260,6 +1447,9 @@ def main():
 
     if not args.no_archive:
         save_archive_snapshot(output, args.archive_dir, args.archive_days)
+
+    if not args.no_brief:
+        generate_daily_brief(output, args.brief_dir, args.archive_days)
 
 
 def save_archive_snapshot(output, archive_dir, keep_days):
