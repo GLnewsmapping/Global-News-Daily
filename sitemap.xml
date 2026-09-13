@@ -5,4 +5,44 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://glnewsmapping.github.io/Global-News-Daily/brief/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://glnewsmapping.github.io/Global-News-Daily/brief/2026-09-13.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://glnewsmapping.github.io/Global-News-Daily/brief/2026-09-12.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://glnewsmapping.github.io/Global-News-Daily/brief/2026-09-11.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://glnewsmapping.github.io/Global-News-Daily/brief/2026-09-10.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://glnewsmapping.github.io/Global-News-Daily/brief/2026-09-09.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://glnewsmapping.github.io/Global-News-Daily/brief/2026-09-08.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://glnewsmapping.github.io/Global-News-Daily/brief/2026-09-07.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
