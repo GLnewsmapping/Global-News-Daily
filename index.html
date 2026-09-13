@@ -390,6 +390,12 @@
     margin: 0 0 4px;
   }
   .popup-meta{ font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+  .lede{
+    font-size: 13px;
+    color: var(--paper);
+    line-height: 1.5;
+    margin: 4px 0 8px;
+  }
   .summary-list{
     list-style: none;
     margin: 6px 0 0;
@@ -696,6 +702,7 @@
     <div class="story-cat"><span class="swatch"></span><span id="panel-cat"></span></div>
     <h2 id="panel-place"></h2>
     <p id="panel-headline"></p>
+    <p id="panel-lede" class="lede"></p>
     <ul id="panel-summary" class="summary-list"></ul>
     <a id="panel-link" href="#" target="_blank">Read the source →</a>
   </div>
@@ -804,12 +811,16 @@
       headline = (f.html || '').replace(/<[^>]+>/g, '').trim() || 'No headline available';
     }
 
-    return { category: f.category, lat: f.lat, lng: f.lon, place: f.name, headline, url, count: f.count || 1, summary: f.summary || null };
+    return { category: f.category, lat: f.lat, lng: f.lon, place: f.name, headline, url, count: f.count || 1, summary: f.summary || null, lede: f.lede || null };
+  }
+
+  function ledeHtml(f) {
+    return f.lede ? `<p class="lede">${f.lede}</p>` : '';
   }
 
   function summaryHtml(f) {
-    if (!f.summary || !f.summary.length) return '';
-    return `<ul class="summary-list">${f.summary.map(s => `<li>${s}</li>`).join('')}</ul>`;
+    if (!f.summary || !f.summary.length) return ledeHtml(f);
+    return ledeHtml(f) + `<ul class="summary-list">${f.summary.map(s => `<li>${s}</li>`).join('')}</ul>`;
   }
 
   function visibleGlobeEvents() {
@@ -965,6 +976,7 @@
     document.querySelector('#story-panel .story-cat .swatch').style.background = COLORS[d.category];
     document.getElementById('panel-place').textContent = d.place;
     document.getElementById('panel-headline').textContent = d.headline;
+    document.getElementById('panel-lede').textContent = d.lede || '';
     document.getElementById('panel-summary').innerHTML = d.summary
       ? d.summary.map(s => `<li>${s}</li>`).join('')
       : '';
@@ -1111,6 +1123,7 @@
     if (!query) return true;
     const haystack = (
       f.name + ' ' +
+      (f.lede || '') + ' ' +
       (f.summary ? f.summary.join(' ') : '') + ' ' +
       (f.html || '').replace(/<[^>]+>/g, '')
     ).toLowerCase();
