@@ -1,0 +1,5 @@
+# These are the FUNDING.yml entries GitHub supports for the "Sponsor"
+# button on the repo page: https://docs.github.com/en/repository-editable-fields/renaming-a-repository/displaying-a-sponsor-button-in-your-repository
+# github: only shows the button once GLnewsmapping is actually approved
+# for GitHub Sponsors -- inert (no button, no error) until then.
+github: [GLnewsmapping]
