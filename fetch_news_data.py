@@ -879,6 +879,42 @@ def fetch_gdelt_bulk_conflict(hours: int, limit: int) -> list:
     return features[:limit]
 
 
+LEDE_MAX_LEN = 220
+
+
+def _normalize_for_compare(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "", text.lower())
+
+
+def _truncate_at_word(text: str, limit: int) -> str:
+    """Cut at the nearest earlier word boundary instead of mid-word, so a
+    truncated lede reads as "...seeking a diplomatic" rather than the
+    uglier "...seeking a diplo..."."""
+    if len(text) <= limit:
+        return text
+    cut = text[:limit]
+    last_space = cut.rfind(" ")
+    if last_space > limit * 0.6:
+        cut = cut[:last_space]
+    return cut.rstrip(" ,;:") + "..."
+
+
+def _lede_from_description(title: str, description: str):
+    """The real article's own description/dek, cleaned up for display as a
+    lede above the GDELT-derived metadata list. Dropped entirely (returns
+    None) when it's just a restatement of the headline -- common with CMS
+    templates that default the meta description to the title verbatim --
+    since repeating the headline back adds nothing a reader doesn't
+    already have."""
+    if not description:
+        return None
+    norm_title = _normalize_for_compare(title)
+    norm_desc = _normalize_for_compare(description)
+    if norm_desc and (norm_desc in norm_title or norm_title in norm_desc):
+        return None
+    return _truncate_at_word(description, LEDE_MAX_LEN)
+
+
 # Titles that mean the fetch hit a bot-block, paywall, or geo-restriction
 # page rather than the actual article -- using one of these as a story's
 # headline would be worse than the synthesized label it's meant to
@@ -1130,10 +1166,9 @@ def enrich_with_real_headlines(features: list, categories=("conflict", "politica
             fetched += 1
             feature["name"] = title
             feature["html"] = f"<a href='{url}' target='_blank'>{title}</a>"
-            if description:
-                if len(description) > 200:
-                    description = description[:197].rstrip() + "..."
-                feature["summary"] = [description] + feature["summary"]
+            lede = _lede_from_description(title, description)
+            if lede:
+                feature["lede"] = lede
 
     if to_drop:
         drop_ids = {id(f) for f in to_drop}

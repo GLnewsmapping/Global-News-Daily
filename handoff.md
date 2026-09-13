@@ -1,6 +1,6 @@
 # Dispatch — Project Handoff
 
-Last updated: 2026-09-11
+Last updated: 2026-09-13
 
 ## Project goal
 
@@ -31,6 +31,7 @@ The site itself: a shared sidebar (masthead, category filters as solid color blo
 
 ## What's been changed (most recent first)
 
+- Gave the real article description its own `lede` field, separate from the GDELT-derived `summary` metadata list, and styled it distinctly (brighter, larger, above the bulleted metadata) in `index.html` instead of just tacking it on as another bullet. Also drops it when it's a verbatim restatement of the headline (common CMS default) and truncates on a word boundary instead of mid-word.
 - Extended the real-article relevance filter (see below) from conflict-only to political too — both categories now fetch 2x their display target as a raw pool and filter for real relevance *before* capping down, since 70-85% of raw candidates don't survive the filter.
 - Added `enrich_with_real_headlines()`: conflict/political story headlines used to be labels synthesized from GDELT's own event classification ("Armed clash: Police"), not the article's real headline. Now fetches each selected story's actual `<title>`/meta description and swaps them in. This is what *surfaced* the need for the relevance filter in the first place — reading real headlines revealed many "conflict" stories were about completely unrelated things (see Failed Attempts).
 - Excluded the cartel/gang-violence country cluster (US, Mexico, Belize, Guatemala, Honduras, El Salvador, Nicaragua) from the conflict-zone list.
@@ -63,4 +64,4 @@ Full technical detail and rationale for all of the above is in `README.md`.
 2. **Let the new relevance filter run for a few more days** before tuning `CONFLICT_RELEVANCE_KEYWORDS`/`POLITICAL_RELEVANCE_KEYWORDS` further — they were calibrated against a single day's sample, and a broader sample across different news cycles will surface edge cases a single snapshot can't.
 3. **Timeline scrubber**, once the archive has more history (currently 4 days, started 2026-09-07). Nothing reads the archive yet — it's pure groundwork so far.
 4. **Analytics before driving real traffic** — Cloudflare Web Analytics was recommended in the launch plan (free, no cookie banner needed) but not yet implemented.
-5. Consider whether the real-headline/description content already being fetched could enrich the summary boxes further, since the fetching infrastructure now exists for both conflict and political.
+5. ~~Consider whether the real-headline/description content already being fetched could enrich the summary boxes further~~ -- done: it's now a distinctly-styled `lede` field, deduped against the headline. Regenerate `data/news_data.json` and eyeball a few conflict/political popups to confirm the lede reads well in practice (this sandbox's network proxy blocks GDELT/EONET/Wikipedia outbound, so it couldn't be spot-checked live here -- verify from a machine with real network access, or let the next GitHub Actions run confirm it).
