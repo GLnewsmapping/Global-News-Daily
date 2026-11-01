@@ -1,0 +1,1526 @@
+{
+  "generated_at": "2026-11-01T12:24:42.975876+00:00",
+  "feature_count": 99,
+  "features": [
+    {
+      "category": "climate",
+      "lat": 31.085833,
+      "lon": -89.097783,
+      "name": "Wildfire South Tank Trail, Perry, Mississippi",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-MSMNF-000680' target='_blank'>Wildfire South Tank Trail, Perry, Mississippi</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Status: Still active",
+        "Size: 1,000 acres",
+        "First reported: Oct 28, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 16.4,
+      "lon": 81.8,
+      "name": "Tropical Cyclone Arnab",
+      "count": 1,
+      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/io0226.tcw' target='_blank'>Tropical Cyclone Arnab</a>",
+      "summary": [
+        "Type: Severe Storms",
+        "Status: Still active",
+        "Peak winds: 55 kts (~63 mph)",
+        "Tracking for 2 days (since Oct 25, 2026)",
+        "Source: JTWC"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 22.3,
+      "lon": 144.1,
+      "name": "Super Typhoon In-fa",
+      "count": 1,
+      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp3026.tcw' target='_blank'>Super Typhoon In-fa</a>",
+      "summary": [
+        "Type: Severe Storms",
+        "Status: Still active",
+        "Peak winds: 90 kts (~104 mph)",
+        "Tracking for 8 days (since Oct 23, 2026)",
+        "Source: JTWC"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 89.80786594913738,
+      "lon": 27.97822497450479,
+      "name": "Flood in Bhutan",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104265' target='_blank'>Flood in Bhutan</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Oct 30, 2026",
+        "Reported: Oct 28, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 28.52021330347826,
+      "lon": 44.222790035012785,
+      "name": "Flood in Romania",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104260' target='_blank'>Flood in Romania</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Oct 28, 2026",
+        "Reported: Oct 26, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 7.454058933333333,
+      "lon": 54.05561983333333,
+      "name": "Flood in Germany",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104257' target='_blank'>Flood in Germany</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Oct 26, 2026",
+        "Reported: Oct 25, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 44.58843045862069,
+      "lon": 39.55459492369299,
+      "name": "Flood in Islamic Republic of Iran",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104247' target='_blank'>Flood in Islamic Republic of Iran</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Oct 24, 2026",
+        "Reported: Oct 22, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": -58.07891617121212,
+      "lon": -32.2582743523569,
+      "name": "Flood in Uruguay",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104238' target='_blank'>Flood in Uruguay</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Oct 14, 2026",
+        "Reported: Oct 12, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 35.259781,
+      "lon": -111.835978,
+      "name": "Prescribed Fire Walker Hill 3 Piles RX, Coconino, Arizona",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-AZCOF-001563' target='_blank'>Prescribed Fire Walker Hill 3 Piles RX, Coconino, Arizona</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Status: Still active",
+        "Size: 784 acres",
+        "First reported: Oct 28, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 16.819866158607127,
+      "lon": 98.74280280459278,
+      "name": "Flood in Thailand",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104169' target='_blank'>Flood in Thailand</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Oct 06, 2026",
+        "Reported: Oct 04, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 31.2,
+      "lon": 127.4,
+      "name": "Super Typhoon Champi",
+      "count": 1,
+      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp2926.tcw' target='_blank'>Super Typhoon Champi</a>",
+      "summary": [
+        "Type: Severe Storms",
+        "Status: Ended Oct 30, 2026",
+        "Peak winds: 35 kts (~40 mph)",
+        "Tracked for 10 days (since Oct 15, 2026)",
+        "Source: JTWC"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": -73.66718045266204,
+      "lon": -12.496127427256944,
+      "name": "Flood in Peru",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104259' target='_blank'>Flood in Peru</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Oct 27, 2026",
+        "Reported: Oct 25, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 34.78877237213115,
+      "lon": 31.27635974303279,
+      "name": "Flood in Israel",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104261' target='_blank'>Flood in Israel</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Oct 28, 2026",
+        "Reported: Oct 26, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 18.570421871311478,
+      "lon": 4.383284030327869,
+      "name": "Flood in Central African Republic",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104256' target='_blank'>Flood in Central African Republic</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Oct 26, 2026",
+        "Reported: Oct 24, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 55.95598089166666,
+      "lon": 37.902455525,
+      "name": "Flood in Islamic Republic of Iran",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104206' target='_blank'>Flood in Islamic Republic of Iran</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Sep 28, 2026",
+        "Reported: Sep 26, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": -58.009658838927336,
+      "lon": -31.386635755882352,
+      "name": "Flood in Argentina",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104218' target='_blank'>Flood in Argentina</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Oct 08, 2026",
+        "Reported: Oct 05, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 34.545833,
+      "lon": -111.315915,
+      "name": "Prescribed Fire Brie Slash Piles RX, Coconino, Arizona",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-AZCOF-001597' target='_blank'>Prescribed Fire Brie Slash Piles RX, Coconino, Arizona</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Status: Still active",
+        "Size: 700 acres",
+        "First reported: Oct 28, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 19.54485705,
+      "lon": 72.7173164125,
+      "name": "Flood in India, Nepal",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104198' target='_blank'>Flood in India, Nepal</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Sep 25, 2026",
+        "Reported: Sep 23, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 36.3,
+      "lon": 149.5,
+      "name": "Super Typhoon Choi-wan",
+      "count": 1,
+      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp2626.tcw' target='_blank'>Super Typhoon Choi-wan</a>",
+      "summary": [
+        "Type: Severe Storms",
+        "Status: Ended Oct 11, 2026",
+        "Peak winds: 75 kts (~86 mph)",
+        "Tracked for 6 days (since Sep 30, 2026)",
+        "Source: JTWC"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 13.2,
+      "lon": -176.2,
+      "name": "Tropical Storm Olana",
+      "count": 1,
+      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/cp0326.tcw' target='_blank'>Tropical Storm Olana</a>",
+      "summary": [
+        "Type: Severe Storms",
+        "Status: Ended Nov 01, 2026",
+        "Peak winds: 25 kts (~29 mph)",
+        "Tracked for 1 day (since Oct 25, 2026)",
+        "Tracked by: JTWC, NOAA_NHC"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 39.01575493125,
+      "lon": 35.96405823125,
+      "name": "Flood in Syria",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104263' target='_blank'>Flood in Syria</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Oct 28, 2026",
+        "Reported: Oct 26, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": -8.833910208333334,
+      "lon": 54.663676691666666,
+      "name": "Flood in Ireland",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104258' target='_blank'>Flood in Ireland</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Oct 24, 2026",
+        "Reported: Oct 23, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 46.92036792209302,
+      "lon": 35.54015972558139,
+      "name": "Flood in Ukraine",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104193' target='_blank'>Flood in Ukraine</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Sep 24, 2026",
+        "Reported: Sep 22, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": -38.36746053139013,
+      "lon": -73.92526752017937,
+      "name": "Flood in Chile",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104190' target='_blank'>Flood in Chile</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Sep 25, 2026",
+        "Reported: Sep 23, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 35.017139,
+      "lon": -111.639444,
+      "name": "Prescribed Fire Newman 3 Piles RX, Coconino, Arizona",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-AZCOF-001600' target='_blank'>Prescribed Fire Newman 3 Piles RX, Coconino, Arizona</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Status: Still active",
+        "Size: 756 acres",
+        "First reported: Oct 28, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 18.1,
+      "lon": 83.7,
+      "name": "Tropical Cyclone 01B",
+      "count": 1,
+      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/io0126.tcw' target='_blank'>Tropical Cyclone 01B</a>",
+      "summary": [
+        "Type: Severe Storms",
+        "Status: Ended Sep 29, 2026",
+        "Peak winds: 35 kts (~40 mph)",
+        "Tracked for 2 days (since Sep 22, 2026)",
+        "Source: JTWC"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 31,
+      "lon": 145.6,
+      "name": "Hurricane Nolo",
+      "count": 1,
+      "html": "<a href='https://science.nasa.gov/earth/earth-observatory/powerful-storms-continue-to-prowl-the-pacific/' target='_blank'>Hurricane Nolo</a>",
+      "summary": [
+        "Type: Severe Storms",
+        "Status: Ended Oct 15, 2026",
+        "Peak winds: 35 kts (~40 mph)",
+        "Tracked for 16 days (since Sep 24, 2026)",
+        "Tracked by: EO, JTWC"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 99.07064880278324,
+      "lon": 2.1456265564178127,
+      "name": "Flood in Indonesia",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104253' target='_blank'>Flood in Indonesia</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Oct 28, 2026",
+        "Reported: Oct 23, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 29.275875204285715,
+      "lon": 40.87289541714286,
+      "name": "Flood in T\u00fcrkiye",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104254' target='_blank'>Flood in T\u00fcrkiye</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Oct 27, 2026",
+        "Reported: Oct 25, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": -5.7,
+      "lon": 47.7,
+      "name": "Tropical Cyclone Agueda",
+      "count": 1,
+      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/sh0227.tcw' target='_blank'>Tropical Cyclone Agueda</a>",
+      "summary": [
+        "Type: Severe Storms",
+        "Status: Ended Oct 28, 2026",
+        "Peak winds: 30 kts (~35 mph)",
+        "Tracked for 4 days (since Oct 20, 2026)",
+        "Source: JTWC"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": -41.110603451042614,
+      "lon": -71.35759136563917,
+      "name": "Flood in Argentina",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104192' target='_blank'>Flood in Argentina</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Sep 24, 2026",
+        "Reported: Sep 22, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 31.099,
+      "lon": -89.161,
+      "name": "Wildfire Range  47B, Forrest, Mississippi",
+      "count": 1,
+      "html": "<a href='https://irwin.doi.gov/observer/incidents/2026-MSMNF-000672' target='_blank'>Wildfire Range  47B, Forrest, Mississippi</a>",
+      "summary": [
+        "Type: Wildfires",
+        "Status: Still active",
+        "Size: 636 acres",
+        "Location note: 3 Miles NE from Brooklyn, MS",
+        "First reported: Oct 24, 2026",
+        "Source: IRWIN"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 31.8,
+      "lon": 138.8,
+      "name": "Super Typhoon Surigae",
+      "count": 1,
+      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/wp2526.tcw' target='_blank'>Super Typhoon Surigae</a>",
+      "summary": [
+        "Type: Severe Storms",
+        "Status: Ended Oct 05, 2026",
+        "Peak winds: 30 kts (~35 mph)",
+        "Tracked for 7 days (since Sep 23, 2026)",
+        "Source: JTWC"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 20.0,
+      "lon": 77.0,
+      "name": "Quad not anti-China or anti-anybody coalition, says Marco Rubio",
+      "count": 12,
+      "html": "<a href='http://www.calcuttanews.net/news/279406119/quad-not-anti-china-or-anti-anybody-coalition-says-marco-rubio' target='_blank'>Quad not anti-China or anti-anybody coalition, says Marco Rubio</a>",
+      "summary": [
+        "Type: Provided aid",
+        "Actors: Australia \u2194 The US",
+        "Location: India",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "US Secretary of State Marco Rubio has said the Quad is not aimed at any country, but acknowledged that the behaviours it raises concerns about are coming repeatedly from one country. The Quad is not anti-anybody. It's..."
+    },
+    {
+      "category": "political",
+      "lat": 54.0,
+      "lon": -4.0,
+      "name": "Diplomatic consultation: France \u2194 Britain",
+      "count": 10,
+      "html": "<a href='https://econotimes.com/UK-Schedules-Another-Asylum-Return-Flight-to-France-for-Nov-17-1768021' target='_blank'>Diplomatic consultation: France \u2194 Britain</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: France \u2194 Britain",
+        "Location: United Kingdom",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 27.6711,
+      "lon": -8.14744,
+      "name": "Competing US, Russia resolutions on Western Sahara defeated in UN Security Council - Sunday World",
+      "count": 10,
+      "html": "<a href='https://sundayworld.co.za/news/competing-us-russia-resolutions-on-western-sahara-defeated-in-un-security-council/' target='_blank'>Competing US, Russia resolutions on Western Sahara defeated in UN Security Council - Sunday World</a>",
+      "summary": [
+        "Type: Rejected cooperation",
+        "Actors: Russia \u2194 A US",
+        "Location: Tindouf, Tindouf, Algeria",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Russia vetoed a US-drafted resolution on Western Sahara at the Security Council on Friday, leaving the UN peacekeeping mission there without a renewed mandate just a day before it expires."
+    },
+    {
+      "category": "political",
+      "lat": 35.75,
+      "lon": 51.5148,
+      "name": "Iran designates UK Royal Navy, RAF 'terrorist organisations', terms MI6 'hostile group' amid war with US: Report | World News",
+      "count": 10,
+      "html": "<a href='https://www.hindustantimes.com/world-news/iran-designates-uk-royal-navy-raf-terrorist-organisations-terms-mi6-hostile-group-amid-war-with-us-report-101793516287897.html' target='_blank'>Iran designates UK Royal Navy, RAF 'terrorist organisations', terms MI6 'hostile group' amid war with US: Report | World News</a>",
+      "summary": [
+        "Type: Expressed intent to cooperate",
+        "Actors: United Kingdom (government) \u2194 Iran",
+        "Location: Tehran, Tehran, Iran",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Iran's foreign ministry also said that it had classified Britain's MI6 as a \"hostile group,\" Iran International reported on Sunday. | World News"
+    },
+    {
+      "category": "political",
+      "lat": 35.0,
+      "lon": 105.0,
+      "name": "His Majesty departs for two-day state visit to China - Times of Oman",
+      "count": 10,
+      "html": "<a href='https://timesofoman.com/article/178615-his-majesty-departs-for-two-day-state-visit-to-china' target='_blank'>His Majesty departs for two-day state visit to China - Times of Oman</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: China \u2194 Muscat",
+        "Location: China",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 17.05,
+      "lon": -61.8,
+      "name": "2026 Commonwealth Heads Of Government Meeting | Mirage News",
+      "count": 10,
+      "html": "<a href='https://www.miragenews.com/2026-commonwealth-heads-of-government-meeting-1770012/' target='_blank'>2026 Commonwealth Heads Of Government Meeting | Mirage News</a>",
+      "summary": [
+        "Type: Expressed intent to cooperate",
+        "Actors: Anthony Albanese (government) \u2194 Antigua And Barbuda",
+        "Location: Antigua And Barbuda",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Prime Minister Anthony Albanese will travel to Antigua and Barbuda to attend the 2026 Commonwealth Heads of Government Meeting (CHOGM) from 31 October"
+    },
+    {
+      "category": "political",
+      "lat": -15.7833,
+      "lon": -47.9167,
+      "name": "Rubio to Meet Brazil\u2019s Foreign Minister as Bolsonaro Dispute Intensifies - Jowhar News Leader | Somali News",
+      "count": 4,
+      "html": "<a href='https://jowhar.com/rubio-to-meet-brazils-foreign-minister-as-bolsonaro-dispute-intensifies/' target='_blank'>Rubio to Meet Brazil\u2019s Foreign Minister as Bolsonaro Dispute Intensifies - Jowhar News Leader | Somali News</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Brazil \u2194 Atlanta",
+        "Location: Brasilia, Distrito Federal, Brazil",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "US Secretary of State Marco Rubio said he spoke with Brazilian Foreign Minister Mauro Vieira at a Group of 20 meeting, and that \u2060they will see each other again in a few weeks."
+    },
+    {
+      "category": "political",
+      "lat": 60.0,
+      "lon": 100.0,
+      "name": "Expressed intent to cooperate: Iran \u2194 Russia",
+      "count": 4,
+      "html": "<a href='https://english.news.cn/northamerica/20261101/b41946cac416452fa0b6bc61e4f7b442/c.html' target='_blank'>Expressed intent to cooperate: Iran \u2194 Russia</a>",
+      "summary": [
+        "Type: Expressed intent to cooperate",
+        "Actors: Iran \u2194 Russia",
+        "Location: Russia",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 28.6667,
+      "lon": 77.2167,
+      "name": "'India US trade deal at finish line', says Sergio Gor; highlights surging defense ties - BusinessToday",
+      "count": 10,
+      "html": "<a href='https://www.businesstoday.in/india/story/india-us-trade-deal-at-finish-line-says-sergio-gor-highlights-surging-defense-ties-564968-2026-11-01' target='_blank'>'India US trade deal at finish line', says Sergio Gor; highlights surging defense ties - BusinessToday</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Australia \u2194 The US (government)",
+        "Location: Delhi, Delhi, India",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "\u201cThe trade agreement has been at the finish line for a very long time, and we hope we will be able to get it across the finish line,\u201d Gor told reporters shortly before the Quad Foreign Ministers\u2019 Meeting."
+    },
+    {
+      "category": "political",
+      "lat": 55.7522,
+      "lon": 37.6156,
+      "name": "Rival US and Russian resolutions on Western Sahara fail at UN",
+      "count": 10,
+      "html": "<a href='https://www.surinametimes.com/artikel/rival-us-and-russian-resolutions-on-western-sahara-fail-at-un' target='_blank'>Rival US and Russian resolutions on Western Sahara fail at UN</a>",
+      "summary": [
+        "Type: Rejected cooperation",
+        "Actors: Russia \u2194 The US",
+        "Location: Moscow, Moskva, Russia",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "MOSCOW \u2013 The United Nations peacekeeping mission in the disputed Western Sahara faces an uncertain future after competing United States and Russian resolutions failed at the UN Security Council."
+    },
+    {
+      "category": "political",
+      "lat": 10.0,
+      "lon": 8.0,
+      "name": "INEC SEEKS STRONGER REGIONAL ALLIANCE AGAINST ELECTORAL DISINFORMATION AHEAD OF 2027 POLLS - Ben Television | Breaking - Nigeria, Africa and World Top News.",
+      "count": 10,
+      "html": "<a href='https://bentelevision.com/inec-seeks-stronger-regional-alliance-against-electoral-disinformation-ahead-of-2027-polls/' target='_blank'>INEC SEEKS STRONGER REGIONAL ALLIANCE AGAINST ELECTORAL DISINFORMATION AHEAD OF 2027 POLLS - Ben Television | Breaking - Nigeria, Africa and World Top News.</a>",
+      "summary": [
+        "Type: Provided aid",
+        "Actors: Nigeria \u2194 Africa",
+        "Location: Nigeria",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "The Independent National Electoral Commission (INEC) has identified electoral disinformation, difficult geographical terrain and inadequate voter awareness as major challenges requiring stronger regional cooperation..."
+    },
+    {
+      "category": "political",
+      "lat": 30.0086,
+      "lon": 31.2122,
+      "name": "Expressed intent to cooperate: Egypt \u2194 European Bank For Reconstruction And Development (international org)",
+      "count": 8,
+      "html": "<a href='https://www.arabnews.com/business/ebrd-arranges-265m-financing-for-egypt-hospitality-expansion-3009247' target='_blank'>Expressed intent to cooperate: Egypt \u2194 European Bank For Reconstruction And Development (international org)</a>",
+      "summary": [
+        "Type: Expressed intent to cooperate",
+        "Actors: Egypt \u2194 European Bank For Reconstruction And Development (international org)",
+        "Location: Giza, Al Jizah, Egypt",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 39.9289,
+      "lon": 116.388,
+      "name": "Wang tells Blinken to 'work with China' on improving US ties",
+      "count": 10,
+      "html": "<a href='https://spacewar.com/wang-tells-blinken-to-work-with-china-on-improving-us-ties-999/' target='_blank'>Wang tells Blinken to 'work with China' on improving US ties</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: China \u2194 A US (government)",
+        "Location: Beijing, Beijing, China",
+        "Reported: Oct 02, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Beijing (AFP) July 14, 2023 - Beijing's top diplomat Wang Yi has urged Washington to work with China to improve ties during a meeting with US Secretary of State Antony Blinken, the Chinese foreign ministry said on..."
+    },
+    {
+      "category": "political",
+      "lat": 39.3498,
+      "lon": -75.5148,
+      "name": "Quad Leaders' Summit to take place in Manila next month, says US Secy of State Marco Rubio",
+      "count": 7,
+      "html": "<a href='http://www.myanmarnews.net/news/279406120/quad-leaders-summit-to-take-place-in-manila-next-month-says-us-secy-of-state-marco-rubio' target='_blank'>Quad Leaders' Summit to take place in Manila next month, says US Secy of State Marco Rubio</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Atlanta \u2194 Manila",
+        "Location: Delaware, United States",
+        "Reported: Oct 02, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "US Secretary of State Marco Rubio has formally announced that the next Quad Leaders' Summit will be held in Manila, the Philippines, next month, bringing together the leaders of India, the United States, Japan and..."
+    },
+    {
+      "category": "political",
+      "lat": -15.7833,
+      "lon": -47.9167,
+      "name": "Rubio to meet Brazil foreign minister amid Bolsonaro row",
+      "count": 4,
+      "html": "<a href='https://www.rte.ie/news/2026/1101/1597503-rubio-brazil/' target='_blank'>Rubio to meet Brazil foreign minister amid Bolsonaro row</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Miami \u2194 Brazil",
+        "Location: Brasilia, Distrito Federal, Brazil",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "US Secretary of State Marco Rubio said he spoke with Brazilian Foreign Minister Mauro Vieira at a Group of 20 meeting, and that \u2060they will see each other again in a few weeks."
+    },
+    {
+      "category": "political",
+      "lat": 8.98333,
+      "lon": 79.9,
+      "name": "Japan provides grant assistance to support Mannar women\u2019s livelihoods | Sri Lanka Mirror",
+      "count": 8,
+      "html": "<a href='https://srilankamirror.com/news/japan-provides-grant-assistance-to-support-mannar-womens-livelihoods' target='_blank'>Japan provides grant assistance to support Mannar women\u2019s livelihoods | Sri Lanka Mirror</a>",
+      "summary": [
+        "Type: Economic or material cooperation",
+        "Actors: Japan \u2194 Sri Lanka",
+        "Location: Mannar, Northern, Sri Lanka",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "On Oct. 29, 2026, Ambassador of Japan to Sri Lanka - Akio Isomata signed a grant contract for the establishment of a local products manufacturing and sales centre in Mannar district under the scheme of \u201cGrant Assistance..."
+    },
+    {
+      "category": "political",
+      "lat": 50.4333,
+      "lon": 30.5167,
+      "name": "Sudan Accuses Ukraine of Training Fighters | The Rio Times",
+      "count": 8,
+      "html": "<a href='https://www.riotimesonline.com/sudan-accuses-ukraine-training-rsf-fighters-2026/' target='_blank'>Sudan Accuses Ukraine of Training Fighters | The Rio Times</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Ireland \u2194 Ukraine (government)",
+        "Location: Kyiv, Kyyiv, Misto, Ukraine",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Sudan's foreign minister says Ukrainian trainers and snipers back the RSF paramilitary; no evidence is public and Ukraine has not replied."
+    },
+    {
+      "category": "political",
+      "lat": -27.8333,
+      "lon": 29.6833,
+      "name": "WATCH LIVE | Kgalema Motlanthe Foundation hosts economic and policy summit: day 3",
+      "count": 6,
+      "html": "<a href='https://www.sowetan.co.za/politics/2026-11-01-watch-live-kgalema-motlanthe-foundation-host-economic-policy-summit-day-3/' target='_blank'>WATCH LIVE | Kgalema Motlanthe Foundation hosts economic and policy summit: day 3</a>",
+      "summary": [
+        "Type: Diplomatic visit",
+        "Actors: Africa \u2194 Kgalema Motlanthe (government)",
+        "Location: Drakensberg, Free State, South Africa",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Former president Kgalema Motlanthe leads discussions on unlocking economic growth, jobs and structural challenges"
+    },
+    {
+      "category": "political",
+      "lat": 31.5,
+      "lon": 34.75,
+      "name": "Diplomatic consultation: Israel \u2194 Lebanon",
+      "count": 6,
+      "html": "<a href='https://news.az/news/live-israel-s-military-operations-expand-across-lebanon-and-the-occupied-west-bank' target='_blank'>Diplomatic consultation: Israel \u2194 Lebanon</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Israel \u2194 Lebanon",
+        "Location: Israel",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 35.0,
+      "lon": 105.0,
+      "name": "Nations commit to get nature goals back on track",
+      "count": 8,
+      "html": "<a href='http://www.brazilsun.com/news/279405643/nations-commit-to-get-nature-goals-back-on-track' target='_blank'>Nations commit to get nature goals back on track</a>",
+      "summary": [
+        "Type: Provided aid",
+        "Actors: The European Union (international org) \u2194 China",
+        "Location: China",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Nearly 200 nations struck hard-fought agreements Friday at a UN biodiversity summit, but the outcome was accompanied by disappointment over missed opportu"
+    },
+    {
+      "category": "political",
+      "lat": 42.8128,
+      "lon": -75.3177,
+      "name": "Expressed intent to cooperate: Canton \u2194 Lawrence",
+      "count": 5,
+      "html": "<a href='http://northcountrynow.com/stories/village-of-potsdam-moving-forward-with-raquette-utility-crossing-and-bridge-project,398439' target='_blank'>Expressed intent to cooperate: Canton \u2194 Lawrence</a>",
+      "summary": [
+        "Type: Expressed intent to cooperate",
+        "Actors: Canton \u2194 Lawrence",
+        "Location: Brookfield, New York, United States",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 50.4333,
+      "lon": 30.5167,
+      "name": "Ghana and Russia agree on new defence pact \u2013 Ghanamma.com",
+      "count": 8,
+      "html": "<a href='https://www.ghanamma.com/2026/11/01/ghana-and-russia-agree-on-new-defence-pact/' target='_blank'>Ghana and Russia agree on new defence pact \u2013 Ghanamma.com</a>",
+      "summary": [
+        "Type: Expressed intent to cooperate",
+        "Actors: Ghana \u2194 Russia",
+        "Location: Kyiv, Kyyiv, Misto, Ukraine",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 8.0,
+      "lon": -2.0,
+      "name": "Diplomatic visit: Africa \u2194 Ghana",
+      "count": 5,
+      "html": "<a href='http://www.businessghana.com/site/news/general/358760/GAIP-promotes-Germination-Index-Insurance-to-protect-farmers-against-climate-risks' target='_blank'>Diplomatic visit: Africa \u2194 Ghana</a>",
+      "summary": [
+        "Type: Diplomatic visit",
+        "Actors: Africa \u2194 Ghana",
+        "Location: Ghana",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 25.5,
+      "lon": 51.25,
+      "name": "Diplomatic cooperation: Qatar \u2194 Iran",
+      "count": 6,
+      "html": "<a href='https://www.arabnews.com/middle-east/qatari-gas-tanker-struck-in-gulf-state-media-3009222' target='_blank'>Diplomatic cooperation: Qatar \u2194 Iran</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: Qatar \u2194 Iran",
+        "Location: Qatar",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 39.9289,
+      "lon": 116.388,
+      "name": "Signed formal agreement: China \u2194 Pakistan (military)",
+      "count": 6,
+      "html": "<a href='http://www.calcuttanews.net/news/279406476/india-is-running-out-of-time-on-fifth-generation-fighter' target='_blank'>Signed formal agreement: China \u2194 Pakistan (military)</a>",
+      "summary": [
+        "Type: Signed formal agreement",
+        "Actors: China \u2194 Pakistan (military)",
+        "Location: Beijing, Beijing, China",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 36.17,
+      "lon": -119.746,
+      "name": "Provided aid: United States \u2194 London (university)",
+      "count": 4,
+      "html": "<a href='https://www.liverpoolecho.co.uk/news/tv/liz-fletchers-life-before-fletchers-34753625' target='_blank'>Provided aid: United States \u2194 London (university)</a>",
+      "summary": [
+        "Type: Provided aid",
+        "Actors: United States \u2194 London (university)",
+        "Location: California, United States",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 43.0,
+      "lon": 35.0,
+      "name": "World: Divided Bulgaria votes in tense presidential runoff",
+      "count": 8,
+      "html": "<a href='https://www.newvision.co.ug/category/world/divided-bulgaria-votes-in-tense-presidential-NV_243354_112026' target='_blank'>World: Divided Bulgaria votes in tense presidential runoff</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: Bulgaria \u2194 The EU (international org)",
+        "Location: Black Sea, Oceans (general), Oceans",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "President Iliana Iotova, who favours dialogue with Moscow and opposes military aid to Ukraine, will face Andrey Gyurov, a banker and former caretaker prime minister backed by the pro-Western opposition."
+    },
+    {
+      "category": "political",
+      "lat": -33.9167,
+      "lon": 18.4167,
+      "name": "China Says South African Exports Rose 25% | The Rio Times",
+      "count": 4,
+      "html": "<a href='https://www.riotimesonline.com/south-africa-exports-china-25-percent-zero-tariff-2026/' target='_blank'>China Says South African Exports Rose 25% | The Rio Times</a>",
+      "summary": [
+        "Type: Economic cooperation",
+        "Actors: Africa \u2194 China",
+        "Location: Cape Town, Western Cape, South Africa",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "China's ambassador says South African exports to China rose about 25% since May, when Beijing dropped tariffs on African goods."
+    },
+    {
+      "category": "political",
+      "lat": 40.1811,
+      "lon": 44.5136,
+      "name": "Diplomatic cooperation: Armenia \u2194 United States",
+      "count": 6,
+      "html": "<a href='https://nuclear-news.net/2026/11/01/3-b1-us-touting-small-nuclear-reactors-for-use-in-caucasus-and-central-asia/' target='_blank'>Diplomatic cooperation: Armenia \u2194 United States</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: Armenia \u2194 United States",
+        "Location: Yerevan, Yerevan*, Armenia",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 25.0389,
+      "lon": 102.718,
+      "name": "Rejected cooperation: China \u2194 Yerevan",
+      "count": 4,
+      "html": "<a href='http://www.hongkongherald.com/news/279406444/world-insights-yerevan-pathway-charts-course-for-biodiversity-action-but-challenges-remain' target='_blank'>Rejected cooperation: China \u2194 Yerevan</a>",
+      "summary": [
+        "Type: Rejected cooperation",
+        "Actors: China \u2194 Yerevan",
+        "Location: Kunming, Yunnan, China",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 8.0,
+      "lon": -66.0,
+      "name": "Economic or material cooperation: United States \u2194 Venezuela",
+      "count": 4,
+      "html": "<a href='https://www.arabnews.com/world/trump-calls-50-million-contract-for-ex-lawyer-alina-habba-mildon-not-acceptable-3009211' target='_blank'>Economic or material cooperation: United States \u2194 Venezuela</a>",
+      "summary": [
+        "Type: Economic or material cooperation",
+        "Actors: United States \u2194 Venezuela",
+        "Location: Venezuela",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 46.0,
+      "lon": 2.0,
+      "name": "Diplomatic consultation: France \u2194 United Kingdom",
+      "count": 6,
+      "html": "<a href='https://www.liverpoolecho.co.uk/whats-on/shopping/irish-cruise-music-markets-guinness-34835273' target='_blank'>Diplomatic consultation: France \u2194 United Kingdom</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: France \u2194 United Kingdom",
+        "Location: France",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 31.666667,
+      "lon": 35.25,
+      "name": "Rejected cooperation: Ithaca \u2194 West Bank",
+      "count": 5,
+      "html": "<a href='https://www.dailyrecord.co.uk/news/scottish-news/uk-government-assessing-rosebank-drilling-37829854' target='_blank'>Rejected cooperation: Ithaca \u2194 West Bank</a>",
+      "summary": [
+        "Type: Rejected cooperation",
+        "Actors: Ithaca \u2194 West Bank",
+        "Location: West Bank",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 12.1085,
+      "lon": 15.0482,
+      "name": "25 killed, 22 injured in intercommunal clashes in western Chad-Xinhua",
+      "count": 20,
+      "html": "<a href='https://english.news.cn/20261101/1e11a516d8d746a89928c26b81f68d02/c.html' target='_blank'>25 killed, 22 injured in intercommunal clashes in western Chad-Xinhua</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Chad",
+        "Location: Ndjamena, (CD04), Chad",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 31.7667,
+      "lon": 35.2333,
+      "name": "Armed clash: Iran",
+      "count": 10,
+      "html": "<a href='https://www.rappler.com/world/middle-east/explainer-scenarios-israel-election-deadlock-break/' target='_blank'>Armed clash: Iran</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Iran",
+        "Location: Jerusalem, Israel (general), Israel",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 51.5055,
+      "lon": 31.2849,
+      "name": "Emotional reunions with loved ones for Oleshky evacuees - BBC News",
+      "count": 10,
+      "html": "<a href='https://www.bbc.co.uk/news/videos/cmy83w0jwznpo' target='_blank'>Emotional reunions with loved ones for Oleshky evacuees - BBC News</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Belarus",
+        "Location: Chernihiv, Chernihivs'ka Oblast', Ukraine",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "The BBC's Dan Johnson travelled to the northern Ukrainian border with Belarus after evacuated Oleshky residents arrived in buses and ambulances following a temporary ceasefire."
+    },
+    {
+      "category": "conflict",
+      "lat": 53.0959,
+      "lon": 49.9462,
+      "name": "Armed clash: Russia",
+      "count": 10,
+      "html": "<a href='https://news.az/news/large-fire-breaks-out-at-russia-s-kstovo-oil-refinery-after-attack' target='_blank'>Armed clash: Russia</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Russia",
+        "Location: Novokuybyshevsk, Samarskaya Oblast', Russia",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 49.0,
+      "lon": 32.0,
+      "name": "UN report finds Russia guilty of war crimes and human trafficking in Ukraine - Daily Kos",
+      "count": 10,
+      "html": "<a href='https://www.dailykos.com/stories/2026/11/1/800120163/community/un-report-finds-russia-guilty-of-war-crimes-and-human-trafficking-in-ukraine/' target='_blank'>UN report finds Russia guilty of war crimes and human trafficking in Ukraine - Daily Kos</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: The UN (international org)",
+        "Location: Ukraine",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "A new UN report has concluded that Russia has committed war crimes, crimes against humanity, and human trafficking during its invasion of Ukraine\u2014including the\u2026"
+    },
+    {
+      "category": "conflict",
+      "lat": 35.75,
+      "lon": 51.5148,
+      "name": "Trump says US still has 'one or two targets' in Iran",
+      "count": 10,
+      "html": "<a href='https://www.ecr.co.za/news/news/trump-says-us-still-has-targets-in-iran/' target='_blank'>Trump says US still has 'one or two targets' in Iran</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: North West",
+        "Location: Tehran, Tehran, Iran",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Donald Trump says the US has remaining targets in Iran as Tehran warns of wider retaliation and diplomatic efforts continue to avert renewed fighting."
+    },
+    {
+      "category": "conflict",
+      "lat": 35.75,
+      "lon": 51.5148,
+      "name": "Iran Brands British Air Force And Navy \u2018terrorists,\u2019 Declares MI6 Hostile - i24NEWS",
+      "count": 10,
+      "html": "<a href='https://www.i24news.tv/en/news/middle-east/iran-eastern-states/artc-iran-brands-british-air-force-and-navy-terrorists-declares-mi6-hostile' target='_blank'>Iran Brands British Air Force And Navy \u2018terrorists,\u2019 Declares MI6 Hostile - i24NEWS</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Iran",
+        "Location: Tehran, Tehran, Iran",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Tehran labels MI6 a \u201chostile group,\u201d citing British support for US-Israeli military operations and measures targeting the Revolutionary Guards"
+    },
+    {
+      "category": "conflict",
+      "lat": 31.75,
+      "lon": 35.0,
+      "name": "4 eastern Jerusalem minors arrested on suspicion of throwing firebombs at Jewish homes | Israel National News",
+      "count": 10,
+      "html": "<a href='https://www.israelnationalnews.com/flashes/696484' target='_blank'>4 eastern Jerusalem minors arrested on suspicion of throwing firebombs at Jewish homes | Israel National News</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Jerusalem",
+        "Location: Jerusalem District, Yerushalayim, Israel",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Jerusalem District police and Border Guard soldiers arrested four minors from the A-Tur neighborhood yesterday, on suspicion of throwing Molotov cocktails at Jewish homes in the ea"
+    },
+    {
+      "category": "conflict",
+      "lat": 24.0,
+      "lon": 90.0,
+      "name": "Bangladesh to form wage board after garment protests shut factories",
+      "count": 10,
+      "html": "<a href='https://kathmandupost.com/world/2026/11/01/bangladesh-to-form-wage-board-after-garment-protests-shut-factories' target='_blank'>Bangladesh to form wage board after garment protests shut factories</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Police (police) vs Worker (labor group)",
+        "Location: Bangladesh",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Workers are demanding a minimum monthly wage of 30,000 taka, more than double the current rate, as factory closures and clashes with police disrupt production in the country\u2019s biggest export industry."
+    },
+    {
+      "category": "conflict",
+      "lat": 36.2028,
+      "lon": 37.1586,
+      "name": "The U.S. military has frozen its plans to cooperate with Russia in Syria",
+      "count": 10,
+      "html": "<a href='https://www.marinecorpstimes.com/news/pentagon-congress/2016/09/20/the-u-s-military-has-frozen-its-plans-to-cooperate-with-russia-in-syria/' target='_blank'>The U.S. military has frozen its plans to cooperate with Russia in Syria</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: International Committee Of The Red Cross (NGO)",
+        "Location: Aleppo, ?alab, Syria",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Plans to launch joint military operations with Russia are on hold because continued violence in Syria violated the seven-day cease-fire agreement."
+    },
+    {
+      "category": "conflict",
+      "lat": 9.16667,
+      "lon": 9.75,
+      "name": "Need to Probe Soldiers, Police Clash in Plateau \u2013 THISDAYLIVE",
+      "count": 10,
+      "html": "<a href='https://www.thisdaylive.com/2026/11/01/need-to-probe-soldiers-police-clash-in-plateau/' target='_blank'>Need to Probe Soldiers, Police Clash in Plateau \u2013 THISDAYLIVE</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Militant (unaligned armed forces)",
+        "Location: Plateau State, Plateau, Nigeria",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 23.7231,
+      "lon": 90.4086,
+      "name": "Armed clash: Police (police) vs Worker (labor group)",
+      "count": 10,
+      "html": "<a href='https://www.arabnews.com/world/bangladesh-to-form-wage-board-after-garment-protests-shut-factories-3009210' target='_blank'>Armed clash: Police (police) vs Worker (labor group)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Police (police) vs Worker (labor group)",
+        "Location: Dhaka, Dhaka, Bangladesh",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 32.0,
+      "lon": 53.0,
+      "name": "Iran designates MI6 as \u2018hostile group\u2019, UK navy and air force as \u2018terrorist organizations\u2019 after IRGC designation",
+      "count": 8,
+      "html": "<a href='https://www.presstv.co.uk/Detail/2026/11/01/779680/iran-bans-uk-military-mi6-in-retaliation-for-complicity-in-war-irgc-designation' target='_blank'>Iran designates MI6 as \u2018hostile group\u2019, UK navy and air force as \u2018terrorist organizations\u2019 after IRGC designation</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Air Force (military)",
+        "Location: Iran",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "The Iranian Foreign Ministry announced the designation, citing the UK\u2019s participation in the illegal US-Israeli war against Iran and the country\u2019s decision on July 13 to designate the Islamic Revolution Guards Corps..."
+    },
+    {
+      "category": "conflict",
+      "lat": 60.0,
+      "lon": 100.0,
+      "name": "Armed clash: Settlement (civilian group)",
+      "count": 7,
+      "html": "<a href='https://sputnikglobe.com/20261101/russian-army-liberated-39-settlements-in-special-military-operation-zone-in-october-1124983612.html' target='_blank'>Armed clash: Settlement (civilian group)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Settlement (civilian group)",
+        "Location: Russia",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 50.4333,
+      "lon": 30.5167,
+      "name": "\u00abThere can be no independent Ukraine\u00bb - Russia demands surrender, Kyiv offers deceitful ceasefire across entire front",
+      "count": 6,
+      "html": "<a href='https://www.bankingnews.gr/diethni/articles/908391/there-can-be-no-independent-ukraine-russia-demands-surrender-kyiv-offers-deceitful-ceasefire-across-entire-front' target='_blank'>\u00abThere can be no independent Ukraine\u00bb - Russia demands surrender, Kyiv offers deceitful ceasefire across entire front</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Not identified in wire report",
+        "Location: Kyiv, Kyyiv, Misto, Ukraine",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 39.9289,
+      "lon": 116.388,
+      "name": "Armed clash: China vs Air Force (military)",
+      "count": 6,
+      "html": "<a href='http://www.calcuttanews.net/news/279406476/india-is-running-out-of-time-on-fifth-generation-fighter' target='_blank'>Armed clash: China vs Air Force (military)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: China vs Air Force (military)",
+        "Location: Beijing, Beijing, China",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 10.1787,
+      "lon": -63.5643,
+      "name": "Armed clash: Liberation Army (separatist group)",
+      "count": 6,
+      "html": "<a href='https://news.az/news/at-least-19-killed-in-strike-on-eln-camp-in-venezuela' target='_blank'>Armed clash: Liberation Army (separatist group)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Liberation Army (separatist group)",
+        "Location: Bolivar, Monagas, Venezuela",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 13.3285,
+      "lon": 14.1217,
+      "name": "Navy marines kill 28 Boko Haram fighters in fresh Lake Chad offensive",
+      "count": 10,
+      "html": "<a href='https://nationalaccordnewspaper.com/navy-marines-kill-28-boko-haram-fighters-in-fresh-lake-chad-offensive/' target='_blank'>Navy marines kill 28 Boko Haram fighters in fresh Lake Chad offensive</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Navy (military) vs Fighter (unaligned armed forces)",
+        "Location: Lake Chad, Nigeria (general), Nigeria",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Nigerian Navy Marines have killed 28 Boko Haram fighters during a joint military operation around Lake Chad, following a fresh assessment of the battlefield"
+    },
+    {
+      "category": "conflict",
+      "lat": 20.5,
+      "lon": 84.4167,
+      "name": "Cheetah shot dead in Kuno National Park, six forest employees suspended - OrissaPOST",
+      "count": 5,
+      "html": "<a href='https://www.orissapost.com/cheetah-shot-dead-in-kuno-national-park-six-forest-employees-suspended/' target='_blank'>Cheetah shot dead in Kuno National Park, six forest employees suspended - OrissaPOST</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Police (police) vs Male",
+        "Location: Orissa, Orissa, India",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Sheopur/Bhopal: The Madhya Pradesh Forest Department and police have intensified action following the death of a 19-month-old male cheetah, KNG22, which was shot in Kuno National Park. Six forest employees \u2014 two..."
+    },
+    {
+      "category": "conflict",
+      "lat": 13.1658,
+      "lon": 45.3797,
+      "name": "Seven Dera al-Watan Soldiers Killed or Injured in Abyan Ambush | \u0648\u0643\u0627\u0644\u0629 \u062e\u0628\u0631 \u0644\u0644\u0623\u0646\u0628\u0627\u0621",
+      "count": 7,
+      "html": "<a href='https://www.khabaragency.net/news255144.html' target='_blank'>Seven Dera al-Watan Soldiers Killed or Injured in Abyan Ambush | \u0648\u0643\u0627\u0644\u0629 \u062e\u0628\u0631 \u0644\u0644\u0623\u0646\u0628\u0627\u0621</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Assailant (criminal group)",
+        "Location: Abyan, Abyan, Yemen",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Five soldiers from the Dera al-Watan forces were killed and two others sustained injuries in a targeted armed ambush in the Al-Mahfad district of Abyan province, southern Yemen, on Saturday,"
+    },
+    {
+      "category": "conflict",
+      "lat": 60.0,
+      "lon": 100.0,
+      "name": "Trump Approves Visa for Ghanaian Teen's Mom",
+      "count": 6,
+      "html": "<a href='https://www.riotimesonline.com/trump-visa-mother-slain-ghanaian-teen-bronx/' target='_blank'>Trump Approves Visa for Ghanaian Teen's Mom</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Not identified in wire report",
+        "Location: Russia",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Mayor Mamdani says Trump will grant a visa to the mother of a Ghanaian teen shot dead in the Bronx. No arrests yet, and no motive."
+    },
+    {
+      "category": "conflict",
+      "lat": 57.5333,
+      "lon": 40.2732,
+      "name": "Armed clash: Russia vs Ukraine",
+      "count": 5,
+      "html": "<a href='https://news.az/news/live-russia-launches-massive-drone-attack-on-ukraine-strikes-hit-lviv-and-kstovo-refinery' target='_blank'>Armed clash: Russia vs Ukraine</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Russia vs Ukraine",
+        "Location: Kstovo, Yaroslavskaya Oblast', Russia",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 13.75,
+      "lon": 100.517,
+      "name": "Armed clash: Police (police)",
+      "count": 4,
+      "html": "<a href='https://www.bangkokpost.com/thailand/general/3346521/police-raid-bangkok-shop-selling-cannabis-sweets' target='_blank'>Armed clash: Police (police)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Police (police)",
+        "Location: Bangkok, Krung Thep Mahanakhon, Thailand",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 18.5392,
+      "lon": -72.335,
+      "name": "Latin America Defense Monitor \u2014 October 24\u201331, 2026",
+      "count": 3,
+      "html": "<a href='https://www.riotimesonline.com/latin-america-defense-monitor-october-24-31-2026/' target='_blank'>Latin America Defense Monitor \u2014 October 24\u201331, 2026</a>",
+      "summary": [
+        "Type: Assault",
+        "Actors: Port Au Prince",
+        "Location: Port-Au-Prince, Ouest, Haiti",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "US troops train in Colombia, new US activity is reported at Ecuador's Taura air base, and four Salvadoran airmen are still missing in Haiti."
+    },
+    {
+      "category": "conflict",
+      "lat": 11.9964,
+      "lon": 8.51667,
+      "name": "What do terrorists want? Nigeria's security failures",
+      "count": 3,
+      "html": "<a href='https://punchng.com/what-do-terrorists-want/' target='_blank'>What do terrorists want? Nigeria's security failures</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Government (government) vs Military (military)",
+        "Location: Kano, Kano, Nigeria",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "An analysis of Nigeria's worsening security challenges, referencing a 2011 summit, the abandoned Abuja CCTV project, and major terrorist attacks."
+    },
+    {
+      "category": "conflict",
+      "lat": 15.8333,
+      "lon": 78.05,
+      "name": "Local body polls underway in Andhra Pradesh, TDP-YSRCP workers clash in Pulivendula | India News",
+      "count": 5,
+      "html": "<a href='https://www.hindustantimes.com/india-news/local-body-polls-underway-in-andhra-pradesh-tdp-ysrcp-workers-clash-in-pulivendula-101793517207032.html' target='_blank'>Local body polls underway in Andhra Pradesh, TDP-YSRCP workers clash in Pulivendula | India News</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Worker (labor group)",
+        "Location: Kurnool, Andhra Pradesh, India",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Voters turned up at polling stations to exercise their franchise as soon as the voting exercise began at 7 am, they added. Polling would go on till 5 pm. | India News"
+    },
+    {
+      "category": "conflict",
+      "lat": 15.0584,
+      "lon": 43.2851,
+      "name": "Iran designates British Royal Navy, Air Force as 'terrorist' organisations, MI6 as 'hostile group'",
+      "count": 5,
+      "html": "<a href='https://tribune.com.pk/story/2638074/irgc-commander-says-military-fully-prepared-for-any-scenario-enemy-may-devise' target='_blank'>Iran designates British Royal Navy, Air Force as 'terrorist' organisations, MI6 as 'hostile group'</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Yemen",
+        "Location: Bajil, Al ?udaydah, Yemen",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Trump says US still has to"
+    },
+    {
+      "category": "conflict",
+      "lat": 54.768,
+      "lon": 45.837,
+      "name": "RIGHT SPEAK: 245 Combat Clashes (55 Pokrovsk, 15 Kostiantynivka, 13 S. Slobozhansk); Trump Calls RU Sanctions Backers 'stupid'; UKR Denies Refinery Strike Pause Deal; UKR Hits MLRS Rocket Fuel Plant in Rostov Obl; Rubio Doubts Negotiated Peace Achievable; Ruge: RU Never Negotiated Seriously in Past 4.5 yrs; UKR Alpha Unit Sets Record Neutralizing 3,198 RU Troops in 1wk; RU Has Killed 120 Clergy, LIVE UPDATES, DETAILS & MORE",
+      "count": 4,
+      "html": "<a href='http://www.rightspeak.net/2026/11/245-combat-clashes-55-pokrovsk-15.html' target='_blank'>RIGHT SPEAK: 245 Combat Clashes (55 Pokrovsk, 15 Kostiantynivka, 13 S. Slobozhansk); Trump Calls RU Sanctions Backers 'stupid'; UKR Denies Refinery Strike Pause Deal; UKR Hits MLRS Rocket Fuel Plant in Rostov Obl; Rubio Doubts Negotiated Peace Achievable; Ruge: RU Never Negotiated Seriously in Past 4.5 yrs; UKR Alpha Unit Sets Record Neutralizing 3,198 RU Troops in 1wk; RU Has Killed 120 Clergy, LIVE UPDATES, DETAILS & MORE</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Russia vs Ukraine",
+        "Location: Pokrovsk, Mordoviya, Russia",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 50.4333,
+      "lon": 30.5167,
+      "name": "Armed clash: Ukraine vs Russia",
+      "count": 4,
+      "html": "<a href='https://www.arabnews.com/world/russia-says-drone-hit-industrial-enterprise-near-moscow-kyiv-claims-hit-major-refinery-3009214' target='_blank'>Armed clash: Ukraine vs Russia</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Ukraine vs Russia",
+        "Location: Kyiv, Kyyiv, Misto, Ukraine",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 35.0,
+      "lon": 105.0,
+      "name": "Armed clash: China",
+      "count": 2,
+      "html": "<a href='https://www.chronogram.com/arts/visualart/pixy-liao-relationship-material-cpw/' target='_blank'>Armed clash: China</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: China",
+        "Location: China",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 13.5,
+      "lon": 23.5,
+      "name": "Sudan Accuses Ukraine of Training Fighters | The Rio Times",
+      "count": 2,
+      "html": "<a href='https://www.riotimesonline.com/sudan-accuses-ukraine-training-rsf-fighters-2026/' target='_blank'>Sudan Accuses Ukraine of Training Fighters | The Rio Times</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Sudanese",
+        "Location: Darfur, Gharb Darfur, Sudan",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Sudan's foreign minister says Ukrainian trainers and snipers back the RSF paramilitary; no evidence is public and Ukraine has not replied."
+    },
+    {
+      "category": "conflict",
+      "lat": 23.7231,
+      "lon": 90.4086,
+      "name": "Armed clash: Bangladesh",
+      "count": 5,
+      "html": "<a href='http://www.nepalnational.com/news/279406156/dengue-fever-claims-418-lives-in-bangladesh-amid-warnings-of-continued-outbreak' target='_blank'>Armed clash: Bangladesh</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Bangladesh",
+        "Location: Dhaka, Dhaka, Bangladesh",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 31.4167,
+      "lon": 34.3333,
+      "name": "Armed clash in Gaza, Israel (general), Israel",
+      "count": 5,
+      "html": "<a href='https://news.az/news/two-infant-girls-die-in-tent-fire-in-southern-gaza' target='_blank'>Armed clash in Gaza, Israel (general), Israel</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Not identified in wire report",
+        "Location: Gaza, Israel (general), Israel",
+        "Reported: Nov 01, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    }
+  ]
+}
