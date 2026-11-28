@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T15:53:56.623780+00:00",
+  "generated_at": "2026-11-28T14:48:45.756846+00:00",
   "feature_count": 99,
   "features": [
     {
@@ -20,26 +20,26 @@
     },
     {
       "category": "climate",
-      "lat": -11.8,
-      "lon": -168.8,
-      "name": "Tropical Cyclone Xavier",
-      "count": 1,
-      "html": "<a href='https://www.metoc.navy.mil/jtwc/products/sh0427.tcw' target='_blank'>Tropical Cyclone Xavier</a>",
-      "summary": [
-        "Type: Severe Storms",
-        "Status: Still active",
-        "Peak winds: 30 kts (~35 mph)",
-        "Tracking for 8 days (since Nov 15, 2026)",
-        "Source: JTWC"
-      ]
-    },
-    {
-      "category": "climate",
       "lat": -9.4523603,
       "lon": 51.679420413604305,
       "name": "Flood in Ireland",
       "count": 1,
       "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104295' target='_blank'>Flood in Ireland</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Nov 23, 2026",
+        "Reported: Nov 21, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": 100.0309138439206,
+      "lon": 7.457915122729529,
+      "name": "Flood in Thailand",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104297' target='_blank'>Flood in Thailand</a>",
       "summary": [
         "Type: Floods",
         "GDACS alert level: Green",
@@ -126,21 +126,6 @@
     },
     {
       "category": "climate",
-      "lat": 100.0309138439206,
-      "lon": 7.457915122729529,
-      "name": "Flood in Thailand",
-      "count": 1,
-      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104297' target='_blank'>Flood in Thailand</a>",
-      "summary": [
-        "Type: Floods",
-        "GDACS alert level: Green",
-        "Status: Ended Nov 23, 2026",
-        "Reported: Nov 21, 2026",
-        "Source: GDACS"
-      ]
-    },
-    {
-      "category": "climate",
       "lat": 29.964378530263158,
       "lon": 0.19126758444779982,
       "name": "Flood in Uganda",
@@ -151,6 +136,21 @@
         "GDACS alert level: Green",
         "Status: Ended Nov 23, 2026",
         "Reported: Nov 21, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": -71.6675632,
+      "lon": -33.1049112863957,
+      "name": "Flood in Chile",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104293' target='_blank'>Flood in Chile</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Nov 21, 2026",
+        "Reported: Nov 19, 2026",
         "Source: GDACS"
       ]
     },
@@ -231,21 +231,6 @@
     },
     {
       "category": "climate",
-      "lat": -71.6675632,
-      "lon": -33.1049112863957,
-      "name": "Flood in Chile",
-      "count": 1,
-      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104293' target='_blank'>Flood in Chile</a>",
-      "summary": [
-        "Type: Floods",
-        "GDACS alert level: Green",
-        "Status: Ended Nov 21, 2026",
-        "Reported: Nov 19, 2026",
-        "Source: GDACS"
-      ]
-    },
-    {
-      "category": "climate",
       "lat": -8.389892545261896,
       "lon": 39.620959853738505,
       "name": "Flood in Portugal",
@@ -256,6 +241,21 @@
         "GDACS alert level: Green",
         "Status: Ended Nov 23, 2026",
         "Reported: Nov 19, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": -75.5402732,
+      "lon": 6.252706413604302,
+      "name": "Flood in Colombia",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104294' target='_blank'>Flood in Colombia</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Nov 19, 2026",
+        "Reported: Nov 17, 2026",
         "Source: GDACS"
       ]
     },
@@ -321,21 +321,6 @@
     },
     {
       "category": "climate",
-      "lat": -75.5402732,
-      "lon": 6.252706413604302,
-      "name": "Flood in Colombia",
-      "count": 1,
-      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104294' target='_blank'>Flood in Colombia</a>",
-      "summary": [
-        "Type: Floods",
-        "GDACS alert level: Green",
-        "Status: Ended Nov 19, 2026",
-        "Reported: Nov 17, 2026",
-        "Source: GDACS"
-      ]
-    },
-    {
-      "category": "climate",
       "lat": -7.9004193630769235,
       "lon": 42.346469027252745,
       "name": "Flood in Spain",
@@ -346,6 +331,20 @@
         "GDACS alert level: Green",
         "Status: Ended Nov 16, 2026",
         "Reported: Nov 14, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": -58.48626760082382,
+      "lon": -21.25622150449937,
+      "name": "Flood in Paraguay",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104302' target='_blank'>Flood in Paraguay</a>",
+      "summary": [
+        "Type: Floods",
+        "Status: Ended Nov 22, 2026",
+        "Reported: Nov 17, 2026",
         "Source: GDACS"
       ]
     },
@@ -381,21 +380,6 @@
     },
     {
       "category": "climate",
-      "lat": -58.48626760082382,
-      "lon": -21.25622150449937,
-      "name": "Flood in Paraguay",
-      "count": 1,
-      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104302' target='_blank'>Flood in Paraguay</a>",
-      "summary": [
-        "Type: Floods",
-        "GDACS alert level: Green",
-        "Status: Ended Nov 22, 2026",
-        "Reported: Nov 17, 2026",
-        "Source: GDACS"
-      ]
-    },
-    {
-      "category": "climate",
       "lat": -11.3,
       "lon": 50.5,
       "name": "Tropical Cyclone 03S",
@@ -407,6 +391,21 @@
         "Peak winds: 25 kts (~29 mph)",
         "Tracked for 1 day (since Nov 07, 2026)",
         "Source: JTWC"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": -80.19023087184466,
+      "lon": 26.046816166343042,
+      "name": "Flood in United States",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104290' target='_blank'>Flood in United States</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Nov 18, 2026",
+        "Reported: Nov 16, 2026",
+        "Source: GDACS"
       ]
     },
     {
@@ -441,21 +440,6 @@
     },
     {
       "category": "climate",
-      "lat": -80.19023087184466,
-      "lon": 26.046816166343042,
-      "name": "Flood in United States",
-      "count": 1,
-      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104290' target='_blank'>Flood in United States</a>",
-      "summary": [
-        "Type: Floods",
-        "GDACS alert level: Green",
-        "Status: Ended Nov 18, 2026",
-        "Reported: Nov 16, 2026",
-        "Source: GDACS"
-      ]
-    },
-    {
-      "category": "climate",
       "lat": -16.285668776190477,
       "lon": 33.126300057142856,
       "name": "Flood in Portugal",
@@ -466,6 +450,21 @@
         "GDACS alert level: Green",
         "Status: Ended Nov 08, 2026",
         "Reported: Nov 06, 2026",
+        "Source: GDACS"
+      ]
+    },
+    {
+      "category": "climate",
+      "lat": -96.77577369999999,
+      "lon": 19.865719013604302,
+      "name": "Flood in Mexico",
+      "count": 1,
+      "html": "<a href='https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104289' target='_blank'>Flood in Mexico</a>",
+      "summary": [
+        "Type: Floods",
+        "GDACS alert level: Green",
+        "Status: Ended Nov 17, 2026",
+        "Reported: Nov 15, 2026",
         "Source: GDACS"
       ]
     },
@@ -501,1030 +500,1028 @@
     },
     {
       "category": "political",
-      "lat": -42.0,
-      "lon": 174.0,
-      "name": "Diplomatic visit: New Zealand \u2194 Charlotte",
-      "count": 90,
-      "html": "<a href='https://www.oxfordmail.co.uk/news/national/26769320.newcomer-wong-holds-balance-power-final-count-leaves-vote-split/' target='_blank'>Diplomatic visit: New Zealand \u2194 Charlotte</a>",
+      "lat": 54.5833,
+      "lon": -2.83333,
+      "name": "Diplomatic visit: North West \u2194 Wales",
+      "count": 10,
+      "html": "<a href='https://www.express.co.uk/news/weather/2270009/met-office-three-areas-snow-sunday' target='_blank'>Diplomatic visit: North West \u2194 Wales</a>",
       "summary": [
         "Type: Diplomatic visit",
-        "Actors: New Zealand \u2194 Charlotte",
-        "Location: New Zealand",
-        "Reported: Nov 27, 2026",
+        "Actors: North West \u2194 Wales",
+        "Location: Cumbria, Cumbria, United Kingdom",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "political",
-      "lat": 33.7,
-      "lon": 73.1667,
-      "name": "Pakistan hosts defense talks with Saudi Arabia and Turkey under Mecca pact",
-      "count": 30,
-      "html": "<a href='https://www.clickorlando.com/news/world/2026/11/27/pakistan-set-to-host-talks-with-saudi-arabia-and-turkey-under-trilateral-defense-pact/' target='_blank'>Pakistan hosts defense talks with Saudi Arabia and Turkey under Mecca pact</a>",
+      "lat": -1.0,
+      "lon": 15.0,
+      "name": "Diplomatic cooperation: Central African \u2194 Rwanda",
+      "count": 10,
+      "html": "<a href='https://aa.com.tr/en/africa/central-african-states-bloc-endorses-rwanda-s-withdrawal/4141328' target='_blank'>Diplomatic cooperation: Central African \u2194 Rwanda</a>",
       "summary": [
-        "Type: Diplomatic consultation",
-        "Actors: Pakistan \u2194 Saudi Arabia",
-        "Location: Islamabad, Islamabad, Pakistan",
-        "Reported: Nov 27, 2026",
+        "Type: Diplomatic cooperation",
+        "Actors: Central African \u2194 Rwanda",
+        "Location: Congo",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 13.5,
+      "lon": 76.0,
+      "name": "India, Denmark adopt Joint Action Plan 2026-2031, exchange MoUs to deepen bilateral cooperation: Jaishankar",
+      "count": 10,
+      "html": "<a href='http://www.bignewsnetwork.com/news/279470716/india-denmark-adopt-joint-action-plan-2026-2031-exchange-mous-to-deepen-bilateral-cooperation-jaishankar' target='_blank'>India, Denmark adopt Joint Action Plan 2026-2031, exchange MoUs to deepen bilateral cooperation: Jaishankar</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: Denmark \u2194 European Union (international org)",
+        "Location: Karnataka, Karnataka, India",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ],
-      "lede": "Pakistan, Saudi Arabia and Turkey have held defense talks in Islamabad to discuss developments in the Middle East, including ongoing attacks on Saudi Arabia by Yemen\u2019s Iran-backed Houthi rebels."
+      "lede": "India and Denmark adopted the Joint Action Plan 2026-2031 and exchanged Memoranda of Understanding (MoUs) covering cultural exchange, skill development, vocational education, entrepreneurship and financial services to..."
     },
     {
       "category": "political",
-      "lat": 54.7065,
-      "lon": 20.511,
-      "name": "500-billion plan turns the Suwalki corridor from a NATO \"powder keg\" into a bridge between Russia and the EU - The lure for Trump",
-      "count": 14,
-      "html": "<a href='https://www.bankingnews.gr/diethni/articles/913615/500-billion-plan-turns-the-suwalki-corridor-from-a-nato-powder-keg-into-a-bridge-between-russia-and-the-eu-the-lure-for-trump' target='_blank'>500-billion plan turns the Suwalki corridor from a NATO \"powder keg\" into a bridge between Russia and the EU - The lure for Trump</a>",
+      "lat": -5.0,
+      "lon": 120.0,
+      "name": "Bank Indonesia and Philippine central bank sign agreement covering cross-border payments and cybersecurity",
+      "count": 10,
+      "html": "<a href='https://world.medianama.com/bank-indonesia-and-philippine-central-bank-sign-agreement-covering-cross-border-payments-and-cybersecurity/' target='_blank'>Bank Indonesia and Philippine central bank sign agreement covering cross-border payments and cybersecurity</a>",
       "summary": [
-        "Type: Diplomatic visit",
-        "Actors: Europe \u2194 Russia",
-        "Location: Kaliningrad, Kaliningradskaya Oblast', Russia",
-        "Reported: Nov 27, 2026",
+        "Type: Expressed intent to cooperate",
+        "Actors: Indonesia (company) \u2194 Philippine (government)",
+        "Location: Indonesia",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Bank Indonesia (BI) and the Philippine central bank (BSP) have signed a cooperation agreement covering payments, cybersecurity and other areas of central banking."
+    },
+    {
+      "category": "political",
+      "lat": 17.05,
+      "lon": -61.8,
+      "name": "Diplomatic consultation: Antigua \u2194 Canary Islands",
+      "count": 10,
+      "html": "<a href='https://www.gazette-news.co.uk/news/26734100.colchester-man-row-atlantic-ocean-three-charities/' target='_blank'>Diplomatic consultation: Antigua \u2194 Canary Islands</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Antigua \u2194 Canary Islands",
+        "Location: Antigua And Barbuda",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "political",
-      "lat": 39.9272,
-      "lon": 32.8644,
-      "name": "Turkiye finalises ratification of Mecca defence pact with Saudi Arabia and Pakistan as Erdogan signs treaty",
-      "count": 12,
-      "html": "<a href='http://www.bignewsnetwork.com/news/279465043/turkiye-finalises-ratification-of-mecca-defence-pact-with-saudi-arabia-and-pakistan-as-erdogan-signs-treaty' target='_blank'>Turkiye finalises ratification of Mecca defence pact with Saudi Arabia and Pakistan as Erdogan signs treaty</a>",
+      "lat": 21.4267,
+      "lon": 39.8261,
+      "name": "Mecca Alliance to Boost Support for Saudi Arabia Amid Houthi Attacks \u2013 Statement",
+      "count": 10,
+      "html": "<a href='https://sputnikglobe.com/20261128/mecca-alliance-to-boost-support-for-saudi-arabia-amid-houthi-attacks--statement-1125154323.html' target='_blank'>Mecca Alliance to Boost Support for Saudi Arabia Amid Houthi Attacks \u2013 Statement</a>",
       "summary": [
         "Type: Signed formal agreement",
         "Actors: Pakistan \u2194 Saudi Arabia",
-        "Location: Ankara, Ankara, Turkey",
-        "Reported: Nov 27, 2026",
+        "Location: Mecca, Makkah, Saudi Arabia",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ],
-      "lede": "Turkish President Recep Tayyip Erdogan has formally signed the Mecca defence pact, completing Turkiye's ratification of a trilateral military alliance with Saudi Arabia and Pakistan, according to Al Jazeera. The signing..."
+      "lede": "Turkiye, Pakistan and Saudi Arabia agreed on Friday to step up efforts to ensure the Gulf Arab kingdom"
     },
     {
       "category": "political",
-      "lat": 43.0264,
-      "lon": 129.006,
-      "name": "Diplomatic consultation: China \u2194 Taiwan",
-      "count": 11,
-      "html": "<a href='https://japantoday.com/category/world/chinese-military-tests-new-taiwan-landing-tactics-in-coastal-drills' target='_blank'>Diplomatic consultation: China \u2194 Taiwan</a>",
+      "lat": -10.0,
+      "lon": -55.0,
+      "name": "Brazil Sees Big Tech Motive in US Jet Tariff",
+      "count": 8,
+      "html": "<a href='https://www.riotimesonline.com/brazil-sees-big-tech-motive-us-jet-tariff-2026/' target='_blank'>Brazil Sees Big Tech Motive in US Jet Tariff</a>",
       "summary": [
-        "Type: Diplomatic consultation",
-        "Actors: China \u2194 Taiwan",
-        "Location: Dacheng, Jilin, China",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 0.97993,
-      "lon": 23.5711,
-      "name": "Arab News | Uganda to withdraw troops from DR Congo amid diplomatic spat",
-      "count": 10,
-      "html": "<a href='https://www.arabnews.com/world/uganda-to-withdraw-troops-from-dr-congo-amid-diplomatic-spat-3014265' target='_blank'>Arab News | Uganda to withdraw troops from DR Congo amid diplomatic spat</a>",
-      "summary": [
-        "Type: Reduced relations / sanctions",
-        "Actors: Uganda \u2194 Dr Congo",
-        "Location: Bahema, Orientale, Democratic Republic Of The Congo",
-        "Reported: Nov 27, 2026",
+        "Type: Economic cooperation",
+        "Actors: Brazil \u2194 United States",
+        "Location: Brazil",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ],
-      "lede": "Uganda plans to withdraw its troops from a key town in DR Congo, amidst accusations against militias allegedly allied with the Congolese government of escalating violence in the eastern region."
+      "lede": "Brazil says a US plan for a 10% jet tariff and higher sugar duties is aimed at Big Tech rules, Pix and minerals. Comments are due 30 December."
     },
     {
       "category": "political",
-      "lat": 60.0,
-      "lon": 100.0,
-      "name": "Representatives of civil society of Armenia and Azerbaijan discuss peace agenda and confidence-building measures between the two countries in Dilijan",
-      "count": 10,
-      "html": "<a href='https://nt.am/en/news/363961/' target='_blank'>Representatives of civil society of Armenia and Azerbaijan discuss peace agenda and confidence-building measures between the two countries in Dilijan</a>",
-      "summary": [
-        "Type: Diplomatic consultation",
-        "Actors: Armenia (civilian group) \u2194 Azerbaijan",
-        "Location: Russia",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "On November 26-27, 2026, a bilateral round table discussion took place in the town of Dilijan, Republic of Armenia, within the framework of the \u00abBridge of..."
-    },
-    {
-      "category": "political",
-      "lat": 60.0,
-      "lon": -96.0,
-      "name": "Diplomatic visit: Canada \u2194 Liverpool",
-      "count": 10,
-      "html": "<a href='https://www.liverpoolecho.co.uk/news/liverpool-news/six-held-after-59m-plot-34973874' target='_blank'>Diplomatic visit: Canada \u2194 Liverpool</a>",
+      "lat": -30.8667,
+      "lon": 148.367,
+      "name": "Diplomatic visit: United Kingdom \u2194 Holland",
+      "count": 4,
+      "html": "<a href='https://www.heraldscotland.com/life_style/26763074.best-adult-advent-calendars-2026-six-tried-tested-44/' target='_blank'>Diplomatic visit: United Kingdom \u2194 Holland</a>",
       "summary": [
         "Type: Diplomatic visit",
-        "Actors: Canada \u2194 Liverpool",
-        "Location: Canada",
-        "Reported: Nov 27, 2026",
+        "Actors: United Kingdom \u2194 Holland",
+        "Location: Bimble, New South Wales, Australia",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ]
+    },
+    {
+      "category": "political",
+      "lat": 52.0,
+      "lon": 20.0,
+      "name": "Economic or material cooperation: New York \u2194 Gulbuddin Hekmatyar (business/elite figure)",
+      "count": 10,
+      "html": "<a href='https://www.khaama.com/hekm-atyars-son-in-law-cia-waterboarding-kabul/' target='_blank'>Economic or material cooperation: New York \u2194 Gulbuddin Hekmatyar (business/elite figure)</a>",
+      "summary": [
+        "Type: Economic or material cooperation",
+        "Actors: New York \u2194 Gulbuddin Hekmatyar (business/elite figure)",
+        "Location: Poland",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 2.06667,
+      "lon": 45.3667,
+      "name": "African Union rejects external interference aimed at dividing Somalia - WardheerNews",
+      "count": 10,
+      "html": "<a href='https://wardheernews.com/african-union-rejects-external-interference-aimed-at-dividing-somalia/' target='_blank'>African Union rejects external interference aimed at dividing Somalia - WardheerNews</a>",
+      "summary": [
+        "Type: Rejected cooperation",
+        "Actors: African Union (international org) \u2194 Somalia",
+        "Location: Mogadishu, Banaadir, Somalia",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "he African Union (AU) has rejected all forms of external interference aimed at dividing Somalia amid a diplomatic rift between Somalia"
+    },
+    {
+      "category": "political",
+      "lat": 30.0,
+      "lon": 70.0,
+      "name": "Pakistan\u2019s Prime Minister speaks with astronaut aboard China\u2019s Space Station [VIDEO]",
+      "count": 6,
+      "html": "<a href='https://www.azernews.az/region/268287.html' target='_blank'>Pakistan\u2019s Prime Minister speaks with astronaut aboard China\u2019s Space Station [VIDEO]</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: Pakistan \u2194 China",
+        "Location: Pakistan",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Pakistan\u2019s Prime Minister Shehbaz Sharif has held a telephone conversation with Pakistani astronaut Muhammad Zeeshan Ali, who is participating in a mission aboard China\u2019s Tiangong space station."
+    },
+    {
+      "category": "political",
+      "lat": 36.0,
+      "lon": 138.0,
+      "name": "Diplomatic consultation: China \u2194 Kazakhstan",
+      "count": 10,
+      "html": "<a href='https://news.az/news/the-world-is-turning-east-why-central-asia-could-shape-the-future-of-global-power' target='_blank'>Diplomatic consultation: China \u2194 Kazakhstan</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: China \u2194 Kazakhstan",
+        "Location: Japan",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": 32.5333,
+      "lon": -117.017,
+      "name": "Mexico Says 90 US Trade Disputes Are Settled",
+      "count": 10,
+      "html": "<a href='https://www.riotimesonline.com/mexico-90-us-non-tariff-barriers-resolved-usmca-talks-continue/' target='_blank'>Mexico Says 90 US Trade Disputes Are Settled</a>",
+      "summary": [
+        "Type: Expressed intent to cooperate",
+        "Actors: Mexico \u2194 The US",
+        "Location: Tijuana, Baja California, Mexico",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Mexico's president says about 90 US trade complaints over non-tariff barriers are resolved, but talks on the USMCA pact are not closed."
+    },
+    {
+      "category": "political",
+      "lat": 16.0,
+      "lon": 30.0,
+      "name": "Diplomatic cooperation: Egypt \u2194 Sudan (military)",
+      "count": 8,
+      "html": "<a href='https://news.az/news/the-uae-from-desert-to-mini-empire' target='_blank'>Diplomatic cooperation: Egypt \u2194 Sudan (military)</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: Egypt \u2194 Sudan (military)",
+        "Location: Sudan",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "political",
+      "lat": -10.0,
+      "lon": -55.0,
+      "name": "Sri Lanka, Brazil discuss higher education cooperation - News Features | Daily Mirror",
+      "count": 4,
+      "html": "<a href='https://www.dailymirror.lk/news-features/Sri-Lanka-Brazil-discuss-higher-education-cooperation/131-355932' target='_blank'>Sri Lanka, Brazil discuss higher education cooperation - News Features | Daily Mirror</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Brazil \u2194 Sri Lanka",
+        "Location: Brazil",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "With a view to further consolidating bilateral relations between Sri Lanka and Brazil in the sphere of higher education, the Ambassador of Sri Lanka to Brazil, C. A. Chaminda I. Colonne, held discussions with Professor..."
     },
     {
       "category": "political",
       "lat": -35.2833,
       "lon": 149.217,
-      "name": "Analysts Welcome New Australia-Solomons Defence Pact, but Warn of Next Battleground | The Epoch Times",
-      "count": 10,
-      "html": "<a href='https://www.theepochtimes.com/world/analysts-welcome-new-australia-solomons-defence-pact-but-warn-of-next-battleground-6129972' target='_blank'>Analysts Welcome New Australia-Solomons Defence Pact, but Warn of Next Battleground | The Epoch Times</a>",
-      "summary": [
-        "Type: Expressed intent to cooperate",
-        "Actors: Australia \u2194 Solomons",
-        "Location: Canberra, Australian Capital Territory, Australia",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "\u2018A foreign base is easy to recognise. The security implications of a commercial contract can be harder to see,\u2019 says security expert Paul Johnstone."
-    },
-    {
-      "category": "political",
-      "lat": 33.6,
-      "lon": 73.0667,
-      "name": "Pakistan to host high-level meeting of Makkah trilateral alliance - The Economic Times",
-      "count": 10,
-      "html": "<a href='https://economictimes.indiatimes.com/news/defence/pakistan-to-host-high-level-meeting-of-makkah-trilateral-alliance/articleshow/136222200.cms' target='_blank'>Pakistan to host high-level meeting of Makkah trilateral alliance - The Economic Times</a>",
-      "summary": [
-        "Type: Diplomatic visit",
-        "Actors: Pakistan \u2194 Saudi Arabia (government)",
-        "Location: Rawalpindi, Punjab, Pakistan",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "Pakistan is set to host a two-day meeting of the trilateral Makkah Defence Alliance starting on Friday. The meeting will focus on the conflict involving Yemen"
-    },
-    {
-      "category": "political",
-      "lat": 38.3462,
-      "lon": -0.487722,
-      "name": "Diplomatic consultation: Spain \u2194 Liverpool",
-      "count": 10,
-      "html": "<a href='https://www.mirror.co.uk/news/uk-news/mum-humiliated-ryanair-one-comment-37922839' target='_blank'>Diplomatic consultation: Spain \u2194 Liverpool</a>",
+      "name": "Turkmenistan, Australia discuss trade and investment cooperation - Trend.Az",
+      "count": 4,
+      "html": "<a href='https://www.trend.az/casia/turkmenistan/4251777.html' target='_blank'>Turkmenistan, Australia discuss trade and investment cooperation - Trend.Az</a>",
       "summary": [
         "Type: Diplomatic consultation",
-        "Actors: Spain \u2194 Liverpool",
-        "Location: Alicante, Valenciana, Spain",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 31.5,
-      "lon": 34.75,
-      "name": "UN marks first global day against child marriage as millions remain at risk - AOL",
-      "count": 10,
-      "html": "<a href='https://www.aol.co.uk/articles/un-marks-first-global-day-124411000.html' target='_blank'>UN marks first global day against child marriage as millions remain at risk - AOL</a>",
-      "summary": [
-        "Type: Signed formal agreement",
-        "Actors: Cape Verde \u2194 Costa Rica",
-        "Location: Israel",
-        "Reported: Nov 27, 2026",
+        "Actors: Australia \u2194 Turkmenistan",
+        "Location: Canberra, Australian Capital Territory, Australia",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ],
-      "lede": "Friday marks the first International Day for the Elimination of Child, Early and Forced Marriage, created by the United Nations to spotlight a practice that affects hundreds of millions of women and girls across the..."
+      "lede": "BAKU, Azerbaijan, November 28. Turkmenistan and Australia have discussed expanding trade, investment and other bilateral ties, including the possibility of holding their first political\u2026"
     },
     {
       "category": "political",
-      "lat": 13.75,
-      "lon": 100.517,
-      "name": "US proposes additional tariffs of up to 18% on Thai exports, putting trade agreement negotiations back in focus \u2013 Thailand Business News",
+      "lat": 51.6667,
+      "lon": -3.0,
+      "name": "Economic cooperation: United Kingdom \u2194 The EU (international org)",
       "count": 10,
-      "html": "<a href='https://www.thailand-business-news.com/trade/342399-us-proposes-additional-tariffs-of-up-to-18-on-thai-exports-putting-trade-agreement-negotiations-back-in-focus' target='_blank'>US proposes additional tariffs of up to 18% on Thai exports, putting trade agreement negotiations back in focus \u2013 Thailand Business News</a>",
+      "html": "<a href='https://www.southwalesargus.co.uk/news/26769211.uk-eu-agri-food-deal-will-remove-border-checks/' target='_blank'>Economic cooperation: United Kingdom \u2194 The EU (international org)</a>",
       "summary": [
         "Type: Economic cooperation",
-        "Actors: Thailand \u2194 United States",
-        "Location: Bangkok, Krung Thep Mahanakhon, Thailand",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "Thailand faces proposed additional US tariffs of up to 18% under Washington's latest Section 301 investigation into structural industrial overcapacity. Announce"
-    },
-    {
-      "category": "political",
-      "lat": -2.631,
-      "lon": 29.5048,
-      "name": "Uganda to withdraw troops from eastern DR Congo town amid diplomatic spat | Africanews",
-      "count": 10,
-      "html": "<a href='https://www.africanews.com/2026/11/27/uganda-to-withdraw-troops-from-eastern-dr-congo-town-amid-diplomatic-spat/' target='_blank'>Uganda to withdraw troops from eastern DR Congo town amid diplomatic spat | Africanews</a>",
-      "summary": [
-        "Type: Reduced relations / sanctions",
-        "Actors: Uganda \u2194 Dr Congo",
-        "Location: Kivu, Sud, Rwanda",
-        "Reported: Nov 27, 2026",
+        "Actors: United Kingdom \u2194 The EU (international org)",
+        "Location: Gwent, United Kingdom (general), United Kingdom",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "political",
-      "lat": 60.0,
-      "lon": 100.0,
-      "name": "T\u00fcrkiye, Russia reaffirm $100B bilateral trade target, sign joint declaration in Istanbul",
-      "count": 10,
-      "html": "<a href='https://aa.com.tr/en/economy/turkiye-russia-reaffirm-100b-bilateral-trade-target-sign-joint-declaration-in-istanbul/4140083' target='_blank'>T\u00fcrkiye, Russia reaffirm $100B bilateral trade target, sign joint declaration in Istanbul</a>",
-      "summary": [
-        "Type: Diplomatic cooperation",
-        "Actors: Russia \u2194 Istanbul",
-        "Location: Russia",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "Trade Minister Omer Bolat, Russian Deputy Prime Minister Alexander Novak co-chair 20th Intergovernmental Commission meeting as trade exceeds $50B | Anadolu"
-    },
-    {
-      "category": "political",
-      "lat": 13.166667,
-      "lon": -59.533333,
-      "name": "President Mahama in Barbados for 5-day state visit - Graphic Online",
-      "count": 10,
-      "html": "<a href='https://www.graphic.com.gh/news/general-news/president-mahama-arrives-in-barbados-for-5-day-state-visit.html' target='_blank'>President Mahama in Barbados for 5-day state visit - Graphic Online</a>",
-      "summary": [
-        "Type: Diplomatic consultation",
-        "Actors: Barbados \u2194 John Dramani Mahama (government)",
-        "Location: Barbados",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "President Mahama arrives in Barbados for 5-day state visit"
-    },
-    {
-      "category": "political",
-      "lat": -21.9956,
-      "lon": 115.045,
-      "name": "COP31 Ends With Practical Climate Action Progress | Mirage News",
-      "count": 6,
-      "html": "<a href='https://www.miragenews.com/cop31-ends-with-practical-climate-action-1784787/' target='_blank'>COP31 Ends With Practical Climate Action Progress | Mirage News</a>",
-      "summary": [
-        "Type: Signed formal agreement",
-        "Actors: Australia \u2194 Denmark",
-        "Location: Minderoo, Western Australia, Australia",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "The 31st United Nations Climate Change Conference (COP31) has concluded in Antalya, T\u00fcrkiye.Running from 9-22 November, representatives from almost"
-    },
-    {
-      "category": "political",
-      "lat": 18.975,
-      "lon": 72.8258,
-      "name": "Diplomatic visit: Pole \u2194 United States",
-      "count": 10,
-      "html": "<a href='https://www.thetelegraphandargus.co.uk/news/26760999.bradford-local-cinemas-schedule-newest-showings-saturday/' target='_blank'>Diplomatic visit: Pole \u2194 United States</a>",
-      "summary": [
-        "Type: Diplomatic visit",
-        "Actors: Pole \u2194 United States",
-        "Location: Mumbai, Maharashtra, India",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 52.6667,
-      "lon": 23.8333,
-      "name": "Expressed intent to cooperate: Belarus \u2194 Poland",
-      "count": 10,
-      "html": "<a href='https://www.sb.by/en/belarus-invites-poland-to-assess-impact-of-border-fence-on-belovezhskaya-pushcha-national-park.html' target='_blank'>Expressed intent to cooperate: Belarus \u2194 Poland</a>",
+      "lat": 27.75,
+      "lon": -18.0,
+      "name": "Spain Votes as Morocco and Migration Loom",
+      "count": 8,
+      "html": "<a href='https://www.riotimesonline.com/spain-election-morocco-ceuta-canary-migration/' target='_blank'>Spain Votes as Morocco and Migration Loom</a>",
       "summary": [
         "Type: Expressed intent to cooperate",
-        "Actors: Belarus \u2194 Poland",
-        "Location: Belovezhskaya Pushcha, Poland (general), Poland",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 39.9272,
-      "lon": 32.8644,
-      "name": "Pakistan hosts talks with Saudi Arabia and Turkey under defense pact - WGAU",
-      "count": 10,
-      "html": "<a href='https://www.wgauradio.com/news/world/pakistan-set-host/WQIIFTN6SAYZ3OTX3TB6V6R7PU/' target='_blank'>Pakistan hosts talks with Saudi Arabia and Turkey under defense pact - WGAU</a>",
-      "summary": [
-        "Type: Diplomatic consultation",
-        "Actors: Pakistan \u2194 Saudi Arabia",
-        "Location: Ankara, Ankara, Turkey",
-        "Reported: Nov 27, 2026",
+        "Actors: Spain \u2194 Morocco",
+        "Location: El Hierro, Canarias, Spain",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ],
-      "lede": "Pakistan, Saudi Arabia and Turkey have held defense talks in Islamabad to discuss developments in the Middle East, including ongoing attacks on Saudi Arabia by Yemen\u2019s Iran-backed Houthi rebels"
+      "lede": "Spain votes 29 Nov with Morocco, Ceuta and a Canary route surge in play: 11,037 arrivals in two weeks. What a NATO ally's election means for Africa."
     },
     {
       "category": "political",
-      "lat": -6.17444,
-      "lon": 106.829,
-      "name": "IEU-CEPA: A partnership for shared prosperity - Academia - The Jakarta Post",
-      "count": 10,
-      "html": "<a href='http://www.thejakartapost.com/opinion/2026/11/27/ieu-cepa-a-partnership-for-shared-prosperity' target='_blank'>IEU-CEPA: A partnership for shared prosperity - Academia - The Jakarta Post</a>",
-      "summary": [
-        "Type: Signed formal agreement",
-        "Actors: Indonesia \u2194 European Union (international org)",
-        "Location: Jakarta, Jakarta Raya, Indonesia",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "After a decade of negotiations, the landmark Indonesia-EU CEPA unlocks tariff-free access to 450 million consumers and charts a resilient, high-value economic partnership in an era of global trade uncertainty."
-    },
-    {
-      "category": "political",
-      "lat": 8.5,
-      "lon": -11.5,
-      "name": "Provided aid: Male \u2194 Sierra Leone",
-      "count": 10,
-      "html": "<a href='https://plan-international.org/blog/2026/11/27/why-girls-voices-must-lead-way-ending-child-marriage/' target='_blank'>Provided aid: Male \u2194 Sierra Leone</a>",
-      "summary": [
-        "Type: Provided aid",
-        "Actors: Male \u2194 Sierra Leone",
-        "Location: Sierra Leone",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "political",
-      "lat": 60.0,
-      "lon": 100.0,
-      "name": "Diplomatic cooperation: Russia \u2194 Ukraine",
-      "count": 10,
-      "html": "<a href='https://www.lancashiretelegraph.co.uk/news/26766486.lancashire-council-extends-support-ukrainian-families-2029/' target='_blank'>Diplomatic cooperation: Russia \u2194 Ukraine</a>",
+      "lat": 34.3247,
+      "lon": 69.3197,
+      "name": "Qatar Chamber concludes its participation in Halal Summit, Expo in Istanbul - Gulf Times",
+      "count": 4,
+      "html": "<a href='https://www.gulf-times.com/article/739147/business/qatar-chamber-concludes-its-participation-in-halal-summit-expo-in-istanbul' target='_blank'>Qatar Chamber concludes its participation in Halal Summit, Expo in Istanbul - Gulf Times</a>",
       "summary": [
         "Type: Diplomatic cooperation",
-        "Actors: Russia \u2194 Ukraine",
-        "Location: Russia",
-        "Reported: Nov 27, 2026",
+        "Actors: Afghanistan \u2194 Qatar",
+        "Location: Jawhar, Kabol, Afghanistan",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ]
+    },
+    {
+      "category": "political",
+      "lat": 39.9289,
+      "lon": 116.388,
+      "name": "Canada Signed A Secret Police Pact With The Chinese Ministry Behind Its Illegal 'Police Stations'<!-- --> | ZeroHedge",
+      "count": 10,
+      "html": "<a href='https://www.zerohedge.com/geopolitical/canada-signed-secret-police-pact-chinese-ministry-behind-its-illegal-police-stations' target='_blank'>Canada Signed A Secret Police Pact With The Chinese Ministry Behind Its Illegal 'Police Stations'<!-- --> | ZeroHedge</a>",
+      "summary": [
+        "Type: Diplomatic visit",
+        "Actors: Mark Carney (government) \u2194 China",
+        "Location: Beijing, Beijing, China",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "\"Law enforcement in China is part of the PRC [People's Republic of China] apparatus...\""
     },
     {
       "category": "political",
       "lat": 42.1497,
       "lon": -74.9384,
-      "name": "Diplomatic cooperation: Spanish \u2194 Netflix (multinational company)",
+      "name": "Russia And North Korea: Limits Of Strategic Partnership - OpEd - Eurasia Review",
       "count": 10,
-      "html": "<a href='https://www.ok.co.uk/tv/netflix-thriller-100-rotten-tomatoes-37913713' target='_blank'>Diplomatic cooperation: Spanish \u2194 Netflix (multinational company)</a>",
+      "html": "<a href='https://www.eurasiareview.com/28112026-russia-and-north-korea-limits-of-strategic-partnership-oped/' target='_blank'>Russia And North Korea: Limits Of Strategic Partnership - OpEd - Eurasia Review</a>",
       "summary": [
-        "Type: Diplomatic cooperation",
-        "Actors: Spanish \u2194 Netflix (multinational company)",
+        "Type: Expressed intent to cooperate",
+        "Actors: North Korea \u2194 Russia",
         "Location: New York, United States",
-        "Reported: Nov 27, 2026",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Russia\u2019s partnership with North Korea has become an increasingly visible and significant component of the changing international system. Though since June"
+    },
+    {
+      "category": "political",
+      "lat": 39.059012,
+      "lon": 34.911546,
+      "name": "A Pivotal Moment Appears In The Ukraine War - OpEd - Eurasia Review",
+      "count": 8,
+      "html": "<a href='https://www.eurasiareview.com/28112026-a-pivotal-moment-appears-in-the-ukraine-war-oped/' target='_blank'>A Pivotal Moment Appears In The Ukraine War - OpEd - Eurasia Review</a>",
+      "summary": [
+        "Type: Diplomatic consultation",
+        "Actors: Libya \u2194 Turkey",
+        "Location: Turkey",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "What difference would two tiny words make to a diplomatic statement? A lot, it seems."
+    },
+    {
+      "category": "political",
+      "lat": 51.8572,
+      "lon": -8.29917,
+      "name": "US State Dept gives over \u20ac180,000 for restoration of Cobh centre",
+      "count": 8,
+      "html": "<a href='https://www.echolive.ie/corknews/arid-41943294.html' target='_blank'>US State Dept gives over \u20ac180,000 for restoration of Cobh centre</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: The US \u2194 Ireland",
+        "Location: Cobh, Cork, Ireland",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "The award, roughly \u20ac182,000, comes through the US Ambassador\u2019s fund for cultural preservation."
+    },
+    {
+      "category": "political",
+      "lat": 5.55,
+      "lon": -0.216667,
+      "name": "Mahama: Reparations push about dignity, truth, reconciliation - Barbados Today",
+      "count": 4,
+      "html": "<a href='https://barbadostoday.bb/2026/11/27/mahama-reparations-push-about-dignity-truth-reconciliation/' target='_blank'>Mahama: Reparations push about dignity, truth, reconciliation - Barbados Today</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: Bridgetown \u2194 Ghana",
+        "Location: Accra, Greater Accra, Ghana",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Ghana is moving to finalise a bilateral air services agreement with Barbados, President John Dramani Mahama told a joint sitting of Parliament on Friday."
+    },
+    {
+      "category": "political",
+      "lat": 20.0,
+      "lon": 77.0,
+      "name": "Economic or material cooperation: Shanghai \u2194 Russia",
+      "count": 4,
+      "html": "<a href='https://idrw.org/chinese-media-project-kusha-s400-complement-not-replacement/' target='_blank'>Economic or material cooperation: Shanghai \u2194 Russia</a>",
+      "summary": [
+        "Type: Economic or material cooperation",
+        "Actors: Shanghai \u2194 Russia",
+        "Location: India",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "political",
-      "lat": 41.707542,
-      "lon": 63.84911,
-      "name": "Uzbekistan, South Korea seek $5B trade goal, advance free trade talks - Trend.Az",
+      "lat": 39.9289,
+      "lon": 116.388,
+      "name": "Australia signs anti-China security pact with Solomon Islands - World Socialist Web Site",
       "count": 10,
-      "html": "<a href='https://www.trend.az/casia/uzbekistan/4251252.html' target='_blank'>Uzbekistan, South Korea seek $5B trade goal, advance free trade talks - Trend.Az</a>",
+      "html": "<a href='https://www.wsws.org/en/articles/2026/11/28/nffk-n28.html' target='_blank'>Australia signs anti-China security pact with Solomon Islands - World Socialist Web Site</a>",
       "summary": [
-        "Type: Diplomatic cooperation",
-        "Actors: Uzbekistan \u2194 South Korea",
-        "Location: Uzbekistan",
-        "Reported: Nov 27, 2026",
+        "Type: Signed formal agreement",
+        "Actors: Australia \u2194 Solomon Island",
+        "Location: Beijing, Beijing, China",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ],
-      "lede": "BAKU, Azerbaijan, November 27. Uzbekistan and South Korea have discussed steps to increase bilateral trade to $5 billion in the coming years, finalize key provisions of a free trade agreement, and\u2026"
+      "lede": "Australia has secured another neo-colonial agreement giving it the right to intervene in the foreign policy of a Pacific Island country to counter China."
     },
     {
       "category": "political",
-      "lat": 53.0,
-      "lon": -8.0,
-      "name": "A Ukraine loan is in limbo after EU budget talks stall. Leaders will try again in 3 weeks \u2013 Winnipeg Free Press",
-      "count": 10,
-      "html": "<a href='https://www.winnipegfreepress.com/world/2026/11/27/a-ukraine-loan-is-in-limbo-after-eu-budget-talks-stall-leaders-will-try-again-in-3-weeks' target='_blank'>A Ukraine loan is in limbo after EU budget talks stall. Leaders will try again in 3 weeks \u2013 Winnipeg Free Press</a>",
+      "lat": 41.8334,
+      "lon": -87.8501,
+      "name": "Expressed intent to cooperate: Victoria \u2194 United States",
+      "count": 8,
+      "html": "<a href='https://mdtheatreguide.com/2026/11/cappies-review-chicago-teen-edition-at-richard-montgomery-high-school/' target='_blank'>Expressed intent to cooperate: Victoria \u2194 United States</a>",
       "summary": [
-        "Type: Diplomatic cooperation",
-        "Actors: European Commission (international org) \u2194 Ursula Von Der Leyen (government)",
-        "Location: Ireland",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "BRUSSELS (AP) \u2014 After struggling to chaperone Europe\u2019s leaders through more than 12 hours of high-stakes budget negotiations, European Council President Ant\u00f3nio Costa faced reporters early Friday with a stark..."
-    },
-    {
-      "category": "political",
-      "lat": 23.6165,
-      "lon": 58.4691,
-      "name": "Oman condems attacks against Kuwait; urges regional de-escalation - Times of Oman",
-      "count": 10,
-      "html": "<a href='https://timesofoman.com/article/179645-oman-condems-attacks-against-kuwait-urges-regional-de-escalation' target='_blank'>Oman condems attacks against Kuwait; urges regional de-escalation - Times of Oman</a>",
-      "summary": [
-        "Type: Diplomatic cooperation",
-        "Actors: Muscat \u2194 Kuwait",
-        "Location: Ministry Of Foreign Affairs, Masqat, Oman",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "Muscat: The Ministry of Foreign Affairs has expressed the Sultanate of Oman\u2019s condemnation of the attacks against the sisterly State of Kuwait.In its..."
-    },
-    {
-      "category": "political",
-      "lat": 1.366667,
-      "lon": 103.8,
-      "name": "Singapore must prepare for US tariff wall | The Straits Times",
-      "count": 10,
-      "html": "<a href='https://www.straitstimes.com/opinion/the-us-is-rebuilding-its-tariff-wall-singapore-must-prepare-for-what-comes-next' target='_blank'>Singapore must prepare for US tariff wall | The Straits Times</a>",
-      "summary": [
-        "Type: Provided aid",
-        "Actors: The US \u2194 Singapore",
-        "Location: Singapore",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "Singapore must respond to US tariffs by diversifying trade, strengthening compliance and reducing reliance on any one market. Read more at straitstimes.com."
-    },
-    {
-      "category": "political",
-      "lat": 0.315556,
-      "lon": 32.5656,
-      "name": "Uganda to withdraw troops from DR Congo's Lubero town amid diplomatic row - BBC News",
-      "count": 10,
-      "html": "<a href='https://www.bbc.co.uk/news/articles/cq4gnj2ldkyzo' target='_blank'>Uganda to withdraw troops from DR Congo's Lubero town amid diplomatic row - BBC News</a>",
-      "summary": [
-        "Type: Reduced relations / sanctions",
-        "Actors: Uganda \u2194 Dr Congo",
-        "Location: Kampala, Kampala, Uganda",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "The Ugandan army is helping the Congolese military fight an Islamist militant group in the east of the country."
-    },
-    {
-      "category": "political",
-      "lat": 72.0,
-      "lon": -40.0,
-      "name": "Ukraine war, Melania's short-term ceasefire, Iran nuclear threat, Greenland: Trump details Mar-a-Lago talks with NATO chief",
-      "count": 10,
-      "html": "<a href='https://news.webindia123.com/news/Articles/World/20261127/4525086.html' target='_blank'>Ukraine war, Melania's short-term ceasefire, Iran nuclear threat, Greenland: Trump details Mar-a-Lago talks with NATO chief</a>",
-      "summary": [
-        "Type: Diplomatic consultation",
-        "Actors: Nato (international org) \u2194 Ukraine",
-        "Location: Greenland",
-        "Reported: Nov 27, 2026",
+        "Type: Expressed intent to cooperate",
+        "Actors: Victoria \u2194 United States",
+        "Location: Cook County, Illinois, United States",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "political",
-      "lat": 25.7907,
-      "lon": -80.13,
-      "name": "Trump Says He Pressed Putin on Ukraine Peace Deal | News Talk 105.9 WMAL-FM",
-      "count": 10,
-      "html": "<a href='https://www.wmal.com/2026/11/26/trump-says-he-pressed-putin-on-ukraine-peace-deal/' target='_blank'>Trump Says He Pressed Putin on Ukraine Peace Deal | News Talk 105.9 WMAL-FM</a>",
+      "lat": 21.4267,
+      "lon": 39.8261,
+      "name": "Pakistan, Saudi Arabia and Turkiye pledge closer defence ties under Makkah pact - Pakistan Times",
+      "count": 6,
+      "html": "<a href='https://www.pakistantimes.com/pakistan-saudi-arabia-and-turkiye-pledge-closer-defence-ties-under-makkah-pact-16927/' target='_blank'>Pakistan, Saudi Arabia and Turkiye pledge closer defence ties under Makkah pact - Pakistan Times</a>",
       "summary": [
-        "Type: Diplomatic consultation",
-        "Actors: Nato (international org) \u2194 Mark Rutte (government)",
-        "Location: Miami Beach, Florida, United States",
-        "Reported: Nov 27, 2026",
+        "Type: Diplomatic cooperation",
+        "Actors: Pakistan \u2194 Saudi Arabia",
+        "Location: Makkah, Makkah, Saudi Arabia",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ],
-      "lede": "President Trump said Thursday he asked Vladimir Putin during their meeting in China earlier this month to halt Russia\u2019s increasingly aggressive maneuvers..."
+      "lede": "Pakistan, Saudi Arabia and Turkiye pledged on Friday to strengthen military cooperation and put earlier decisions under the Makkah Joint Defence Pact into"
+    },
+    {
+      "category": "political",
+      "lat": 50.9167,
+      "lon": -0.083333,
+      "name": "Diplomatic visit: United Kingdom \u2194 United States",
+      "count": 8,
+      "html": "<a href='https://www.cotswoldjournal.co.uk/news/26765601.harry-meghans-solo-festive-plans-cotswolds-revealed/' target='_blank'>Diplomatic visit: United Kingdom \u2194 United States</a>",
+      "summary": [
+        "Type: Diplomatic visit",
+        "Actors: United Kingdom \u2194 United States",
+        "Location: Sussex, East Sussex, United Kingdom",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
     },
     {
       "category": "political",
       "lat": 33.7,
       "lon": 73.1667,
-      "name": "Pakistan hosts defense talks with Saudi Arabia and Turkey under Mecca pact",
-      "count": 8,
-      "html": "<a href='https://www.durangoherald.com/articles/associated-press/pakistan-set-to-host-talks-with-saudi-arabia-and-turkey-under-trilateral-defense-pact/' target='_blank'>Pakistan hosts defense talks with Saudi Arabia and Turkey under Mecca pact</a>",
+      "name": "Makkah Alliance for Defence moves towards institutionalisation as partners deepen strategic cooperation",
+      "count": 4,
+      "html": "<a href='https://dnd.com.pk/makkah-alliance-for-defence-moves-towards-institutionalisation-as-partners-deepen-strategic-cooperation/330869/' target='_blank'>Makkah Alliance for Defence moves towards institutionalisation as partners deepen strategic cooperation</a>",
       "summary": [
-        "Type: Diplomatic consultation",
-        "Actors: Pakistan \u2194 Saudi Arabia",
+        "Type: Diplomatic cooperation",
+        "Actors: Saudi Arabia \u2194 Pakistan",
         "Location: Islamabad, Islamabad, Pakistan",
-        "Reported: Nov 27, 2026",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ],
-      "lede": "ISLAMABAD (AP) \u2014 Pakistan, Saudi Arabia and Turkey held talks on Friday to discuss developments in the Middle East, including ongoing attacks on Saudi Arabia"
+      "lede": "DND News Opinion The second meeting of the Strategic Political and Defence Committee (S-PDC) of the Makkah Alliance for Defence in Islamabad marks another"
     },
     {
       "category": "political",
-      "lat": 49.2378,
-      "lon": -2.04083,
-      "name": "Provided aid: Jersey \u2194 Ukraine",
+      "lat": -5.0,
+      "lon": 120.0,
+      "name": "From Critical Minerals To Nuclear Power: Is Indonesia Becoming A New Arena Of Energy Diplomacy? - OpEd - Eurasia Review",
       "count": 10,
-      "html": "<a href='https://jerseyeveningpost.com/news/2026/11/27/more-than-3000-shoeboxes-sent-from-jersey-to-romania-this-year/' target='_blank'>Provided aid: Jersey \u2194 Ukraine</a>",
+      "html": "<a href='https://www.eurasiareview.com/28112026-from-critical-minerals-to-nuclear-power-is-indonesia-becoming-a-new-arena-of-energy-diplomacy-oped/' target='_blank'>From Critical Minerals To Nuclear Power: Is Indonesia Becoming A New Arena Of Energy Diplomacy? - OpEd - Eurasia Review</a>",
       "summary": [
-        "Type: Provided aid",
-        "Actors: Jersey \u2194 Ukraine",
-        "Location: Rozel Bay, Jersey (general), Jersey",
-        "Reported: Nov 27, 2026",
+        "Type: Diplomatic cooperation",
+        "Actors: United States \u2194 Indonesia",
+        "Location: Indonesia",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "The global energy transition is transforming not only how countries produce electricity, but also how they compete for influence. Over the past several years,"
+    },
+    {
+      "category": "political",
+      "lat": 13.25,
+      "lon": -59.65,
+      "name": "APO Group - Africa Newsroom / Press release | Ghana: Barbados Prime Minister Mia Mottley urges global action on reparatory justice",
+      "count": 6,
+      "html": "<a href='https://www.africa-newsroom.com/press/ghana-barbados-prime-minister-mia-mottley-urges-global-action-on-reparatory-justice' target='_blank'>APO Group - Africa Newsroom / Press release | Ghana: Barbados Prime Minister Mia Mottley urges global action on reparatory justice</a>",
+      "summary": [
+        "Type: Diplomatic cooperation",
+        "Actors: Barbados \u2194 John Dramani Mahama (government)",
+        "Location: Speightstown, Saint Peter, Barbados",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
-      "category": "conflict",
-      "lat": 14.834,
-      "lon": 3.9179,
-      "name": "Suspected militants kill 13 soldiers in southwest Niger, ministry says - KSEV Radio 700",
-      "count": 20,
-      "html": "<a href='https://ksevradio.com/suspected-militants-kill-13-soldiers-in-southwest-niger-ministry-says/' target='_blank'>Suspected militants kill 13 soldiers in southwest Niger, ministry says - KSEV Radio 700</a>",
+      "category": "political",
+      "lat": 55.7522,
+      "lon": 37.6156,
+      "name": "North Korea Has Halted Arms Shipments To Russia Over Seoul Row, Ukraine Says<!-- --> | ZeroHedge",
+      "count": 8,
+      "html": "<a href='https://www.zerohedge.com/geopolitical/ukraine-says-north-korea-has-halted-arms-shipments-russia-over-seoul-row' target='_blank'>North Korea Has Halted Arms Shipments To Russia Over Seoul Row, Ukraine Says<!-- --> | ZeroHedge</a>",
       "summary": [
-        "Type: Armed clash",
-        "Actors: The West African Country",
-        "Location: Sanam, Tillab\u00e9, Niger",
-        "Reported: Nov 27, 2026",
+        "Type: Economic or material cooperation",
+        "Actors: North Korea \u2194 Ukraine",
+        "Location: Moscow, Moskva, Russia",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ],
-      "lede": "Nov 27 (Reuters) \u2013 Suspected militants killed 13 soldiers and wounded 20 others in an attack on a National Guard position in southwestern Niger on Thursday, the defence ministry said. \u2022 The ministry said the attack was..."
+      "lede": "Pyongyang took offense&nbsp;at words by a Russian diplomat..."
     },
     {
       "category": "conflict",
-      "lat": 25.2522,
-      "lon": 55.28,
-      "name": "Armed clash in Dubai, Dubayy, United Arab Emirates",
-      "count": 20,
-      "html": "<a href='https://www.yourlocalguardian.co.uk/news/national/uk-today/26768525.hmrc-warning-uk-travellers-heading-turkey-dubai/' target='_blank'>Armed clash in Dubai, Dubayy, United Arab Emirates</a>",
+      "lat": 11.1595,
+      "lon": 48.1967,
+      "name": "Somali State Says Somaliland Backs Militias",
+      "count": 10,
+      "html": "<a href='https://www.riotimesonline.com/somali-state-says-somaliland-backs-militias/' target='_blank'>Somali State Says Somaliland Backs Militias</a>",
       "summary": [
         "Type: Armed clash",
-        "Actors: Not identified in wire report",
-        "Location: Dubai, Dubayy, United Arab Emirates",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 23.1667,
-      "lon": 89.5,
-      "name": "Bangladesh: Former PM Hasina's key aide and two others sent to jail",
-      "count": 20,
-      "html": "<a href='https://ianslive.in/bangladesh-former-pm-hasinas-key-aide-and-two-others-sent-to-jail--20261127153952' target='_blank'>Bangladesh: Former PM Hasina's key aide and two others sent to jail</a>",
-      "summary": [
-        "Type: Armed clash",
-        "Actors: Village (civilian group)",
-        "Location: Narail, Bangladesh (general), Bangladesh",
-        "Reported: Nov 27, 2026",
+        "Actors: Administration (government) vs Civilian (civilian group)",
+        "Location: Lasqoray, Sanaag, Somalia",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ],
-      "lede": "Dhaka, Nov 27 (IANS) A Bangladeshi court sent three people, including ousted Prime Minister Sheikh Hasina's former Deputy Press Secretary K M Shakhawat Moon, to jail in connection with an anti-terrorism case filed with..."
-    },
-    {
-      "category": "conflict",
-      "lat": 31.4167,
-      "lon": 34.3333,
-      "name": "IDF eliminates October 7 terrorist who took part in hostage \u2018ceremony\u2019 | Israel National News",
-      "count": 20,
-      "html": "<a href='https://www.israelnationalnews.com/flashes/698717' target='_blank'>IDF eliminates October 7 terrorist who took part in hostage \u2018ceremony\u2019 | Israel National News</a>",
-      "summary": [
-        "Type: Assault",
-        "Actors: Terrorist (unaligned armed forces)",
-        "Location: Gaza, Israel (general), Israel",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "Yousef Ayidi, who infiltrated Israel on October 7 and participated in the staged handover of three hostages, named among four Hamas terrorists eliminated in Gaza."
-    },
-    {
-      "category": "conflict",
-      "lat": 44.0049,
-      "lon": 129.244,
-      "name": "Armed clash: China vs China (military)",
-      "count": 16,
-      "html": "<a href='https://japantoday.com/category/world/chinese-military-tests-new-taiwan-landing-tactics-in-coastal-drills' target='_blank'>Armed clash: China vs China (military)</a>",
-      "summary": [
-        "Type: Armed clash",
-        "Actors: China vs China (military)",
-        "Location: Dongshan, Heilongjiang, China",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
+      "lede": "North Eastern State says Somaliland backs clan militias in Sanaag, Somalia. The claim is unverified and gives no casualty figures."
     },
     {
       "category": "conflict",
       "lat": 31.7667,
       "lon": 35.2333,
-      "name": "Israeli military says 6 militants killed in Gaza over past week-Xinhua",
-      "count": 12,
-      "html": "<a href='https://english.news.cn/20261127/243e0714ff5e47d9b73462aee2a713d2/c.html' target='_blank'>Israeli military says 6 militants killed in Gaza over past week-Xinhua</a>",
+      "name": "East Jerusalem Electric Company employees attacked by West Bank extremists | The Jerusalem Post",
+      "count": 10,
+      "html": "<a href='https://www.jpost.com/israel-news/article-916379' target='_blank'>East Jerusalem Electric Company employees attacked by West Bank extremists | The Jerusalem Post</a>",
       "summary": [
-        "Type: Assault",
-        "Actors: Militant (unaligned armed forces)",
+        "Type: Armed clash",
+        "Actors: Not identified in wire report",
         "Location: Jerusalem, Israel (general), Israel",
-        "Reported: Nov 27, 2026",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "The IDF condemned the attack, decrying it as \u201ca deliberate and indiscriminate act of violence against innocent individuals\u201d and opening an investigation into the incident."
+    },
+    {
+      "category": "conflict",
+      "lat": 32.2833,
+      "lon": 75.65,
+      "name": "BSF Neutralizes Intruder in Punjab's Bamial Sector Amid Heightened Border Vigilance",
+      "count": 10,
+      "html": "<a href='https://www.sentinelassam.com/more-news/national-news/bsf-neutralizes-intruder-in-punjabs-bamial-sector-amid-heightened-border-vigilance' target='_blank'>BSF Neutralizes Intruder in Punjab's Bamial Sector Amid Heightened Border Vigilance</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Chandigarh vs Pakistan",
+        "Location: Pathankot, Punjab, India",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Border Security Force (BSF) personnel shot dead an intruder during an attempted infiltration bid along the India-Pakistan border in the Bamial sector of Punjab's Pathankot district early on Friday."
+    },
+    {
+      "category": "conflict",
+      "lat": 15.5,
+      "lon": 47.5,
+      "name": "KSA: Air defences intercept, destroy ballistic missile launched by terrorist houthi militia toward southern region",
+      "count": 10,
+      "html": "<a href='https://www.gdnonline.com:443/Details/1414227/Air-defences-intercept,-destroy-ballistic-missile-launched-by-terrorist-houthi-militia-toward-southern-region' target='_blank'>KSA: Air defences intercept, destroy ballistic missile launched by terrorist houthi militia toward southern region</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Terrorist (unaligned armed forces)",
+        "Location: Yemen",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "conflict",
-      "lat": 31.0,
-      "lon": 36.0,
-      "name": "Assault: Police (police) vs Hospital",
+      "lat": 1.0,
+      "lon": 38.0,
+      "name": "Assault: Police (police)",
       "count": 10,
-      "html": "<a href='https://www.bucksfreepress.co.uk/news/26768381.men-19-47-charged-nathan-reg-john-jordans-murder/' target='_blank'>Assault: Police (police) vs Hospital</a>",
+      "html": "<a href='https://www.mirror.co.uk/news/uk-news/cctv-issued-police-hunt-man-37924617' target='_blank'>Assault: Police (police)</a>",
       "summary": [
         "Type: Assault",
-        "Actors: Police (police) vs Hospital",
-        "Location: Jordan",
-        "Reported: Nov 27, 2026",
+        "Actors: Police (police)",
+        "Location: Kenya",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ]
+    },
+    {
+      "category": "conflict",
+      "lat": 24.6408,
+      "lon": 46.7728,
+      "name": "Armed clash: Saudi Arabia",
+      "count": 10,
+      "html": "<a href='https://www.arabnews.com/saudi-arabia/air-defenses-intercept-houthi-ballistic-missile-targeting-saudi-arabias-southern-region-3014357' target='_blank'>Armed clash: Saudi Arabia</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Saudi Arabia",
+        "Location: Riyadh, Ar Riya?, Saudi Arabia",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 28.4414,
+      "lon": 56.3728,
+      "name": "Armed clash: National Council (legislature)",
+      "count": 10,
+      "html": "<a href='https://www.dailystar.co.uk/news/world-news/bride-14-beaten-death-husband-37924648' target='_blank'>Armed clash: National Council (legislature)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: National Council (legislature)",
+        "Location: Arzuiyeh, Kerman, Iran",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 31.4167,
+      "lon": 34.3333,
+      "name": "Two staff killed in Israeli strike on Gaza medical clinic, MSF says - BBC News",
+      "count": 10,
+      "html": "<a href='https://www.bbc.co.uk/news/articles/cm5y10yydln3o' target='_blank'>Two staff killed in Israeli strike on Gaza medical clinic, MSF says - BBC News</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Hamas (rebel group)",
+        "Location: Gaza, Israel (general), Israel",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "The Israeli military says it targeted \"Hamas terrorists\" in the strike which has been condemned by the World Health Organization."
+    },
+    {
+      "category": "conflict",
+      "lat": 29.9479,
+      "lon": 70.8993,
+      "name": "Armed clash: Border Security (military) vs Pakistan",
+      "count": 10,
+      "html": "<a href='https://idrw.org/bsf-shoots-dead-pakistani-intruder-along-india-pakistan-border-in-pathankot/' target='_blank'>Armed clash: Border Security (military) vs Pakistan</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Border Security (military) vs Pakistan",
+        "Location: Paharpur, Punjab, Pakistan",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 15.5,
+      "lon": 47.5,
+      "name": "KSA: Air defences intercept and destroy cruise missile launched by terrorist Houthi militia toward Riyadh region",
+      "count": 10,
+      "html": "<a href='https://www.gdnonline.com:443/Details/1414224/Air-defences-intercept-and-destroy-cruise-missile-launched-by-terrorist-Houthi-militia-toward-Riyadh-region' target='_blank'>KSA: Air defences intercept and destroy cruise missile launched by terrorist Houthi militia toward Riyadh region</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Terrorist (unaligned armed forces) vs Riyadh",
+        "Location: Yemen",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 23.1167,
+      "lon": 96.6833,
+      "name": "Myanmar Junta Troops Suffer Heavy Losses in Momeik Fighting; Soldiers Captured as POWs | Burma News International",
+      "count": 10,
+      "html": "<a href='https://www.bnionline.net/en/news/myanmar-junta-troops-suffer-heavy-losses-momeik-fighting-soldiers-captured-pows' target='_blank'>Myanmar Junta Troops Suffer Heavy Losses in Momeik Fighting; Soldiers Captured as POWs | Burma News International</a>",
+      "summary": [
+        "Type: Riot",
+        "Actors: Residents (civilian group)",
+        "Location: Momeik, Shan State, Myanmar",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Fighting in Momeik (Mongmit) Township, northern Shan State, has dealt heavy blows to junta forces, with a resistance coalition capturing several regime soldiers, including officers, as prisoners of war (POWs). Following..."
+    },
+    {
+      "category": "conflict",
+      "lat": 31.4167,
+      "lon": 34.3333,
+      "name": "Israel intensifies targeted killings of Hamas leaders as US pushes Gaza ceasefire - Philippine Canadian Inquirer Nationwide Filipino Newspaper",
+      "count": 10,
+      "html": "<a href='https://canadianinquirer.net/2026/11/28/israel-intensifies-targeted-killings-of-hamas-leaders-as-us-pushes-gaza-ceasefire/' target='_blank'>Israel intensifies targeted killings of Hamas leaders as US pushes Gaza ceasefire - Philippine Canadian Inquirer Nationwide Filipino Newspaper</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Hamas (rebel group)",
+        "Location: Gaza, Israel (general), Israel",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Floyd Brenz, Philippine Canadian Inquirer November 28, 2026 Israel has stepped up its targeted military operations in Gaza, killing several senior Hamas officials as the United States pressures Israeli Prime [\u2026]"
     },
     {
       "category": "conflict",
       "lat": 55.7522,
       "lon": 37.6156,
-      "name": "Russian hybrid attacks could cause \u2018mass casualty event\u2019 in Europe, report warns - International | Daily Mirror",
+      "name": "Is The War In Ukraine Heading Toward The Negotiating Table? | Socialist Alternative",
       "count": 10,
-      "html": "<a href='https://www.dailymirror.lk/international/Russian-hybrid-attacks-could-cause-mass-casualty-event-in-Europe-report-warns/107-355904' target='_blank'>Russian hybrid attacks could cause \u2018mass casualty event\u2019 in Europe, report warns - International | Daily Mirror</a>",
+      "html": "<a href='https://www.socialistalternative.org/2026/11/28/is-the-war-in-ukraine-heading-toward-the-negotiating-table/' target='_blank'>Is The War In Ukraine Heading Toward The Negotiating Table? | Socialist Alternative</a>",
       "summary": [
         "Type: Armed clash",
-        "Actors: Russia",
-        "Location: Kremlin, Moskva, Russia",
-        "Reported: Nov 27, 2026",
+        "Actors: Ukraine",
+        "Location: Moscow, Moskva, Russia",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ],
-      "lede": "Russian hybrid attacks could cause a mass-casualty event in Europe, a report has warned, as Moscow steps up sabotage operations across the continent."
-    },
-    {
-      "category": "conflict",
-      "lat": 8.0,
-      "lon": 8.0,
-      "name": "Armed clash: Bandit (criminal group) vs Military (military)",
-      "count": 10,
-      "html": "<a href='https://fpif.org/the-next-congress-should-scrutinize-the-u-s-nigeria-security-partnership/' target='_blank'>Armed clash: Bandit (criminal group) vs Military (military)</a>",
-      "summary": [
-        "Type: Armed clash",
-        "Actors: Bandit (criminal group) vs Military (military)",
-        "Location: Middle Belt, Nigeria (general), Nigeria",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 60.0,
-      "lon": 100.0,
-      "name": "Ukrainian 11th-grader builds AI-powered, GPS-free drone autopilot to beat frontline jamming \u2014 earns 'The Future of Ukraine' award from President Zelenskyy | Tom's Hardware",
-      "count": 10,
-      "html": "<a href='https://www.tomshardware.com/tech-industry/drones/ukrainian-11th-grader-builds-ai-powered-gps-free-drone-autopilot-to-beat-frontline-jamming-earns-the-future-of-ukraine-award-from-president-zelenskyy' target='_blank'>Ukrainian 11th-grader builds AI-powered, GPS-free drone autopilot to beat frontline jamming \u2014 earns 'The Future of Ukraine' award from President Zelenskyy | Tom's Hardware</a>",
-      "summary": [
-        "Type: Armed clash",
-        "Actors: Navy (military) vs Navy (military)",
-        "Location: Russia",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "That"
-    },
-    {
-      "category": "conflict",
-      "lat": 35.75,
-      "lon": 51.5148,
-      "name": "Italy says two citizens killed in Iranian drone strike in Kuwait \u2014 Naharnet",
-      "count": 10,
-      "html": "<a href='https://mobile.naharnet.com/stories/en/324046-italy-says-two-citizens-killed-in-iranian-drone-strike-in-kuwait' target='_blank'>Italy says two citizens killed in Iranian drone strike in Kuwait \u2014 Naharnet</a>",
-      "summary": [
-        "Type: Armed clash",
-        "Actors: Citizen (civilian group)",
-        "Location: Tehran, Tehran, Iran",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "Naharnet is the leading Lebanese news destination, breaking the news as it happens!"
-    },
-    {
-      "category": "conflict",
-      "lat": 17.3753,
-      "lon": 78.4744,
-      "name": "Congress & BRS Clash at Bawarchi Turns Chaotic -",
-      "count": 10,
-      "html": "<a href='https://www.gulte.com/political-news/444687/congress-brs-clash-at-bawarchi-turns-chaotic' target='_blank'>Congress & BRS Clash at Bawarchi Turns Chaotic -</a>",
-      "summary": [
-        "Type: Armed clash",
-        "Actors: Telugu",
-        "Location: Hyderabad, Andhra Pradesh, India",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "The acting opposition leader of Telangana KTR had been following an interesting strategy when it com"
-    },
-    {
-      "category": "conflict",
-      "lat": 10.0,
-      "lon": 8.0,
-      "name": "Gunmen \u2018kill 16\u2019 in attack on Plateau community - Latest News In Nigeria, Nigeria News Today, Your Online Nigerian Newspaper",
-      "count": 10,
-      "html": "<a href='https://www.nigerianeye.com/2026/11/gunmen-kill-16-in-attack-on-plateau.html' target='_blank'>Gunmen \u2018kill 16\u2019 in attack on Plateau community - Latest News In Nigeria, Nigeria News Today, Your Online Nigerian Newspaper</a>",
-      "summary": [
-        "Type: Armed clash",
-        "Actors: Gunmen (unaligned armed forces) vs Community (civilian group)",
-        "Location: Nigeria",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 59.8944,
-      "lon": 30.2642,
-      "name": "Armed clash: Russia",
-      "count": 10,
-      "html": "<a href='https://news.az/news/ukraine-targets-rocket-fuel-plant-in-russia-s-tula-as-drones-strike-st-petersburg' target='_blank'>Armed clash: Russia</a>",
-      "summary": [
-        "Type: Armed clash",
-        "Actors: Russia",
-        "Location: Leningrad, Sankt-Peterburg, Russia",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
+      "lede": "A fifth devastating winter of war awaits Ukraine. At the same time, the war is escalating and claiming more and more victims. This year, the number of civilian casualties in Ukraine has been dramatically higher than in..."
     },
     {
       "category": "conflict",
       "lat": 13.75,
       "lon": 100.517,
-      "name": "Armed clash in Bangkok, Krung Thep Mahanakhon, Thailand",
-      "count": 10,
-      "html": "<a href='https://www.bangkokpost.com/thailand/general/3362201/650000-floodhit-households-still-await-relief-funds' target='_blank'>Armed clash in Bangkok, Krung Thep Mahanakhon, Thailand</a>",
+      "name": "Armed clash: Ambassador (government) vs Thailand",
+      "count": 8,
+      "html": "<a href='https://www.bangkokpost.com/thailand/general/3362815/major-korean-gambling-network-busted-in-bangkok' target='_blank'>Armed clash: Ambassador (government) vs Thailand</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Ambassador (government) vs Thailand",
+        "Location: Bangkok, Krung Thep Mahanakhon, Thailand",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": -3.21667,
+      "lon": 37.8,
+      "name": "Assault: Police (police) vs Kenya",
+      "count": 8,
+      "html": "<a href='https://www.kenyan-post.com/2026/11/a-kdf-officer-arrested-for-attempting.html' target='_blank'>Assault: Police (police) vs Kenya</a>",
+      "summary": [
+        "Type: Assault",
+        "Actors: Police (police) vs Kenya",
+        "Location: Njoro, Coast, Kenya",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 60.0,
+      "lon": 100.0,
+      "name": "Twenty-three injured in Russian shelling across Kharkiv region over past 24 hours",
+      "count": 7,
+      "html": "<a href='https://en.interfax.com.ua/news/general/1243855.html' target='_blank'>Twenty-three injured in Russian shelling across Kharkiv region over past 24 hours</a>",
+      "summary": [
+        "Type: Assault",
+        "Actors: Kharkiv (civilian group)",
+        "Location: Russia",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Russian forces struck 25 settlements in Kharkiv region over the past 24 hours, injuring 23 people, including children, Regional Military Administration Head Oleh Synehubov said."
+    },
+    {
+      "category": "conflict",
+      "lat": 27.45,
+      "lon": 83.1333,
+      "name": "Armed clash in Aligarh, Uttar Pradesh, India",
+      "count": 5,
+      "html": "<a href='https://indiaeducationdiary.in/amu-english-literature-student-selected-as-google-gemini-ambassador-secures-place-in-national-top-1000/' target='_blank'>Armed clash in Aligarh, Uttar Pradesh, India</a>",
       "summary": [
         "Type: Armed clash",
         "Actors: Not identified in wire report",
-        "Location: Bangkok, Krung Thep Mahanakhon, Thailand",
-        "Reported: Nov 27, 2026",
+        "Location: Aligarh, Uttar Pradesh, India",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ]
+    },
+    {
+      "category": "conflict",
+      "lat": 24.6408,
+      "lon": 46.7728,
+      "name": "Coalition Destroys Houthi Missiles Launched at Southern Region and Riyadh",
+      "count": 10,
+      "html": "<a href='https://english.aawsat.com/gulf/5346502-coalition-destroys-cruise-missile-fired-riyadh' target='_blank'>Coalition Destroys Houthi Missiles Launched at Southern Region and Riyadh</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Terrorist (unaligned armed forces)",
+        "Location: Riyadh, Ar Riya?, Saudi Arabia",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Major General Turki Al-Malki, spokesman for the Coalition to Restore Legitimacy in Yemen, said on Saturday that Saudi air defenses had intercepted and destroyed a ballistic missile launched by the Houthi militia toward..."
+    },
+    {
+      "category": "conflict",
+      "lat": 50.0767,
+      "lon": 29.9177,
+      "name": "Armed clash: Ukraine",
+      "count": 6,
+      "html": "<a href='https://news.az/news/energy-site-damaged-in-russian-strike-on-bila-tserkva' target='_blank'>Armed clash: Ukraine</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Ukraine",
+        "Location: Fastiv, Kyyivs'ka Oblast', Ukraine",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 3.5167,
+      "lon": 39.0584,
+      "name": "Ethiopian troops escort 300 Kenyan trucks back across Moyale after weeks of border clashes",
+      "count": 8,
+      "html": "<a href='https://kenya-today.com/report-ethiopian-troops-escort-300-kenyan-trucks-back-across-moyale-after-weeks-of-border-clashes-34440/' target='_blank'>Ethiopian troops escort 300 Kenyan trucks back across Moyale after weeks of border clashes</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Not identified in wire report",
+        "Location: Moyale, Eastern, Kenya",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "More than 300 Kenyan truck drivers stranded in Ethiopia were escorted into Kenya on Nov 26 under Ethiopian military protection following a cease\u2011fire between Oromo and Somali fighters."
     },
     {
       "category": "conflict",
       "lat": 60.0,
       "lon": 100.0,
-      "name": "Assault: Denmark",
-      "count": 8,
-      "html": "<a href='https://cphpost.dk/2026-11-27/global/sweden-summons-russian-ambassador-over-suspected-assassination-plot-in-denmark/' target='_blank'>Assault: Denmark</a>",
-      "summary": [
-        "Type: Assault",
-        "Actors: Denmark",
-        "Location: Russia",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 35.0,
-      "lon": 38.0,
-      "name": "MWL condemns terrorist attack on Internal Security headquarters in Hasakah",
-      "count": 10,
-      "html": "<a href='https://sana.sy/en/middle-east/2362266/' target='_blank'>MWL condemns terrorist attack on Internal Security headquarters in Hasakah</a>",
-      "summary": [
-        "Type: Armed clash",
-        "Actors: Minist Of Interior (government) vs Neighborhood (civilian group)",
-        "Location: Syria",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "Mecca, Nov .27 (SANA) The Muslim World League strongly condemned the terrorist attack targeting a Ministry of Interior facility in the city of Hasakah,"
-    },
-    {
-      "category": "conflict",
-      "lat": 13.0833,
-      "lon": 80.2833,
-      "name": "Assault: Hospital",
-      "count": 10,
-      "html": "<a href='https://indiankanoon.org/doc/197565840/' target='_blank'>Assault: Hospital</a>",
-      "summary": [
-        "Type: Assault",
-        "Actors: Hospital",
-        "Location: Madras, Tamil Nadu, India",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 0.833333,
-      "lon": 32.1833,
-      "name": "UPDF to Withdraw From Lubero Amid Renewed Fighting in Eastern DRC | ChimpReports",
-      "count": 10,
-      "html": "<a href='https://chimpreports.com/updf-to-withdraw-from-lubero-amid-renewed-fighting-in-eastern-drc/' target='_blank'>UPDF to Withdraw From Lubero Amid Renewed Fighting in Eastern DRC | ChimpReports</a>",
-      "summary": [
-        "Type: Armed clash",
-        "Actors: The Drc vs Military (military)",
-        "Location: Kivu, Kiboga, Uganda",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "KAMPALA: The Uganda People\u2019s Defence Forces (UPDF) has announced plans to withdraw from Lubero town in eastern Democratic Republic of Congo, handing over responsibility for its security to the Congolese army amid..."
-    },
-    {
-      "category": "conflict",
-      "lat": 50.9216,
-      "lon": 34.8003,
-      "name": "1 killed, 9 injured in Russia-Ukraine overnight strikes",
-      "count": 8,
-      "html": "<a href='https://aa.com.tr/en/russia-ukraine-war/1-killed-9-injured-in-russia-ukraine-overnight-strikes/4140194' target='_blank'>1 killed, 9 injured in Russia-Ukraine overnight strikes</a>",
-      "summary": [
-        "Type: Armed clash",
-        "Actors: Ukraine (military)",
-        "Location: Sumy, Sums'ka Oblast', Ukraine",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "Russian attacks hit 9 Ukrainian regions, killing 1, injuring 6 people, while drone strike injures 3 in Russia\u2019s Novorossiysk | Anadolu"
-    },
-    {
-      "category": "conflict",
-      "lat": 31.2222,
-      "lon": 121.458,
-      "name": "Armed clash: China",
-      "count": 10,
-      "html": "<a href='https://technode.com/2026/11/27/china-launches-6g-trials-across-eight-regions-eyes-2030-rollout/' target='_blank'>Armed clash: China</a>",
-      "summary": [
-        "Type: Armed clash",
-        "Actors: China",
-        "Location: Shanghai, Shanghai, China",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 60.0,
-      "lon": 100.0,
-      "name": "Southern Africa: Crowded Waters - Can Southern Africa Steer Mozambique Channel Security? - allAfrica.com",
+      "name": "Armed clash: Europe",
       "count": 5,
-      "html": "<a href='https://allafrica.com/stories/202611270333.html' target='_blank'>Southern Africa: Crowded Waters - Can Southern Africa Steer Mozambique Channel Security? - allAfrica.com</a>",
+      "html": "<a href='https://nuclear-news.net/2026/11/28/4-a-the-rand-corporation-speaks-of-war-in-europe/' target='_blank'>Armed clash: Europe</a>",
       "summary": [
         "Type: Armed clash",
-        "Actors: Naval (military)",
+        "Actors: Europe",
         "Location: Russia",
-        "Reported: Nov 27, 2026",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
-      ],
-      "lede": "Analysis - Rising international interest and insurgent activity at sea should push regional states to reassess their maritime commitments and capabilities."
+      ]
     },
     {
       "category": "conflict",
-      "lat": 32.1472,
-      "lon": 34.8417,
-      "name": "Terror attack thwarted in Binyamin, terrorists arrested | Israel National News",
-      "count": 10,
-      "html": "<a href='https://www.israelnationalnews.com/news/437269' target='_blank'>Terror attack thwarted in Binyamin, terrorists arrested | Israel National News</a>",
-      "summary": [
-        "Type: Violent repression",
-        "Actors: Battalion (military)",
-        "Location: Ramat Hasharon, Tel Aviv, Israel",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "Three terrorists planning imminent attack arrested in village, Duvdevan commandos and paratroopers raid homes, carry out arrests."
-    },
-    {
-      "category": "conflict",
-      "lat": 28.9842,
-      "lon": 74.3117,
-      "name": "Assault: Magistrate (judiciary)",
-      "count": 10,
-      "html": "<a href='https://indiankanoon.org/doc/167049797/' target='_blank'>Assault: Magistrate (judiciary)</a>",
+      "lat": 12.9833,
+      "lon": 77.5833,
+      "name": "Assault: Police (police)",
+      "count": 5,
+      "html": "<a href='https://www.siasat.com/bengaluru-police-shoot-man-accused-of-molesting-women-attempted-rape-3588746/' target='_blank'>Assault: Police (police)</a>",
       "summary": [
         "Type: Assault",
-        "Actors: Magistrate (judiciary)",
-        "Location: Mahila, Rajasthan, India",
-        "Reported: Nov 27, 2026",
+        "Actors: Police (police)",
+        "Location: Bengaluru, Karnataka, India",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "conflict",
-      "lat": 8.31667,
-      "lon": 8.51667,
-      "name": "Four Days with Boko Haram Terrorists: MAN, 55 beaten, starved, and marked for death",
-      "count": 8,
-      "html": "<a href='https://www.vanguardngr.com/2026/11/four-days-with-boko-haram-terrorists-man-55-beaten-starved-and-marked-for-death/' target='_blank'>Four Days with Boko Haram Terrorists: MAN, 55 beaten, starved, and marked for death</a>",
-      "summary": [
-        "Type: Armed clash",
-        "Actors: Nigeria",
-        "Location: Benue, Nigeria (general), Nigeria",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "For 55-year-old Emmanuel Ofikwu, July 28, 2026, began like any other working day. He had finished work on a factory project at Ogbaku\u2014an area described as No Man's Land, near the Federal Road Safety Corps office in Imo..."
-    },
-    {
-      "category": "conflict",
-      "lat": 50.4333,
-      "lon": 30.5167,
-      "name": "Meloni warns Kyiv that war 'cannot spread to the Mediterranean' after bombing of Russian warship in Libya | Daily Mail Online",
-      "count": 7,
-      "html": "<a href='https://www.dailymail.com/news/article-16326607/Meloni-warns-Kyiv-war-spread-Mediterranean-Russian-warship-Libya.html' target='_blank'>Meloni warns Kyiv that war 'cannot spread to the Mediterranean' after bombing of Russian warship in Libya | Daily Mail Online</a>",
-      "summary": [
-        "Type: Armed clash",
-        "Actors: Navy (military)",
-        "Location: Kyiv, Kyyiv, Misto, Ukraine",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "Giorgia Meloni confronted Kyiv after Volodymyr Zelensky confirmed on Monday that Ukrainian suicide drones had destroyed the Merkury at a port in Benghazi."
-    },
-    {
-      "category": "conflict",
-      "lat": 13.7702,
-      "lon": 100.685,
-      "name": "Armed clash: Thailand",
-      "count": 6,
-      "html": "<a href='https://www.bangkokpost.com/thailand/general/3362221/paint-storage-building-on-fire-at-saphan-sung-district' target='_blank'>Armed clash: Thailand</a>",
-      "summary": [
-        "Type: Armed clash",
-        "Actors: Thailand",
-        "Location: Saphan Sung, Krung Thep Mahanakhon, Thailand",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 35.0,
-      "lon": 38.0,
-      "name": "2 Syrian soldiers killed in attack by unidentified assailants in Daraa",
+      "lat": 33.5,
+      "lon": 36.3,
+      "name": "The cost of colonialism \u2013 the loss of heritage, life and companionship as Saudi Arabia slaughters 60 pure Arabian horses \u2013 The Greanville Post",
       "count": 10,
-      "html": "<a href='https://aa.com.tr/en/middle-east/2-syrian-soldiers-killed-in-attack-by-unidentified-assailants-in-daraa/4140139' target='_blank'>2 Syrian soldiers killed in attack by unidentified assailants in Daraa</a>",
+      "html": "<a href='https://www.greanvillepost.com/the-cost-of-colonialism-the-loss-of-heritage-life-and-companionship-as-saudi-arabia-slaughters-60-pure-arabian-horses/' target='_blank'>The cost of colonialism \u2013 the loss of heritage, life and companionship as Saudi Arabia slaughters 60 pure Arabian horses \u2013 The Greanville Post</a>",
       "summary": [
         "Type: Armed clash",
-        "Actors: Assailant (criminal group)",
-        "Location: Syria",
-        "Reported: Nov 27, 2026",
+        "Actors: Saudi Arabia",
+        "Location: Damascus, Dimashq, Syria",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ],
-      "lede": "Attack took place on Al-Quniya\u2013Al-Sanamayn road in northern rural Daraa, says Defense Ministry | Anadolu"
+      "lede": "VB\u2014In Gaza, the Zionists have deliberately slaughtered livestock and the few equestrian centres that provided sport and escape for traumatised children were bombed in the first days of the genocide. The horses that..."
     },
     {
       "category": "conflict",
-      "lat": 20.0,
-      "lon": 77.0,
-      "name": "Pak intruder shot dead by BSF troops along international border in Punjab | India News - Business Standard",
-      "count": 10,
-      "html": "<a href='https://www.business-standard.com/india-news/pak-intruder-shot-dead-by-bsf-troops-along-international-border-in-punjab-126112700230_1.html' target='_blank'>Pak intruder shot dead by BSF troops along international border in Punjab | India News - Business Standard</a>",
+      "lat": 47.1553,
+      "lon": 29.962,
+      "name": "Armed clash: Settlement (civilian group)",
+      "count": 5,
+      "html": "<a href='http://www.rightspeak.net/2026/11/134-combat-clashes-11-kostiantynivka-7.html' target='_blank'>Armed clash: Settlement (civilian group)</a>",
       "summary": [
         "Type: Armed clash",
-        "Actors: Border Security (military)",
-        "Location: India",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ],
-      "lede": "Officials said the man was shot dead around 2 am in the Pahadpur border post area along the Ujh River in Pathankot"
-    },
-    {
-      "category": "conflict",
-      "lat": -2.26925,
-      "lon": 40.8991,
-      "name": "Armed clash: Kenya",
-      "count": 8,
-      "html": "<a href='https://www.inquisitr.com/ali-kololo-lawsuit-metropolitan-police/' target='_blank'>Armed clash: Kenya</a>",
-      "summary": [
-        "Type: Armed clash",
-        "Actors: Kenya",
-        "Location: Lamu, Coast, Kenya",
-        "Reported: Nov 27, 2026",
+        "Actors: Settlement (civilian group)",
+        "Location: Novopavlivka, Odes'ka Oblast, Ukraine",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ]
     },
     {
       "category": "conflict",
-      "lat": 53.2521,
-      "lon": 34.3717,
-      "name": "Armed clash: Village (civilian group) vs Governor (government)",
-      "count": 6,
-      "html": "<a href='https://www.themoscowtimes.com/2026/11/27/drone-strikes-kill-2-in-kursk-and-bryansk-regions-amid-overnight-attacks-a812391' target='_blank'>Armed clash: Village (civilian group) vs Governor (government)</a>",
+      "lat": 13.8572,
+      "lon": 2.0143,
+      "name": "Niger Guard Post Attack Kills 13",
+      "count": 4,
+      "html": "<a href='https://www.riotimesonline.com/niger-national-guard-post-attack-sanam/' target='_blank'>Niger Guard Post Attack Kills 13</a>",
       "summary": [
         "Type: Armed clash",
-        "Actors: Village (civilian group) vs Governor (government)",
-        "Location: Bryansk, Bryanskaya Oblast', Russia",
-        "Reported: Nov 27, 2026",
-        "Source: GDELT (bulk event data)"
-      ]
-    },
-    {
-      "category": "conflict",
-      "lat": 44.0049,
-      "lon": 129.244,
-      "name": "Chinese Military Tests New Taiwan Landing Tactics in Coastal Drills",
-      "count": 6,
-      "html": "<a href='https://english.aawsat.com/world/5346198-chinese-military-tests-new-taiwan-landing-tactics-coastal-drills' target='_blank'>Chinese Military Tests New Taiwan Landing Tactics in Coastal Drills</a>",
-      "summary": [
-        "Type: Armed clash",
-        "Actors: China vs China (military)",
-        "Location: Dongshan, Heilongjiang, China",
-        "Reported: Nov 27, 2026",
+        "Actors: Unidentified Gunmen (rebel group)",
+        "Location: Tera, Tillab\u00e9, Niger",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ],
-      "lede": "China is staging a weeks-long amphibious landing drill in the province facing Taiwan, testing a new method to land troops ashore by linking civilian vessels into a makeshift floating bridge, satellite images and a..."
+      "lede": "Niger\u2019s defence ministry says attackers killed 13 National Guard members and wounded 20 at Sanam on 26 November, days after another deadly ambush."
     },
     {
       "category": "conflict",
-      "lat": 14.7978,
-      "lon": 42.9545,
-      "name": "Assault: Saudi Arabia vs Yemen",
-      "count": 10,
-      "html": "<a href='https://www.rigzone.com/news/wire/deadly_houthi_strike_at_jazan_refinery_halts_some_operations-27-nov-2026-185180-article/' target='_blank'>Assault: Saudi Arabia vs Yemen</a>",
+      "lat": 60.0,
+      "lon": 100.0,
+      "name": "Attacks on Zaporizhia and surrounding district leave 1 dead, 5 injured",
+      "count": 5,
+      "html": "<a href='https://en.interfax.com.ua/news/general/1243850.html' target='_blank'>Attacks on Zaporizhia and surrounding district leave 1 dead, 5 injured</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Russia",
+        "Location: Russia",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Russian troops attacked Zaporizhia region more than 700 times over the past 24 hours, killing one person and injuring five others, Ivan Fedorov, head of the Zaporizhia Regional Defense Council, said."
+    },
+    {
+      "category": "conflict",
+      "lat": 34.8731,
+      "lon": 71.147,
+      "name": "Assault: Afghanistan vs Ministry (government)",
+      "count": 4,
+      "html": "<a href='https://www.inquisitr.com/kunar-school-explosion-mining-depot/' target='_blank'>Assault: Afghanistan vs Ministry (government)</a>",
       "summary": [
         "Type: Assault",
-        "Actors: Saudi Arabia vs Yemen",
-        "Location: Hodeida, Al ?udaydah, Yemen",
-        "Reported: Nov 27, 2026",
+        "Actors: Afghanistan vs Ministry (government)",
+        "Location: Asadabad, Konar, Afghanistan",
+        "Reported: Nov 28, 2026",
         "Source: GDELT (bulk event data)"
       ]
+    },
+    {
+      "category": "conflict",
+      "lat": 32.0,
+      "lon": 53.0,
+      "name": "Armed clash: International Energy Agency (international org)",
+      "count": 10,
+      "html": "<a href='https://www.rigzone.com/news/wire/oil_swings_with_rising_me_attacks_in_focus-27-nov-2026-185191-article/' target='_blank'>Armed clash: International Energy Agency (international org)</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: International Energy Agency (international org)",
+        "Location: Iran",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 36.7631,
+      "lon": 3.05056,
+      "name": "Armed clash: Kuwait",
+      "count": 4,
+      "html": "<a href='https://www.aps.dz:443/en/algeria/national-news/mwz5vie0-algeria-condemns-in-strongest-terms-attack-on-vital-facility-in-kuwait' target='_blank'>Armed clash: Kuwait</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Kuwait",
+        "Location: Algiers, Alger, Algeria",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 33.0,
+      "lon": 66.0,
+      "name": "Assault: Afghanistan",
+      "count": 4,
+      "html": "<a href='https://www.gazettelive.co.uk/news/teesside-news/former-soldier-who-raped-young-34971320' target='_blank'>Assault: Afghanistan</a>",
+      "summary": [
+        "Type: Assault",
+        "Actors: Afghanistan",
+        "Location: Afghanistan",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 35.75,
+      "lon": 51.5148,
+      "name": "Armed clash in Tehran, Tehran, Iran",
+      "count": 8,
+      "html": "<a href='https://bdnews24.com/world/btfqyv091x' target='_blank'>Armed clash in Tehran, Tehran, Iran</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Not identified in wire report",
+        "Location: Tehran, Tehran, Iran",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ]
+    },
+    {
+      "category": "conflict",
+      "lat": 27.0,
+      "lon": 30.0,
+      "name": "Egyptian Nationals Confirmed Among Casualties in Shipwreck Off Cuban Coast",
+      "count": 8,
+      "html": "<a href='https://www.cubaheadlines.com/articles/346816' target='_blank'>Egyptian Nationals Confirmed Among Casualties in Shipwreck Off Cuban Coast</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Not identified in wire report",
+        "Location: Egypt",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "The Egyptian Ministry of Foreign Affairs announced on Friday that most of the victims of the Halima cargo ship's shipwreck near the Cuban coast are Eg..."
+    },
+    {
+      "category": "conflict",
+      "lat": 35.75,
+      "lon": 51.5148,
+      "name": "Strait Of Hormuz Latest: Iran Claims More Tankers Hit Mines As Traffic Plunges And Gulf Tensions Keep Rising",
+      "count": 8,
+      "html": "<a href='https://www.ibtimes.com.au/iran-claims-tankers-hit-mines-strait-hormuz-1879510' target='_blank'>Strait Of Hormuz Latest: Iran Claims More Tankers Hit Mines As Traffic Plunges And Gulf Tensions Keep Rising</a>",
+      "summary": [
+        "Type: Armed clash",
+        "Actors: Iran vs United Arab Emirates",
+        "Location: Tehran, Tehran, Iran",
+        "Reported: Nov 28, 2026",
+        "Source: GDELT (bulk event data)"
+      ],
+      "lede": "Iran's Revolutionary Guard says two more oil tankers struck naval mines in the Strait of Hormuz, but the vessels and casualties remain unidentified and the claims are unverified."
     }
   ]
 }
